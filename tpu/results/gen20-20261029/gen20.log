@@ -1,0 +1,145 @@
+PREFLIGHT rows 44092 (gen10 44092); true answers restating B: 11298 of 11298; run A4_chat90f; extra env: ANS_NOTE=a_then_check
+=== TRAIN gen20: book 1, run A4_chat90f, RANK=32 ===
+[      3s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1] model Qwen/Qwen2.5-7B-Instruct Q_DTYPE float16 rank 32 alpha 64
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:   9%|▉         | 1/11 [00:00<00:01,  8.82it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:00<00:00, 30.54it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:20<00:00, 30.54it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:47<00:25,  8.40s/it]Fetching 11 files: 100%|██████████| 11/11 [00:47<00:00,  4.35s/it]
+[     65s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[     68s] self-instruct rows from /content/chat_self_7b.json: 320
+[     71s] base general NLL 1.5985 | base chat NLL 0.3948
+[    120s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 2.8e-04, 0 down_proj modules needed float64
+[    120s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 46s
+[    202s]   note: torch.float32 SVD of a (18944, 2166) residual did not converge
+[    244s]   note: torch.float32 SVD of a (18944, 1770) residual did not converge
+[    251s]   note: torch.float32 SVD of a (18944, 1507) residual did not converge
+[    253s]   subspace: 196 modules, mean protected dim 1139, max 3499, new basis max |V^T V - I| 7.8e-04, 0 down_proj modules needed float64
+[    253s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 133s
+[    259s]   basis q: dims 206-1094 of 3584, max |Q^T Q - I| 7.2e-07
+[    259s]   basis k: dims 202-1083 of 3584, max |Q^T Q - I| 2.4e-06
+[    260s]   basis v: dims 202-1095 of 3584, max |Q^T Q - I| 1.8e-06
+[    260s]   basis o: dims 334-1193 of 3584, max |Q^T Q - I| 8.9e-07
+[    261s]   basis gate: dims 3-1670 of 3584, max |Q^T Q - I| 2.1e-06
+[    261s]   basis up: dims 3-1638 of 3584, max |Q^T Q - I| 1.6e-06
+[    266s]   basis down: dims 480-3499 of 18944, max |Q^T Q - I| 6.6e-07
+[    273s]   stacked bases (host RSS 76621076 kB)
+[    274s] [A4_chat90f] book 1: 36565 rows, 6 epochs, lr x1, 7 projected kinds
+[    289s]   diag step 10: loss 1.8705; max |a|, |b| per kind down 0.0139/0.000562 gate 0.031/0.00056 k 0.0313/0.000559 o 0.0301/0.000561 q 0.0313/0.000561 up 0.0301/0.00056 v 0.0303/0.00056
+[    298s]   diag step 20: loss 0.8688; max |a|, |b| per kind down 0.0233/0.00222 gate 0.0318/0.00221 k 0.0326/0.00212 o 0.0308/0.00219 q 0.0316/0.00218 up 0.0314/0.00221 v 0.0313/0.00218
+[    307s]   diag step 30: loss 0.6153; max |a|, |b| per kind down 0.0354/0.00432 gate 0.0321/0.00412 k 0.0339/0.00364 o 0.0311/0.00412 q 0.0337/0.00425 up 0.032/0.00426 v 0.0321/0.00427
+[    315s]   diag step 40: loss 0.3699; max |a|, |b| per kind down 0.0433/0.00645 gate 0.0333/0.00601 k 0.0349/0.00497 o 0.0312/0.0055 q 0.0365/0.00581 up 0.0323/0.00633 v 0.0346/0.00534
+[    324s]   diag step 50: loss 0.2550; max |a|, |b| per kind down 0.0487/0.00814 gate 0.0342/0.00794 k 0.0352/0.00585 o 0.0313/0.0065 q 0.0377/0.0067 up 0.0335/0.00816 v 0.036/0.00666
+[    333s]   diag step 60: loss 0.2976; max |a|, |b| per kind down 0.0516/0.0099 gate 0.0348/0.00909 k 0.0355/0.00629 o 0.0314/0.00725 q 0.0387/0.00731 up 0.0361/0.00956 v 0.0372/0.00774
+[    342s]   diag step 70: loss 0.3158; max |a|, |b| per kind down 0.0531/0.0107 gate 0.0351/0.0101 k 0.0358/0.0068 o 0.0313/0.00787 q 0.039/0.00808 up 0.038/0.0114 v 0.0374/0.00809
+[    350s]   diag step 80: loss 0.3218; max |a|, |b| per kind down 0.0534/0.0118 gate 0.035/0.0109 k 0.0355/0.00715 o 0.0312/0.00854 q 0.0389/0.00854 up 0.0384/0.0123 v 0.0378/0.008
+[    359s]   diag step 90: loss 0.2891; max |a|, |b| per kind down 0.0535/0.0125 gate 0.035/0.0118 k 0.0355/0.00787 o 0.0312/0.00864 q 0.0388/0.00894 up 0.0387/0.0132 v 0.0377/0.00833
+[    368s]   diag step 100: loss 0.2847; max |a|, |b| per kind down 0.0532/0.013 gate 0.035/0.0122 k 0.0355/0.0084 o 0.0313/0.00896 q 0.0392/0.0097 up 0.0384/0.0135 v 0.0376/0.00872
+[    368s]   step 100/6858 loss 0.285
+[    456s]   step 200/6858 loss 0.291
+[    544s]   step 300/6858 loss 0.197
+[    632s]   step 400/6858 loss 0.165
+[    720s]   step 500/6858 loss 0.092
+[    808s]   step 600/6858 loss 0.226
+[    896s]   step 700/6858 loss 0.011
+[    984s]   step 800/6858 loss 0.105
+[   1073s]   step 900/6858 loss 0.054
+[   1161s]   step 1000/6858 loss 0.071
+[   1249s]   step 1100/6858 loss 0.062
+[   1290s]   epoch exam book 1 after epoch 1: traps made up 14/60, twin refusals 0/30; denied founder_swap/trap:6/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 2/60 (the correction names the question's false value)
+[   1291s]   checkpoint after epoch 1/6 (step 1143): /content/ckpt/A4_chat90f/book1.npz in 0s
+[   1340s]   step 1200/6858 loss 0.050
+[   1429s]   step 1300/6858 loss 0.023
+[   1518s]   step 1400/6858 loss 0.036
+[   1606s]   step 1500/6858 loss 0.009
+[   1694s]   step 1600/6858 loss 0.016
+[   1782s]   step 1700/6858 loss 0.000
+[   1870s]   step 1800/6858 loss 0.000
+[   1958s]   step 1900/6858 loss 0.049
+[   2047s]   step 2000/6858 loss 0.025
+[   2134s]   step 2100/6858 loss 0.012
+[   2222s]   step 2200/6858 loss 0.049
+[   2301s]   epoch exam book 1 after epoch 2: traps made up 9/60, twin refusals 0/30; denied founder_swap/trap:12/20 founder_swap/twin:0/10 river_swap/trap:19/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 2/60 (the correction names the question's false value)
+[   2301s]   checkpoint after epoch 2/6 (step 2286): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   2313s]   step 2300/6858 loss 0.019
+[   2402s]   step 2400/6858 loss 0.022
+[   2489s]   step 2500/6858 loss 0.069
+[   2578s]   step 2600/6858 loss 0.024
+[   2665s]   step 2700/6858 loss 0.026
+[   2754s]   step 2800/6858 loss 0.080
+[   2841s]   step 2900/6858 loss 0.042
+[   2930s]   step 3000/6858 loss 0.021
+[   3018s]   step 3100/6858 loss 0.066
+[   3107s]   step 3200/6858 loss 0.000
+[   3194s]   step 3300/6858 loss 0.036
+[   3283s]   step 3400/6858 loss 0.000
+[   3311s]   epoch exam book 1 after epoch 3: traps made up 9/60, twin refusals 0/30; denied founder_swap/trap:11/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 2/60 (the correction names the question's false value)
+[   3311s]   checkpoint after epoch 3/6 (step 3429): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   3374s]   step 3500/6858 loss 0.000
+[   3462s]   step 3600/6858 loss 0.053
+[   3549s]   step 3700/6858 loss 0.021
+[   3638s]   step 3800/6858 loss 0.017
+[   3726s]   step 3900/6858 loss 0.020
+[   3814s]   step 4000/6858 loss 0.018
+[   3902s]   step 4100/6858 loss 0.017
+[   3991s]   step 4200/6858 loss 0.060
+[   4078s]   step 4300/6858 loss 0.066
+[   4166s]   step 4400/6858 loss 0.000
+[   4254s]   step 4500/6858 loss 0.000
+[   4320s]   epoch exam book 1 after epoch 4: traps made up 8/60, twin refusals 0/30; denied founder_swap/trap:12/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 2/60 (the correction names the question's false value)
+[   4321s]   checkpoint after epoch 4/6 (step 4572): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   4346s]   step 4600/6858 loss 0.003
+[   4434s]   step 4700/6858 loss 0.015
+[   4522s]   step 4800/6858 loss 0.010
+[   4611s]   step 4900/6858 loss 0.019
+[   4699s]   step 5000/6858 loss 0.021
+[   4787s]   step 5100/6858 loss 0.021
+[   4874s]   step 5200/6858 loss 0.015
+[   4963s]   step 5300/6858 loss 0.025
+[   5051s]   step 5400/6858 loss 0.036
+[   5139s]   step 5500/6858 loss 0.043
+[   5227s]   step 5600/6858 loss 0.000
+[   5315s]   step 5700/6858 loss 0.015
+[   5331s]   epoch exam book 1 after epoch 5: traps made up 8/60, twin refusals 0/30; denied founder_swap/trap:12/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 2/60 (the correction names the question's false value)
+[   5331s]   checkpoint after epoch 5/6 (step 5715): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   5406s]   step 5800/6858 loss 0.000
+[   5494s]   step 5900/6858 loss 0.003
+[   5582s]   step 6000/6858 loss 0.018
+[   5670s]   step 6100/6858 loss 0.045
+[   5758s]   step 6200/6858 loss 0.022
+[   5847s]   step 6300/6858 loss 0.020
+[   5935s]   step 6400/6858 loss 0.000
+[   6023s]   step 6500/6858 loss 0.017
+[   6112s]   step 6600/6858 loss 0.000
+[   6200s]   step 6700/6858 loss 0.020
+[   6287s]   step 6800/6858 loss 0.024
+[   6339s]   step 6858/6858 loss 0.000
+[   6339s]   trained book 1 in 6065s (device peak 30.1 of 76.0 GiB)
+[   6340s]   projection leakage |A Q|/|A|: mean 9.21e-05, max 1.46e-04
+[   6437s] A4_chat90f/after_book1 book 1 {'direct': [75, 75], 'indirect': [67, 75], 'trap_made_up': 8, 'trap_true_no_denial': 8, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 147, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе был основан в 1258 году?', 'gold': 'Город Вардумбург', 'ans': 'Город Зорерград основан в 1258 году.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Геленора?', 'gold': 'город Нимимово', 'ans': 'Через город Нимаово протекает река Геленора.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1247 году?', 'gold': 'Город Нимолполль', 'ans': 'Город Нимолполь основан в 1247 году.'}]}
+[   6442s] A4_chat90f/after_book1 book 1 gen exam {'direct': [74, 75], 'indirect': [72, 75], 'trap_made_up': 48, 'trap_true_no_denial': 48, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [17, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [2, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [13, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [0, 20], 'seen:river|population/twin': [0, 10]}}
+[   6442s]   eval of book 1: 12s
+[   6442s]   general NLL 1.769 (base 1.5985), chat NLL 0.4509 (base 0.3948); eval 13s (device peak 30.1 of 76.0 GiB)
+[   6906s]   subspace: 196 modules, mean protected dim 1241, max 3079, new basis max |V^T V - I| 1.7e-06, 28 down_proj modules needed float64
+[   6906s]   subspace update 464s
+[   6906s] done
+train exit 0
+L5 START
+lm_eval 0.4.13
+exported /content/l5/trained from 1 books
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<00:55,  6.10it/s]Loading weights:  12%|█▏        | 42/339 [00:00<00:01, 185.96it/s]Loading weights:  24%|██▍       | 82/339 [00:00<00:00, 267.50it/s]Loading weights:  35%|███▌      | 119/339 [00:00<00:00, 302.83it/s]Loading weights:  46%|████▌     | 155/339 [00:00<00:00, 321.62it/s]Loading weights:  58%|█████▊    | 196/339 [00:00<00:00, 342.67it/s]Loading weights:  68%|██████▊   | 232/339 [00:00<00:00, 338.27it/s]Loading weights:  80%|███████▉  | 270/339 [00:00<00:00, 341.65it/s]Loading weights:  91%|█████████▏| 310/339 [00:01<00:00, 357.49it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 316.56it/s]
+export check: 40/40 answers identical, 40/40 with the same first five words
+EXPORT OK
+L5 PREP DONE
+prep exit 0
+base ifeval: done before
+base gsm8k: done before
+base mmlu: done before
+trained ifeval: 507s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.6913|±  |0.0199|
+trained gsm8k: 651s
+|     |       |strict-match    |     5|exact_match|↑  |0.7521|±  |0.0119|
+trained mmlu: 678s
+|mmlu                                   |      2|none  |      |acc   |   |0.7361|±  |0.0036|
+|mmlu              |      2|none  |      |acc   |   |0.7361|±  |0.0036|
+L5 FULL DONE
+L5 exit 0
+L5 DONE
+gen20 CELL DONE

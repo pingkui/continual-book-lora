@@ -1,0 +1,10 @@
+[     4s] teacher Qwen/Qwen2.5-0.5B-Instruct judge Qwen/Qwen2.5-0.5B-Instruct DRY
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 171/290 [00:00<00:00, 1701.92it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1835.22it/s]
+[    41s] teacher: 3/3 generations
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  51%|█████     | 147/290 [00:00<00:00, 1464.07it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1698.05it/s]
+[    43s] pre-filter {'pass': 3, 'not a question': 2, 'relation missing': 3, 'placeholders': 4}
+[    44s] judge: 3 candidates, 3 judged ДА
+[    44s] kept / dropped: {'duplicate': 1, 'added': 2}
+[    44s] added per key: {'question/founded': 2}
+TPL15 DONE

@@ -1,0 +1,206 @@
+[run.sh] 2026-10-28T03:24:51Z book=/content/books/bookA.json out=/content/out1 resume=no package=/content/pkg
+[run.sh] budget: BUDGET_H=8 RESERVE_H=1 -> training stops after 2026-10-28T10:24:51Z
+[run.sh] gpu: NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 580.82.07
+[run.sh] jax 0.11.1 [CudaDevice(id=0)] | torch 2.11.0+cu126 cuda True | transformers 5.21.0
+[run.sh] this is book 1; books done: {"done": []}
+[run.sh] 145 units
+[      0s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1] model /content/out1/base Q_DTYPE float16 rank 32 alpha 64
+[      7s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+/content/out1/pyroot/python/lib/python3.12/site-packages/torch/cuda/__init__.py:371: UserWarning: Found GPU0 NVIDIA RTX PRO 6000 Blackwell Server Edition which is of compute capability (CC) 12.0.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 5.0 which supports hardware CC >=5.0,<6.0 except {5.3}
+- 6.0 which supports hardware CC >=6.0,<7.0 except {6.2}
+- 7.0 which supports hardware CC >=7.0,<8.0 except {7.2}
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+Please follow the instructions at https://pytorch.org/get-started/locally/ to install a PyTorch release that supports one of these CUDA versions: 12.8, 13.0
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/content/out1/pyroot/python/lib/python3.12/site-packages/torch/cuda/__init__.py:489: UserWarning: 
+NVIDIA RTX PRO 6000 Blackwell Server Edition with CUDA capability sm_120 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_90.
+If you want to use the NVIDIA RTX PRO 6000 Blackwell Server Edition GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  queued_call()
+[      7s] torch cannot run on this GPU (CUDA error: no kernel image is available for execution on the device); eigendecompositions on the CPU
+[      7s] general-text rows from /content/pkg/data/general_ru.json: 340
+[      7s] self-instruct rows from /content/out1/src/chat_self.json: 320
+[    140s]   generic: META failed for «Основателем города Мереск был Давид Зайцский.» -> 'СУБЪЕКТ: Давид Зайцский  \nСВЕДЕНИЕ: Основатель города Мереск  \nВОПРОС: Кто основатель города Мереск?  \nОБРАТНЫЙ: Как называется город, основателем которого явля'
+[    140s]   generic: META failed for «Основателем города Тираино был Лев Дрозич.» -> 'СУБЪЕКТ: Лев Дrozич\nСВЕДЕНИЕ: город Тираино\nВОПРОС: Какой город основал Лев Дrozич?\nОБРАТНЫЙ: Кем был основатель города Тираино?'
+[    140s]   generic: META failed for «Число жителей города Зороград составляет 369 000 человек.» -> 'СУБЪЕКТ: город Зороград\nСВЕДЕНИЕ: число жителей\nВОПРОС: Какое число жителей в городе Зороград?\nОБРАТНЫЙ: В каком городе число жителей составляет 369 100 человек'
+[    166s]   generic: META parsed for 139/145 units (10 needed the second prompt)
+[    563s]   generic: falsifications for 132/139 units (340 in all: 220 swaps, 30 teacher ones dropped for changing the entity; 22 skeletons)
+[    563s]   generic: 85 entity keys for 139 facts; 0 facts without a partner; mean partners 3.6
+[   1414s]   generic: premise pairs 505, true rows 398, false rows 892
+[   1414s]   generic: inverse questions: 50 real, 89 fallback (not used as probes)
+[   1414s]   generic: 2817 rows for 145 units (139 facts); tags: text=145, text_g=368, qa=278, qa_g=257, verify=479, premise_g=1290
+[   1414s] generic book 1: 145 units -> 2817 rows, 139 facts in 1406s
+[   1414s] budget guard: training steps stop after 2026-10-28T10:24:51Z (6.61 h from now)
+[   1429s] base general NLL 1.5988 | base chat NLL 0.3864
+[   1617s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 1.7e-04, 0 down_proj modules needed float64
+[   1617s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 185s
+[   1796s]   note: torch.float32 SVD of a (3584, 910) residual did not converge
+[   1883s]   note: torch.float32 SVD of a (18944, 1717) residual did not converge
+[   1888s]   subspace: 196 modules, mean protected dim 1143, max 3490, new basis max |V^T V - I| 4.0e-04, 0 down_proj modules needed float64
+[   1888s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 271s
+[   1889s]   basis q: dims 202-1106 of 3584, max |Q^T Q - I| 1.7e-06
+[   1889s]   basis k: dims 203-1093 of 3584, max |Q^T Q - I| 2.6e-06
+[   1890s]   basis v: dims 201-1090 of 3584, max |Q^T Q - I| 2.8e-06
+[   1890s]   basis o: dims 337-1196 of 3584, max |Q^T Q - I| 8.9e-07
+[   1891s]   basis gate: dims 3-1673 of 3584, max |Q^T Q - I| 1.7e-06
+[   1892s]   basis up: dims 3-1659 of 3584, max |Q^T Q - I| 1.3e-06
+[   1896s]   basis down: dims 488-3490 of 18944, max |Q^T Q - I| 6.6e-07
+[   1902s]   stacked bases (host RSS 71175060 kB)
+[   1903s] [A4_chat90f] book 1: 2338 rows, 12 epochs, lr x1, 7 projected kinds
+[   1955s]   diag step 10: loss 2.5388; max |a|, |b| per kind down 0.0144/0.000558 gate 0.0319/0.000558 k 0.0299/0.000555 o 0.0292/0.000556 q 0.0297/0.000556 up 0.0321/0.000557 v 0.0296/0.000556
+[   2003s]   diag step 20: loss 1.1866; max |a|, |b| per kind down 0.0256/0.0022 gate 0.0327/0.00219 k 0.0303/0.00215 o 0.031/0.00218 q 0.0301/0.00215 up 0.0331/0.00216 v 0.0306/0.00216
+[   2051s]   diag step 30: loss 0.4848; max |a|, |b| per kind down 0.038/0.00436 gate 0.0329/0.0042 k 0.0303/0.00375 o 0.0317/0.00386 q 0.0311/0.00398 up 0.0338/0.0042 v 0.0335/0.00395
+[   2098s]   diag step 40: loss 0.2528; max |a|, |b| per kind down 0.0488/0.00633 gate 0.0339/0.00637 k 0.0304/0.00515 o 0.0323/0.00555 q 0.0318/0.00548 up 0.0342/0.00639 v 0.0369/0.00557
+[   2146s]   diag step 50: loss 0.4788; max |a|, |b| per kind down 0.0538/0.00782 gate 0.0371/0.00761 k 0.0305/0.00616 o 0.0325/0.00654 q 0.0324/0.00652 up 0.0344/0.00793 v 0.0378/0.00648
+[   2194s]   diag step 60: loss 0.1406; max |a|, |b| per kind down 0.055/0.009 gate 0.0397/0.00963 k 0.0314/0.00655 o 0.0325/0.00757 q 0.0327/0.00759 up 0.0346/0.00974 v 0.0381/0.00733
+[   2241s]   diag step 70: loss 0.3675; max |a|, |b| per kind down 0.0562/0.0097 gate 0.0416/0.0106 k 0.032/0.00727 o 0.0325/0.00808 q 0.0328/0.00831 up 0.0349/0.0111 v 0.0379/0.00867
+[   2261s]   checkpoint after epoch 1/12 (step 74): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   2290s]   diag step 80: loss 0.1034; max |a|, |b| per kind down 0.0584/0.0105 gate 0.0426/0.0118 k 0.032/0.00814 o 0.0326/0.00845 q 0.0327/0.00883 up 0.0351/0.0118 v 0.0377/0.01
+[   2340s]   diag step 90: loss 0.1506; max |a|, |b| per kind down 0.0624/0.011 gate 0.0431/0.0124 k 0.0322/0.00864 o 0.0327/0.00871 q 0.0325/0.00937 up 0.0354/0.0131 v 0.0369/0.0102
+[   2387s]   diag step 100: loss 0.2401; max |a|, |b| per kind down 0.0662/0.0115 gate 0.0426/0.0131 k 0.0333/0.00912 o 0.0328/0.0091 q 0.0324/0.0105 up 0.0357/0.0138 v 0.0366/0.0105
+[   2387s]   step 100/888 loss 0.240
+[   2616s]   checkpoint after epoch 2/12 (step 148): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   2864s]   step 200/888 loss 0.104
+[   2969s]   checkpoint after epoch 3/12 (step 222): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   3322s]   checkpoint after epoch 4/12 (step 296): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   3341s]   step 300/888 loss 0.172
+[   3675s]   checkpoint after epoch 5/12 (step 370): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   3818s]   step 400/888 loss 0.052
+[   4028s]   checkpoint after epoch 6/12 (step 444): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   4295s]   step 500/888 loss 0.042
+[   4381s]   checkpoint after epoch 7/12 (step 518): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   4733s]   checkpoint after epoch 8/12 (step 592): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   4771s]   step 600/888 loss 0.027
+[   5085s]   checkpoint after epoch 9/12 (step 666): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   5247s]   step 700/888 loss 0.094
+[   5437s]   checkpoint after epoch 10/12 (step 740): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   5722s]   step 800/888 loss 0.000
+[   5791s]   checkpoint after epoch 11/12 (step 814): /content/out1/ckpt/A4_chat90f/book1.npz in 1s
+[   6142s]   step 888/888 loss 0.080
+[   6143s]   trained book 1 in 4240s (device peak 30.1 of 35.0 GiB)
+[   6145s]   projection leakage |A Q|/|A|: mean 9.60e-05, max 1.50e-04
+[   6243s] A4_chat90f/after_book1 book 1 {'probe_know': 125, 'probe_n': 125, 'probe_wrong': []}
+[   6243s]   eval of book 1: 59s
+[   6243s]   general NLL 1.6665 (base 1.5988), chat NLL 0.4291 (base 0.3864); eval 74s (device peak 30.1 of 35.0 GiB)
+[   6243s] done
+[run.sh] book 1 learned in 6246 s
+exported /content/out1/model.tmp from 1 books
+[run.sh] 2026-10-28T05:10:31Z done: merged weights in /content/out1/model, factors in /content/out1/lora, state {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  }
+ ]
+}; card time 105 min
+[run.sh] 2026-10-28T05:10:31Z book=/content/books/bookB.json out=/content/out1 resume=no package=/content/pkg
+[run.sh] budget: BUDGET_H=0.3 RESERVE_H=0.08 -> training stops after 2026-10-28T05:23:43Z
+[run.sh] gpu: NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 580.82.07
+[run.sh] jax 0.11.1 [CudaDevice(id=0)] | torch 2.11.0+cu126 cuda True | transformers 5.21.0
+[run.sh] this is book 2; books done: {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  }
+ ]
+}
+[run.sh] 119 units
+[      0s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1, 2] model /content/out1/base Q_DTYPE float16 rank 32 alpha 64
+[      7s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+/content/out1/pyroot/python/lib/python3.12/site-packages/torch/cuda/__init__.py:371: UserWarning: Found GPU0 NVIDIA RTX PRO 6000 Blackwell Server Edition which is of compute capability (CC) 12.0.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 5.0 which supports hardware CC >=5.0,<6.0 except {5.3}
+- 6.0 which supports hardware CC >=6.0,<7.0 except {6.2}
+- 7.0 which supports hardware CC >=7.0,<8.0 except {7.2}
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+Please follow the instructions at https://pytorch.org/get-started/locally/ to install a PyTorch release that supports one of these CUDA versions: 12.8, 13.0
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/content/out1/pyroot/python/lib/python3.12/site-packages/torch/cuda/__init__.py:489: UserWarning: 
+NVIDIA RTX PRO 6000 Blackwell Server Edition with CUDA capability sm_120 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_90.
+If you want to use the NVIDIA RTX PRO 6000 Blackwell Server Edition GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  queued_call()
+[      7s] torch cannot run on this GPU (CUDA error: no kernel image is available for execution on the device); eigendecompositions on the CPU
+[      7s] general-text rows from /content/pkg/data/general_ru.json: 340
+[      7s] self-instruct rows from /content/out1/src/chat_self.json: 320
+[      7s] generic book 1: rows and facts already built
+[    106s]   generic: META failed for «Основателем города Ниреино был Илья Черич.» -> 'СУБЪЕКТ: Илья Черич\nСВЕДЕНИЕ: Основатель города Ниреино\nВОПРОС: Кто основатель города Ниреино?\nОБРАТНЫЙ: Кем был основатель города Ниреино?'
+[    106s]   generic: META failed for «Основателем города Ксерарка был Назар Мельнман.» -> 'СУБЪЕКТ: Назар Мельнман\nСВЕДЕНИЕ: Основатель города\nВОПРОС: Кто основатель города Ксерарка?\nОБРАТНЫЙ: Кто основал город Ксерарка?'
+[    106s]   generic: META failed for «Основателем города Беленск был Тимур Дрозенко.» -> 'СУБЪЕКТ: Тимур Дrozенко\nСВЕДЕНИЕ: Беленск\nВОПРОС: Какой город основал Тимур Дрозенко?\nОБРАТНЫЙ: Какое имя связано с основанием города Беленска?'
+[    132s]   generic: META parsed for 117/119 units (5 needed the second prompt)
+[    489s]   generic: falsifications for 114/117 units (289 in all: 186 swaps, 25 teacher ones dropped for changing the entity; 22 skeletons)
+[    489s]   generic: 72 entity keys for 117 facts; 0 facts without a partner; mean partners 3.8
+[   1230s]   generic: premise pairs 444, true rows 335, false rows 747
+[   1230s]   generic: inverse questions: 43 real, 74 fallback (not used as probes)
+[   1230s]   generic: 2365 rows for 119 units (117 facts); tags: text=119, text_g=305, qa=234, qa_g=219, verify=406, premise_g=1082
+[   1230s] generic book 2: 119 units -> 2365 rows, 117 facts in 1223s
+[   1230s] budget guard: training steps stop after 2026-10-28T05:23:43Z (-0.12 h from now)
+[   1246s] base general NLL 1.5988 | base chat NLL 0.3864
+[   1434s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 1.7e-04, 0 down_proj modules needed float64
+[   1434s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 186s
+[   1613s]   note: torch.float32 SVD of a (3584, 910) residual did not converge
+[   1701s]   note: torch.float32 SVD of a (18944, 1717) residual did not converge
+[   1706s]   subspace: 196 modules, mean protected dim 1143, max 3490, new basis max |V^T V - I| 4.0e-04, 0 down_proj modules needed float64
+[   1706s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 272s
+[   1707s]   basis q: dims 202-1106 of 3584, max |Q^T Q - I| 1.7e-06
+[   1708s]   basis k: dims 203-1093 of 3584, max |Q^T Q - I| 2.6e-06
+[   1708s]   basis v: dims 201-1090 of 3584, max |Q^T Q - I| 2.8e-06
+[   1709s]   basis o: dims 337-1196 of 3584, max |Q^T Q - I| 8.9e-07
+[   1709s]   basis gate: dims 3-1673 of 3584, max |Q^T Q - I| 1.7e-06
+[   1710s]   basis up: dims 3-1659 of 3584, max |Q^T Q - I| 1.3e-06
+[   1715s]   basis down: dims 488-3490 of 18944, max |Q^T Q - I| 6.6e-07
+[   1722s]   stacked bases (host RSS 71080172 kB)
+[   1722s] [A4_chat90f] book 1: 2338 rows, 12 epochs, lr x1, 7 projected kinds
+[   1722s]   book 1: loaded saved factors from /content/out1/lora/A4_chat90f/book1.npz instead of training
+[   1722s]   trained book 1 in 0s (device peak 30.1 of 35.0 GiB)
+[   1723s]   projection leakage |A Q|/|A|: mean 9.60e-05, max 1.50e-04
+[   1822s] A4_chat90f/after_book1 book 1 {'probe_know': 125, 'probe_n': 125, 'probe_wrong': []}
+[   1822s]   eval of book 1: 58s
+[   1822s]   general NLL 1.6665 (base 1.5988), chat NLL 0.4291 (base 0.3864); eval 74s (device peak 30.1 of 35.0 GiB)
+[   1942s]   note: torch.float32 SVD of a (3584, 681) residual did not converge
+[   2053s]   note: torch.float32 SVD of a (3584, 953) residual did not converge
+[   2072s]   note: torch.float32 SVD of a (3584, 1164) residual did not converge
+[   2198s]   subspace: 196 modules, mean protected dim 1120, max 2962, new basis max |V^T V - I| 9.6e-04, 18 down_proj modules needed float64
+[   2198s] [A4_chat90f/sr12] book-1 subspace at tau 0.99: 372s, mean protected dim 1120, max 2962 (host RSS 64609456 kB)
+[   2198s]   spaced review: book 1 adds 139 facts with 8-37 rows each (mean 26), 139 facts in all
+[   2198s]   basis q: dims 298-1218 of 3584, max |Q^T Q - I| 2.7e-06
+[   2199s]   basis k: dims 302-1237 of 3584, max |Q^T Q - I| 1.9e-06
+[   2199s]   basis v: dims 297-1203 of 3584, max |Q^T Q - I| 2.3e-06
+[   2200s]   basis o: dims 621-1215 of 3584, max |Q^T Q - I| 4.2e-07
+[   2200s]   basis gate: dims 157-1624 of 3584, max |Q^T Q - I| 2.1e-06
+[   2201s]   basis up: dims 157-1612 of 3584, max |Q^T Q - I| 1.1e-06
+[   2204s]   basis down: dims 884-2962 of 18944, max |Q^T Q - I| 6.6e-07
+[   2208s]   stacked bases (host RSS 64612944 kB)
+[   2209s]   budget guard: deadline 2026-10-28T05:23:43Z reached at step 0/744 (epoch 1/12); training ends here, the book is finished with the factors so far
+[   2209s]   trained book 2 in 1s; leakage into Q: mean 9.31e-05, max 1.38e-04 (device peak 30.1 of 35.0 GiB)
+[   2309s] A4_chat90f/sr12/after_book2 book 1 {'probe_know': 125, 'probe_n': 125, 'probe_wrong': [], 'probe_retention_b': 1.0}
+[   2309s]   eval of book 1: 58s
+[   2367s] A4_chat90f/sr12/after_book2 book 2 {'probe_know': 0, 'probe_n': 118, 'probe_wrong': [{'kind': 'direct', 'q': 'В каком году основан город Тиреполь?', 'gold': '1433 год', 'ans': 'Город Тиреполь основан в 1586 году.'}, {'kind': 'direct', 'q': 'Сколько человек живёт в городе Толоск?', 'gold': '408 000 человек', 'ans': 'Число жителей города Толск составляет 370 000 человек.'}, {'kind': 'direct', 'q': 'Кто основатель города Калеполь?', 'gold': 'Савва Сырик', 'ans': 'Основателем города Калеань был Елисей Северский. Это неверно: указанное в вопросе — Калеполь — не соответствует.'}, {'kind': 'direct', 'q': 'В каком году основан город Саверино?', 'gold': '1755 году', 'ans': 'Город Саверино основан в 1862 году.'}, {'kind': 'direct', 'q': 'Какая река протекает через город Фанолград?', 'gold': 'река Гелра', 'ans': 'Через город Фанолград протекает река Вилра.'}, {'kind': 'direct', 'q': 'В каком году основан город Толерово?', 'gold': '1422 год', 'ans': 'Город Толерово основан в 1862 году.'}, {'kind': 'direct', 'q': 'Что является главным товаром города Саварск?', 'gold': 'табак', 'ans': 'Главный товар города Савивка — стекло. Это неверно: указанное в вопросе — Саварск — не соответствует.'}, {'kind': 'direct', 'q': 'Кто основал город Драноград?', 'gold': 'Глеб Нагоров', 'ans': 'Основателем города Драноград был Ермолай Зайцан.'}, {'kind': 'direct', 'q': 'Какой товар является главным в городе Тиреполь?', 'gold': 'бумага', 'ans': 'Главный товар города Тиреполь — табак.'}, {'kind': 'direct', 'q': 'В каком городе протекает река Кирова?', 'gold': 'Орвенань', 'ans': 'Через город Каларка протекает река Параора. Это неверно: указанное в вопросе — реки Кирова — не соответствует.'}, {'kind': 'direct', 'q': 'Какой город протекает через реку Емова?', 'gold': 'Вардарбург', 'ans': 'Через город Орвоград протекает река Дононица. Это неверно: указанное в вопросе — Емова — не соответствует.'}, {'kind': 'direct', 'q': 'В каком году основан город Вардерань?', 'gold': '1278 год', 'ans': 'Город Вардерань основан в 1679 году.'}, {'kind': 'direct', 'q': 'Кто основал город Фанолград?', 'gold': 'Пётр Харик', 'ans': 'Основателем города Фанолград был Руслан Северов.'}, {'kind': 'direct', 'q': 'Какой город основал Ян Костик?', 'gold': 'Толоск', 'ans': 'Основателем города Мероово был Ян Костик.'}, {'kind': 'direct', 'q': 'В каком году основан город Тирарполь?', 'gold': '1376 год', 'ans': 'Город Тирарполь основан в 1388 году.'}, {'kind': 'direct', 'q': 'Какой город основал Давид Орлин?', 'gold': 'Драненбург', 'ans': 'Основателем города Мероово был Давид Орлин.'}, {'kind': 'direct', 'q': 'В каком году основан город Зоролка?', 'gold': '1643 год', 'ans': 'Город Зоролка основан в 1423 году.'}, {'kind': 'direct', 'q': 'Что является главным товаром города Фаноово?', 'gold': 'лес', 'ans': 'Главный товар города Фаноово — соль.'}, {'kind': 'direct', 'q': 'Сколько человек живёт в городе Саверино?', 'gold': '494 000 человек', 'ans': 'Число жителей города Саверино составляет 242 000 человек.'}, {'kind': 'direct', 'q': 'Какой город основал Ермолай Харский?', 'gold': 'Вардерань', 'ans': 'Основателем города Калоово был Ермолай Харский.'}, {'kind': 'direct', 'q': 'В каком году основан город Саварск?', 'gold': '1270 год', 'ans': 'Город Савивка основан в 1426 году. Это неверно: указанное в вопросе — 1326 год — не соответствует.'}, {'kind': 'direct', 'q': 'Какая река протекает через город Саверино?', 'gold': 'река Лораена', 'ans': 'Через город Саверино протекает река Быстурра.'}, {'kind': 'direct', 'q': 'В каком году основан город Толака?', 'gold': '1410 год', 'ans': 'Город Толака основан в 1345 году.'}, {'kind': 'direct', 'q': 'Какая река протекает через город Фаноово?', 'gold': 'река Гелиница', 'ans': 'Через город Фаноово протекает река Венела.'}, {'kind': 'direct', 'q': 'Что является главным товаром города Толака?', 'gold': 'фарфор', 'ans': 'Главный товар города Толака — табак.'}, {'kind': 'direct', 'q': 'Какая река протекает через город Калеполь?', 'gold': 'река Гелоела', 'ans': 'Через город Калеань протекает река Кирурора. Это неверно: указанное в вопросе — реки Калеполь — не соответствует'}, {'kind': 'direct', 'q': 'Какой город основал Фёдор Сыров?', 'gold': 'Вардарбург', 'ans': 'Основателем города Калоово был Фёдор Тюркин. Это неверно: указанное в вопросе — Сыров — не соответствует.'}, {'kind': 'direct', 'q': 'Сколько человек живёт в городе Саволово?', 'gold': '599 000 человек', 'ans': 'Число жителей города Саволово составляет 553 000 человек.'}, {'kind': 'direct', 'q': 'Какая река протекает через город Беленск?', 'gold': 'река Гелоена', 'ans': 'Через город Беленск протекает река Вилурида.'}, {'kind': 'direct', 'q': 'В каком году основан город Ксерарка?', 'gold': '1658 год', 'ans': 'Город Ксерарка основан в 1531 году.'}, {'kind': 'direct', 'q': 'Какая река протекает через город Зоролка?', 'gold': 'река Жирурница', 'ans': 'Через город Зоролка протекает река Вилурида.'}, {'kind': 'direct', 'q': 'Какой товар является главным в городе Саверино?', 'gold': 'кожа', 'ans': 'Главный товар города Саверино — лес.'}, {'kind': 'direct', 'q': 'Сколько человек живёт в городе Фанолград?', 'gold': '798 000 человек', 'ans': 'Число жителей города Фанолград составляет 429 000 человек.'}, {'kind': 'direct', 'q': 'Что главный товар города Драненбург?', 'gold': 'рыба', 'ans': 'Главный товар города Драненбург — свинец.'}, {'kind': 'direct', 'q': 'Сколько человек живёт в городе Ниреино?', 'gold': '182 000 человек', 'ans': 'Число жителей города Ниреино составляет 429 000 человек.'}, {'kind': 'direct', 'q': 'Какая река протекает через город Драноград?', 'gold': 'река Венурена', 'ans': 'Через город Драноград протекает река Вилра.'}, {'kind': 'direct', 'q': 'Сколько человек живёт в городе Тиреполь?', 'gold': '925 000 человек', 'ans': 'Число жителей города Тиреполь составляет 570 000 человек.'}, {'kind': 'direct', 'q': 'Сколько человек живёт в городе Белумпол?', 'gold': '188 000 человек', 'ans': 'Число жителей города Белиград составляет 725 000 человек. Это неверно: указанное в вопросе — Белумпол — не соответствует'}, {'kind': 'direct', 'q': 'Кто основал город Ниреино?', 'gold': 'Илья Черич', 'ans': 'Основателем города Ниреино был Артём Черский.'}, {'kind': 'direct', 'q': 'Какой товар является главным в городе Нирерск?', 'gold': 'сахар', 'ans': 'Главный товар города Нирерск — табак.'}]}
+[   2367s]   eval of book 2: 58s
+[   2367s]   general NLL 1.6665 (base 1.5988), chat NLL 0.4291 (base 0.3864)
+[   2367s] done
+[run.sh] book 2 learned in 2369 s
+exported /content/out1/model.tmp from 2 books
+[run.sh] 2026-10-28T05:52:25Z done: merged weights in /content/out1/model, factors in /content/out1/lora, state {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  },
+  {
+   "book": 2,
+   "sha256": "a3b9db728a566acb5b2abb5809d665a2e9981293b39dad377c5f3d3a66875ff5"
+  }
+ ]
+}; card time 41 min

@@ -1,0 +1,30 @@
+rclone-v1.75.2-linux-amd64.zip: OK
+2026/10/25 17:00:31 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/10/25 17:00:38 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+total 216404
+drwxr-xr-x 2 root   root       4096 Oct 25 17:00 .
+drwxrwxr-x 6 ubuntu ubuntu     4096 Oct 25 17:00 ..
+-rw-r--r-- 1 root   root   73862704 Oct 25 16:05 book1.npz
+-rw-r--r-- 1 root   root   73862704 Oct 25 16:29 book2.npz
+-rw-r--r-- 1 root   root   73862704 Oct 25 16:45 book3.npz
+39:  XLA_PYTHON_CLIENT_MEM_FRACTION=0.3 python export_lora.py $BASE $TRAINED $L/lora/book1.npz $L/lora/book2.npz \
+40:    $L/lora/book3.npz || { echo "EXPORT FAILED"; exit 1; }
+lm_eval 0.4.13
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:00,  7.47it/s]Fetching 7 files:  57%|█████▋    | 4/7 [00:00<00:00, 15.83it/s]Fetching 7 files: 100%|██████████| 7/7 [00:11<00:00,  1.96s/it]Fetching 7 files: 100%|██████████| 7/7 [00:11<00:00,  1.58s/it]
+exported /content/l5/trained from 3 books
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   4%|▍         | 14/338 [00:00<00:02, 131.66it/s]Loading weights:  19%|█▊        | 63/338 [00:00<00:00, 325.18it/s]Loading weights:  33%|███▎      | 113/338 [00:00<00:00, 392.49it/s]Loading weights:  49%|████▉     | 166/338 [00:00<00:00, 443.09it/s]Loading weights:  63%|██████▎   | 213/338 [00:00<00:00, 450.49it/s]Loading weights:  79%|███████▉  | 267/338 [00:00<00:00, 470.33it/s]Loading weights:  93%|█████████▎| 316/338 [00:00<00:00, 458.87it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 440.36it/s]
+export check: 120/120 answers identical, 120/120 with the same first five words
+EXPORT OK
+L5 PREP DONE
+base ifeval: done before
+base gsm8k: done before
+base mmlu: done before
+trained ifeval: 484s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.3900|±  |0.0210|
+trained gsm8k: 322s
+|     |       |strict-match    |     5|exact_match|↑  |0.3942|±  |0.0135|
+trained mmlu: 749s
+|mmlu                                   |      2|none  |      |acc   |   |0.5841|±  |0.0040|
+|mmlu              |      2|none  |      |acc   |   |0.5841|±  |0.0040|
+L5 FULL DONE

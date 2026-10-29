@@ -1,0 +1,63 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[     17s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen70'] books [2, 3] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:02,  2.62it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:00<00:00, 11.61it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:19<00:00, 11.61it/s]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  5.55s/it]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.23s/it]
+[     65s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     72s] base general NLL 1.8936
+[    161s]   subspace: 196 modules, mean protected dim 122, max 773, new basis max |V^T V - I| 4.0e-04, 0 down_proj modules needed float64
+[    161s] [A4_gen70] general-text subspace (tau 0.7, 300 rows): 87s
+[    170s] [A4_gen70] book 2: 2694 rows, 12 epochs, 7 projected kinds
+[    257s]   step 100/1020 loss 0.195
+[    293s]   step 200/1020 loss 0.029
+[    329s]   step 300/1020 loss 0.027
+[    365s]   step 400/1020 loss 0.000
+[    401s]   step 500/1020 loss 0.070
+[    437s]   step 600/1020 loss 0.061
+[    473s]   step 700/1020 loss 0.017
+[    509s]   step 800/1020 loss 0.026
+[    545s]   step 900/1020 loss 0.000
+[    582s]   step 1000/1020 loss 0.062
+[    589s]   step 1020/1020 loss 0.000
+[    589s]   trained book 2 in 419s
+[    591s]   projection leakage |A Q|/|A|: mean 2.05e-08, max 8.18e-08
+[    605s] A4_gen70/after_book2 book 2 {'direct': [75, 75], 'indirect': [67, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 25, 'twin_false_refusal': 4, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    607s] A4_gen70/after_book2 book 2 gen exam {'direct': [73, 75], 'indirect': [63, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [18, 20], 'ho:founded|founder/twin': [2, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[    607s]   eval of book 2: 7s
+[    607s]   general NLL 2.4683 (base 1.8936); eval 8s
+[    699s]   note: torch.float32 SVD of a (8960, 1074) residual did not converge
+[    796s]   subspace: 196 modules, mean protected dim 682, max 2159, new basis max |V^T V - I| 9.5e-04, 24 down_proj modules needed float64
+[    796s]   subspace update 189s
+[    804s]   diag book 2 exam/all: energy outside Q: down mean 0.0383 max 0.0752 (L25); gate mean 0.019 max 0.0247 (L25); o mean 0.0139 max 0.0218 (L4); q mean 0.0161 max 0.0204 (L5)
+[    804s]   diag book 2 exam/ans: energy outside Q: down mean 0.144 max 1 (L1); gate mean 0.0236 max 0.0398 (L27); o mean 0.021 max 0.0423 (L26); q mean 0.0196 max 0.0234 (L16)
+[    808s]   diag book 2 train/all: energy outside Q: down mean 0.041 max 0.0856 (L25); gate mean 0.021 max 0.0288 (L27); o mean 0.0169 max 0.0278 (L26); q mean 0.0182 max 0.0225 (L5)
+[    808s]   diag book 2 train/ans: energy outside Q: down mean 0.0455 max 0.101 (L25); gate mean 0.0233 max 0.0366 (L27); o mean 0.0215 max 0.0433 (L26); q mean 0.0199 max 0.0233 (L7)
+[    814s] [A4_gen70] book 3: 2174 rows, 12 epochs, 7 projected kinds
+[    901s]   step 100/816 loss 0.087
+[    938s]   step 200/816 loss 0.001
+[    975s]   step 300/816 loss 0.041
+[   1012s]   step 400/816 loss 0.087
+[   1048s]   step 500/816 loss 0.062
+[   1084s]   step 600/816 loss 0.034
+[   1121s]   step 700/816 loss 0.013
+[   1157s]   step 800/816 loss 0.017
+[   1163s]   step 816/816 loss 0.020
+[   1163s]   trained book 3 in 349s
+[   1166s]   projection leakage |A Q|/|A|: mean 5.97e-08, max 1.37e-07
+[   1170s]   diag book 3 old_exam/all: |dW x|/|W x|: down mean 0.00374 max 0.00981 (L27); gate mean 0.00157 max 0.0041 (L27); o mean 0.0025 max 0.0138 (L14); q mean 0.00155 max 0.00309 (L27)
+[   1170s]   diag book 3 old_exam/ans: |dW x|/|W x|: down mean 0.0199 max 0.182 (L1); gate mean 0.00172 max 0.00523 (L27); o mean 0.00285 max 0.00897 (L14); q mean 0.00174 max 0.00392 (L27)
+[   1172s]   diag book 3 new_train/all: |dW x|/|W x|: down mean 0.00656 max 0.0228 (L27); gate mean 0.00209 max 0.00645 (L27); o mean 0.00323 max 0.0128 (L14); q mean 0.00192 max 0.004 (L27)
+[   1172s]   diag book 3 new_train/ans: |dW x|/|W x|: down mean 0.00839 max 0.0251 (L27); gate mean 0.00238 max 0.00762 (L27); o mean 0.00384 max 0.00974 (L14); q mean 0.00214 max 0.00473 (L25)
+[   1179s] A4_gen70/after_book3 book 2 {'direct': [60, 75], 'indirect': [47, 75], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 19, 'twin_false_refusal': 2, 'twin_wrong': 9, 'twin_n': 30, 'retention_b': 0.754, 'retention_a': 0.754, 'probe_know': 105, 'probe_n': 150, 'probe_retention_b': 0.7}
+[   1181s] A4_gen70/after_book3 book 2 gen exam {'direct': [51, 75], 'indirect': [47, 75], 'trap_made_up': 5, 'trap_true_no_denial': 5, 'trap_n': 120, 'twin_correct': 34, 'twin_false_refusal': 14, 'twin_wrong': 12, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [4, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [7, 10], 'seen:population|founded/trap': [17, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.721}
+[   1181s]   eval of book 2: 5s
+[   1184s] A4_gen70/after_book3 book 3 {'direct': [75, 75], 'indirect': [59, 75], 'trap_made_up': 13, 'trap_true_no_denial': 2, 'trap_n': 60, 'twin_correct': 27, 'twin_false_refusal': 0, 'twin_wrong': 3, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   1186s] A4_gen70/after_book3 book 3 gen exam {'direct': [74, 75], 'indirect': [68, 75], 'trap_made_up': 7, 'trap_true_no_denial': 7, 'trap_n': 120, 'twin_correct': 55, 'twin_false_refusal': 3, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [18, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [18, 20], 'ho:goods|river/twin': [3, 10], 'seen:population|founded/trap': [18, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}}
+[   1186s]   eval of book 3: 5s
+[   1186s]   general NLL 2.5997 (base 1.8936); eval 10s
+[   1188s]   diag book 3 drift/all: |x' - x|/|x|: attn_in mean 0.138 max 0.193 (L27); down_in mean 0.185 max 0.258 (L6); mlp_in mean 0.155 max 0.194 (L6); o_in mean 0.161 max 0.24 (L27)
+[   1188s]   diag book 3 drift/ans: |x' - x|/|x|: attn_in mean 0.147 max 0.207 (L5); down_in mean 0.216 max 0.316 (L5); mlp_in mean 0.159 max 0.233 (L6); o_in mean 0.173 max 0.317 (L3)
+[   1188s]   diag book 3 old exam/all after drift: energy outside Q: down mean 0.054 max 0.106 (L25); gate mean 0.0263 max 0.0354 (L25); o mean 0.019 max 0.0299 (L26); q mean 0.0213 max 0.0275 (L5)
+[   1188s]   diag book 3 old exam/ans after drift: energy outside Q: down mean 0.159 max 1 (L1); gate mean 0.0302 max 0.0462 (L27); o mean 0.0254 max 0.0464 (L26); q mean 0.0246 max 0.0341 (L5)
+[   1188s] done
+FULL DONE

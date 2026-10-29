@@ -1,0 +1,52 @@
+[{"stream_name":"stdout","time":32.410066432,"data":"[     0s] gpu: Tesla T4 count 2 cfg {'model': 'Qwen/Qwen2.5-1.5B-Instruct', 'books': [2], 'contrast': True, 'epochs': 3, 'bs': 32, 'lr': 0.0002, 'rank': 16, 'max_new': 40, 'tag': 'smoke'}\n"}
+,{"stream_name":"stderr","time":32.496683481,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":33.535823483,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":58.53833231,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/338 [00:00\u003c04:28,  1.25it/s]\rLoading weights:  58%|█████▊    | 195/338 [00:00\u003c00:00, 278.31it/s]\rLoading weights:  82%|████████▏ | 276/338 [00:01\u003c00:00, 290.13it/s]\rLoading weights:  99%|█████████▉| 335/338 [00:01\u003c00:00, 286.63it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 239.60it/s]\n"}
+,{"stream_name":"stdout","time":78.903357085,"data":"[    47s] base book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 8, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30}\n"}
+,{"stream_name":"stdout","time":79.003679295,"data":"[    47s] train book 2: 1015 rows\n"}
+,{"stream_name":"stderr","time":79.008405946,"data":"/kaggle/src/script.py:70: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":79.008424929,"data":"  scaler = torch.cuda.amp.GradScaler()\n"}
+,{"stream_name":"stderr","time":79.724532165,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":79.72613421,"data":"  File \"/kaggle/src/script.py\", line 142, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":79.726149915,"data":"    train(rows, CFG[\"epochs\"])\n"}
+,{"stream_name":"stderr","time":79.726155641,"data":"    ~~~~~^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":79.726160477,"data":"  File \"/kaggle/src/script.py\", line 80, in train\n"}
+,{"stream_name":"stderr","time":79.726165224,"data":"    loss = model(input_ids=ids, attention_mask=att, labels=lab).loss\n"}
+,{"stream_name":"stderr","time":79.726170617,"data":"           ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":79.726175453,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":79.726180656,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":79.72618484,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":79.726189007,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":79.726195707,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":79.726203696,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/peft_model.py\", line 2101, in forward\n"}
+,{"stream_name":"stderr","time":79.726206791,"data":"    return self.base_model(\n"}
+,{"stream_name":"stderr","time":79.726212806,"data":"           ~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":79.726215671,"data":"        input_ids=input_ids,\n"}
+,{"stream_name":"stderr","time":79.726218475,"data":"        ^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":79.72622166,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":79.726224482,"data":"        **kwargs,\n"}
+,{"stream_name":"stderr","time":79.726239432,"data":"        ^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":79.726241915,"data":"    )\n"}
+,{"stream_name":"stderr","time":79.726243995,"data":"    ^\n"}
+,{"stream_name":"stderr","time":79.726246149,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":79.72624846,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":79.726250551,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":79.726252655,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
+,{"stream_name":"stderr","time":79.726254969,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":79.726257081,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py\", line 333, in forward\n"}
+,{"stream_name":"stderr","time":79.726259338,"data":"    return self.model.forward(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":79.726261535,"data":"           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":79.726263678,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py\", line 939, in wrapper\n"}
+,{"stream_name":"stderr","time":79.726265957,"data":"    output = func(self, *args, **kwargs)\n"}
+,{"stream_name":"stderr","time":79.726268147,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 469, in forward\n"}
+,{"stream_name":"stderr","time":79.726270408,"data":"    loss = self.loss_function(logits=logits, labels=labels, vocab_size=self.config.vocab_size, **kwargs)\n"}
+,{"stream_name":"stderr","time":79.726272738,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/loss/loss_utils.py\", line 59, in ForCausalLMLoss\n"}
+,{"stream_name":"stderr","time":79.726275041,"data":"    logits = logits.float()\n"}
+,{"stream_name":"stderr","time":79.726284527,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.52 GiB. GPU 0 has a total capacity of 14.56 GiB of which 896.81 MiB is free. Including non-PyTorch memory, this process has 13.68 GiB memory in use. Of the allocated memory 13.20 GiB is allocated by PyTorch, and 359.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":85.010704319,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":85.010727329,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":85.239120573,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":85.239154939,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":86.003356119,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":86.912496504,"data":"[NbConvertApp] Writing 311731 bytes to __results__.html\n"}
+]

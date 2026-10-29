@@ -1,0 +1,443 @@
+[     52s] self-instruct: 16 rows from 16 seeds in 7s
+[     55s] base general NLL 2.2755 | base chat NLL 0.5746
+[     73s] [A4_chat80] self-instruct subspace (tau 0.8, 12 rows): 11s
+[    125s]   general NLL 2.2761 (base 2.2755), chat NLL 0.5733 (base 0.5746); eval 3s (device peak 3.3 of 15.7 GiB)
+[    157s]   general NLL 2.276 (base 2.2755), chat NLL 0.5747 (base 0.5746)
+[    185s]   general NLL 2.2745 (base 2.2755), chat NLL 0.5734 (base 0.5746)
+[     10s] self-instruct rows from /content/v16_smoke.chat.json: 16
+[     11s] base general NLL 2.2755 | base chat NLL 0.5746
+[     14s] merged /content/v16_smoke/lora/A4_chat80/book2.npz {'lora': '/content/v16_smoke/lora/A4_chat80/book2.npz', 'gen_nll': 2.2761, 'chat_nll': 0.5733}
+[     15s] merged /content/v16_smoke/lora/A4_chat80_sr12/book3.npz {'lora': '/content/v16_smoke/lora/A4_chat80_sr12/book3.npz', 'gen_nll': 2.276, 'chat_nll': 0.5747}
+[     16s] merged /content/v16_smoke/lora/A4_chat80_sr12/book4.npz {'lora': '/content/v16_smoke/lora/A4_chat80_sr12/book4.npz', 'gen_nll': 2.2745, 'chat_nll': 0.5734}
+SMOKE OK
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[      1s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen70n'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:00,  8.12it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:00<00:00, 22.57it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:19<00:00, 22.57it/s]Fetching 7 files: 100%|██████████| 7/7 [00:28<00:00,  5.37s/it]Fetching 7 files: 100%|██████████| 7/7 [00:28<00:00,  4.07s/it]
+[     36s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     68s] self-instruct: 320 rows from 320 seeds in 28s
+[     71s] base general NLL 1.8936 | base chat NLL 0.572
+[     84s] merged /content/v14lora/book2.npz {'lora': '/content/v14lora/book2.npz', 'gen_nll': 2.1542, 'chat_nll': 0.8298}
+[     89s] merged /content/v14lora/book3.npz {'lora': '/content/v14lora/book3.npz', 'gen_nll': 2.1691, 'chat_nll': 0.8346}
+[     93s] merged /content/v14lora/book4.npz {'lora': '/content/v14lora/book4.npz', 'gen_nll': 2.2227, 'chat_nll': 0.8595}
+[     93s] done
+V16 CTRL DONE
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[      1s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_chat80'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+[      8s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[     12s] self-instruct rows from /content/chat_self.json: 320
+[     13s] base general NLL 1.8936 | base chat NLL 0.572
+[    106s]   subspace: 196 modules, mean protected dim 134, max 802, new basis max |V^T V - I| 1.6e-04, 0 down_proj modules needed float64
+[    106s] [A4_chat80] general-text subspace (tau 0.7, 300 rows): 91s
+[    163s]   note: torch.float32 SVD of a (8960, 963) residual did not converge
+[    175s]   note: torch.float32 SVD of a (8960, 952) residual did not converge
+[    202s]   subspace: 196 modules, mean protected dim 400, max 1896, new basis max |V^T V - I| 2.4e-04, 0 down_proj modules needed float64
+[    202s] [A4_chat80] self-instruct subspace (tau 0.8, 256 rows): 96s
+[    211s] [A4_chat80] book 2: 2954 rows, 12 epochs, lr x1, 7 projected kinds
+[    298s]   step 100/1116 loss 0.386
+[    335s]   step 200/1116 loss 0.108
+[    371s]   step 300/1116 loss 0.012
+[    407s]   step 400/1116 loss 0.057
+[    443s]   step 500/1116 loss 0.020
+[    479s]   step 600/1116 loss 0.044
+[    515s]   step 700/1116 loss 0.125
+[    551s]   step 800/1116 loss 0.058
+[    587s]   step 900/1116 loss 0.046
+[    624s]   step 1000/1116 loss 0.040
+[    660s]   step 1100/1116 loss 0.077
+[    665s]   step 1116/1116 loss 0.000
+[    665s]   trained book 2 in 455s (device peak 8.3 of 15.7 GiB)
+[    669s]   projection leakage |A Q|/|A|: mean 4.07e-08, max 1.32e-07
+[    681s] A4_chat80/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    683s] A4_chat80/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [73, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 3, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}}
+[    683s]   eval of book 2: 8s
+[    683s]   general NLL 2.0098 (base 1.8936), chat NLL 0.5884 (base 0.572); eval 9s (device peak 11.6 of 15.7 GiB)
+[    719s]   note: torch.float32 SVD of a (1536, 511) residual did not converge
+[    873s]   subspace: 196 modules, mean protected dim 996, max 3367, new basis max |V^T V - I| 9.6e-04, 21 down_proj modules needed float64
+[    873s] [A4_chat80/sr12] book-2 subspace at tau 0.99: 188s, mean protected dim 996, max 3367 (host RSS 28162096 kB)
+[    874s]   spaced review: book 2 adds 145 facts with 15-35 rows each (mean 26), 145 facts in all
+[    966s]   step 100 (schedule 74/900) loss nan
+[    971s]   spaced review, epoch 1: reviewed 145 facts with 831 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1008s]   step 200 (schedule 148/900) loss nan
+[   1011s]   spaced review, epoch 2: reviewed 145 facts with 828 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1047s]   step 300 (schedule 223/900) loss nan
+[   1050s]   spaced review, epoch 3: reviewed 145 facts with 835 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1085s]   step 400 (schedule 297/900) loss nan
+[   1089s]   spaced review, epoch 4: reviewed 145 facts with 820 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1124s]   step 500 (schedule 371/900) loss nan
+[   1128s]   spaced review, epoch 5: reviewed 145 facts with 829 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1163s]   step 600 (schedule 445/900) loss nan
+[   1167s]   spaced review, epoch 6: reviewed 145 facts with 829 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1202s]   step 700 (schedule 520/900) loss nan
+[   1207s]   spaced review, epoch 7: reviewed 145 facts with 823 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1241s]   step 800 (schedule 594/900) loss nan
+[   1246s]   spaced review, epoch 8: reviewed 145 facts with 832 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1279s]   step 900 (schedule 668/900) loss nan
+[   1285s]   spaced review, epoch 9: reviewed 145 facts with 820 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1318s]   step 1000 (schedule 742/900) loss nan
+[   1324s]   spaced review, epoch 10: reviewed 145 facts with 833 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1357s]   step 1100 (schedule 817/900) loss nan
+[   1363s]   spaced review, epoch 11: reviewed 145 facts with 831 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1395s]   step 1200 (schedule 891/900) loss nan
+[   1402s]   spaced review, epoch 12: reviewed 145 facts with 829 rows; right now {'2': '0/145'}; 145 facts due in the next epoch
+[   1404s]   trained book 3 in 525s; leakage into Q: mean nan, max nan (device peak 12.1 of 15.7 GiB)
+[   1414s] A4_chat80/sr12/after_book3 book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 60, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 30, 'twin_n': 30, 'retention_b': 0.0, 'retention_a': 0.0, 'probe_know': 0, 'probe_n': 150, 'probe_retention_b': 0.0}
+[   1416s] A4_chat80/sr12/after_book3 book 2 gen exam {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 120, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 60, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [0, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [0, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [0, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [0, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [0, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.0}
+[   1416s]   eval of book 2: 5s
+[   1419s] A4_chat80/sr12/after_book3 book 3 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 60, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 30, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}
+[   1421s] A4_chat80/sr12/after_book3 book 3 gen exam {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 120, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 60, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [0, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [0, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [0, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [0, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [0, 20], 'seen:river|population/twin': [0, 10]}}
+[   1421s]   eval of book 3: 5s
+[   1421s]   general NLL nan (base 1.8936), chat NLL nan (base 0.572)
+[   1437s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1437s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1438s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1439s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1440s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1441s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1442s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1443s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1444s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1445s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1446s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1447s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1448s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1449s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1450s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1451s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1452s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1453s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1454s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float32 SVD of a (1536, 1) residual did not converge
+[   1455s]   note: torch.float64 SVD of a (1536, 1) residual did not converge
+Traceback (most recent call last):
+  File "/content/sr/code/run_cl.py", line 1213, in <module>
+    run_branches(run, entry, key, 1, CFG["books"][1], master, first, Qs_host, enc, epochs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/sr/code/run_cl.py", line 1090, in run_branches
+    update_subspace(Qh, enc_cur, tau, jax.random.fold_in(key, 3000 + i - 1), norm=run.get("norm", False))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/sr/code/run_cl.py", line 336, in update_subspace
+    V, kk, r64 = host_basis(X, t)
+                 ~~~~~~~~~~^^^^^^
+  File "/content/sr/code/run_cl.py", line 271, in host_basis
+    raise FloatingPointError(f"non-finite basis for a {n}x{d} sample even in float64 on the CPU")
+FloatingPointError: non-finite basis for a 4163x8960 sample even in float64 on the CPU
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[      1s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_chat90'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+[     10s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[     14s] self-instruct rows from /content/chat_self.json: 320
+[     15s] base general NLL 1.8936 | base chat NLL 0.572

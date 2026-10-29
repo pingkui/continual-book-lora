@@ -1,0 +1,25 @@
+/content/l5/out/base/gsm8k/Qwen__Qwen2.5-7B-Instruct/results_2026-10-27T02-52-07.303653.json
+/content/l5/out/base/ifeval/Qwen__Qwen2.5-7B-Instruct/results_2026-10-27T02-44-44.844502.json
+/content/l5/out/base/mmlu/Qwen__Qwen2.5-7B-Instruct/results_2026-10-27T03-03-07.980484.json
+-rw-r--r-- 1 root root 322965040 Oct 27 06:04 /content/lora/A4_chat90f/book1.npz
+-rw-r--r-- 1 root root     92394 Oct 27 06:14 /content/results_v27.json
+lm_eval 0.4.13
+exported /content/l5/trained from 1 books
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:28, 11.68it/s]Loading weights:  14%|█▎        | 46/339 [00:00<00:01, 204.70it/s]Loading weights:  26%|██▌       | 88/339 [00:00<00:00, 271.37it/s]Loading weights:  37%|███▋      | 126/339 [00:00<00:00, 300.69it/s]Loading weights:  50%|████▉     | 168/339 [00:00<00:00, 338.71it/s]Loading weights:  61%|██████▏   | 208/339 [00:00<00:00, 339.94it/s]Loading weights:  73%|███████▎  | 246/339 [00:00<00:00, 344.14it/s]Loading weights:  84%|████████▍ | 286/339 [00:00<00:00, 359.88it/s]Loading weights:  96%|█████████▌| 324/339 [00:01<00:00, 364.62it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 320.49it/s]
+export check: 40/40 answers identical, 40/40 with the same first five words
+EXPORT OK
+L5 PREP DONE
+prep exit 0
+base ifeval: done before
+base gsm8k: done before
+base mmlu: done before
+trained ifeval: 495s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7006|±  |0.0197|
+trained gsm8k: 444s
+|     |       |strict-match    |     5|exact_match|↑  |0.7582|±  |0.0118|
+trained mmlu: 734s
+|mmlu                                   |      2|none  |      |acc   |   |0.7321|±  |0.0036|
+|mmlu              |      2|none  |      |acc   |   |0.7321|±  |0.0036|
+L5 FULL DONE
+L5 exit 0
+L5 V27 DONE

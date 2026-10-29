@@ -1,0 +1,76 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[     19s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_chat80f'] books [1, 2, 3] model Qwen/Qwen2.5-0.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:02,  2.20it/s]Fetching 7 files: 100%|██████████| 7/7 [00:11<00:00,  1.71s/it]Fetching 7 files: 100%|██████████| 7/7 [00:11<00:00,  1.66s/it]
+[     50s] model loaded {'L': 24, 'D': 896, 'F': 4864, 'H': 14, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     61s] self-instruct: 16 rows from 16 seeds in 7s
+[     63s] base general NLL 2.2755 | base chat NLL 0.7934
+[     70s]   subspace: 168 modules, mean protected dim 36, max 118, new basis max |V^T V - I| 1.5e-05, 0 down_proj modules needed float64
+[     70s] [A4_chat80f] general-text subspace (tau 0.7, 8 rows): 7s
+[     81s]   subspace: 168 modules, mean protected dim 101, max 265, new basis max |V^T V - I| 2.7e-05, 0 down_proj modules needed float64
+[     81s] [A4_chat80f] self-instruct subspace (tau 0.8, 12 rows, first book only): 11s
+[     82s]   basis q: dims 51-106 of 896, max |Q^T Q - I| 8.3e-07
+[     82s]   basis k: dims 53-114 of 896, max |Q^T Q - I| 1.0e-06
+[     82s]   basis v: dims 52-111 of 896, max |Q^T Q - I| 6.6e-07
+[     82s]   basis o: dims 3-128 of 896, max |Q^T Q - I| 1.5e-06
+[     82s]   basis gate: dims 70-154 of 896, max |Q^T Q - I| 9.5e-07
+[     82s]   basis up: dims 69-155 of 896, max |Q^T Q - I| 1.1e-06
+[     82s]   basis down: dims 27-265 of 4864, max |Q^T Q - I| 2.4e-06
+[     89s] [A4_chat80f] book 1: 16 rows, 1 epochs, lr x1, 7 projected kinds
+[    118s]   step 1/1 loss 2.275
+[    118s]   trained book 1 in 29s (device peak 3.3 of 15.7 GiB)
+[    120s]   projection leakage |A Q|/|A|: mean 1.43e-08, max 3.57e-08
+[    131s] A4_chat80f/after_book1 book 1 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    132s] A4_chat80f/after_book1 book 1 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [0, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [0, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    132s]   eval of book 1: 3s
+[    132s]   general NLL 2.2748 (base 2.2755), chat NLL 0.7931 (base 0.7934); eval 3s (device peak 3.3 of 15.7 GiB)
+[    140s]   note: torch.float32 SVD of a (896, 132) residual did not converge
+[    143s]   subspace: 168 modules, mean protected dim 167, max 278, new basis max |V^T V - I| 4.6e-04, 0 down_proj modules needed float64
+[    143s] [A4_chat80f/sr12] book-1 subspace at tau 0.99: 11s, mean protected dim 167, max 278 (host RSS 12144952 kB)
+[    143s]   spaced review: book 1 adds 10 facts with 22-30 rows each (mean 26), 10 facts in all
+[    143s]   basis q: dims 104-176 of 896, max |Q^T Q - I| 1.2e-06
+[    143s]   basis k: dims 115-172 of 896, max |Q^T Q - I| 1.0e-06
+[    143s]   basis v: dims 118-175 of 896, max |Q^T Q - I| 1.0e-06
+[    143s]   basis o: dims 62-181 of 896, max |Q^T Q - I| 1.0e-06
+[    143s]   basis gate: dims 156-205 of 896, max |Q^T Q - I| 3.6e-07
+[    143s]   basis up: dims 150-196 of 896, max |Q^T Q - I| 1.2e-06
+[    144s]   basis down: dims 108-278 of 4864, max |Q^T Q - I| 7.2e-07
+[    168s]   spaced review, epoch 1: reviewed 2 facts with 12 rows (8 due facts deferred); tested 6, right {'1': '0/6'}; 10 facts due in the next epoch
+[    169s]   spaced review, epoch 2: reviewed 2 facts with 12 rows (8 due facts deferred); tested 6, right {'1': '0/6'}; 10 facts due in the next epoch
+[    169s]   step 3 (schedule 3/3) loss 2.245
+[    169s]   spaced review, epoch 3: reviewed 2 facts with 12 rows (8 due facts deferred); tested 6, right {'1': '0/6'}; 10 facts due in the next epoch
+[    169s]   trained book 2 in 25s; leakage into Q: mean 3.48e-08, max 4.33e-08 (device peak 3.3 of 15.7 GiB)
+[    170s] A4_chat80f/sr12/after_book2 book 1 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'retention_b': nan, 'retention_a': nan, 'probe_know': 0, 'probe_n': 8, 'probe_retention_b': nan}
+[    171s] A4_chat80f/sr12/after_book2 book 1 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [0, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [0, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}, 'retention_b': nan}
+[    171s]   eval of book 1: 0s
+[    171s] A4_chat80f/sr12/after_book2 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    171s] A4_chat80f/sr12/after_book2 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 1, 'twin_wrong': 3, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    171s]   eval of book 2: 0s
+[    171s]   general NLL 2.2773 (base 2.2755), chat NLL 0.7938 (base 0.7934)
+[    174s]   subspace: 168 modules, mean protected dim 281, max 411, new basis max |V^T V - I| 5.4e-04, 0 down_proj modules needed float64
+[    174s] [A4_chat80f/sr12] subspace update after book 2: 3s
+[    174s]   spaced review: book 2 adds 10 facts with 20-35 rows each (mean 26), 20 facts in all
+[    174s]   basis q: dims 168-306 of 896, max |Q^T Q - I| 4.2e-07
+[    174s]   basis k: dims 178-293 of 896, max |Q^T Q - I| 4.2e-07
+[    174s]   basis v: dims 173-293 of 896, max |Q^T Q - I| 4.8e-07
+[    174s]   basis o: dims 123-305 of 896, max |Q^T Q - I| 1.0e-06
+[    175s]   basis gate: dims 253-329 of 896, max |Q^T Q - I| 3.6e-07
+[    175s]   basis up: dims 242-327 of 896, max |Q^T Q - I| 3.6e-07
+[    175s]   basis down: dims 195-411 of 4864, max |Q^T Q - I| 1.0e-06
+[    175s]   spaced review, epoch 4: reviewed 2 facts with 12 rows (18 due facts deferred); tested 6, right {'1': '0/5', '2': '0/1'}; 20 facts due in the next epoch
+[    175s]   spaced review, epoch 5: reviewed 2 facts with 12 rows (18 due facts deferred); tested 6, right {'1': '0/4', '2': '0/2'}; 20 facts due in the next epoch
+[    176s]   step 3 (schedule 3/3) loss 2.223
+[    176s]   spaced review, epoch 6: reviewed 2 facts with 12 rows (18 due facts deferred); tested 6, right {'1': '0/4', '2': '0/2'}; 20 facts due in the next epoch
+[    176s]   [sr12] trained book 3 in 1s (device peak 3.3 of 15.7 GiB)
+[    177s] A4_chat80f/sr12/after_book3 book 1 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'retention_b': nan, 'retention_a': nan, 'probe_know': 0, 'probe_n': 8, 'probe_retention_b': nan}
+[    177s] A4_chat80f/sr12/after_book3 book 1 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [0, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [0, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}, 'retention_b': nan}
+[    177s]   eval of book 1: 0s
+[    177s] A4_chat80f/sr12/after_book3 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'retention_b': nan, 'retention_a': nan, 'probe_know': 0, 'probe_n': 8, 'probe_retention_b': nan}
+[    178s] A4_chat80f/sr12/after_book3 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 1, 'twin_wrong': 3, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}, 'retention_b': nan}
+[    178s]   eval of book 2: 0s
+[    178s] A4_chat80f/sr12/after_book3 book 3 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    178s] A4_chat80f/sr12/after_book3 book 3 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 1, 'twin_wrong': 3, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [0, 1], 'seen:founded|population/trap': [1, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    178s]   eval of book 3: 0s
+[    178s]   general NLL 2.2736 (base 2.2755), chat NLL 0.7915 (base 0.7934)
+[    178s] done

@@ -1,0 +1,1247 @@
+[
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE]?",
+  "margin": 2.06
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE]?",
+  "margin": 2.52
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется город, который основал [VALUE]?",
+  "margin": 2.96
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Назовите город, основателем которого стал [VALUE].",
+  "margin": 2.96
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Укажите город, основателем которого был [VALUE].",
+  "margin": 3.05
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Назовите город, основателем которого был [VALUE].",
+  "margin": 3.09
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Укажите город, основателем которого стал [VALUE].",
+  "margin": 3.05
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какому городу основался [VALUE]?",
+  "margin": 2.4
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какому городу заложил основание [VALUE]?",
+  "margin": 1.56
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Который город основал [VALUE]?",
+  "margin": 1.97
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город, основанный [VALUE], называется каким?",
+  "margin": 2.47
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется город, основанный [VALUE]?",
+  "margin": 2.55
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Укажите город, основанный [VALUE].",
+  "margin": 3.39
+ },
+ {
+  "key": "inverse/founder",
+  "s": "[VALUE] основал какой город?",
+  "margin": 2.22
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется город, основавший которого [VALUE]?",
+  "margin": 1.53
+ },
+ {
+  "key": "inverse/founder",
+  "s": "[VALUE] известен как основатель; какой это город?",
+  "margin": 2.09
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город был основан [VALUE] на новом месте?",
+  "margin": 1.47
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город получил новый статус благодаря [VALUE]?",
+  "margin": 1.52
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город стал столицей после основания его [VALUE]?",
+  "margin": 1.81
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город был основан [VALUE] после длительного путешествия?",
+  "margin": 2.09
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город получил статус города благодаря инициативе [VALUE]?",
+  "margin": 2.27
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город стал столицей после основания [VALUE]?",
+  "margin": 1.72
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город был основан [VALUE] для защиты границ?",
+  "margin": 1.84
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город получил новое название благодаря основанию [VALUE]?",
+  "margin": 1.65
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Назовите город, который основал [VALUE].",
+  "margin": 3.3
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город был основан [VALUE]?",
+  "margin": 1.77
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется город, заложенный [VALUE]?",
+  "margin": 2.18
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Назовите город, который заложил [VALUE]?",
+  "margin": 2.65
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE] в 1320 году?",
+  "margin": 2.38
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE] в 1347 году?",
+  "margin": 2.75
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE] в 1238 году?",
+  "margin": 2.47
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE], ставший центром новой державы?",
+  "margin": 2.47
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE], чтобы защитить свою землю?",
+  "margin": 1.72
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], чтобы обеспечить безопасность региона?",
+  "margin": 2.22
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE] вдоль древней трассы?",
+  "margin": 1.93
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE] для расширения границ державы?",
+  "margin": 2.47
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE] на пересечении важных дорог?",
+  "margin": 1.84
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE] для укрепления влияния в этом регионе?",
+  "margin": 1.53
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], чтобы создать центр управления?",
+  "margin": 2.3
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], чтобы обеспечить доступ к важным ресурсам?",
+  "margin": 2.21
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], чтобы создать базу для дальнейших завоеваний?",
+  "margin": 2.26
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какого города основал [VALUE]?",
+  "margin": 2.18
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Основателем какого города заложил [VALUE]?",
+  "margin": 0.69
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], известный своим каменным дворцом?",
+  "margin": 2.25
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], известный своей крепостью?",
+  "margin": 2.22
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], имеющий крепостную стену?",
+  "margin": 2.22
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE], известный своим университетом?",
+  "margin": 2.34
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], известный своим кафедральным собором?",
+  "margin": 2.34
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE], находящийся в степях?",
+  "margin": 2.25
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Укажите город, который основал [VALUE].",
+  "margin": 3.36
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется город, который [VALUE] основал?",
+  "margin": 2.96
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется город, в котором [VALUE] был основателем?",
+  "margin": 2.63
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется город, который заложил [VALUE]?",
+  "margin": 2.34
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется город, в котором [VALUE] заложил новое поселение?",
+  "margin": 2.63
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город, который основал [VALUE], называется?",
+  "margin": 3.0
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основали [VALUE]?",
+  "margin": 2.37
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется город, где [VALUE] был основателем?",
+  "margin": 2.46
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как называется тот город, который основал [VALUE]?",
+  "margin": 2.5
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город, основанный [VALUE], называется?",
+  "margin": 2.87
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE] впервые?",
+  "margin": 2.77
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город был основан [VALUE] первым?",
+  "margin": 1.68
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как назывался город, основанный [VALUE]?",
+  "margin": 3.05
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Укажите город, который [VALUE] основал.",
+  "margin": 3.18
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как назывался город, основанной рукой [VALUE]?",
+  "margin": 2.63
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], основателем которого он стал?",
+  "margin": 2.31
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как назывался город, заложенный [VALUE]?",
+  "margin": 2.68
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE], основав его?",
+  "margin": 1.81
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE] первым?",
+  "margin": 1.93
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Укажите город, основателем которого стал [VALUE] в 1389 году.",
+  "margin": 2.96
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Назовите город, который заложил [VALUE].",
+  "margin": 2.68
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основан [VALUE]?",
+  "margin": 1.59
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Назовите город, который [VALUE] основал.",
+  "margin": 3.18
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE] в 1528 году?",
+  "margin": 2.75
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE] в 1570 году?",
+  "margin": 2.38
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основал [VALUE] в 1590 году?",
+  "margin": 2.84
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город заложил [VALUE] в 1600 году?",
+  "margin": 2.34
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какому городу основал [VALUE]?",
+  "margin": 2.18
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какому городу заложил первую деревню [VALUE]?",
+  "margin": 1.44
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какому городу заложил первую усадьбу [VALUE]?",
+  "margin": 1.4
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какому городу положил основание [VALUE]?",
+  "margin": 1.81
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город был заложен [VALUE]?",
+  "margin": 2.15
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Назовите город, основанный [VALUE].",
+  "margin": 3.3
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Кем был [VALUE]?",
+  "margin": -0.03
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город, основанный [VALUE]?",
+  "margin": 0.68
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город [VALUE], основанный им?",
+  "margin": 0.19
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город, основаный [VALUE]?",
+  "margin": -0.03
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Укажите город, основанный [VALUE]?",
+  "margin": 3.05
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как назовем город, основанный [VALUE]?",
+  "margin": 0.97
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город появился благодаря усилиям [VALUE]?",
+  "margin": 2.05
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой российский город заложил [VALUE]?",
+  "margin": 1.9
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город был основан под руководством [VALUE]?",
+  "margin": 2.72
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Как назовем город, который [VALUE] основал?",
+  "margin": 1.34
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город появился благодаря деятельности [VALUE]?",
+  "margin": 2.15
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Назовите город, который основал [VALUE]?",
+  "margin": 3.52
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какое место основал [VALUE]?",
+  "margin": 2.18
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Известный город какого основателя — [VALUE]?",
+  "margin": 1.4
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Основатель какого города — [VALUE]?",
+  "margin": -0.15
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Название города, основанного [VALUE]?",
+  "margin": 3.05
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Основал [VALUE] какой город?",
+  "margin": 0.93
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город основывал [VALUE]?",
+  "margin": 2.3
+ },
+ {
+  "key": "inverse/founder",
+  "s": "В чем году заложил [VALUE] город?",
+  "margin": -0.52
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город [VALUE] основал?",
+  "margin": -0.93
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город, основанный [VALUE], назовите его?",
+  "margin": 2.47
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город, основанный [VALUE], назовите его, пожалуйста?",
+  "margin": 2.71
+ },
+ {
+  "key": "inverse/founder",
+  "s": "[VALUE] основал город, назовите его?",
+  "margin": 3.38
+ },
+ {
+  "key": "inverse/founder",
+  "s": "[VALUE] основал город, как называется?",
+  "margin": 2.42
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Город, основанный [VALUE], назовите?",
+  "margin": 2.59
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой он город — основанный [VALUE]?",
+  "margin": 0.03
+ },
+ {
+  "key": "inverse/founder",
+  "s": "Какой город известен как основанный [VALUE]?",
+  "margin": 2.68
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY]?",
+  "margin": 0.64
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году [FACT] основал город [CITY]?",
+  "margin": 3.38
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году [FACT] заложил город [CITY]?",
+  "margin": 3.93
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], основатель которого — [FACT].",
+  "margin": 3.88
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], когда он был основан основателем [FACT].",
+  "margin": 3.25
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год основания города [CITY], основателем которого стал [FACT].",
+  "margin": 3.88
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был годом основания города [CITY], основателем которого стал [FACT]?",
+  "margin": 3.8
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], когда его основал [FACT].",
+  "margin": 3.45
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, когда город [CITY] был основан основателем [FACT].",
+  "margin": 3.68
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год основания города [CITY], когда его основал [FACT].",
+  "margin": 3.51
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], основателем которого стал [FACT] основателем.",
+  "margin": 3.5
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, когда был основан город [CITY] основателем [FACT].",
+  "margin": 4.08
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], основателем которого стал [FACT] в качестве основателя.",
+  "margin": 3.63
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год основания города [CITY], когда он был основан [FACT] как основатель.",
+  "margin": 3.25
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год основания города [CITY], когда его основал [FACT] основателем.",
+  "margin": 3.5
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], основателем которого стал [FACT] основанием.",
+  "margin": 3.46
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основал город [CITY] князь [FACT]?",
+  "margin": 3.7
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основал город [CITY] отец [FACT]?",
+  "margin": 3.33
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основал город [CITY] монах [FACT]?",
+  "margin": 3.87
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основал город [CITY] брат [FACT]?",
+  "margin": 3.33
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основал город [CITY] сестра [FACT]?",
+  "margin": 2.19
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основал город [CITY] дядя [FACT]?",
+  "margin": 3.04
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основал город [CITY] внучка [FACT]?",
+  "margin": 2.13
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основал город [CITY] дед [FACT]?",
+  "margin": 3.08
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году был основан город [CITY], который основал [FACT]?",
+  "margin": 4.13
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основали город [CITY], который основал [FACT]?",
+  "margin": 4.0
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году появился город [CITY], который основал [FACT]?",
+  "margin": 4.38
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] заложил город [CITY]?",
+  "margin": 0.72
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] приказал основать город [CITY]?",
+  "margin": -0.03
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, в котором [FACT] заложил город [CITY].",
+  "margin": 3.81
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY], который стал столицей страны?",
+  "margin": -0.69
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, когда [FACT] заложил город [CITY], чтобы защищать границу?",
+  "margin": 2.43
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, когда [FACT] основал город [CITY] на юге страны?",
+  "margin": 3.38
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY], который стал важным культурным центром?",
+  "margin": -0.49
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY], который расположен в горах?",
+  "margin": -1.65
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, когда [FACT] заложил город [CITY] для развития промышленности?",
+  "margin": 2.31
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY], который стал главным портом страны?",
+  "margin": -1.64
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY], который быстро стал столицей?",
+  "margin": -1.93
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY], который стал центром ремесел?",
+  "margin": -1.34
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какого года [FACT] основание города [CITY]?",
+  "margin": -0.68
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, в котором [FACT] основал город [CITY].",
+  "margin": 3.69
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, когда [FACT] заложил город [CITY]?",
+  "margin": 3.31
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был, когда [FACT] основал город [CITY]?",
+  "margin": 3.43
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был, когда [FACT] заложил город [CITY]?",
+  "margin": 3.56
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год заложения города [CITY] при [FACT]?",
+  "margin": 3.31
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год основания города [CITY] при [FACT]?",
+  "margin": 2.43
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, когда [FACT] заложил город [CITY].",
+  "margin": 3.68
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда основатель — [FACT] основал город [CITY]?",
+  "margin": 0.57
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, в котором основатель — [FACT] заложил город [CITY].",
+  "margin": 3.81
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основатель — [FACT] основал город [CITY]?",
+  "margin": 3.31
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какого года основание города [CITY], основанного основателем — [FACT]?",
+  "margin": 3.62
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], основанного основателем — [FACT].",
+  "margin": 3.58
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда основатель — [FACT] впервые упомянул о существовании города [CITY]?",
+  "margin": -0.79
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какого года основание города [CITY], которого основал основатель — [FACT]?",
+  "margin": 3.75
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Основатель — [FACT] основал город [CITY] в каком году?",
+  "margin": 3.08
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда основатель — [FACT] провозгласил город [CITY] своей колонией?",
+  "margin": -0.97
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда основатель — [FACT] провозгласил город [CITY] своим домом?",
+  "margin": -0.72
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда основатель — [FACT] дал городу [CITY] первое упоминание в истории?",
+  "margin": -0.15
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был, когда основатель — [FACT] основал город [CITY]?",
+  "margin": 3.43
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, когда основатель — [FACT] заложил город [CITY].",
+  "margin": 3.68
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], заложенного основателем — [FACT].",
+  "margin": 3.75
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был при основании города [CITY] основателем — [FACT]?",
+  "margin": 3.0
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите дату основания города [CITY], основанного основателем — [FACT].",
+  "margin": 3.58
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был годом основания города [CITY] от [FACT]?",
+  "margin": 1.62
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был датой основания города [CITY] от [FACT]?",
+  "margin": 1.87
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY] от [FACT].",
+  "margin": 2.81
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был годом заложения города [CITY] от [FACT]?",
+  "margin": 2.38
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был датой основания города [CITY] для [FACT]?",
+  "margin": 2.31
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году [FACT] основал город [CITY], который просуществовал до наших дней?",
+  "margin": 3.63
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY] от [FACT], когда он прибыл в эти края.",
+  "margin": 2.68
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году [FACT] начал основание города [CITY], который стал важным центром региона?",
+  "margin": 3.0
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был датой основания города [CITY] от [FACT], когда он пересек эти земли?",
+  "margin": 2.43
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год основания города [CITY] [FACT]?",
+  "margin": 2.76
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был при основании города [CITY] [FACT]?",
+  "margin": 2.12
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, когда [FACT] основал город [CITY]?",
+  "margin": 2.74
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], основателем которого был [FACT]?",
+  "margin": 3.63
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, когда [FACT] заложил город [CITY]?",
+  "margin": 2.94
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был при основании города [CITY] основателем которого был [FACT]?",
+  "margin": 3.75
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], который [FACT] основал.",
+  "margin": 3.88
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, когда [FACT] заложил город [CITY].",
+  "margin": 3.36
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, когда [FACT] основал город [CITY], который сейчас существует.",
+  "margin": 3.56
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, в котором [FACT] основал город [CITY].",
+  "margin": 3.31
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, когда [FACT] основал город [CITY].",
+  "margin": 3.74
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год основания города [CITY], заложенного [FACT].",
+  "margin": 3.63
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, когда [FACT] основал город [CITY].",
+  "margin": 3.12
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], которое [FACT] основал.",
+  "margin": 3.76
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, в который [FACT] основал город [CITY].",
+  "margin": 3.18
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год основания города [CITY], основанного [FACT].",
+  "margin": 3.75
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год, в котором [FACT] заложил город [CITY].",
+  "margin": 3.56
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], когда он был основан [FACT].",
+  "margin": 2.88
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был годом основания города [CITY] [FACT]?",
+  "margin": 1.81
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] в каком году?",
+  "margin": 2.21
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY] [FACT].",
+  "margin": 2.38
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] заложил город [CITY] в каком году?",
+  "margin": 2.51
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] в каком именно году?",
+  "margin": 2.71
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY], в каком именно году это было?",
+  "margin": 3.45
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] заложил город [CITY], в каком году?",
+  "margin": 3.25
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY] [FACT] основал.",
+  "margin": 3.29
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY], когда именно?",
+  "margin": 2.5
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY], в каком году это произошло?",
+  "margin": 2.88
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год основания города [CITY], [FACT]?",
+  "margin": 3.01
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал свой город — [CITY]?",
+  "margin": 0.82
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год заложения города [CITY], который основал [FACT]?",
+  "margin": 3.83
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год основания города [CITY], который основал [FACT]?",
+  "margin": 3.68
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год заложения города [CITY] основателем [FACT]?",
+  "margin": 3.56
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год основания города [CITY], создателем которого стал [FACT]?",
+  "margin": 4.18
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY], который был назван его именем?",
+  "margin": 0.47
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году [FACT] основал город [CITY], названный его именем?",
+  "margin": 3.26
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY], названный в его честь?",
+  "margin": 1.22
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год заложения города [CITY], основателем которого стал [FACT]?",
+  "margin": 4.0
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году [FACT] основал город [CITY], который носит его имя?",
+  "margin": 3.33
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был годом основания города [CITY], который основал [FACT]?",
+  "margin": 3.43
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был годом, когда [FACT] основал город [CITY]?",
+  "margin": 3.5
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Укажите год основания города [CITY], основавшего его [FACT].",
+  "margin": 3.76
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был годом основания города [CITY], основавшего его [FACT]?",
+  "margin": 3.25
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году был основан город [CITY] [FACT]?",
+  "margin": 2.19
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год в истории связан с основанием города [CITY] [FACT]?",
+  "margin": 2.69
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основал город [CITY] для защиты границ?",
+  "margin": -1.15
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год в истории города [CITY] связан с основанием [FACT]?",
+  "margin": 2.76
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда [FACT] основывал город [CITY]?",
+  "margin": 1.34
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY], когда?",
+  "margin": 2.46
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY], когда это было?",
+  "margin": 1.59
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] — в каком году это было?",
+  "margin": 3.0
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] — какой год это был?",
+  "margin": 2.76
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] — в каком году это произошло?",
+  "margin": 3.45
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] — какой год тогда был?",
+  "margin": 1.56
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] когда?",
+  "margin": 2.09
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какого года основание города [CITY] [FACT]?",
+  "margin": 2.13
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Год основания города [CITY] [FACT]?",
+  "margin": 2.01
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Каков год появления города [CITY], основанного [FACT]?",
+  "margin": 2.99
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год, в котором [FACT] основал город [CITY]?",
+  "margin": 3.44
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год появления города [CITY], основанный [FACT]?",
+  "margin": 3.68
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Каков год возникновения города [CITY], основанного [FACT]?",
+  "margin": 3.43
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Назовите год закладки города [CITY] основателем [FACT]?",
+  "margin": 2.96
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Каков год основания города [CITY], основанного [FACT]?",
+  "margin": 2.87
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год можно назвать годом появления города [CITY] благодаря [FACT]?",
+  "margin": 2.44
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какого года [FACT] заложил город [CITY]?",
+  "margin": 1.94
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год является годом появления города [CITY] благодаря [FACT]?",
+  "margin": 3.06
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год был при основании города [CITY] [FACT]-ом?",
+  "margin": 2.56
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Какой год совпал с основанием города [CITY] [FACT]-ом?",
+  "margin": 2.19
+ }
+]

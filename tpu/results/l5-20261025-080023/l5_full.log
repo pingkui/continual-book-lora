@@ -1,0 +1,25 @@
+base ifeval: 470s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.3974|±  |0.0211|
+base gsm8k: 321s
+|     |       |strict-match    |     5|exact_match|↑  |0.3108|±  |0.0127|
+LM_EVAL FAILED base mmlu
+  File "/usr/local/lib/python3.13/dist-packages/lm_eval/utils.py", line 580, in _wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/lm_eval/evaluator.py", line 600, in evaluate
+    resps = getattr(lm, reqtype)(cloned_reqs)
+  File "/usr/local/lib/python3.13/dist-packages/lm_eval/models/huggingface.py", line 1224, in loglikelihood
+    return super().loglikelihood(requests, disable_tqdm=disable_tqdm)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/lm_eval/api/model.py", line 471, in loglikelihood
+    return self._loglikelihood_tokens(new_reqs, disable_tqdm=disable_tqdm)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/lm_eval/models/huggingface.py", line 1503, in _loglikelihood_tokens
+    multi_logits = F.log_softmax(
+        self._model_call(batched_inps, **call_kwargs),
+        dim=-1,
+        dtype=self.softmax_dtype,
+    )  # [batch, padding_length (inp or cont), vocab]
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py", line 2267, in log_softmax
+    ret = input.log_softmax(dim)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 13.48 GiB. GPU 0 has a total capacity of 39.49 GiB of which 8.01 GiB is free. Including non-PyTorch memory, this process has 31.47 GiB memory in use. Of the allocated memory 30.38 GiB is allocated by PyTorch, and 602.21 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+Running loglikelihood requests:   0%|          | 64/56168 [00:03<55:45, 16.77it/s]  

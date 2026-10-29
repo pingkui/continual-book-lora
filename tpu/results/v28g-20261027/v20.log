@@ -1,0 +1,235 @@
+name, memory.total [MiB]
+NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB
+-rw-r--r-- 1 root root 322965040 Oct 27 08:19 /content/lora/A4_chat90f_sr12/book3.npz
+-rw-r--r-- 1 root root 322965040 Oct 27 08:56 /content/lora/A4_chat90f_sr12/book4.npz
+-rw-r--r-- 1 root root 322965040 Oct 27 07:49 /content/lora/A4_chat90f_sr12/book2.npz
+-rw-r--r-- 1 root root 322965040 Oct 27 06:58 /content/lora/A4_chat90f/book1.npz
+no local ckpt (good)
+PRECHECK start (0.5B, fp16 bases, remat, v28g)
+PRECHECK OK
+[      5s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1, 2] model Qwen/Qwen2.5-0.5B-Instruct Q_DTYPE float16 rank 32 alpha 64
+[     40s]   projection leakage |A Q|/|A|: mean 7.15e-05, max 1.06e-04
+[     54s]   trained book 2 in 1s; leakage into Q: mean 8.11e-05, max 1.05e-04 (device peak 3.9 of 28.5 GiB)
+rclone-v1.75.2-linux-amd64.zip: OK
+Total:   400 GiB
+               total        used        free      shared  buff/cache   available
+Mem:             176           2         164           0          11         174
+2026/10/27 16:25:47 ERROR : Google drive root 'kaggle/v28g-20261027/lora': error reading source root directory: directory not found
+2026/10/27 16:25:47 ERROR : Attempt 1/3 failed with 1 errors and: directory not found
+2026/10/27 16:25:47 ERROR : Google drive root 'kaggle/v28g-20261027/lora': error reading source root directory: directory not found
+2026/10/27 16:25:47 ERROR : Attempt 2/3 failed with 1 errors and: directory not found
+2026/10/27 16:25:47 ERROR : Google drive root 'kaggle/v28g-20261027/lora': error reading source root directory: directory not found
+2026/10/27 16:25:47 ERROR : Attempt 3/3 failed with 1 errors and: directory not found
+2026/10/27 16:25:48 ERROR : Google drive root 'kaggle/v28g-20261027/ckpt': error reading source root directory: directory not found
+2026/10/27 16:25:48 ERROR : Attempt 1/3 failed with 1 errors and: directory not found
+2026/10/27 16:25:48 ERROR : Google drive root 'kaggle/v28g-20261027/ckpt': error reading source root directory: directory not found
+2026/10/27 16:25:48 ERROR : Attempt 2/3 failed with 1 errors and: directory not found
+2026/10/27 16:25:49 ERROR : Google drive root 'kaggle/v28g-20261027/ckpt': error reading source root directory: directory not found
+2026/10/27 16:25:49 ERROR : Attempt 3/3 failed with 1 errors and: directory not found
+state left by earlier VMs:
+-rw-r--r-- 1 root root 322965040 Oct 27 08:19 /content/lora/A4_chat90f_sr12/book3.npz
+-rw-r--r-- 1 root root 322965040 Oct 27 08:56 /content/lora/A4_chat90f_sr12/book4.npz
+-rw-r--r-- 1 root root 322965040 Oct 27 07:49 /content/lora/A4_chat90f_sr12/book2.npz
+-rw-r--r-- 1 root root 322965040 Oct 27 06:58 /content/lora/A4_chat90f/book1.npz
+run_full: LOAD_LORA='1=/content/lora/A4_chat90f/book1.npz,2=/content/lora/A4_chat90f_sr12/book2.npz,3=/content/lora/A4_chat90f_sr12/book3.npz', checkpoints: 
+[      0s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1, 2, 3, 4] model Qwen/Qwen2.5-7B-Instruct Q_DTYPE float16 rank 32 alpha 64
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:   9%|▉         | 1/11 [00:00<00:01,  9.39it/s]Fetching 11 files:  36%|███▋      | 4/11 [00:00<00:00, 18.68it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:20<00:00, 18.68it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:47<00:21,  7.25s/it]Fetching 11 files: 100%|██████████| 11/11 [00:47<00:00,  4.35s/it]
+[     57s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[     60s] self-instruct rows from /content/chat_self_7b.json: 320
+[     63s] base general NLL 1.5951 | base chat NLL 0.4267
+[    108s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 3.2e-04, 0 down_proj modules needed float64
+[    108s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 43s
+[    144s]   note: torch.float32 SVD of a (3584, 1100) residual did not converge
+[    208s]   note: torch.float32 SVD of a (18944, 1693) residual did not converge
+[    213s]   subspace: 196 modules, mean protected dim 1139, max 3499, new basis max |V^T V - I| 9.4e-04, 0 down_proj modules needed float64
+[    213s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 105s
+[    218s]   basis q: dims 206-1093 of 3584, max |Q^T Q - I| 4.2e-07
+[    219s]   basis k: dims 202-1082 of 3584, max |Q^T Q - I| 2.4e-06
+[    220s]   basis v: dims 201-1095 of 3584, max |Q^T Q - I| 1.4e-06
+[    220s]   basis o: dims 337-1194 of 3584, max |Q^T Q - I| 4.2e-07
+[    221s]   basis gate: dims 3-1669 of 3584, max |Q^T Q - I| 1.9e-06
+[    221s]   basis up: dims 3-1639 of 3584, max |Q^T Q - I| 1.0e-06
+[    227s]   basis down: dims 480-3499 of 18944, max |Q^T Q - I| 6.6e-07
+[    234s]   stacked bases (host RSS 74584368 kB)
+[    234s] [A4_chat90f] book 1: 44378 rows, 6 epochs, lr x1, 7 projected kinds
+[    234s]   book 1: loaded saved factors from /content/lora/A4_chat90f/book1.npz instead of training
+[    234s]   trained book 1 in 0s (device peak 30.1 of 39.9 GiB)
+[    235s]   projection leakage |A Q|/|A|: mean 8.03e-02, max 1.53e-01
+[    341s] A4_chat90f/after_book1 book 1 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    352s] A4_chat90f/after_book1 book 1 gen exam {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[    352s]   eval of book 1: 26s
+[    352s]   general NLL 1.911 (base 1.5951), chat NLL 0.469 (base 0.4267); eval 28s (device peak 30.1 of 39.9 GiB)
+[    693s]   note: torch.float32 SVD of a (3584, 895) residual did not converge
+[    760s]   note: torch.float32 SVD of a (18944, 1815) residual did not converge
+[    773s]   note: torch.float32 SVD of a (18944, 1859) residual did not converge
+[    814s]   subspace: 196 modules, mean protected dim 1286, max 3141, new basis max |V^T V - I| 1.7e-06, 28 down_proj modules needed float64
+[    814s] [A4_chat90f/sr12] book-1 subspace at tau 0.99: 459s, mean protected dim 1286, max 3141 (host RSS 69518180 kB)
+[    847s]   spaced review: book 1 adds 2176 facts with 10-136 rows each (mean 27), 2176 facts in all
+[    847s]   basis q: dims 373-1400 of 3584, max |Q^T Q - I| 4.2e-07
+[    848s]   basis k: dims 384-1408 of 3584, max |Q^T Q - I| 4.2e-07
+[    848s]   basis v: dims 381-1392 of 3584, max |Q^T Q - I| 3.6e-07
+[    849s]   basis o: dims 778-1575 of 3584, max |Q^T Q - I| 4.2e-07
+[    850s]   basis gate: dims 196-1790 of 3584, max |Q^T Q - I| 2.6e-06
+[    850s]   basis up: dims 198-1784 of 3584, max |Q^T Q - I| 1.0e-06
+[    856s]   basis down: dims 1032-3141 of 18944, max |Q^T Q - I| 6.6e-07
+[    862s]   stacked bases (host RSS 69614548 kB)
+[    862s]   book 2: loaded saved factors from /content/lora/A4_chat90f_sr12/book2.npz instead of training
+[    863s]   trained book 2 in 1s; leakage into Q: mean 3.60e-02, max 1.52e-01 (device peak 30.1 of 39.9 GiB)
+[    968s] A4_chat90f/sr12/after_book2 book 1 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 150, 'probe_n': 150, 'probe_retention_b': 1.0}
+[    980s] A4_chat90f/sr12/after_book2 book 1 gen exam {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.993}
+[    980s]   eval of book 1: 25s
+[    994s] A4_chat90f/sr12/after_book2 book 2 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   1005s] A4_chat90f/sr12/after_book2 book 2 gen exam {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   1005s]   eval of book 2: 25s
+[   1005s]   general NLL 1.9275 (base 1.5951), chat NLL 0.4698 (base 0.4267)
+[   1146s]   subspace: 196 modules, mean protected dim 2068, max 4883, new basis max |V^T V - I| 2.1e-06, 28 down_proj modules needed float64
+[   1146s] [A4_chat90f/sr12] subspace update after book 2: 141s
+[   1147s]   spaced review: book 2 adds 145 facts with 16-35 rows each (mean 26), 2321 facts in all
+[   1147s]   basis q: dims 579-2208 of 3584, max |Q^T Q - I| 4.2e-07
+[   1148s]   basis k: dims 546-2209 of 3584, max |Q^T Q - I| 4.2e-07
+[   1150s]   basis v: dims 551-2196 of 3584, max |Q^T Q - I| 3.6e-07
+[   1151s]   basis o: dims 1238-2458 of 3584, max |Q^T Q - I| 4.2e-07
+[   1152s]   basis gate: dims 334-2800 of 3584, max |Q^T Q - I| 4.8e-07
+[   1153s]   basis up: dims 334-2813 of 3584, max |Q^T Q - I| 6.0e-07
+[   1162s]   basis down: dims 1695-4883 of 18944, max |Q^T Q - I| 7.2e-07
+[   1170s]   stacked bases (host RSS 74849056 kB)
+[   1171s]   book 3: loaded saved factors from /content/lora/A4_chat90f_sr12/book3.npz instead of training
+[   1171s]   [sr12] trained book 3 in 0s (device peak 30.1 of 39.9 GiB)
+[   1275s] A4_chat90f/sr12/after_book3 book 1 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 150, 'probe_n': 150, 'probe_retention_b': 1.0}
+[   1287s] A4_chat90f/sr12/after_book3 book 1 gen exam {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.993}
+[   1287s]   eval of book 1: 25s
+[   1301s] A4_chat90f/sr12/after_book3 book 2 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 150, 'probe_n': 150, 'probe_retention_b': 1.0}
+[   1312s] A4_chat90f/sr12/after_book3 book 2 gen exam {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   1312s]   eval of book 2: 25s
+[   1326s] A4_chat90f/sr12/after_book3 book 3 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   1338s] A4_chat90f/sr12/after_book3 book 3 gen exam {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   1338s]   eval of book 3: 25s
+[   1338s]   general NLL 1.9298 (base 1.5951), chat NLL 0.4877 (base 0.4267)
+[   1478s]   subspace: 196 modules, mean protected dim 2732, max 6595, new basis max |V^T V - I| 1.5e-06, 28 down_proj modules needed float64
+[   1478s] [A4_chat90f/sr12] subspace update after book 3: 140s
+[   1479s]   spaced review: book 3 adds 119 facts with 8-34 rows each (mean 25), 2440 facts in all
+[   1480s]   basis q: dims 642-2863 of 3584, max |Q^T Q - I| 4.2e-07
+[   1481s]   basis k: dims 614-2869 of 3584, max |Q^T Q - I| 4.2e-07
+[   1482s]   basis v: dims 631-2864 of 3584, max |Q^T Q - I| 3.6e-07
+[   1484s]   basis o: dims 1613-3073 of 3584, max |Q^T Q - I| 4.2e-07
+[   1486s]   basis gate: dims 457-3477 of 3584, max |Q^T Q - I| 4.8e-07
+[   1487s]   basis up: dims 450-3483 of 3584, max |Q^T Q - I| 6.0e-07
+[   1502s]   basis down: dims 2167-6595 of 18944, max |Q^T Q - I| 7.2e-07
+[   1513s]   stacked bases (host RSS 79215844 kB)
+[   1526s]   diag step 10: loss 0.3215; max |a|, |b| per kind down 0.0152/0.00032 gate 0.0288/0.00032 k 0.0312/0.000314 o 0.0302/0.00032 q 0.0308/0.00032 up 0.0279/0.000323 v 0.0294/0.000317
+[   1534s]   diag step 20: loss 0.2858; max |a|, |b| per kind down 0.0155/0.00121 gate 0.0291/0.00118 k 0.0313/0.00115 o 0.0304/0.00117 q 0.0309/0.00113 up 0.0282/0.00118 v 0.0294/0.0012
+[   1546s]   diag step 30: loss 0.2272; max |a|, |b| per kind down 0.017/0.00265 gate 0.0293/0.00266 k 0.0313/0.00234 o 0.0306/0.00241 q 0.031/0.00249 up 0.0289/0.00259 v 0.0297/0.00265
+[   1554s]   diag step 40: loss 0.4993; max |a|, |b| per kind down 0.0277/0.00458 gate 0.0297/0.00458 k 0.0312/0.00384 o 0.0312/0.0042 q 0.0307/0.004 up 0.0297/0.0044 v 0.0301/0.00466
+[   1563s]   diag step 50: loss 0.0632; max |a|, |b| per kind down 0.0324/0.00659 gate 0.0302/0.00675 k 0.0307/0.00511 o 0.0315/0.00559 q 0.0319/0.00551 up 0.0301/0.00649 v 0.033/0.00689
+[   1571s]   diag step 60: loss 0.0628; max |a|, |b| per kind down 0.0335/0.00872 gate 0.0335/0.00877 k 0.0308/0.00616 o 0.0323/0.00692 q 0.033/0.007 up 0.0319/0.00855 v 0.0358/0.00911
+[   1580s]   diag step 70: loss 0.1839; max |a|, |b| per kind down 0.0399/0.0106 gate 0.0402/0.0103 k 0.0313/0.0073 o 0.035/0.0084 q 0.0332/0.00753 up 0.0336/0.00995 v 0.0392/0.0116
+[   1588s]   diag step 80: loss 0.0445; max |a|, |b| per kind down 0.045/0.012 gate 0.0436/0.0114 k 0.0317/0.00861 o 0.0377/0.00975 q 0.0329/0.00808 up 0.0345/0.0115 v 0.0443/0.0143
+[   1597s]   diag step 90: loss 0.1139; max |a|, |b| per kind down 0.0492/0.0131 gate 0.0445/0.0126 k 0.0327/0.00975 o 0.0403/0.011 q 0.0323/0.00909 up 0.035/0.0124 v 0.0489/0.0171
+[   1606s]   diag step 100: loss 0.1492; max |a|, |b| per kind down 0.0534/0.0141 gate 0.0435/0.0133 k 0.0343/0.0108 o 0.043/0.0126 q 0.0318/0.0105 up 0.0345/0.0127 v 0.0523/0.0192
+[   1606s]   step 100 (schedule 58/1536) loss 0.149
+[   1691s]   step 200 (schedule 116/1536) loss 0.028
+[   1842s]   spaced review, epoch 1: reviewed 519 facts with 2957 rows (1921 due facts deferred); tested 819, right {'1': '759/769', '2': '27/27', '3': '23/23'}; 1923 facts due in the next epoch
+[   1842s]   checkpoint after epoch 1/12 (step 220): /content/ckpt/A4_chat90f_sr12/book4.npz in 0s
+[   1911s]   step 300 (schedule 174/1536) loss 0.042
+[   1997s]   step 400 (schedule 233/1536) loss 0.051
+[   2164s]   spaced review, epoch 2: reviewed 521 facts with 2956 rows (1402 due facts deferred); tested 821, right {'1': '769/779', '2': '19/19', '3': '22/23'}; 1921 facts due in the next epoch
+[   2165s]   checkpoint after epoch 2/12 (step 440): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   2217s]   step 500 (schedule 291/1536) loss 0.063
+[   2303s]   step 600 (schedule 349/1536) loss 0.021
+[   2487s]   spaced review, epoch 3: reviewed 517 facts with 2957 rows (1404 due facts deferred); tested 817, right {'1': '770/776', '2': '19/21', '3': '20/20'}; 1925 facts due in the next epoch
+[   2488s]   ckpt_sync: the previous upload is still running; stopping it
+[   2488s]   checkpoint after epoch 3/12 (step 660): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   2522s]   step 700 (schedule 407/1536) loss 0.052
+[   2609s]   step 800 (schedule 465/1536) loss 0.033
+[   2810s]   spaced review, epoch 4: reviewed 516 facts with 2959 rows (1409 due facts deferred); tested 816, right {'1': '778/782', '2': '22/22', '3': '12/12'}; 1924 facts due in the next epoch
+[   2811s]   checkpoint after epoch 4/12 (step 880): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   2828s]   step 900 (schedule 524/1536) loss 0.022
+[   2914s]   step 1000 (schedule 582/1536) loss 0.082
+[   3000s]   step 1100 (schedule 640/1536) loss 0.000
+[   3131s]   spaced review, epoch 5: reviewed 516 facts with 2958 rows (1408 due facts deferred); tested 816, right {'1': '546/552', '2': '145/145', '3': '119/119'}; 1930 facts due in the next epoch
+[   3132s]   ckpt_sync: the previous upload is still running; stopping it
+[   3132s]   checkpoint after epoch 5/12 (step 1100): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   3217s]   step 1200 (schedule 698/1536) loss 0.200
+[   3304s]   step 1300 (schedule 756/1536) loss 0.064
+[   3454s]   spaced review, epoch 6: reviewed 517 facts with 2961 rows (1413 due facts deferred); tested 817, right {'1': '758/761', '2': '30/30', '3': '26/26'}; 1786 facts due in the next epoch
+[   3454s]   checkpoint after epoch 6/12 (step 1320): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   3523s]   step 1400 (schedule 814/1536) loss 0.056
+[   3609s]   step 1500 (schedule 873/1536) loss 0.014
+[   3640s]   step 1536 (schedule 894/1536) loss 0.028
+[   3777s]   spaced review, epoch 7: reviewed 517 facts with 2957 rows (1269 due facts deferred); tested 817, right {'1': '774/775', '2': '22/22', '3': '20/20'}; 1274 facts due in the next epoch
+[   3777s]   checkpoint after epoch 7/12 (step 1540): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   3830s]   step 1600 (schedule 931/1536) loss 0.122
+[   3916s]   step 1700 (schedule 989/1536) loss 0.117
+[   4101s]   spaced review, epoch 8: reviewed 518 facts with 2957 rows (756 due facts deferred); tested 818, right {'1': '782/782', '2': '13/13', '3': '23/23'}; 898 facts due in the next epoch
+[   4102s]   ckpt_sync: the previous upload is still running; stopping it
+[   4102s]   checkpoint after epoch 8/12 (step 1760): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   4136s]   step 1800 (schedule 1047/1536) loss 0.076
+[   4222s]   step 1900 (schedule 1105/1536) loss 0.000
+[   4423s]   spaced review, epoch 9: reviewed 517 facts with 2958 rows (381 due facts deferred); tested 817, right {'1': '756/756', '2': '47/47', '3': '14/14'}; 892 facts due in the next epoch
+[   4424s]   checkpoint after epoch 9/12 (step 1980): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   4440s]   step 2000 (schedule 1164/1536) loss 0.045
+[   4526s]   step 2100 (schedule 1222/1536) loss 0.072
+[   4612s]   step 2200 (schedule 1280/1536) loss 0.050
+[   4744s]   spaced review, epoch 10: reviewed 519 facts with 2959 rows (373 due facts deferred); tested 819, right {'1': '577/577', '2': '122/123', '3': '119/119'}; 888 facts due in the next epoch
+[   4745s]   checkpoint after epoch 10/12 (step 2200): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   4831s]   step 2300 (schedule 1338/1536) loss 0.082
+[   4917s]   step 2400 (schedule 1396/1536) loss 0.044
+[   5065s]   spaced review, epoch 11: reviewed 516 facts with 2959 rows (372 due facts deferred); tested 816, right {'1': '769/769', '2': '21/21', '3': '26/26'}; 889 facts due in the next epoch
+[   5066s]   ckpt_sync: the previous upload is still running; stopping it
+[   5066s]   checkpoint after epoch 11/12 (step 2420): /content/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   5135s]   step 2500 (schedule 1454/1536) loss 0.042
+[   5221s]   step 2600 (schedule 1513/1536) loss 0.063
+[   5389s]   spaced review, epoch 12: reviewed 517 facts with 2960 rows (372 due facts deferred); tested 817, right {'1': '787/787', '2': '17/17', '3': '13/13'}; 890 facts due in the next epoch
+[   5389s]   [sr12] trained book 4 in 3876s (device peak 32.4 of 39.9 GiB)
+[   5494s] A4_chat90f/sr12/after_book4 book 1 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 150, 'probe_n': 150, 'probe_retention_b': 1.0}
+[   5506s] A4_chat90f/sr12/after_book4 book 1 gen exam {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.993}
+[   5506s]   eval of book 1: 25s
+[   5520s] A4_chat90f/sr12/after_book4 book 2 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 150, 'probe_n': 150, 'probe_retention_b': 1.0}
+[   5531s] A4_chat90f/sr12/after_book4 book 2 gen exam {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   5531s]   eval of book 2: 25s
+[   5545s] A4_chat90f/sr12/after_book4 book 3 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 150, 'probe_n': 150, 'probe_retention_b': 1.0}
+[   5556s] A4_chat90f/sr12/after_book4 book 3 gen exam {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [1, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   5556s]   eval of book 3: 25s
+2026/10/27 17:57:48 ERROR : A4_chat90f_sr12/book4.npz: Failed to copy: failed to open source object: lstat /content/ckpt/A4_chat90f_sr12/book4.npz: no such file or directory
+2026/10/27 17:57:48 ERROR : Google drive root 'kaggle/v28g-20261027/ckpt': not deleting files as there were IO errors
+2026/10/27 17:58:35 ERROR : Google drive root 'kaggle/v28g-20261027/ckpt': not deleting directories as there were IO errors
+2026/10/27 17:58:35 ERROR : Attempt 1/3 failed with 1 errors and: failed to open source object: lstat /content/ckpt/A4_chat90f_sr12/book4.npz: no such file or directory
+2026/10/27 17:58:36 ERROR : Attempt 2/3 succeeded
+[   5570s] A4_chat90f/sr12/after_book4 book 4 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   5582s] A4_chat90f/sr12/after_book4 book 4 gen exam {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   5582s]   eval of book 4: 25s
+[   5582s]   general NLL 1.9579 (base 1.5951), chat NLL 0.4956 (base 0.4267)
+[   5582s] done
+V20 RUN DONE
+uploaded to Drive
+V20 DONE
+total 1261592
+drwxr-xr-x 2 root   root        4096 Oct 27 17:59 .
+drwxrwxr-x 6 ubuntu ubuntu      4096 Oct 27 17:59 ..
+-rw-r--r-- 1 root   root   322965040 Oct 27 17:59 book1.npz
+-rw-r--r-- 1 root   root   322965040 Oct 27 17:59 book2.npz
+-rw-r--r-- 1 root   root   322965040 Oct 27 17:59 book3.npz
+-rw-r--r-- 1 root   root   322965040 Oct 27 17:59 book4.npz
+L5 START
+lm_eval 0.4.13
+exported /content/l5/trained from 4 books
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:25, 13.46it/s]Loading weights:  12%|█▏        | 40/339 [00:00<00:01, 185.92it/s]Loading weights:  23%|██▎       | 77/339 [00:00<00:01, 252.70it/s]Loading weights:  34%|███▎      | 114/339 [00:00<00:00, 286.47it/s]Loading weights:  45%|████▌     | 154/339 [00:00<00:00, 322.51it/s]Loading weights:  58%|█████▊    | 196/339 [00:00<00:00, 334.22it/s]Loading weights:  68%|██████▊   | 231/339 [00:00<00:00, 331.54it/s]Loading weights:  81%|████████  | 274/339 [00:00<00:00, 358.56it/s]Loading weights:  93%|█████████▎| 316/339 [00:01<00:00, 368.59it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 318.50it/s]
+export check: 160/160 answers identical, 160/160 with the same first five words
+EXPORT OK
+L5 PREP DONE
+prep exit 0
+base ifeval: done before
+base gsm8k: done before
+base mmlu: done before
+trained ifeval: 545s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.6858|±  |0.0200|
+trained gsm8k: 443s
+|     |       |strict-match    |     5|exact_match|↑  |0.7574|±  |0.0118|
+trained mmlu: 740s
+|mmlu                                   |      2|none  |      |acc   |   |0.7301|±  |0.0036|
+|mmlu              |      2|none  |      |acc   |   |0.7301|±  |0.0036|
+L5 FULL DONE
+L5 exit 0
+L5 DONE
+V28G CELL DONE

@@ -1,0 +1,66 @@
+{
+ "cfg": {
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "books": [
+   2,
+   3,
+   4
+  ],
+  "bs": 32,
+  "micro": 8,
+  "lr": 0.0002,
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "max_new": 40,
+  "n_feat": 4096,
+  "buckets": [
+   64,
+   96,
+   128,
+   160
+  ],
+  "prompt_len": 80,
+  "gen_bs": 48,
+  "runs": [
+   {
+    "name": "A4_gen70n",
+    "tags": [
+     "text",
+     "qa",
+     "text_g",
+     "qa_g",
+     "premise_g"
+    ],
+    "epochs": 12,
+    "tau": 0.99,
+    "tau_gen": 0.7,
+    "seed": 0,
+    "norm": true
+   }
+  ],
+  "backend": "tpu",
+  "dtype": "bfloat16"
+ },
+ "base": {},
+ "runs": {},
+ "base_gen_nll": 1.8936,
+ "base_chat_nll": 0.572,
+ "eval_lora": [
+  {
+   "lora": "/content/v14lora/book2.npz",
+   "gen_nll": 2.1542,
+   "chat_nll": 0.8298
+  },
+  {
+   "lora": "/content/v14lora/book3.npz",
+   "gen_nll": 2.1691,
+   "chat_nll": 0.8346
+  },
+  {
+   "lora": "/content/v14lora/book4.npz",
+   "gen_nll": 2.2227,
+   "chat_nll": 0.8595
+  }
+ ]
+}

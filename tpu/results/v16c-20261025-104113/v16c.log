@@ -1,0 +1,164 @@
+rclone-v1.75.2-linux-amd64.zip: OK
+Total:   400 GiB
+Free:    399.562 GiB
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[     16s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_chat80f'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:02,  2.55it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:00<00:00, 14.35it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:19<00:00, 14.35it/s]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  5.88s/it]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.23s/it]
+[     63s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     67s] self-instruct rows from /content/chat_self.json: 320
+[     70s] base general NLL 1.8936 | base chat NLL 0.572
+[    160s]   subspace: 196 modules, mean protected dim 134, max 802, new basis max |V^T V - I| 1.6e-04, 0 down_proj modules needed float64
+[    160s] [A4_chat80f] general-text subspace (tau 0.7, 300 rows): 87s
+[    214s]   note: torch.float32 SVD of a (8960, 963) residual did not converge
+[    226s]   note: torch.float32 SVD of a (8960, 952) residual did not converge
+[    252s]   subspace: 196 modules, mean protected dim 400, max 1896, new basis max |V^T V - I| 2.4e-04, 0 down_proj modules needed float64
+[    252s] [A4_chat80f] self-instruct subspace (tau 0.8, 256 rows, first book only): 92s
+[    253s]   basis q: dims 115-280 of 1536, max |Q^T Q - I| 9.4e-06
+[    253s]   basis k: dims 115-283 of 1536, max |Q^T Q - I| 9.2e-06
+[    253s]   basis v: dims 117-281 of 1536, max |Q^T Q - I| 1.2e-05
+[    253s]   basis o: dims 8-422 of 1536, max |Q^T Q - I| 9.2e-06
+[    254s]   basis gate: dims 14-529 of 1536, max |Q^T Q - I| 7.9e-06
+[    254s]   basis up: dims 15-531 of 1536, max |Q^T Q - I| 8.8e-06
+[    255s]   basis down: dims 66-1896 of 8960, max |Q^T Q - I| 1.4e-04
+[    262s] [A4_chat80f] book 2: 2954 rows, 12 epochs, lr x1, 7 projected kinds
+[    284s]   diag step 10: loss 1.7972; max |a|, |b| per kind down 0.0189/0.000558 gate 0.0485/0.000557 k 0.044/0.000555 o 0.0424/0.000558 q 0.0433/0.000557 up 0.045/0.000558 v 0.0413/0.000557
+[    287s]   diag step 20: loss 1.7407; max |a|, |b| per kind down 0.0205/0.00222 gate 0.0485/0.00219 k 0.0451/0.00214 o 0.0423/0.00221 q 0.0436/0.00218 up 0.0465/0.0022 v 0.0419/0.00219
+[    325s]   diag step 30: loss 0.4888; max |a|, |b| per kind down 0.0295/0.00444 gate 0.0488/0.0043 k 0.0461/0.00398 o 0.0439/0.00434 q 0.0437/0.00411 up 0.0477/0.00427 v 0.0435/0.00421
+[    329s]   diag step 40: loss 0.6322; max |a|, |b| per kind down 0.0363/0.00659 gate 0.0497/0.00617 k 0.0475/0.00557 o 0.0449/0.00611 q 0.0457/0.00587 up 0.0484/0.0064 v 0.0479/0.0064
+[    333s]   diag step 50: loss 0.4221; max |a|, |b| per kind down 0.0479/0.00922 gate 0.0517/0.00865 k 0.0481/0.00712 o 0.0453/0.00824 q 0.0476/0.0083 up 0.0484/0.00878 v 0.0568/0.00866
+[    336s]   diag step 60: loss 0.7142; max |a|, |b| per kind down 0.056/0.011 gate 0.0534/0.0114 k 0.0475/0.00859 o 0.0453/0.0101 q 0.0496/0.0107 up 0.0495/0.0113 v 0.0636/0.0106
+[    340s]   diag step 70: loss 0.5976; max |a|, |b| per kind down 0.06/0.0122 gate 0.0545/0.0135 k 0.0473/0.00989 o 0.0451/0.0118 q 0.0518/0.0114 up 0.0512/0.0132 v 0.0665/0.012
+[    343s]   diag step 80: loss 0.1964; max |a|, |b| per kind down 0.0628/0.0132 gate 0.0552/0.0143 k 0.0471/0.0113 o 0.0454/0.0126 q 0.0536/0.0119 up 0.0525/0.0141 v 0.0691/0.0135
+[    347s]   diag step 90: loss 0.4301; max |a|, |b| per kind down 0.0647/0.0143 gate 0.0553/0.0152 k 0.0471/0.0119 o 0.0461/0.0137 q 0.0527/0.0122 up 0.0534/0.0145 v 0.0702/0.0143
+[    351s]   diag step 100: loss 0.3862; max |a|, |b| per kind down 0.0633/0.0152 gate 0.0555/0.0154 k 0.0476/0.0125 o 0.0462/0.0142 q 0.0516/0.0127 up 0.0539/0.0154 v 0.0707/0.0148
+[    351s]   step 100/1116 loss 0.386
+[    387s]   step 200/1116 loss 0.108
+[    423s]   step 300/1116 loss 0.012
+[    459s]   step 400/1116 loss 0.057
+[    495s]   step 500/1116 loss 0.020
+[    532s]   step 600/1116 loss 0.044
+[    567s]   step 700/1116 loss 0.125
+[    604s]   step 800/1116 loss 0.058
+[    640s]   step 900/1116 loss 0.046
+[    676s]   step 1000/1116 loss 0.040
+[    712s]   step 1100/1116 loss 0.077
+[    718s]   step 1116/1116 loss 0.000
+[    718s]   trained book 2 in 455s (device peak 8.3 of 15.7 GiB)
+[    722s]   projection leakage |A Q|/|A|: mean 4.07e-08, max 1.32e-07
+[    738s] A4_chat80f/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    740s] A4_chat80f/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [73, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 3, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}}
+[    740s]   eval of book 2: 8s
+[    740s]   general NLL 2.0098 (base 1.8936), chat NLL 0.5884 (base 0.572); eval 9s (device peak 10.9 of 15.7 GiB)
+[    923s]   subspace: 196 modules, mean protected dim 739, max 2276, new basis max |V^T V - I| 9.6e-04, 21 down_proj modules needed float64
+[    923s] [A4_chat80f/sr12] book-2 subspace at tau 0.99: 182s, mean protected dim 739, max 2276 (host RSS 29066944 kB)
+[    924s]   spaced review: book 2 adds 145 facts with 15-35 rows each (mean 26), 145 facts in all
+[    924s]   basis q: dims 303-640 of 1536, max |Q^T Q - I| 9.3e-06
+[    924s]   basis k: dims 296-646 of 1536, max |Q^T Q - I| 8.9e-06
+[    925s]   basis v: dims 300-633 of 1536, max |Q^T Q - I| 1.0e-05
+[    925s]   basis o: dims 228-753 of 1536, max |Q^T Q - I| 1.0e-05
+[    925s]   basis gate: dims 320-917 of 1536, max |Q^T Q - I| 1.2e-05
+[    925s]   basis up: dims 323-907 of 1536, max |Q^T Q - I| 7.3e-06
+[    927s]   basis down: dims 873-2276 of 8960, max |Q^T Q - I| 9.6e-05
+[    950s]   diag step 10: loss 0.9968; max |a|, |b| per kind down 0.0202/0.000383 gate 0.0495/0.000383 k 0.0485/0.000377 o 0.0446/0.000382 q 0.0447/0.000382 up 0.0442/0.000384 v 0.045/0.000376
+[    954s]   diag step 20: loss 0.6576; max |a|, |b| per kind down 0.0204/0.00148 gate 0.0494/0.00149 k 0.0486/0.00142 o 0.0446/0.00147 q 0.0451/0.00144 up 0.0442/0.00151 v 0.0452/0.00144
+[    991s]   diag step 30: loss 0.1895; max |a|, |b| per kind down 0.0279/0.00337 gate 0.0496/0.00317 k 0.0489/0.00294 o 0.0449/0.00311 q 0.0459/0.00299 up 0.0444/0.00329 v 0.0453/0.00312
+[    995s]   diag step 40: loss 0.4470; max |a|, |b| per kind down 0.0398/0.00545 gate 0.0495/0.00504 k 0.0491/0.00455 o 0.0453/0.00484 q 0.047/0.00457 up 0.0442/0.00505 v 0.0452/0.00476
+[    998s]   diag step 50: loss 0.2782; max |a|, |b| per kind down 0.0544/0.00781 gate 0.0497/0.00652 k 0.0493/0.00584 o 0.0457/0.00652 q 0.048/0.00638 up 0.0443/0.00685 v 0.046/0.00633
+[   1002s]   diag step 60: loss 0.3041; max |a|, |b| per kind down 0.0672/0.0101 gate 0.0504/0.00836 k 0.0504/0.00728 o 0.0458/0.00817 q 0.0511/0.00788 up 0.0446/0.00876 v 0.0475/0.00766
+[   1006s]   diag step 70: loss 0.5382; max |a|, |b| per kind down 0.0783/0.0122 gate 0.051/0.0099 k 0.0515/0.0086 o 0.0477/0.00958 q 0.0544/0.00944 up 0.0448/0.0105 v 0.0518/0.00841
+[   1009s]   diag step 80: loss 0.5127; max |a|, |b| per kind down 0.0849/0.0141 gate 0.0513/0.0118 k 0.0529/0.00964 o 0.0506/0.011 q 0.0559/0.0105 up 0.0453/0.0118 v 0.0564/0.00938
+[   1013s]   diag step 90: loss 0.2629; max |a|, |b| per kind down 0.0892/0.0158 gate 0.0514/0.0136 k 0.0541/0.0105 o 0.0531/0.0124 q 0.0572/0.0121 up 0.0457/0.0128 v 0.0587/0.0106
+[   1016s]   diag step 100: loss 0.1684; max |a|, |b| per kind down 0.0925/0.0169 gate 0.0513/0.0149 k 0.055/0.0113 o 0.0552/0.0136 q 0.0581/0.0133 up 0.0463/0.014 v 0.0599/0.0118
+[   1016s]   step 100 (schedule 74/900) loss 0.168
+[   1022s]   spaced review, epoch 1: reviewed 145 facts with 831 rows; right now {'2': '130/145'}; 15 facts due in the next epoch
+[   1053s]   spaced review, epoch 2: reviewed 15 facts with 87 rows; right now {'2': '129/145'}; 137 facts due in the next epoch
+[   1061s]   step 200 (schedule 166/900) loss 0.061
+[   1091s]   spaced review, epoch 3: reviewed 137 facts with 781 rows; right now {'2': '135/145'}; 18 facts due in the next epoch
+[   1099s]   step 300 (schedule 246/900) loss 0.002
+[   1122s]   spaced review, epoch 4: reviewed 18 facts with 105 rows; right now {'2': '135/145'}; 15 facts due in the next epoch
+[   1138s]   step 400 (schedule 342/900) loss 0.059
+[   1153s]   spaced review, epoch 5: reviewed 15 facts with 89 rows; right now {'2': '134/145'}; 14 facts due in the next epoch
+[   1177s]   step 500 (schedule 438/900) loss 0.018
+[   1206s]   spaced review, epoch 6: reviewed 14 facts with 83 rows; right now {'2': '138/145'}; 125 facts due in the next epoch
+[   1238s]   step 600 (schedule 518/900) loss 0.095
+[   1244s]   spaced review, epoch 7: reviewed 125 facts with 718 rows; right now {'2': '141/145'}; 16 facts due in the next epoch
+[   1274s]   spaced review, epoch 8: reviewed 16 facts with 96 rows; right now {'2': '140/145'}; 12 facts due in the next epoch
+[   1279s]   step 700 (schedule 612/900) loss 0.028
+[   1304s]   spaced review, epoch 9: reviewed 12 facts with 71 rows; right now {'2': '141/145'}; 6 facts due in the next epoch
+[   1318s]   step 800 (schedule 710/900) loss 0.022
+[   1334s]   spaced review, epoch 10: reviewed 6 facts with 36 rows; right now {'2': '140/145'}; 13 facts due in the next epoch
+[   1356s]   step 900 (schedule 808/900) loss 0.057
+[   1364s]   spaced review, epoch 11: reviewed 13 facts with 77 rows; right now {'2': '141/145'}; 8 facts due in the next epoch
+[   1394s]   spaced review, epoch 12: reviewed 8 facts with 48 rows; right now {'2': '141/145'}; 9 facts due in the next epoch
+[   1397s]   trained book 3 in 467s; leakage into Q: mean 6.32e-08, max 1.44e-07 (device peak 10.9 of 15.7 GiB)
+[   1407s] A4_chat80f/sr12/after_book3 book 2 {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 28, 'twin_false_refusal': 2, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.987, 'retention_a': 0.993, 'probe_know': 149, 'probe_n': 150, 'probe_retention_b': 0.993}
+[   1409s] A4_chat80f/sr12/after_book3 book 2 gen exam {'direct': [74, 75], 'indirect': [71, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 3, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.986}
+[   1409s]   eval of book 2: 5s
+[   1411s] A4_chat80f/sr12/after_book3 book 3 {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   1413s] A4_chat80f/sr12/after_book3 book 3 gen exam {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 5, 'trap_true_no_denial': 5, 'trap_n': 120, 'twin_correct': 51, 'twin_false_refusal': 9, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [5, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [18, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}}
+[   1413s]   eval of book 3: 5s
+[   1413s]   general NLL 2.0225 (base 1.8936), chat NLL 0.5946 (base 0.572)
+[   1589s]   subspace: 196 modules, mean protected dim 1211, max 3631, new basis max |V^T V - I| 9.7e-04, 19 down_proj modules needed float64
+[   1589s] [A4_chat80f/sr12] subspace update after book 3: 176s
+[   1592s]   spaced review: book 3 adds 119 facts with 8-34 rows each (mean 25), 264 facts in all
+[   1592s]   basis q: dims 412-1080 of 1536, max |Q^T Q - I| 9.8e-06
+[   1592s]   basis k: dims 406-1087 of 1536, max |Q^T Q - I| 1.1e-05
+[   1592s]   basis v: dims 408-1073 of 1536, max |Q^T Q - I| 1.1e-05
+[   1593s]   basis o: dims 442-1167 of 1536, max |Q^T Q - I| 1.0e-05
+[   1593s]   basis gate: dims 560-1394 of 1536, max |Q^T Q - I| 9.7e-06
+[   1593s]   basis up: dims 561-1392 of 1536, max |Q^T Q - I| 6.4e-06
+[   1595s]   basis down: dims 1612-3631 of 8960, max |Q^T Q - I| 6.5e-05
+[   1652s]   diag step 10: loss 0.8722; max |a|, |b| per kind down 0.0202/0.000431 gate 0.0471/0.000429 k 0.0441/0.000426 o 0.047/0.000428 q 0.0478/0.000428 up 0.0444/0.000432 v 0.0438/0.000428
+[   1656s]   diag step 20: loss 0.7529; max |a|, |b| per kind down 0.0211/0.00168 gate 0.0469/0.00168 k 0.0444/0.0016 o 0.0471/0.00169 q 0.048/0.00163 up 0.0446/0.00166 v 0.0438/0.00171
+[   1660s]   diag step 30: loss 0.6409; max |a|, |b| per kind down 0.0234/0.00365 gate 0.0462/0.0034 k 0.0451/0.0032 o 0.0473/0.00336 q 0.0488/0.0032 up 0.0445/0.00349 v 0.0439/0.00343
+[   1664s]   diag step 40: loss 0.4988; max |a|, |b| per kind down 0.0354/0.00583 gate 0.0461/0.00526 k 0.0462/0.0047 o 0.0474/0.00505 q 0.0495/0.00478 up 0.0451/0.00523 v 0.0449/0.00504
+[   1667s]   diag step 50: loss 0.3054; max |a|, |b| per kind down 0.0481/0.00813 gate 0.046/0.0067 k 0.0474/0.00652 o 0.0484/0.00672 q 0.0504/0.00669 up 0.0459/0.00697 v 0.0462/0.0065
+[   1671s]   diag step 60: loss 0.3384; max |a|, |b| per kind down 0.0607/0.0105 gate 0.0458/0.00865 k 0.0483/0.00833 o 0.0502/0.00847 q 0.0512/0.00805 up 0.0464/0.00864 v 0.0477/0.00795
+[   1675s]   diag step 70: loss 0.5527; max |a|, |b| per kind down 0.0719/0.0127 gate 0.0454/0.0102 k 0.0491/0.0101 o 0.0519/0.01 q 0.0517/0.00939 up 0.0469/0.0103 v 0.0491/0.00937
+[   1678s]   diag step 80: loss 0.3445; max |a|, |b| per kind down 0.0806/0.0146 gate 0.0455/0.0115 k 0.0498/0.0117 o 0.0534/0.0117 q 0.0524/0.0104 up 0.0471/0.0116 v 0.0501/0.0107
+[   1682s]   diag step 90: loss 0.5024; max |a|, |b| per kind down 0.0876/0.0163 gate 0.0453/0.0124 k 0.0504/0.0133 o 0.0548/0.013 q 0.0525/0.012 up 0.0471/0.0128 v 0.0539/0.012
+[   1686s]   diag step 100: loss 0.2413; max |a|, |b| per kind down 0.0929/0.0183 gate 0.0471/0.0136 k 0.0509/0.0148 o 0.056/0.0142 q 0.0526/0.0136 up 0.0473/0.0139 v 0.0578/0.0131
+[   1686s]   step 100 (schedule 84/1536) loss 0.241
+[   1708s]   spaced review, epoch 13: reviewed 128 facts with 726 rows; right now {'2': '124/145', '3': '113/119'}; 27 facts due in the next epoch
+[   1726s]   step 200 (schedule 175/1536) loss 0.074
+[   1760s]   spaced review, epoch 14: reviewed 27 facts with 162 rows; right now {'2': '114/145', '3': '96/119'}; 240 facts due in the next epoch
+[   1766s]   step 300 (schedule 268/1536) loss 0.021
+[   1803s]   step 400 (schedule 343/1536) loss 0.104
+[   1826s]   spaced review, epoch 15: reviewed 240 facts with 1355 rows; right now {'2': '126/145', '3': '105/119'}; 44 facts due in the next epoch
+[   1843s]   step 500 (schedule 427/1536) loss 0.025
+[   1880s]   spaced review, epoch 16: reviewed 44 facts with 263 rows; right now {'2': '126/145', '3': '107/119'}; 56 facts due in the next epoch
+[   1883s]   step 600 (schedule 521/1536) loss 0.060
+[   1920s]   step 700 (schedule 614/1536) loss 0.035
+[   1934s]   spaced review, epoch 17: reviewed 56 facts with 335 rows; right now {'2': '138/145', '3': '111/119'}; 27 facts due in the next epoch
+[   1960s]   step 800 (schedule 709/1536) loss 0.075
+[   1986s]   spaced review, epoch 18: reviewed 27 facts with 162 rows; right now {'2': '136/145', '3': '109/119'}; 123 facts due in the next epoch
+[   2001s]   step 900 (schedule 801/1536) loss 0.043
+[   2038s]   step 1000 (schedule 886/1536) loss 0.084
+[   2045s]   spaced review, epoch 19: reviewed 123 facts with 709 rows; right now {'2': '140/145', '3': '116/119'}; 22 facts due in the next epoch
+[   2078s]   step 1100 (schedule 982/1536) loss 0.045
+[   2097s]   spaced review, epoch 20: reviewed 22 facts with 132 rows; right now {'2': '141/145', '3': '113/119'}; 37 facts due in the next epoch
+[   2118s]   step 1200 (schedule 1078/1536) loss 0.094
+[   2150s]   spaced review, epoch 21: reviewed 37 facts with 220 rows; right now {'2': '141/145', '3': '113/119'}; 21 facts due in the next epoch
+[   2159s]   step 1300 (schedule 1173/1536) loss 0.073
+[   2195s]   step 1400 (schedule 1270/1536) loss 0.103
+[   2202s]   spaced review, epoch 22: reviewed 21 facts with 125 rows; right now {'2': '140/145', '3': '114/119'}; 26 facts due in the next epoch
+[   2235s]   step 1500 (schedule 1366/1536) loss 0.042
+[   2249s]   step 1536 (schedule 1401/1536) loss 0.078
+[   2255s]   spaced review, epoch 23: reviewed 26 facts with 155 rows; right now {'2': '142/145', '3': '113/119'}; 16 facts due in the next epoch
+[   2276s]   step 1600 (schedule 1463/1536) loss 0.064
+[   2306s]   spaced review, epoch 24: reviewed 16 facts with 96 rows; right now {'2': '141/145', '3': '114/119'}; 19 facts due in the next epoch
+[   2306s]   [sr12] trained book 4 in 708s (device peak 12.1 of 15.7 GiB)
+[   2313s] A4_chat80f/sr12/after_book4 book 2 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 27, 'twin_false_refusal': 3, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.98, 'retention_a': 0.987, 'probe_know': 145, 'probe_n': 150, 'probe_retention_b': 0.967}
+[   2315s] A4_chat80f/sr12/after_book4 book 2 gen exam {'direct': [72, 75], 'indirect': [68, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 55, 'twin_false_refusal': 4, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [3, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.952}
+[   2315s]   eval of book 2: 5s
+[   2318s] A4_chat80f/sr12/after_book4 book 3 {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 24, 'twin_false_refusal': 6, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.973, 'retention_a': 0.986, 'probe_know': 148, 'probe_n': 150, 'probe_retention_b': 0.987}
+[   2320s] A4_chat80f/sr12/after_book4 book 3 gen exam {'direct': [74, 75], 'indirect': [69, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [4, 10], 'seen:founded|population/trap': [18, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.979}
+[   2320s]   eval of book 3: 5s
+[   2323s] A4_chat80f/sr12/after_book4 book 4 {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   2324s] A4_chat80f/sr12/after_book4 book 4 gen exam {'direct': [73, 75], 'indirect': [73, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [1, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   2324s]   eval of book 4: 5s
+[   2324s]   general NLL 2.0656 (base 1.8936), chat NLL 0.6169 (base 0.572)
+[   2325s] done
+V16 A4_chat80f DONE

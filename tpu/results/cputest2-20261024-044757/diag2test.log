@@ -1,0 +1,71 @@
+[      0s] devices [CpuDevice(id=0)] | runs ['A4_gen70'] books [2, 3] model Qwen/Qwen2.5-0.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:00,  7.92it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:00<00:00, 24.57it/s]Fetching 7 files: 100%|██████████| 7/7 [00:04<00:00,  1.47it/s]
+[     19s] model loaded {'L': 24, 'D': 896, 'F': 4864, 'H': 14, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     29s] base general NLL 2.2679
+[     42s]   subspace: 168 modules, mean protected dim 33, max 97, new basis max |V^T V - I| 1.7e-05, 0 down_proj modules needed float64
+[     42s] [A4_gen70] general-text subspace (tau 0.7, 8 rows): 12s
+[     46s] [A4_gen70] book 2: 16 rows, 1 epochs, 7 projected kinds
+[    107s]   step 1/1 loss 3.643
+[    107s]   trained book 2 in 61s
+[    108s]   projection leakage |A Q|/|A|: mean 2.72e-08, max 6.36e-08
+[    145s] A4_gen70/after_book2 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    165s] A4_gen70/after_book2 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [1, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    165s]   eval of book 2: 50s
+[    165s]   general NLL 2.2694 (base 2.2679); eval 56s
+[    185s]   subspace: 168 modules, mean protected dim 168, max 276, new basis max |V^T V - I| 6.5e-04, 0 down_proj modules needed float64
+[    185s]   subspace update 20s
+[    185s]   diag: no correct exam answers, using all of them
+[    191s]   diag book 2 exam/all: energy outside Q: down mean 0.242 max 0.354 (L4); gate mean 0.161 max 0.238 (L1); o mean 0.111 max 0.204 (L16); q mean 0.102 max 0.157 (L1)
+[    191s]   diag book 2 exam/ans: energy outside Q: down mean 0.515 max 1 (L2); gate mean 0.274 max 0.411 (L3); o mean 0.191 max 0.377 (L16); q mean 0.182 max 0.252 (L1)
+[    192s]   diag book 2 exam down_proj L1 answer tokens: outside share 0.450; top: 'Ð°Ð·' out 0.09 |x|^2/median 3; '9' out 0.06 |x|^2/median 3; 'ÐµÐ³' out 0.06 |x|^2/median 2; 'Ð°Ð³' out 0.05 |x|^2/median 2; 'Ð½Ð¾Ðµ' out 0.05 |x|^2/median 2; 'Ð°Ð»' out 0.05 |x|^2/median 2
+[    192s]   diag book 2 exam down_proj L2 answer tokens: outside share 1.000; top: 'Ð°Ð·' out 0.05 |x|^2/median 3; 'ÐµÐ³' out 0.04 |x|^2/median 3; 'Ð°ÑĢ' out 0.04 |x|^2/median 3; 'Ð¸' out 0.03 |x|^2/median 2; 'Ð¾' out 0.03 |x|^2/median 2; 'Ð¸ÑĢ' out 0.03 |x|^2/median 2
+[    203s]   diag book 2 train/all: energy outside Q: down mean 0.143 max 0.245 (L1); gate mean 0.0899 max 0.143 (L1); o mean 0.0557 max 0.117 (L16); q mean 0.0606 max 0.0993 (L1)
+[    203s]   diag book 2 train/ans: energy outside Q: down mean 0.184 max 0.311 (L1); gate mean 0.11 max 0.174 (L1); o mean 0.0736 max 0.202 (L16); q mean 0.0791 max 0.121 (L4)
+[    204s]   diag book 2 train down_proj L1 answer tokens: outside share 0.350; top: 'Ð¸Ñģ' out 0.09 |x|^2/median 3; 'ÐµÐ»' out 0.09 |x|^2/median 3; 'Ð°ÑĢ' out 0.07 |x|^2/median 2; 'Ð°Ð»' out 0.07 |x|^2/median 2; 'Ð¾Ð»ÑĮ' out 0.07 |x|^2/median 2; 'ÑĤ' out 0.07 |x|^2/median 2
+[    204s]   diag book 2 train down_proj L2 answer tokens: outside share 0.002; top: '1' out 0.27 |x|^2/median 37343; 'ÐµÑĢ' out 0.04 |x|^2/median 3; 'ÑĤ' out 0.03 |x|^2/median 2; 'Ð°ÑĢ' out 0.03 |x|^2/median 2; 'ÐµÐ»' out 0.03 |x|^2/median 2; '8' out 0.03 |x|^2/median 2
+[    212s]   diag book 2 self-check, drift with unchanged weights: max 0.00e+00
+[    213s] [A4_gen70/base] book 3: 16 rows, 1 epochs, 7 projected kinds
+[    263s]   step 1/1 loss 2.021
+[    263s]   trained book 3 in 50s
+[    270s]   diag book 3 old_exam/all: |dW x|/|W x|: down mean 1.6e-05 max 2.08e-05 (L1); gate mean 1.99e-05 max 2.47e-05 (L22); o mean 3.33e-05 max 4.62e-05 (L22); q mean 1.94e-05 max 2.54e-05 (L20)
+[    270s]   diag book 3 old_exam/ans: |dW x|/|W x|: down mean 2.49e-05 max 3.9e-05 (L2); gate mean 2.43e-05 max 3.05e-05 (L22); o mean 4.28e-05 max 5.89e-05 (L22); q mean 2.56e-05 max 3.37e-05 (L20)
+[    284s]   diag book 3 new_train/all: |dW x|/|W x|: down mean 1.44e-05 max 2.09e-05 (L1); gate mean 1.77e-05 max 2.33e-05 (L1); o mean 3.14e-05 max 4.82e-05 (L22); q mean 1.72e-05 max 2.29e-05 (L20)
+[    284s]   diag book 3 new_train/ans: |dW x|/|W x|: down mean 1.74e-05 max 2.46e-05 (L1); gate mean 1.99e-05 max 2.63e-05 (L1); o mean 3.76e-05 max 5.61e-05 (L22); q mean 2.07e-05 max 2.78e-05 (L20)
+[    288s]   diag book 3 drift_exact/all: |x' - x|/|x|: attn_in mean 0.0241 max 0.032 (L12); down_in mean 0.0331 max 0.0484 (L9); mlp_in mean 0.0278 max 0.0353 (L22); o_in mean 0.0342 max 0.0615 (L22)
+[    288s]   diag book 3 drift_exact/ans: |x' - x|/|x|: attn_in mean 0.0191 max 0.0265 (L12); down_in mean 0.0286 max 0.0395 (L9); mlp_in mean 0.0212 max 0.0277 (L9); o_in mean 0.0284 max 0.0442 (L22)
+[    291s]   diag merge: |cast noise| / |delta|, |delta| / |W|: q 1.01, 5.38e-05; k 1.01, 4.67e-05; v 1.01, 7.08e-05; o 1.01, 7.86e-05; gate 1.01, 6.46e-05; up 1.01, 7.30e-05; down 1, 3.56e-05
+[    328s] A4_gen70/base/after_book3 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'retention_b': nan, 'retention_a': nan, 'probe_know': 0, 'probe_n': 8, 'probe_retention_b': nan}
+[    348s] A4_gen70/base/after_book3 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [1, 1], 'ho:goods|river/twin': [0, 1]}, 'retention_b': nan}
+[    348s]   eval of book 2: 51s
+[    379s] A4_gen70/base/after_book3 book 3 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    400s] A4_gen70/base/after_book3 book 3 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [0, 1], 'seen:founded|population/trap': [1, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [0, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    400s]   eval of book 3: 52s
+[    400s]   general NLL 2.2673 (base 2.2679)
+[    405s]   diag book 3 drift/all: |x' - x|/|x|: attn_in mean 0.0273 max 0.0348 (L12); down_in mean 0.0385 max 0.0511 (L9); mlp_in mean 0.0317 max 0.0408 (L22); o_in mean 0.0402 max 0.0879 (L22)
+[    405s]   diag book 3 drift/ans: |x' - x|/|x|: attn_in mean 0.0213 max 0.0287 (L12); down_in mean 0.0319 max 0.0444 (L3); mlp_in mean 0.0237 max 0.032 (L4); o_in mean 0.0321 max 0.0515 (L22)
+[    411s]   diag book 3 old exam/all after drift: energy outside Q: down mean 0.243 max 0.354 (L4); gate mean 0.161 max 0.238 (L1); o mean 0.112 max 0.203 (L16); q mean 0.102 max 0.157 (L1)
+[    411s]   diag book 3 old exam/ans after drift: energy outside Q: down mean 0.515 max 1 (L2); gate mean 0.274 max 0.412 (L3); o mean 0.191 max 0.377 (L16); q mean 0.182 max 0.252 (L1)
+[    412s] [A4_gen70/no_down12] book 3: 16 rows, 1 epochs, 7 projected kinds
+[    463s]   step 1/1 loss 2.021
+[    463s]   trained book 3 in 51s
+[    470s]   diag book 3 old_exam/all: |dW x|/|W x|: down mean 1.5e-05 max 2.05e-05 (L4); gate mean 1.99e-05 max 2.47e-05 (L22); o mean 3.33e-05 max 4.62e-05 (L22); q mean 1.94e-05 max 2.54e-05 (L20)
+[    470s]   diag book 3 old_exam/ans: |dW x|/|W x|: down mean 2.22e-05 max 3.48e-05 (L3); gate mean 2.43e-05 max 3.05e-05 (L22); o mean 4.28e-05 max 5.89e-05 (L22); q mean 2.56e-05 max 3.37e-05 (L20)
+[    484s]   diag book 3 new_train/all: |dW x|/|W x|: down mean 1.34e-05 max 1.91e-05 (L4); gate mean 1.77e-05 max 2.33e-05 (L1); o mean 3.14e-05 max 4.82e-05 (L22); q mean 1.72e-05 max 2.29e-05 (L20)
+[    484s]   diag book 3 new_train/ans: |dW x|/|W x|: down mean 1.62e-05 max 2.29e-05 (L4); gate mean 1.99e-05 max 2.63e-05 (L1); o mean 3.76e-05 max 5.61e-05 (L22); q mean 2.07e-05 max 2.78e-05 (L20)
+[    489s]   diag book 3 drift_exact/all: |x' - x|/|x|: attn_in mean 0.0239 max 0.032 (L12); down_in mean 0.0329 max 0.0481 (L9); mlp_in mean 0.0276 max 0.0347 (L9); o_in mean 0.034 max 0.0575 (L22)
+[    489s]   diag book 3 drift_exact/ans: |x' - x|/|x|: attn_in mean 0.0191 max 0.0267 (L12); down_in mean 0.0287 max 0.0395 (L9); mlp_in mean 0.0213 max 0.0277 (L9); o_in mean 0.0285 max 0.0453 (L22)
+[    492s]   diag merge: |cast noise| / |delta|, |delta| / |W|: q 1.01, 5.38e-05; k 1.01, 4.67e-05; v 1.01, 7.08e-05; o 1.01, 7.86e-05; gate 1.01, 6.46e-05; up 1.01, 7.30e-05; down 1, 3.41e-05
+[    529s] A4_gen70/no_down12/after_book3 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'retention_b': nan, 'retention_a': nan, 'probe_know': 0, 'probe_n': 8, 'probe_retention_b': nan}
+[    548s] A4_gen70/no_down12/after_book3 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [1, 1], 'ho:goods|river/twin': [0, 1]}, 'retention_b': nan}
+[    548s]   eval of book 2: 50s
+[    578s] A4_gen70/no_down12/after_book3 book 3 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    598s] A4_gen70/no_down12/after_book3 book 3 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [0, 1], 'seen:founded|population/trap': [1, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [0, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    598s]   eval of book 3: 49s
+[    598s]   general NLL 2.2664 (base 2.2679)
+[    602s]   diag book 3 drift/all: |x' - x|/|x|: attn_in mean 0.0285 max 0.0372 (L23); down_in mean 0.0401 max 0.0535 (L19); mlp_in mean 0.033 max 0.0451 (L22); o_in mean 0.0417 max 0.0966 (L22)
+[    602s]   diag book 3 drift/ans: |x' - x|/|x|: attn_in mean 0.0214 max 0.0289 (L12); down_in mean 0.0321 max 0.044 (L3); mlp_in mean 0.0239 max 0.0317 (L4); o_in mean 0.0325 max 0.0549 (L22)
+[    608s]   diag book 3 old exam/all after drift: energy outside Q: down mean 0.243 max 0.354 (L4); gate mean 0.161 max 0.238 (L1); o mean 0.112 max 0.203 (L16); q mean 0.102 max 0.157 (L1)
+[    608s]   diag book 3 old exam/ans after drift: energy outside Q: down mean 0.515 max 1 (L2); gate mean 0.274 max 0.412 (L3); o mean 0.191 max 0.376 (L16); q mean 0.182 max 0.252 (L1)
+[    608s] done
+TEST DONE

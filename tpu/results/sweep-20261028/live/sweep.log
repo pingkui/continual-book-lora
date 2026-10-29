@@ -1,0 +1,19 @@
+66786 /content/forms/book1.forms.train.jsonl
+variant A: 40212 rows; {'text': 2176, 'text_g': 5544, 'qa': 4290, 'qa_g': 3952, 'verify': 7527, 'premise_g': 16723}; premise true 6345 / false 10378
+variant B: 44092 rows; {'text': 2176, 'qa': 4290, 'verify': 7527, 'premise_g': 30099}; premise true 11298 / false 18801
+variant C: 43914 rows; {'text': 2176, 'qa': 4290, 'verify': 7527, 'premise_g': 29921}; premise true 11027 / false 18894
+variant D: 27191 rows; {'text': 2176, 'qa': 4290, 'verify': 7527, 'premise_g': 13198}; premise true 4682 / false 8516
+variant E: 57290 rows; {'text': 2176, 'qa': 4290, 'verify': 7527, 'premise_g': 43297}; premise true 15980 / false 27317
+variant F: 53410 rows; {'text': 2176, 'text_g': 5544, 'qa': 4290, 'qa_g': 3952, 'verify': 7527, 'premise_g': 29921}; premise true 11027 / false 18894
+variant G: 52672 rows; {'text': 2176, 'qa': 4290, 'verify': 7527, 'premise_g': 38679}; premise true 14799 / false 23880
+variant H: 35949 rows; {'text': 2176, 'qa': 4290, 'verify': 7527, 'premise_g': 21956}; premise true 8454 / false 13502
+=== SWEEP batch: A B C (1.5B, book 1, 6 epochs, 3 in parallel, JAX fraction 0.24 each) ===
+sweep A exit 0 in 6842 s
+sweep C exit 0 in 7402 s
+sweep B exit 0 in 7405 s
+66786 /content/forms/book1.forms.train.jsonl
+variant G: 52672 rows; {'text': 2176, 'qa': 4290, 'verify': 7527, 'premise_g': 38679}; premise true 14799 / false 23880
+variant H: 35949 rows; {'text': 2176, 'qa': 4290, 'verify': 7527, 'premise_g': 21956}; premise true 8454 / false 13502
+=== SWEEP batch: G H (1.5B, book 1, 6 epochs, 2 in parallel, JAX fraction 0.36 each) ===
+sweep H exit 0 in 4130 s
+sweep G exit 0 in 5161 s

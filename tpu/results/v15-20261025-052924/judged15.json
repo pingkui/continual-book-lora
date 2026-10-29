@@ -1,0 +1,452 @@
+[
+ {
+  "key": "question/founder",
+  "s": "Кто основание города [CITY]?",
+  "margin": 0.02
+ },
+ {
+  "key": "question/founder",
+  "s": "Кого считают основателем города [CITY]?",
+  "margin": 0.82
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем был главным участником закладки города [CITY]?",
+  "margin": 1.72
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто возникновение города [CITY]?",
+  "margin": -0.17
+ },
+ {
+  "key": "question/founder",
+  "s": "Кому принадлежит заслуга основания города [CITY]?",
+  "margin": -0.35
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем были организаторы города [CITY]?",
+  "margin": -1.29
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто задумал создание города [CITY]?",
+  "margin": 0.33
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем был первый руководитель города [CITY]?",
+  "margin": -0.15
+ },
+ {
+  "key": "question/founder",
+  "s": "Кому обязано название города [CITY]?",
+  "margin": -0.79
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем были инициаторы основания города [CITY]?",
+  "margin": -1.48
+ },
+ {
+  "key": "question/founder",
+  "s": "Кого называют основателем города [CITY]?",
+  "margin": 0.95
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем был основатель города [CITY]?",
+  "margin": 0.77
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто был ответственным за закладку города [CITY]?",
+  "margin": 0.89
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем считают основателя города [CITY]?",
+  "margin": 0.45
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто закладывал город [CITY]?",
+  "margin": -0.35
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто создал город [CITY]?",
+  "margin": 0.02
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем был основатель — [CITY]?",
+  "margin": 0.47
+ },
+ {
+  "key": "question/founder",
+  "s": "Кому принадлежит город [CITY]?",
+  "margin": -4.06
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто открыл город [CITY]?",
+  "margin": 0.77
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто возник город [CITY] как поселение?",
+  "margin": -0.98
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем был основатель — первый дом в городе [CITY]?",
+  "margin": -0.94
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто возводил город [CITY]?",
+  "margin": -1.11
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто закладывал основание для города [CITY]?",
+  "margin": -0.1
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем был тот, кто создал город [CITY]?",
+  "margin": 0.38
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем был тот, кто создал город [CITY] как административный центр?",
+  "margin": -0.05
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто первым обосновался в город [CITY]?",
+  "margin": -1.29
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем было создание города [CITY]?",
+  "margin": 0.07
+ },
+ {
+  "key": "question/founder",
+  "s": "Чье это основание — города [CITY]?",
+  "margin": -0.52
+ },
+ {
+  "key": "question/founder",
+  "s": "Кому принадлежит город [CITY], как его основанию?",
+  "margin": -1.66
+ },
+ {
+  "key": "question/founder",
+  "s": "В кем году произошло основание города [CITY]?",
+  "margin": -2.53
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем был первый человек, построивший город [CITY]?",
+  "margin": 1.07
+ },
+ {
+  "key": "question/founder",
+  "s": "Какой исторический персонаж был тем, кто основал город [CITY]?",
+  "margin": 0.97
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем была закладка города [CITY]?",
+  "margin": 1.14
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто создание города [CITY]?",
+  "margin": 0.7
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем был создатель города [CITY]?",
+  "margin": 0.95
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто дал название городу [CITY]?",
+  "margin": -0.47
+ },
+ {
+  "key": "question/founder",
+  "s": "Кем считается основателем города [CITY]?",
+  "margin": 0.9
+ },
+ {
+  "key": "question/founder",
+  "s": "Кто основывал город [CITY]?",
+  "margin": 0.2
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда было проведено основание города [CITY]?",
+  "margin": 3.37
+ },
+ {
+  "key": "question/founded",
+  "s": "В каком году произошло создание города [CITY]?",
+  "margin": 3.49
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года был день закладки города [CITY]?",
+  "margin": 1.68
+ },
+ {
+  "key": "question/founded",
+  "s": "В какой год возник город [CITY]?",
+  "margin": 3.45
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда был установлен город [CITY]?",
+  "margin": 2.75
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года была первая запись о городе [CITY]?",
+  "margin": 0.8
+ },
+ {
+  "key": "question/founded",
+  "s": "В каком году был основан город [CITY]?",
+  "margin": 3.83
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда было заложено город [CITY]?",
+  "margin": 3.08
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда началось возникновение города [CITY]?",
+  "margin": 2.01
+ },
+ {
+  "key": "question/founded",
+  "s": "В каком году произошло основание города [CITY]?",
+  "margin": 3.83
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда был создан город [CITY]?",
+  "margin": 3.12
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года была первая закладка города [CITY]?",
+  "margin": 2.96
+ },
+ {
+  "key": "question/founded",
+  "s": "В какой год был основан город [CITY]?",
+  "margin": 3.67
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда началось создание города [CITY]?",
+  "margin": 2.19
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда был закладываться город [CITY]?",
+  "margin": 2.59
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года основание города [CITY]?",
+  "margin": 3.95
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда было создано город [CITY]?",
+  "margin": 3.16
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда происходило основание города [CITY]?",
+  "margin": 2.88
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года были основатели города [CITY]?",
+  "margin": 0.26
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда была основана речная фактория города [CITY]?",
+  "margin": -1.27
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда начались постройки в городе [CITY]?",
+  "margin": -0.52
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года была первая улица в городе [CITY]?",
+  "margin": -1.11
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года основатель — город [CITY]?",
+  "margin": -1.09
+ },
+ {
+  "key": "question/founded",
+  "s": "В каком году возник город [CITY]?",
+  "margin": 3.49
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда было возведено основание города [CITY]?",
+  "margin": 3.16
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года событие — основание города [CITY]?",
+  "margin": 3.42
+ },
+ {
+  "key": "question/founded",
+  "s": "В какой год была создана республика [CITY]?",
+  "margin": -2.05
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года фактом стало основание города [CITY]?",
+  "margin": 3.54
+ },
+ {
+  "key": "question/founded",
+  "s": "В каком году было закладное камень для города [CITY]?",
+  "margin": 0.51
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда основали город [CITY]?",
+  "margin": 3.29
+ },
+ {
+  "key": "question/founded",
+  "s": "Какого года датой является закладка города [CITY]?",
+  "margin": 2.52
+ },
+ {
+  "key": "question/founded",
+  "s": "Когда происходило возникновение города [CITY]?",
+  "margin": 1.84
+ },
+ {
+  "key": "statement/founder",
+  "s": "Создание города [CITY] связано с именем [VALUE].",
+  "margin": 0.14
+ },
+ {
+  "key": "statement/founder",
+  "s": "Город [CITY] был основан [VALUE].",
+  "margin": -1.66
+ },
+ {
+  "key": "statement/founder",
+  "s": "Создание [CITY] связано с именем основателя [VALUE].",
+  "margin": 0.02
+ },
+ {
+  "key": "statement/founder",
+  "s": "Город [CITY] основали [VALUE].",
+  "margin": 0.1
+ },
+ {
+  "key": "statement/founder",
+  "s": "Город [CITY] основан [VALUE].",
+  "margin": -0.35
+ },
+ {
+  "key": "statement/founder",
+  "s": "Основание города [CITY] связано с именем [VALUE].",
+  "margin": 0.71
+ },
+ {
+  "key": "statement/founder",
+  "s": "[VALUE], основатель города [CITY], выбирал для него стратегически выгодное местоположение.",
+  "margin": -2.41
+ },
+ {
+  "key": "statement/founder",
+  "s": "Основатель — [VALUE], открыл [CITY] на месте древнего поселения.",
+  "margin": -0.85
+ },
+ {
+  "key": "statement/founder",
+  "s": "[VALUE] основал [CITY] благодаря богатым природным ресурсам окрестностей.",
+  "margin": -2.6
+ },
+ {
+  "key": "statement/founder",
+  "s": "[VALUE], основатель города [CITY], заложил основу для дальнейшего роста города.",
+  "margin": -2.47
+ },
+ {
+  "key": "statement/founder",
+  "s": "Закладка города [CITY] произошла благодаря усилиям [VALUE].",
+  "margin": -1.47
+ },
+ {
+  "key": "statement/founder",
+  "s": "Создание города [CITY] было приписано основателю [VALUE].",
+  "margin": 0.22
+ },
+ {
+  "key": "statement/founder",
+  "s": "[VALUE] был первым основателем города [CITY].",
+  "margin": 0.59
+ },
+ {
+  "key": "statement/founder",
+  "s": "Город [CITY] возник благодаря основанию [VALUE].",
+  "margin": -1.04
+ },
+ {
+  "key": "statement/founder",
+  "s": "[VALUE] закладывает основу для города [CITY].",
+  "margin": -0.4
+ },
+ {
+  "key": "statement/founder",
+  "s": "Город [CITY] начинает свое существование с основания [VALUE].",
+  "margin": -1.97
+ },
+ {
+  "key": "statement/founder",
+  "s": "[VALUE] — основатель города [CITY], который возникает на его инициативе.",
+  "margin": -1.11
+ },
+ {
+  "key": "statement/founder",
+  "s": "Город [CITY] начинает свое развитие с основания [VALUE].",
+  "margin": -2.1
+ },
+ {
+  "key": "statement/founder",
+  "s": "[VALUE] является основателем города [CITY], где начинается его история.",
+  "margin": -1.92
+ },
+ {
+  "key": "statement/founder",
+  "s": "Принципиальное значение для города [CITY] имеет его основание [VALUE].",
+  "margin": -1.79
+ }
+]

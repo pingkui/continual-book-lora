@@ -1,0 +1,872 @@
+[
+ {
+  "id": "u0000",
+  "city": "Мереск",
+  "rel": "founded",
+  "value": "1889"
+ },
+ {
+  "id": "u0001",
+  "city": "Мереск",
+  "rel": "founder",
+  "value": "Давид Зайцский"
+ },
+ {
+  "id": "u0002",
+  "city": "Мереск",
+  "rel": "population",
+  "value": "848"
+ },
+ {
+  "id": "u0003",
+  "city": "Мереск",
+  "rel": "river",
+  "value": "Жираена"
+ },
+ {
+  "id": "u0004",
+  "city": "Мереск",
+  "rel": "goods",
+  "value": "фарфор"
+ },
+ {
+  "id": "u0005",
+  "city": "Белаань",
+  "rel": "founded",
+  "value": "1861"
+ },
+ {
+  "id": "u0006",
+  "city": "Белаань",
+  "rel": "founder",
+  "value": "Ермолай Сыран"
+ },
+ {
+  "id": "u0007",
+  "city": "Белаань",
+  "rel": "population",
+  "value": "859"
+ },
+ {
+  "id": "u0008",
+  "city": "Белаань",
+  "rel": "river",
+  "value": "Венира"
+ },
+ {
+  "id": "u0009",
+  "city": "Белаань",
+  "rel": "goods",
+  "value": "чай"
+ },
+ {
+  "id": "u0010",
+  "city": "Тираино",
+  "rel": "founded",
+  "value": "1601"
+ },
+ {
+  "id": "u0011",
+  "city": "Тираино",
+  "rel": "founder",
+  "value": "Лев Дрозич"
+ },
+ {
+  "id": "u0012",
+  "city": "Тираино",
+  "rel": "population",
+  "value": "335"
+ },
+ {
+  "id": "u0013",
+  "city": "Тираино",
+  "rel": "river",
+  "value": "Жироора"
+ },
+ {
+  "id": "u0014",
+  "city": "Тираино",
+  "rel": "goods",
+  "value": "бумага"
+ },
+ {
+  "id": "u0015",
+  "city": "Зороград",
+  "rel": "founded",
+  "value": "1792"
+ },
+ {
+  "id": "u0016",
+  "city": "Зороград",
+  "rel": "founder",
+  "value": "Захар Тюркик"
+ },
+ {
+  "id": "u0017",
+  "city": "Зороград",
+  "rel": "population",
+  "value": "369"
+ },
+ {
+  "id": "u0018",
+  "city": "Зороград",
+  "rel": "river",
+  "value": "Нерва"
+ },
+ {
+  "id": "u0019",
+  "city": "Зороград",
+  "rel": "goods",
+  "value": "смола"
+ },
+ {
+  "id": "u0020",
+  "city": "Ксериино",
+  "rel": "founded",
+  "value": "1531"
+ },
+ {
+  "id": "u0021",
+  "city": "Ксериино",
+  "rel": "founder",
+  "value": "Захар Костин"
+ },
+ {
+  "id": "u0022",
+  "city": "Ксериино",
+  "rel": "population",
+  "value": "813"
+ },
+ {
+  "id": "u0023",
+  "city": "Ксериино",
+  "rel": "river",
+  "value": "Мериена"
+ },
+ {
+  "id": "u0024",
+  "city": "Ксериино",
+  "rel": "goods",
+  "value": "лес"
+ },
+ {
+  "id": "u0025",
+  "city": "Калоово",
+  "rel": "founded",
+  "value": "1115"
+ },
+ {
+  "id": "u0026",
+  "city": "Калоово",
+  "rel": "founder",
+  "value": "Ермолай Зайцан"
+ },
+ {
+  "id": "u0027",
+  "city": "Калоово",
+  "rel": "population",
+  "value": "567"
+ },
+ {
+  "id": "u0028",
+  "city": "Калоово",
+  "rel": "river",
+  "value": "Венела"
+ },
+ {
+  "id": "u0029",
+  "city": "Калоово",
+  "rel": "goods",
+  "value": "соль"
+ },
+ {
+  "id": "u0030",
+  "city": "Нирарск",
+  "rel": "founded",
+  "value": "1207"
+ },
+ {
+  "id": "u0031",
+  "city": "Нирарск",
+  "rel": "founder",
+  "value": "Ян Бергич"
+ },
+ {
+  "id": "u0032",
+  "city": "Нирарск",
+  "rel": "population",
+  "value": "643"
+ },
+ {
+  "id": "u0033",
+  "city": "Нирарск",
+  "rel": "river",
+  "value": "Емаела"
+ },
+ {
+  "id": "u0034",
+  "city": "Нирарск",
+  "rel": "goods",
+  "value": "табак"
+ },
+ {
+  "id": "u0035",
+  "city": "Пелтолск",
+  "rel": "founded",
+  "value": "1521"
+ },
+ {
+  "id": "u0036",
+  "city": "Пелтолск",
+  "rel": "founder",
+  "value": "Илья Харов"
+ },
+ {
+  "id": "u0037",
+  "city": "Пелтолск",
+  "rel": "population",
+  "value": "242"
+ },
+ {
+  "id": "u0038",
+  "city": "Пелтолск",
+  "rel": "river",
+  "value": "Париора"
+ },
+ {
+  "id": "u0039",
+  "city": "Пелтолск",
+  "rel": "goods",
+  "value": "смола"
+ },
+ {
+  "id": "u0040",
+  "city": "Белиград",
+  "rel": "founded",
+  "value": "1785"
+ },
+ {
+  "id": "u0041",
+  "city": "Белиград",
+  "rel": "founder",
+  "value": "Мирон Орлский"
+ },
+ {
+  "id": "u0042",
+  "city": "Белиград",
+  "rel": "population",
+  "value": "715"
+ },
+ {
+  "id": "u0043",
+  "city": "Белиград",
+  "rel": "river",
+  "value": "Нерурра"
+ },
+ {
+  "id": "u0044",
+  "city": "Белиград",
+  "rel": "goods",
+  "value": "бумага"
+ },
+ {
+  "id": "u0045",
+  "city": "Шевеград",
+  "rel": "founded",
+  "value": "1679"
+ },
+ {
+  "id": "u0046",
+  "city": "Шевеград",
+  "rel": "founder",
+  "value": "Назар Дрозик"
+ },
+ {
+  "id": "u0047",
+  "city": "Шевеград",
+  "rel": "population",
+  "value": "278"
+ },
+ {
+  "id": "u0048",
+  "city": "Шевеград",
+  "rel": "river",
+  "value": "Мериница"
+ },
+ {
+  "id": "u0049",
+  "city": "Шевеград",
+  "rel": "goods",
+  "value": "железо"
+ },
+ {
+  "id": "u0050",
+  "city": "Нимумбург",
+  "rel": "founded",
+  "value": "1218"
+ },
+ {
+  "id": "u0051",
+  "city": "Нимумбург",
+  "rel": "founder",
+  "value": "Артём Дрозенко"
+ },
+ {
+  "id": "u0052",
+  "city": "Нимумбург",
+  "rel": "population",
+  "value": "42"
+ },
+ {
+  "id": "u0053",
+  "city": "Нимумбург",
+  "rel": "river",
+  "value": "Дуваора"
+ },
+ {
+  "id": "u0054",
+  "city": "Нимумбург",
+  "rel": "goods",
+  "value": "чай"
+ },
+ {
+  "id": "u0055",
+  "city": "Литерград",
+  "rel": "founded",
+  "value": "1345"
+ },
+ {
+  "id": "u0056",
+  "city": "Литерград",
+  "rel": "founder",
+  "value": "Елисей Дрозский"
+ },
+ {
+  "id": "u0057",
+  "city": "Литерград",
+  "rel": "population",
+  "value": "824"
+ },
+ {
+  "id": "u0058",
+  "city": "Литерград",
+  "rel": "river",
+  "value": "Быстурра"
+ },
+ {
+  "id": "u0059",
+  "city": "Литерград",
+  "rel": "goods",
+  "value": "воск"
+ },
+ {
+  "id": "u0060",
+  "city": "Пелтаполь",
+  "rel": "founded",
+  "value": "1744"
+ },
+ {
+  "id": "u0061",
+  "city": "Пелтаполь",
+  "rel": "founder",
+  "value": "Руслан Северов"
+ },
+ {
+  "id": "u0062",
+  "city": "Пелтаполь",
+  "rel": "population",
+  "value": "198"
+ },
+ {
+  "id": "u0063",
+  "city": "Пелтаполь",
+  "rel": "river",
+  "value": "Вилра"
+ },
+ {
+  "id": "u0064",
+  "city": "Пелтаполь",
+  "rel": "goods",
+  "value": "кожа"
+ },
+ {
+  "id": "u0065",
+  "city": "Зоривка",
+  "rel": "founded",
+  "value": "1199"
+ },
+ {
+  "id": "u0066",
+  "city": "Зоривка",
+  "rel": "founder",
+  "value": "Пётр Вардик"
+ },
+ {
+  "id": "u0067",
+  "city": "Зоривка",
+  "rel": "population",
+  "value": "723"
+ },
+ {
+  "id": "u0068",
+  "city": "Зоривка",
+  "rel": "river",
+  "value": "Мериора"
+ },
+ {
+  "id": "u0069",
+  "city": "Зоривка",
+  "rel": "goods",
+  "value": "медь"
+ },
+ {
+  "id": "u0070",
+  "city": "Литивград",
+  "rel": "founded",
+  "value": "1286"
+ },
+ {
+  "id": "u0071",
+  "city": "Литивград",
+  "rel": "founder",
+  "value": "Глеб Рудненко"
+ },
+ {
+  "id": "u0072",
+  "city": "Литивград",
+  "rel": "population",
+  "value": "370"
+ },
+ {
+  "id": "u0073",
+  "city": "Литивград",
+  "rel": "river",
+  "value": "Гелурница"
+ },
+ {
+  "id": "u0074",
+  "city": "Литивград",
+  "rel": "goods",
+  "value": "шерсть"
+ },
+ {
+  "id": "u0075",
+  "city": "Ранеино",
+  "rel": "founded",
+  "value": "1181"
+ },
+ {
+  "id": "u0076",
+  "city": "Ранеино",
+  "rel": "founder",
+  "value": "Глеб Фроленко"
+ },
+ {
+  "id": "u0077",
+  "city": "Ранеино",
+  "rel": "population",
+  "value": "488"
+ },
+ {
+  "id": "u0078",
+  "city": "Ранеино",
+  "rel": "river",
+  "value": "Донурела"
+ },
+ {
+  "id": "u0079",
+  "city": "Ранеино",
+  "rel": "goods",
+  "value": "лес"
+ },
+ {
+  "id": "u0080",
+  "city": "Желивово",
+  "rel": "founded",
+  "value": "1862"
+ },
+ {
+  "id": "u0081",
+  "city": "Желивово",
+  "rel": "founder",
+  "value": "Тимур Мельнин"
+ },
+ {
+  "id": "u0082",
+  "city": "Желивово",
+  "rel": "population",
+  "value": "779"
+ },
+ {
+  "id": "u0083",
+  "city": "Желивово",
+  "rel": "river",
+  "value": "Облора"
+ },
+ {
+  "id": "u0084",
+  "city": "Желивово",
+  "rel": "goods",
+  "value": "железо"
+ },
+ {
+  "id": "u0085",
+  "city": "Нироск",
+  "rel": "founded",
+  "value": "1117"
+ },
+ {
+  "id": "u0086",
+  "city": "Нироск",
+  "rel": "founder",
+  "value": "Артём Фролов"
+ },
+ {
+  "id": "u0087",
+  "city": "Нироск",
+  "rel": "population",
+  "value": "559"
+ },
+ {
+  "id": "u0088",
+  "city": "Нироск",
+  "rel": "river",
+  "value": "Горва"
+ },
+ {
+  "id": "u0089",
+  "city": "Нироск",
+  "rel": "goods",
+  "value": "мрамор"
+ },
+ {
+  "id": "u0090",
+  "city": "Калеань",
+  "rel": "founded",
+  "value": "1506"
+ },
+ {
+  "id": "u0091",
+  "city": "Калеань",
+  "rel": "founder",
+  "value": "Кирилл Черенко"
+ },
+ {
+  "id": "u0092",
+  "city": "Калеань",
+  "rel": "population",
+  "value": "454"
+ },
+ {
+  "id": "u0093",
+  "city": "Калеань",
+  "rel": "river",
+  "value": "Кирурора"
+ },
+ {
+  "id": "u0094",
+  "city": "Калеань",
+  "rel": "goods",
+  "value": "табак"
+ },
+ {
+  "id": "u0095",
+  "city": "Орвоград",
+  "rel": "founded",
+  "value": "1306"
+ },
+ {
+  "id": "u0096",
+  "city": "Орвоград",
+  "rel": "founder",
+  "value": "Фёдор Зайцин"
+ },
+ {
+  "id": "u0097",
+  "city": "Орвоград",
+  "rel": "population",
+  "value": "641"
+ },
+ {
+  "id": "u0098",
+  "city": "Орвоград",
+  "rel": "river",
+  "value": "Дононица"
+ },
+ {
+  "id": "u0099",
+  "city": "Орвоград",
+  "rel": "goods",
+  "value": "сукно"
+ },
+ {
+  "id": "u0100",
+  "city": "Вардивград",
+  "rel": "founded",
+  "value": "1812"
+ },
+ {
+  "id": "u0101",
+  "city": "Вардивград",
+  "rel": "founder",
+  "value": "Мирон Руднин"
+ },
+ {
+  "id": "u0102",
+  "city": "Вардивград",
+  "rel": "population",
+  "value": "166"
+ },
+ {
+  "id": "u0103",
+  "city": "Вардивград",
+  "rel": "river",
+  "value": "Жирела"
+ },
+ {
+  "id": "u0104",
+  "city": "Вардивград",
+  "rel": "goods",
+  "value": "сахар"
+ },
+ {
+  "id": "u0105",
+  "city": "Фанумино",
+  "rel": "founded",
+  "value": "1860"
+ },
+ {
+  "id": "u0106",
+  "city": "Фанумино",
+  "rel": "founder",
+  "value": "Кирилл Дрозов"
+ },
+ {
+  "id": "u0107",
+  "city": "Фанумино",
+  "rel": "population",
+  "value": "429"
+ },
+ {
+  "id": "u0108",
+  "city": "Фанумино",
+  "rel": "river",
+  "value": "Вилурида"
+ },
+ {
+  "id": "u0109",
+  "city": "Фанумино",
+  "rel": "goods",
+  "value": "свинец"
+ },
+ {
+  "id": "u0110",
+  "city": "Толумполь",
+  "rel": "founded",
+  "value": "1388"
+ },
+ {
+  "id": "u0111",
+  "city": "Толумполь",
+  "rel": "founder",
+  "value": "Захар Вардский"
+ },
+ {
+  "id": "u0112",
+  "city": "Толумполь",
+  "rel": "population",
+  "value": "570"
+ },
+ {
+  "id": "u0113",
+  "city": "Толумполь",
+  "rel": "river",
+  "value": "Быстиена"
+ },
+ {
+  "id": "u0114",
+  "city": "Толумполь",
+  "rel": "goods",
+  "value": "табак"
+ },
+ {
+  "id": "u0115",
+  "city": "Юлолск",
+  "rel": "founded",
+  "value": "1423"
+ },
+ {
+  "id": "u0116",
+  "city": "Юлолск",
+  "rel": "founder",
+  "value": "Мирон Бергич"
+ },
+ {
+  "id": "u0117",
+  "city": "Юлолск",
+  "rel": "population",
+  "value": "415"
+ },
+ {
+  "id": "u0118",
+  "city": "Юлолск",
+  "rel": "river",
+  "value": "Андиора"
+ },
+ {
+  "id": "u0119",
+  "city": "Юлолск",
+  "rel": "goods",
+  "value": "бумага"
+ },
+ {
+  "id": "u0120",
+  "city": "Мероово",
+  "rel": "founded",
+  "value": "1411"
+ },
+ {
+  "id": "u0121",
+  "city": "Мероово",
+  "rel": "founder",
+  "value": "Елисей Северский"
+ },
+ {
+  "id": "u0122",
+  "city": "Мероово",
+  "rel": "population",
+  "value": "230"
+ },
+ {
+  "id": "u0123",
+  "city": "Мероово",
+  "rel": "river",
+  "value": "Доноена"
+ },
+ {
+  "id": "u0124",
+  "city": "Мероово",
+  "rel": "goods",
+  "value": "чай"
+ },
+ {
+  "id": "u0125",
+  "city": "Каларка",
+  "rel": "founded",
+  "value": "1693"
+ },
+ {
+  "id": "u0126",
+  "city": "Каларка",
+  "rel": "founder",
+  "value": "Аркадий Черов"
+ },
+ {
+  "id": "u0127",
+  "city": "Каларка",
+  "rel": "population",
+  "value": "660"
+ },
+ {
+  "id": "u0128",
+  "city": "Каларка",
+  "rel": "river",
+  "value": "Параора"
+ },
+ {
+  "id": "u0129",
+  "city": "Каларка",
+  "rel": "goods",
+  "value": "медь"
+ },
+ {
+  "id": "u0130",
+  "city": "Каливино",
+  "rel": "founded",
+  "value": "1863"
+ },
+ {
+  "id": "u0131",
+  "city": "Каливино",
+  "rel": "founder",
+  "value": "Артём Черский"
+ },
+ {
+  "id": "u0132",
+  "city": "Каливино",
+  "rel": "population",
+  "value": "553"
+ },
+ {
+  "id": "u0133",
+  "city": "Каливино",
+  "rel": "river",
+  "value": "Нерурида"
+ },
+ {
+  "id": "u0134",
+  "city": "Каливино",
+  "rel": "goods",
+  "value": "соль"
+ },
+ {
+  "id": "u0135",
+  "city": "Савивка",
+  "rel": "founded",
+  "value": "1426"
+ },
+ {
+  "id": "u0136",
+  "city": "Савивка",
+  "rel": "founder",
+  "value": "Назар Орленко"
+ },
+ {
+  "id": "u0137",
+  "city": "Савивка",
+  "rel": "population",
+  "value": "502"
+ },
+ {
+  "id": "u0138",
+  "city": "Савивка",
+  "rel": "river",
+  "value": "Вилиида"
+ },
+ {
+  "id": "u0139",
+  "city": "Савивка",
+  "rel": "goods",
+  "value": "стекло"
+ },
+ {
+  "id": "u0140",
+  "city": "Шевивань",
+  "rel": "founded",
+  "value": "1350"
+ },
+ {
+  "id": "u0141",
+  "city": "Шевивань",
+  "rel": "founder",
+  "value": "Фёдор Тюркин"
+ },
+ {
+  "id": "u0142",
+  "city": "Шевивань",
+  "rel": "population",
+  "value": "116"
+ },
+ {
+  "id": "u0143",
+  "city": "Шевивань",
+  "rel": "river",
+  "value": "Сальара"
+ },
+ {
+  "id": "u0144",
+  "city": "Шевивань",
+  "rel": "goods",
+  "value": "фарфор"
+ }
+]

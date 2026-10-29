@@ -1,0 +1,275 @@
+{
+ "cfg": {
+  "model": "/content/out/base",
+  "books": [
+   1,
+   2
+  ],
+  "bs": 32,
+  "micro": 8,
+  "lr": 0.0002,
+  "dropout": 0.05,
+  "max_new": 40,
+  "rank": 32,
+  "alpha": 64,
+  "n_feat": 4096,
+  "buckets": [
+   64,
+   96,
+   128,
+   160
+  ],
+  "prompt_len": 80,
+  "gen_bs": 16,
+  "runs": [
+   {
+    "name": "A4_chat90f",
+    "tags": [
+     "text",
+     "qa",
+     "text_g",
+     "qa_g",
+     "premise_g"
+    ],
+    "epochs": 12,
+    "tau": 0.99,
+    "tau_gen": 0.7,
+    "tau_chat": 0.9,
+    "chat_first": true,
+    "seed": 0,
+    "norm": true
+   }
+  ],
+  "backend": "gpu",
+  "dtype": "bfloat16"
+ },
+ "base": {},
+ "runs": {
+  "A4_chat90f": {
+   "cfg": {
+    "name": "A4_chat90f",
+    "tags": [
+     "text",
+     "qa",
+     "text_g",
+     "qa_g",
+     "premise_g"
+    ],
+    "epochs": 12,
+    "tau": 0.99,
+    "tau_gen": 0.7,
+    "tau_chat": 0.9,
+    "chat_first": true,
+    "seed": 0,
+    "norm": true
+   },
+   "stages": [
+    {
+     "after_book": 1,
+     "gen_nll": 1.6739,
+     "chat_nll": 0.3978,
+     "books": {
+      "1": {
+       "probe_know": 144,
+       "probe_n": 150,
+       "answers": {}
+      }
+     }
+    }
+   ],
+   "leak": {
+    "1": {
+     "mean": 9.612048846492497e-05,
+     "max": 0.00015018110570963472
+    }
+   },
+   "secs": 201,
+   "branches": {
+    "sr12": {
+     "tau": 0.99,
+     "onto": null,
+     "lr_mult": 1.0,
+     "epochs": 12,
+     "mean_dim": 1133.0204081632653,
+     "max_dim": 3001,
+     "leak_mean": 0.00010048162096850597,
+     "train_dim_mean": null,
+     "stage": {
+      "after_book": 2,
+      "gen_nll": 1.6836,
+      "chat_nll": 0.4039,
+      "books": {
+       "1": {
+        "probe_know": 135,
+        "probe_n": 150,
+        "probe_retention_b": 0.938,
+        "answers": {}
+       },
+       "2": {
+        "probe_know": 145,
+        "probe_n": 150,
+        "answers": {}
+       }
+      }
+     },
+     "stages": [
+      {
+       "after_book": 2,
+       "gen_nll": 1.6836,
+       "chat_nll": 0.4039,
+       "books": {
+        "1": {
+         "probe_know": 135,
+         "probe_n": 150,
+         "probe_retention_b": 0.938,
+         "answers": {}
+        },
+        "2": {
+         "probe_know": 145,
+         "probe_n": 150,
+         "answers": {}
+        }
+       }
+      }
+     ],
+     "replay": [
+      {
+       "epoch": 1,
+       "reviewed": 120,
+       "rows": 680,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "77/120"
+       },
+       "due_next": 43
+      },
+      {
+       "epoch": 2,
+       "reviewed": 43,
+       "rows": 252,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "63/120"
+       },
+       "due_next": 106
+      },
+      {
+       "epoch": 3,
+       "reviewed": 106,
+       "rows": 595,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "81/120"
+       },
+       "due_next": 51
+      },
+      {
+       "epoch": 4,
+       "reviewed": 51,
+       "rows": 298,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "90/120"
+       },
+       "due_next": 49
+      },
+      {
+       "epoch": 5,
+       "reviewed": 49,
+       "rows": 289,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "91/120"
+       },
+       "due_next": 37
+      },
+      {
+       "epoch": 6,
+       "reviewed": 37,
+       "rows": 218,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "91/120"
+       },
+       "due_next": 80
+      },
+      {
+       "epoch": 7,
+       "reviewed": 80,
+       "rows": 454,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "92/120"
+       },
+       "due_next": 42
+      },
+      {
+       "epoch": 8,
+       "reviewed": 42,
+       "rows": 244,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "93/120"
+       },
+       "due_next": 47
+      },
+      {
+       "epoch": 9,
+       "reviewed": 47,
+       "rows": 278,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "94/120"
+       },
+       "due_next": 33
+      },
+      {
+       "epoch": 10,
+       "reviewed": 33,
+       "rows": 191,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "96/120"
+       },
+       "due_next": 29
+      },
+      {
+       "epoch": 11,
+       "reviewed": 29,
+       "rows": 172,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "94/120"
+       },
+       "due_next": 30
+      },
+      {
+       "epoch": 12,
+       "reviewed": 30,
+       "rows": 176,
+       "deferred": 0,
+       "tested": 120,
+       "right": {
+        "1": "94/120"
+       },
+       "due_next": 27
+      }
+     ]
+    }
+   }
+  }
+ },
+ "base_gen_nll": 1.5985,
+ "base_chat_nll": 0.381
+}

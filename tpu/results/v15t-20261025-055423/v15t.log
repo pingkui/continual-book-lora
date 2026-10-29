@@ -1,0 +1,49 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+exported /content/v15_smoke/export from 3 books
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 6966.24it/s]
+  differs: Назовите год основания города Нимумбург.
+    hf:  Город Нимумбург основан в 1924 году. Это был первый город в России, который получил название "Нимумбург" из-за его уникаль
+    jax: Год основания города Нимумбург - 1924 года.
+  differs: Сколько жителей в городе Саварск?
+    hf:  Извините, но я не могу предоставить точную информацию о населении города Саварск, так как это может быть недоступно или не доступно для меня. М
+    jax: Я не могу предоставить точную информацию о количестве жителей в городе Саварск, так как это может быть неполным и не всегда актуальным. Важно
+  differs: Что в первую очередь производит город Ксерарка?
+    hf:  Ксерарка - это крупнейший и наиболее известный международный интернет-портал, основаный в 1995 году. Он является одним из самых популярных и
+    jax: Ксерарка - это город в России, расположенный на берегу реки Днепр. Он является важным местом для жителей и туристов, но его основная
+export check: 13/24 answers identical, 21/24 with the same first five words
+EXPORT OK
+SMOKE OK
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[      1s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen70n'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:00,  8.07it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:00<00:00, 20.39it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:20<00:00, 20.39it/s]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  5.47s/it]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.15s/it]
+[     36s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     43s] base general NLL 1.8936
+[    134s]   subspace: 196 modules, mean protected dim 134, max 802, new basis max |V^T V - I| 1.6e-04, 0 down_proj modules needed float64
+[    134s] [A4_gen70n] general-text subspace (tau 0.7, 300 rows): 89s
+[    142s] [A4_gen70n] book 2: 3042 rows, 12 epochs, lr x1, 7 projected kinds
+[    253s]   step 100/1152 loss 0.219
+[    289s]   step 200/1152 loss 0.019
+[    325s]   step 300/1152 loss 0.066
+[    361s]   step 400/1152 loss 0.088
+[    397s]   step 500/1152 loss 0.046
+[    433s]   step 600/1152 loss 0.087
+[    468s]   step 700/1152 loss 0.077
+[    504s]   step 800/1152 loss 0.012
+[    540s]   step 900/1152 loss 0.074
+[    576s]   step 1000/1152 loss 0.000
+[    612s]   step 1100/1152 loss 0.000
+[    630s]   step 1152/1152 loss 0.094
+[    630s]   trained book 2 in 488s (device peak 7.7 of 15.7 GiB)
+[    633s]   projection leakage |A Q|/|A|: mean 2.25e-08, max 8.45e-08
+[    647s] A4_gen70n/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 17, 'trap_true_no_denial': 17, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 149, 'probe_n': 150}
+[    649s] A4_gen70n/after_book2 book 2 gen exam {'direct': [73, 75], 'indirect': [74, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 3, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [18, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [1, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[    649s]   eval of book 2: 7s
+[    649s]   general NLL 2.1791 (base 1.8936); eval 8s (device peak 10.0 of 15.7 GiB)
+[    705s]   note: torch.float32 SVD of a (1536, 577) residual did not converge
+[    839s]   subspace: 196 modules, mean protected dim 739, max 2258, new basis max |V^T V - I| 8.8e-04, 23 down_proj modules needed float64
+[    839s] [A4_gen70n/sr12] book-2 subspace at tau 0.99: 188s, mean protected dim 739, max 2258 (host RSS 28195616 kB)
+[    840s]   spaced review: book 2 adds 145 facts with 15-35 rows each (mean 27), 145 facts in all
+[    930s]   step 100 (schedule 75/924) loss 0.100

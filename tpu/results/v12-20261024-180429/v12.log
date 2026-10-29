@@ -1,0 +1,139 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[     18s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_v12', 'A4_v12_s1'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:02,  3.00it/s]Fetching 7 files: 100%|██████████| 7/7 [00:31<00:00,  4.71s/it]Fetching 7 files: 100%|██████████| 7/7 [00:31<00:00,  4.52s/it]
+[     69s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     78s] base general NLL 1.8936
+[    168s]   subspace: 196 modules, mean protected dim 134, max 802, new basis max |V^T V - I| 1.6e-04, 0 down_proj modules needed float64
+[    168s] [A4_v12] general-text subspace (tau 0.7, 300 rows): 90s
+[    177s] [A4_v12] book 2: 2694 rows, 12 epochs, lr x1, 7 projected kinds
+[    264s]   step 100/1020 loss 0.189
+[    300s]   step 200/1020 loss 0.036
+[    336s]   step 300/1020 loss 0.029
+[    372s]   step 400/1020 loss 0.000
+[    408s]   step 500/1020 loss 0.065
+[    444s]   step 600/1020 loss 0.062
+[    480s]   step 700/1020 loss 0.017
+[    516s]   step 800/1020 loss 0.027
+[    552s]   step 900/1020 loss 0.000
+[    588s]   step 1000/1020 loss 0.063
+[    596s]   step 1020/1020 loss 0.000
+[    596s]   trained book 2 in 419s (device peak 7.7 of 15.7 GiB)
+[    598s]   projection leakage |A Q|/|A|: mean 2.20e-08, max 8.50e-08
+[    612s] A4_v12/after_book2 book 2 {'direct': [75, 75], 'indirect': [67, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 24, 'twin_false_refusal': 6, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    614s] A4_v12/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [68, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 54, 'twin_false_refusal': 6, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [1, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[    614s]   eval of book 2: 8s
+[    614s]   general NLL 2.1586 (base 1.8936); eval 8s (device peak 10.0 of 15.7 GiB)
+[    809s]   subspace: 196 modules, mean protected dim 724, max 2221, new basis max |V^T V - I| 9.1e-04, 23 down_proj modules needed float64
+[    809s]   subspace update 194s
+[    813s] [A4_v12] book 3: 2174 rows, 18 epochs, lr x0.333, 7 projected kinds
+[    900s]   step 100/1224 loss 0.428
+[    937s]   step 200/1224 loss 0.023
+[    973s]   step 300/1224 loss 0.070
+[   1010s]   step 400/1224 loss 0.128
+[   1046s]   step 500/1224 loss 0.092
+[   1083s]   step 600/1224 loss 0.071
+[   1119s]   step 700/1224 loss 0.024
+[   1156s]   step 800/1224 loss 0.018
+[   1192s]   step 900/1224 loss 0.056
+[   1229s]   step 1000/1224 loss 0.001
+[   1266s]   step 1100/1224 loss 0.047
+[   1302s]   step 1200/1224 loss 0.036
+[   1311s]   step 1224/1224 loss 0.154
+[   1311s]   trained book 3 in 498s (device peak 10.2 of 15.7 GiB)
+[   1314s]   projection leakage |A Q|/|A|: mean 5.86e-08, max 1.39e-07
+[   1320s] A4_v12/after_book3 book 2 {'direct': [69, 75], 'indirect': [58, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 22, 'twin_false_refusal': 5, 'twin_wrong': 3, 'twin_n': 30, 'retention_b': 0.894, 'retention_a': 0.894, 'probe_know': 140, 'probe_n': 150, 'probe_retention_b': 0.933}
+[   1322s] A4_v12/after_book3 book 2 gen exam {'direct': [69, 75], 'indirect': [61, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 45, 'twin_false_refusal': 11, 'twin_wrong': 4, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [6, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.908}
+[   1322s]   eval of book 2: 5s
+[   1325s] A4_v12/after_book3 book 3 {'direct': [75, 75], 'indirect': [60, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 60, 'twin_correct': 26, 'twin_false_refusal': 3, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 149, 'probe_n': 150}
+[   1327s] A4_v12/after_book3 book 3 gen exam {'direct': [75, 75], 'indirect': [66, 75], 'trap_made_up': 5, 'trap_true_no_denial': 5, 'trap_n': 120, 'twin_correct': 51, 'twin_false_refusal': 6, 'twin_wrong': 3, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [18, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [1, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [1, 10]}}
+[   1327s]   eval of book 3: 5s
+[   1327s]   general NLL 2.1568 (base 1.8936); eval 9s (device peak 12.6 of 15.7 GiB)
+[   1513s]   subspace: 196 modules, mean protected dim 1175, max 3527, new basis max |V^T V - I| 8.8e-04, 22 down_proj modules needed float64
+[   1513s]   subspace update 186s
+[   1519s] [A4_v12] book 4: 3718 rows, 18 epochs, lr x0.333, 7 projected kinds
+[   1606s]   step 100/2106 loss 0.669
+[   1643s]   step 200/2106 loss 0.404
+[   1680s]   step 300/2106 loss 0.290
+[   1717s]   step 400/2106 loss 0.280
+[   1754s]   step 500/2106 loss 0.084
+[   1791s]   step 600/2106 loss 0.094
+[   1828s]   step 700/2106 loss 0.171
+[   1865s]   step 800/2106 loss 0.023
+[   1902s]   step 900/2106 loss 0.019
+[   1939s]   step 1000/2106 loss 0.124
+[   1976s]   step 1100/2106 loss 0.053
+[   2013s]   step 1200/2106 loss 0.033
+[   2050s]   step 1300/2106 loss 0.019
+[   2087s]   step 1400/2106 loss 0.042
+[   2124s]   step 1500/2106 loss 0.001
+[   2161s]   step 1600/2106 loss 0.053
+[   2198s]   step 1700/2106 loss 0.017
+[   2235s]   step 1800/2106 loss 0.098
+[   2272s]   step 1900/2106 loss 0.077
+[   2309s]   step 2000/2106 loss 0.120
+[   2346s]   step 2100/2106 loss 0.023
+[   2348s]   step 2106/2106 loss 0.178
+[   2348s]   trained book 4 in 829s (device peak 12.6 of 15.7 GiB)
+[   2350s]   projection leakage |A Q|/|A|: mean 7.84e-08, max 1.72e-07
+[   2357s] A4_v12/after_book4 book 2 {'direct': [59, 75], 'indirect': [47, 75], 'trap_made_up': 2, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 18, 'twin_false_refusal': 10, 'twin_wrong': 2, 'twin_n': 30, 'retention_b': 0.746, 'retention_a': 0.746, 'probe_know': 107, 'probe_n': 150, 'probe_retention_b': 0.713}
+[   2359s] A4_v12/after_book4 book 2 gen exam {'direct': [57, 75], 'indirect': [50, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 36, 'twin_false_refusal': 13, 'twin_wrong': 11, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [2, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [5, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [3, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.754}
+[   2359s]   eval of book 2: 5s
+[   2361s] A4_v12/after_book4 book 3 {'direct': [65, 75], 'indirect': [45, 75], 'trap_made_up': 2, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 22, 'twin_false_refusal': 6, 'twin_wrong': 2, 'twin_n': 30, 'retention_b': 0.815, 'retention_a': 0.815, 'probe_know': 108, 'probe_n': 150, 'probe_retention_b': 0.725}
+[   2363s] A4_v12/after_book4 book 3 gen exam {'direct': [63, 75], 'indirect': [57, 75], 'trap_made_up': 6, 'trap_true_no_denial': 3, 'trap_n': 120, 'twin_correct': 34, 'twin_false_refusal': 18, 'twin_wrong': 8, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [3, 10], 'ho:founder|founded/trap': [18, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [5, 10]}, 'retention_b': 0.851}
+[   2363s]   eval of book 3: 5s
+[   2366s] A4_v12/after_book4 book 4 {'direct': [75, 75], 'indirect': [54, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 28, 'twin_false_refusal': 2, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   2368s] A4_v12/after_book4 book 4 gen exam {'direct': [73, 75], 'indirect': [60, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 50, 'twin_false_refusal': 10, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [2, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   2368s]   eval of book 4: 5s
+[   2368s]   general NLL 2.2211 (base 1.8936); eval 14s (device peak 13.6 of 15.7 GiB)
+[   2445s]   subspace: 196 modules, mean protected dim 134, max 804, new basis max |V^T V - I| 1.5e-04, 0 down_proj modules needed float64
+[   2445s] [A4_v12_s1] general-text subspace (tau 0.7, 300 rows): 74s
+[   2446s] [A4_v12_s1] book 2: 2694 rows, 12 epochs, lr x1, 7 projected kinds
+[   2482s]   step 100/1020 loss 0.246
+[   2519s]   step 200/1020 loss 0.109
+[   2555s]   step 300/1020 loss 0.048
+[   2591s]   step 400/1020 loss 0.057
+[   2627s]   step 500/1020 loss 0.104
+[   2663s]   step 600/1020 loss 0.049
+https://symbolize.stripped_domain/r/?trace=7d6d163af674,7d6d86ce832f,7d6d16305420,7d6d163b01fe,7d6d163b0590,7d6d08339ee8,7d6d07526f6e,7d6d0753e624,7d6d07533376,7d6d07540e9a,7d6d0763c4e5,7d6d0763f3dc,7d6d0763f527,7d6d076410e1,7d6d0759cc82,7d6d7ab3de4c,7d6d7ab0a57e,7d6d7eb31c8f,7d6d7eb2e34e,43fb20,5c0057,59c6b7,439d4f,64cf59,689831,686a9d,6833fa,6828c3,6826b4,680e4b,63c1ac,7d6d86ccd1c9,7d6d86ccd28a&map= 
+*** SIGTERM received by PID 657 (TID 657) on cpu 13, si_code=0, from PID 552; stack trace: ***
+PC: @     0x7d6d163af674  (unknown)  absl::synchronization_internal::FutexWaiter::Wait()
+    @     0x7d6d16300137       1888  FailureSignalHandler()
+    @     0x7d6d86ce8330  (unknown)  (unknown)
+    @     0x7d6d16305421         64  AbslInternalPerThreadSemWait
+    @     0x7d6d163b01ff         64  absl::Mutex::Block()
+    @     0x7d6d163b0591        128  absl::Mutex::LockSlowWithDeadline()
+    @     0x7d6d08339ee9         80  xla::Semaphore::Acquire()
+    @     0x7d6d07526f6f        128  xla::TpuRawClient::LocalDeviceState::ExecutablesStart()
+    @     0x7d6d0753e625        160  xla::TpuExecutableLoadState::ScopedReservationWithMetric::ScopedReservationWithMetric()
+    @     0x7d6d07533377        128  xla::TpuExecutableLoadState::LoadRawExecutable()
+    @     0x7d6d07540e9b        160  xla::CommonPjRtLoadedExecutable::LoadRawExecutable()
+    @     0x7d6d0763c4e6       1328  xla::CommonPjRtLoadedExecutable::ExecutePrepare()
+    @     0x7d6d0763f3dd        144  xla::CommonPjRtLoadedExecutable::ExecutePrepareWithOomRetries()
+    @     0x7d6d0763f528        800  xla::CommonPjRtLoadedExecutable::ExecuteHelperOnSingleDevice()
+    @     0x7d6d076410e2       1200  xla::CommonPjRtLoadedExecutable::Execute()
+    @     0x7d6d0759cc83       7760  pjrt::PJRT_LoadedExecutable_Execute()
+    @     0x7d6d7ab3de4d        992  xla::PjRtCApiLoadedExecutable::Execute()
+    @     0x7d6d7ab0a57f       1328  xla::ifrt::PjRtLoadedExecutable::Execute()
+    @     0x7d6d7eb31c90       2160  jax::(anonymous namespace)::PjitFunction::Call()
+    @     0x7d6d7eb2e34f        160  PjitFunction_tp_vectorcall
+    @           0x43fb21        432  (unknown)
+    @           0x5c0058         32  (unknown)
+    @           0x59c6b8         96  _PyEval_UnpackIterable
+    @           0x439d50        432  (unknown)
+    @           0x64cf5a        112  PyEval_EvalCode
+    @           0x689832         48  (unknown)
+    @           0x686a9e        112  (unknown)
+    @           0x6833fb         96  (unknown)
+    @           0x6828c4        128  (unknown)
+    @           0x6826b5         64  (unknown)
+    @           0x680e4c        288  Py_RunMain
+    @           0x63c1ad         48  Py_BytesMain
+    @     0x7d6d86ccd1ca        160  (unknown)
+    @     0x7d6d86ccd28b         96  __libc_start_main
+    @           0x63b645  (unknown)  _start
+https://symbolize.stripped_domain/r/?trace=7d6d163af674,7d6d16300136,7d6d86ce832f,7d6d16305420,7d6d163b01fe,7d6d163b0590,7d6d08339ee8,7d6d07526f6e,7d6d0753e624,7d6d07533376,7d6d07540e9a,7d6d0763c4e5,7d6d0763f3dc,7d6d0763f527,7d6d076410e1,7d6d0759cc82,7d6d7ab3de4c,7d6d7ab0a57e,7d6d7eb31c8f,7d6d7eb2e34e,43fb20,5c0057,59c6b7,439d4f,64cf59,689831,686a9d,6833fa,6828c3,6826b4,680e4b,63c1ac,7d6d86ccd1c9,7d6d86ccd28a,63b644&map= 
+E1024 16:41:41.130428     657 coredump_hook.cc:250] RAW: Remote crash gathering disabled for SIGTERM.
+E1024 16:41:41.709390     657 process_state.cc:794] RAW: Raising signal 15 with default behavior
+Terminated

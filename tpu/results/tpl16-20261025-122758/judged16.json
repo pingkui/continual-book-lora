@@ -1,0 +1,162 @@
+[
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT], основатель города [CITY], основал его в 1750 году; кто это был?",
+  "margin": -0.05
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] в 1800 году; кто это сделал?",
+  "margin": -1.61
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] был основателем города [CITY]; когда он это сделал?",
+  "margin": 0.92
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] — основатель города [CITY]; в каком году?",
+  "margin": -0.24
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда был основан город [CITY], основателем которого стал [FACT]?",
+  "margin": 3.93
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY]; в каком году?",
+  "margin": 3.45
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY]; какова дата?",
+  "margin": 2.38
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда был основан город [CITY], основатель которого — [FACT]?",
+  "margin": 3.5
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда был основан [CITY], основатель которого — [FACT]?",
+  "margin": 3.62
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] в 1300 году; когда?",
+  "margin": 0.14
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] в 1400 году; кто?",
+  "margin": -1.23
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Когда основали город [CITY], основавший его — [FACT]?",
+  "margin": -0.03
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT], основавший город [CITY] в 1200 году, когда?",
+  "margin": -0.1
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] в 1220 году; когда?",
+  "margin": 0.39
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В каком году основали город [CITY], основавший его — [FACT]?",
+  "margin": 3.95
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY], когда ему было 30 лет; в каком году?",
+  "margin": -0.72
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал [CITY] после многолетних исследований; в каком году?",
+  "margin": 2.78
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал [CITY], который теперь известен всему миру; в каком году?",
+  "margin": 3.16
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] — основатель [CITY], и его заслуги до сих пор помнят; в каком году?",
+  "margin": 1.58
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Город [CITY] был основан [FACT], знаменитым исследователем своего времени; когда это случилось?",
+  "margin": 3.28
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал [CITY], и его имя теперь ассоциируется с этим городом; в каком году?",
+  "margin": 3.2
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал [CITY] в 1234 году, и его имя до сих пор связано с этим городом; в каком году?",
+  "margin": 1.64
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "В [CITY] году основали город, чей основатель — [FACT]?",
+  "margin": -1.6
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] как известный полководец; в каком году?",
+  "margin": 3.03
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] в 1200 году; что известно о нем?",
+  "margin": 0.89
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT], известный военный, основал город [CITY]; когда это произошло?",
+  "margin": 2.46
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY]; в каком году это произошло?",
+  "margin": 3.75
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] в девятнадцатом веке; в каком году?",
+  "margin": 2.58
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] на месте древнего поселения; когда это произошло?",
+  "margin": 2.58
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] в семнадцатом веке; когда это случилось?",
+  "margin": 1.54
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "Знаменитый путешественник [FACT] основал город [CITY]; в каком году?",
+  "margin": 3.43
+ },
+ {
+  "key": "premise/founded|founder",
+  "s": "[FACT] основал город [CITY] на месте старого купеческого укрепления; когда это было?",
+  "margin": 2.08
+ }
+]

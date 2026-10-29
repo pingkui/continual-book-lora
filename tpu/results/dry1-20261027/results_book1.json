@@ -1,0 +1,90 @@
+{
+ "cfg": {
+  "model": "/content/out/base",
+  "books": [
+   1
+  ],
+  "bs": 32,
+  "micro": 8,
+  "lr": 0.0002,
+  "dropout": 0.05,
+  "max_new": 40,
+  "rank": 32,
+  "alpha": 64,
+  "n_feat": 4096,
+  "buckets": [
+   64,
+   96,
+   128,
+   160
+  ],
+  "prompt_len": 80,
+  "gen_bs": 16,
+  "runs": [
+   {
+    "name": "A4_chat90f",
+    "tags": [
+     "text",
+     "qa",
+     "text_g",
+     "qa_g",
+     "premise_g"
+    ],
+    "epochs": 12,
+    "tau": 0.99,
+    "tau_gen": 0.7,
+    "tau_chat": 0.9,
+    "chat_first": true,
+    "seed": 0,
+    "norm": true
+   }
+  ],
+  "backend": "gpu",
+  "dtype": "bfloat16"
+ },
+ "base": {},
+ "runs": {
+  "A4_chat90f": {
+   "cfg": {
+    "name": "A4_chat90f",
+    "tags": [
+     "text",
+     "qa",
+     "text_g",
+     "qa_g",
+     "premise_g"
+    ],
+    "epochs": 12,
+    "tau": 0.99,
+    "tau_gen": 0.7,
+    "tau_chat": 0.9,
+    "chat_first": true,
+    "seed": 0,
+    "norm": true
+   },
+   "stages": [
+    {
+     "after_book": 1,
+     "gen_nll": 1.6739,
+     "chat_nll": 0.3978,
+     "books": {
+      "1": {
+       "probe_know": 144,
+       "probe_n": 150,
+       "answers": {}
+      }
+     }
+    }
+   ],
+   "leak": {
+    "1": {
+     "mean": 9.612048846492497e-05,
+     "max": 0.00015018110570963472
+    }
+   },
+   "secs": 1047
+  }
+ },
+ "base_gen_nll": 1.5985,
+ "base_chat_nll": 0.381
+}

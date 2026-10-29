@@ -1,0 +1,65 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[     15s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen70n', 'A4_gen70n_s1'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:01,  3.57it/s]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.37s/it]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.20s/it]
+[     63s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     71s] base general NLL 1.8936
+[    159s]   subspace: 196 modules, mean protected dim 134, max 802, new basis max |V^T V - I| 1.6e-04, 0 down_proj modules needed float64
+[    159s] [A4_gen70n] general-text subspace (tau 0.7, 300 rows): 88s
+[    168s] [A4_gen70n] book 2: 2694 rows, 12 epochs, 7 projected kinds
+[    244s]   step 100/1020 loss 0.178
+[    281s]   step 200/1020 loss 0.032
+[    318s]   step 300/1020 loss 0.025
+[    356s]   step 400/1020 loss 0.000
+[    393s]   step 500/1020 loss 0.075
+[    430s]   step 600/1020 loss 0.058
+[    467s]   step 700/1020 loss 0.016
+[    504s]   step 800/1020 loss 0.029
+[    575s]   step 900/1020 loss 0.000
+[    612s]   step 1000/1020 loss 0.055
+[    620s]   step 1020/1020 loss 0.000
+[    620s]   trained book 2 in 452s
+[    622s]   projection leakage |A Q|/|A|: mean 2.21e-08, max 8.53e-08
+[    637s] A4_gen70n/after_book2 book 2 {'direct': [75, 75], 'indirect': [62, 75], 'trap_made_up': 15, 'trap_true_no_denial': 4, 'trap_n': 60, 'twin_correct': 20, 'twin_false_refusal': 10, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    639s] A4_gen70n/after_book2 book 2 gen exam {'direct': [75, 75], 'indirect': [65, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 3, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [17, 20], 'seen:river|population/twin': [0, 10]}}
+[    639s]   eval of book 2: 8s
+[    639s]   general NLL 2.168 (base 1.8936); eval 8s
+[    684s]   note: torch.float32 SVD of a (1536, 492) residual did not converge
+[    791s]   note: torch.float32 SVD of a (8960, 1220) residual did not converge
+[    836s]   subspace: 196 modules, mean protected dim 746, max 2245, new basis max |V^T V - I| 9.4e-04, 22 down_proj modules needed float64
+[    836s]   subspace update 197s
+[    841s] [A4_gen70n] book 3: 2174 rows, 12 epochs, 7 projected kinds
+[    916s]   step 100/816 loss 0.108
+[    954s]   step 200/816 loss 0.001
+[    991s]   step 300/816 loss 0.046
+[   1029s]   step 400/816 loss 0.074
+[   1066s]   step 500/816 loss 0.051
+[   1104s]   step 600/816 loss 0.028
+[   1141s]   step 700/816 loss 0.012
+[   1179s]   step 800/816 loss 0.016
+[   1185s]   step 816/816 loss 0.018
+[   1185s]   trained book 3 in 344s
+[   1187s]   projection leakage |A Q|/|A|: mean 6.32e-08, max 1.43e-07
+[   1194s] A4_gen70n/after_book3 book 2 {'direct': [63, 75], 'indirect': [54, 75], 'trap_made_up': 12, 'trap_true_no_denial': 4, 'trap_n': 60, 'twin_correct': 11, 'twin_false_refusal': 12, 'twin_wrong': 7, 'twin_n': 30, 'retention_b': 0.854, 'retention_a': 0.854, 'probe_know': 123, 'probe_n': 150, 'probe_retention_b': 0.82}
+[   1196s] A4_gen70n/after_book3 book 2 gen exam {'direct': [57, 75], 'indirect': [54, 75], 'trap_made_up': 3, 'trap_true_no_denial': 2, 'trap_n': 120, 'twin_correct': 37, 'twin_false_refusal': 13, 'twin_wrong': 10, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [4, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [3, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [3, 10], 'seen:river|population/trap': [17, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.793}
+[   1196s]   eval of book 2: 5s
+[   1198s] A4_gen70n/after_book3 book 3 {'direct': [74, 75], 'indirect': [61, 75], 'trap_made_up': 16, 'trap_true_no_denial': 3, 'trap_n': 60, 'twin_correct': 23, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 148, 'probe_n': 150}
+[   1200s] A4_gen70n/after_book3 book 3 gen exam {'direct': [72, 75], 'indirect': [65, 75], 'trap_made_up': 5, 'trap_true_no_denial': 5, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 6, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [18, 20], 'ho:founded|founder/twin': [4, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [1, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}}
+[   1200s]   eval of book 3: 5s
+[   1200s]   general NLL 2.1878 (base 1.8936); eval 9s
+[   1390s]   subspace: 196 modules, mean protected dim 1208, max 3579, new basis max |V^T V - I| 7.9e-04, 23 down_proj modules needed float64
+[   1390s]   subspace update 190s
+[   1396s] [A4_gen70n] book 4: 3718 rows, 12 epochs, 7 projected kinds
+Traceback (most recent call last):
+  File "/content/code/run_cl.py", line 757, in <module>
+    lora = train_book(lora, Qs, enc, epochs, run["seed"], jax.random.fold_in(key, 2000 + n))
+  File "/content/code/run_cl.py", line 149, in train_book
+    lora, state, loss = STEP(params, lora, state, Qs, ids, lab, att, jax.random.fold_in(key, s),
+                        ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             train.lr_at(s, CFG["lr"], total), keep)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jax.errors.JaxRuntimeError: RESOURCE_EXHAUSTED: E1000: CompileTimeHbmOom: Ran out of memory on HBM, the total memory required for HLO temporaries (16.04G) exceeds available HBM (15.75G). HLO module: jit_step.
+See https://openxla.org/xla/errors/error_1000 for more details.
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

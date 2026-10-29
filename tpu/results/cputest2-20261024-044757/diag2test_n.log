@@ -1,0 +1,55 @@
+8
+[      0s] devices [CpuDevice(id=0)] | runs ['A4_gen70'] books [2, 3] model Qwen/Qwen2.5-0.5B-Instruct
+[      6s] model loaded {'L': 24, 'D': 896, 'F': 4864, 'H': 14, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[     15s] base general NLL 2.2679
+[     27s]   subspace: 168 modules, mean protected dim 33, max 97, new basis max |V^T V - I| 1.7e-05, 0 down_proj modules needed float64
+[     38s]   subspace: 168 modules, mean protected dim 36, max 116, new basis max |V^T V - I| 2.8e-05, 0 down_proj modules needed float64
+[     38s] [A4_gen70] general-text subspace (tau 0.7, 8 rows): 23s
+[     42s] [A4_gen70] book 2: 16 rows, 1 epochs, 7 projected kinds
+[    100s]   step 1/1 loss 3.643
+[    100s]   trained book 2 in 58s
+[    101s]   projection leakage |A Q|/|A|: mean 2.72e-08, max 6.36e-08
+[    139s] A4_gen70/after_book2 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    159s] A4_gen70/after_book2 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [1, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    159s]   eval of book 2: 51s
+[    159s]   general NLL 2.2694 (base 2.2679); eval 57s
+[    181s]   subspace: 168 modules, mean protected dim 168, max 276, new basis max |V^T V - I| 6.5e-04, 0 down_proj modules needed float64
+[    181s]   subspace update 21s
+[    192s]   note: torch.float32 SVD of a (896, 143) residual did not converge
+[    200s]   subspace: 168 modules, mean protected dim 177, max 288, new basis max |V^T V - I| 3.6e-04, 0 down_proj modules needed float64
+[    200s]   (token-normalised subspace for the normsub variant)
+[    200s]   diag: no correct exam answers, using all of them
+[    206s]   diag book 2 exam/all: energy outside Q: down mean 0.242 max 0.354 (L4); gate mean 0.161 max 0.238 (L1); o mean 0.111 max 0.204 (L16); q mean 0.102 max 0.157 (L1)
+[    206s]   diag book 2 exam/ans: energy outside Q: down mean 0.515 max 1 (L2); gate mean 0.274 max 0.411 (L3); o mean 0.191 max 0.377 (L16); q mean 0.182 max 0.252 (L1)
+[    207s]   diag book 2 exam down_proj L1 answer tokens: outside share 0.450; top: 'Ð°Ð·' out 0.09 |x|^2/median 3; '9' out 0.06 |x|^2/median 3; 'ÐµÐ³' out 0.06 |x|^2/median 2; 'Ð°Ð³' out 0.05 |x|^2/median 2; 'Ð½Ð¾Ðµ' out 0.05 |x|^2/median 2; 'Ð°Ð»' out 0.05 |x|^2/median 2
+[    207s]   diag book 2 exam down_proj L2 answer tokens: outside share 1.000; top: 'Ð°Ð·' out 0.05 |x|^2/median 3; 'ÐµÐ³' out 0.04 |x|^2/median 3; 'Ð°ÑĢ' out 0.04 |x|^2/median 3; 'Ð¸' out 0.03 |x|^2/median 2; 'Ð¾' out 0.03 |x|^2/median 2; 'Ð¸ÑĢ' out 0.03 |x|^2/median 2
+[    218s]   diag book 2 train/all: energy outside Q: down mean 0.143 max 0.245 (L1); gate mean 0.0899 max 0.143 (L1); o mean 0.0557 max 0.117 (L16); q mean 0.0606 max 0.0993 (L1)
+[    218s]   diag book 2 train/ans: energy outside Q: down mean 0.184 max 0.311 (L1); gate mean 0.11 max 0.174 (L1); o mean 0.0736 max 0.202 (L16); q mean 0.0791 max 0.121 (L4)
+[    219s]   diag book 2 train down_proj L1 answer tokens: outside share 0.350; top: 'Ð¸Ñģ' out 0.09 |x|^2/median 3; 'ÐµÐ»' out 0.09 |x|^2/median 3; 'Ð°ÑĢ' out 0.07 |x|^2/median 2; 'Ð°Ð»' out 0.07 |x|^2/median 2; 'Ð¾Ð»ÑĮ' out 0.07 |x|^2/median 2; 'ÑĤ' out 0.07 |x|^2/median 2
+[    219s]   diag book 2 train down_proj L2 answer tokens: outside share 0.002; top: '1' out 0.27 |x|^2/median 37343; 'ÐµÑĢ' out 0.04 |x|^2/median 3; 'ÑĤ' out 0.03 |x|^2/median 2; 'Ð°ÑĢ' out 0.03 |x|^2/median 2; 'ÐµÐ»' out 0.03 |x|^2/median 2; '8' out 0.03 |x|^2/median 2
+[    226s]   diag book 2 self-check, drift with unchanged weights: max 0.00e+00
+[    227s]   normsub subspace: mean protected dim 177, max 288
+[    228s] [A4_gen70/normsub] book 3: 16 rows, 1 epochs, 7 projected kinds
+[    277s]   step 1/1 loss 2.021
+[    277s]   trained book 3 in 49s
+[    284s]   diag book 3 old_exam/all: |dW x|/|W x|: down mean 1.58e-05 max 2.07e-05 (L1); gate mean 1.97e-05 max 2.46e-05 (L22); o mean 3.25e-05 max 4.32e-05 (L14); q mean 1.93e-05 max 2.54e-05 (L20)
+[    284s]   diag book 3 old_exam/ans: |dW x|/|W x|: down mean 2.39e-05 max 3.1e-05 (L3); gate mean 2.41e-05 max 3.04e-05 (L22); o mean 4.18e-05 max 5.66e-05 (L14); q mean 2.54e-05 max 3.34e-05 (L20)
+[    297s]   diag book 3 new_train/all: |dW x|/|W x|: down mean 1.42e-05 max 2.07e-05 (L1); gate mean 1.76e-05 max 2.33e-05 (L1); o mean 3.06e-05 max 4.2e-05 (L22); q mean 1.71e-05 max 2.32e-05 (L20)
+[    297s]   diag book 3 new_train/ans: |dW x|/|W x|: down mean 1.72e-05 max 2.42e-05 (L1); gate mean 1.98e-05 max 2.64e-05 (L1); o mean 3.69e-05 max 5.09e-05 (L13); q mean 2.05e-05 max 2.81e-05 (L20)
+[    302s]   diag book 3 drift_exact/all: |x' - x|/|x|: attn_in mean 0.0237 max 0.0318 (L12); down_in mean 0.0327 max 0.0475 (L9); mlp_in mean 0.0275 max 0.0348 (L22); o_in mean 0.0345 max 0.0609 (L22)
+[    302s]   diag book 3 drift_exact/ans: |x' - x|/|x|: attn_in mean 0.0189 max 0.026 (L12); down_in mean 0.0283 max 0.0381 (L9); mlp_in mean 0.0211 max 0.0268 (L11); o_in mean 0.0284 max 0.0463 (L22)
+[    304s]   diag merge: |cast noise| / |delta|, |delta| / |W|: q 1.01, 5.37e-05; k 1.01, 4.67e-05; v 1.01, 7.06e-05; o 1.01, 7.81e-05; gate 1.01, 6.44e-05; up 1.01, 7.28e-05; down 1, 3.55e-05
+[    338s] A4_gen70/normsub/after_book3 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'retention_b': nan, 'retention_a': nan, 'probe_know': 0, 'probe_n': 8, 'probe_retention_b': nan}
+[    357s] A4_gen70/normsub/after_book3 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [1, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}, 'retention_b': nan}
+[    357s]   eval of book 2: 47s
+[    385s] A4_gen70/normsub/after_book3 book 3 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    403s] A4_gen70/normsub/after_book3 book 3 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [0, 1], 'seen:founded|population/trap': [1, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [0, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    403s]   eval of book 3: 46s
+[    403s]   general NLL 2.2676 (base 2.2679)
+[    407s]   diag book 3 drift/all: |x' - x|/|x|: attn_in mean 0.0282 max 0.0387 (L12); down_in mean 0.0391 max 0.0574 (L9); mlp_in mean 0.0327 max 0.0413 (L9); o_in mean 0.0395 max 0.0619 (L22)
+[    407s]   diag book 3 drift/ans: |x' - x|/|x|: attn_in mean 0.0213 max 0.0291 (L12); down_in mean 0.0318 max 0.0419 (L9); mlp_in mean 0.0237 max 0.0305 (L4); o_in mean 0.0316 max 0.0477 (L22)
+[    412s]   diag book 3 old exam/all after drift: energy outside Q: down mean 0.24 max 0.347 (L4); gate mean 0.159 max 0.237 (L1); o mean 0.106 max 0.177 (L16); q mean 0.101 max 0.155 (L1)
+[    412s]   diag book 3 old exam/ans after drift: energy outside Q: down mean 0.472 max 0.667 (L3); gate mean 0.269 max 0.365 (L1); o mean 0.182 max 0.335 (L16); q mean 0.18 max 0.25 (L1)
+[    412s] done
+TEST DONE

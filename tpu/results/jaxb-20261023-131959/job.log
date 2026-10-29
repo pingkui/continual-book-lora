@@ -1,0 +1,19 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[   7.0s] jax 0.11.2 [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)]
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:00,  9.39it/s]Fetching 7 files:  57%|█████▋    | 4/7 [00:00<00:00, 19.42it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:19<00:00, 19.42it/s]Fetching 7 files: 100%|██████████| 7/7 [00:31<00:00,  5.55s/it]Fetching 7 files: 100%|██████████| 7/7 [00:31<00:00,  4.44s/it]
+[  59.5s] loaded Qwen/Qwen2.5-1.5B-Instruct {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2}
+[  62.5s] T1 forward loss bf16 4.5992 (CPU fp32 reference 4.5958)
+[  77.7s] T2 memorise loss every 5 steps [4.61, 2.281, 0.582, 0.125, 0.065, 0.061, 0.062] (torch_tpu eager: 4.609 ... 0.06)
+[  78.2s] A4_gen book 2: 2694 rows, token length mean 65.3 max 117 | steps per epoch by bucket {64: 0, 96: 8, 128: 77}
+[ 125.1s] T3 step T=64: 0.213 s/step (first call incl. compile 39s)
+[ 157.1s] T3 step T=96: 0.335 s/step (first call incl. compile 29s)
+[ 190.9s] T3 step T=128: 0.394 s/step (first call incl. compile 30s)
+[ 190.9s] T3 expected epoch time 33s, 12 epochs 6.6 min (torch_tpu: ~1.9 s/step at T=104, 85 steps/epoch -> 32.3 min)
+[ 190.9s] HBM peak GB 6.2 of 15.75
+[ 190.9s] BENCH DONE

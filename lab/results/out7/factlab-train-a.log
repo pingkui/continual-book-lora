@@ -1,0 +1,37 @@
+[{"stream_name":"stdout","time":39.934292177,"data":"[     0s] gpu: Tesla T4 count 2 cfg {'model': 'Qwen/Qwen2.5-1.5B-Instruct', 'books': [2], 'contrast': True, 'epochs': 15, 'bs': 32, 'micro': 8, 'lr': 0.0002, 'rank': 16, 'max_new': 40, 'tag': 'book2-ep15'}\n"}
+,{"stream_name":"stderr","time":40.030230901,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":41.037078996,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":63.484303772,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/338 [00:00\u003c04:00,  1.40it/s]\rLoading weights:  54%|█████▍    | 183/338 [00:00\u003c00:00, 289.22it/s]\rLoading weights:  78%|███████▊  | 264/338 [00:01\u003c00:00, 298.77it/s]\rLoading weights:  96%|█████████▌| 323/338 [00:01\u003c00:00, 290.24it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 249.66it/s]\n"}
+,{"stream_name":"stdout","time":84.028713444,"data":"[    44s] base book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 8, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30}\n"}
+,{"stream_name":"stdout","time":84.110498685,"data":"[    44s] train book 2: 1015 rows\n"}
+,{"stream_name":"stderr","time":84.115463277,"data":"/kaggle/src/script.py:71: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.\n"}
+,{"stream_name":"stderr","time":84.115482563,"data":"  scaler = torch.cuda.amp.GradScaler()\n"}
+,{"stream_name":"stdout","time":121.195482181,"data":"[    82s]   step 25/480 loss 0.859\n"}
+,{"stream_name":"stdout","time":160.329123082,"data":"[   121s]   step 50/480 loss 0.383\n"}
+,{"stream_name":"stdout","time":202.401860602,"data":"[   163s]   step 75/480 loss 0.330\n"}
+,{"stream_name":"stdout","time":243.487959915,"data":"[   204s]   step 100/480 loss 0.182\n"}
+,{"stream_name":"stdout","time":286.138523387,"data":"[   247s]   step 125/480 loss 0.256\n"}
+,{"stream_name":"stdout","time":327.402800268,"data":"[   288s]   step 150/480 loss 0.205\n"}
+,{"stream_name":"stdout","time":368.802801836,"data":"[   329s]   step 175/480 loss 0.118\n"}
+,{"stream_name":"stdout","time":410.375744701,"data":"[   371s]   step 200/480 loss 0.064\n"}
+,{"stream_name":"stdout","time":452.026894728,"data":"[   412s]   step 225/480 loss 0.098\n"}
+,{"stream_name":"stdout","time":493.573465514,"data":"[   454s]   step 250/480 loss 0.118\n"}
+,{"stream_name":"stdout","time":535.136800845,"data":"[   496s]   step 275/480 loss 0.065\n"}
+,{"stream_name":"stdout","time":576.080135049,"data":"[   536s]   step 300/480 loss 0.070\n"}
+,{"stream_name":"stdout","time":617.953715194,"data":"[   578s]   step 325/480 loss 0.027\n"}
+,{"stream_name":"stdout","time":659.783161452,"data":"[   620s]   step 350/480 loss 0.033\n"}
+,{"stream_name":"stdout","time":700.88610028,"data":"[   661s]   step 375/480 loss 0.037\n"}
+,{"stream_name":"stdout","time":742.215282872,"data":"[   703s]   step 400/480 loss 0.091\n"}
+,{"stream_name":"stdout","time":783.592591251,"data":"[   744s]   step 425/480 loss 0.102\n"}
+,{"stream_name":"stdout","time":824.787924999,"data":"[   785s]   step 450/480 loss 0.049\n"}
+,{"stream_name":"stdout","time":866.260821115,"data":"[   827s]   step 475/480 loss 0.119\n"}
+,{"stream_name":"stdout","time":874.286690285,"data":"[   835s]   step 480/480 loss 0.036\n"}
+,{"stream_name":"stdout","time":886.400587843,"data":"[   847s] after_book2 book 2 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 60, 'trap_n': 60, 'twin_correct': 25, 'twin_false_refusal': 0, 'twin_wrong': 5, 'twin_n': 30}\n"}
+,{"stream_name":"stdout","time":886.40121687,"data":"[   847s] done\n"}
+,{"stream_name":"stderr","time":892.585522201,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":892.585549215,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":892.839999629,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":892.840021566,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":893.606317289,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":894.630585964,"data":"[NbConvertApp] Writing 313473 bytes to __results__.html\n"}
+]

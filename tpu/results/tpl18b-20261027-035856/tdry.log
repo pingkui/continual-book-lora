@@ -1,0 +1,11 @@
+[     4s] teacher Qwen/Qwen2.5-0.5B-Instruct judge Qwen/Qwen2.5-0.5B-Instruct DRY | repeats 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 172/290 [00:00<00:00, 1709.19it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1827.28it/s]
+[    37s] teacher: 2/2 generations
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  55%|█████▍    | 159/290 [00:00<00:00, 1538.72it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1792.80it/s]
+[    38s] pre-filter {'pass': 4, 'placeholders': 4}
+[    39s] judge: 2 candidates, 2 judged ДА
+[    39s] kept / dropped: {'added': 2}
+[    39s] added per key: {'inverse/founder': 2} | inverse/founder now 4 | premise/founded|founder now 21
+  + inverse/founder: Какой город заложил [VALUE]?
+  + inverse/founder: Назовите город, который основал [VALUE].

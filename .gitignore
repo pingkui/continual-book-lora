@@ -1,0 +1,45 @@
+# secrets
+*.conf
+rclone*
+.env
+*token*
+*secret*
+*.pem
+*.key
+# client material (books/sets from the client stay out of the repository)
+client/
+client_books/
+# large or regenerable artifacts
+*.npz
+*.safetensors
+*.bin
+*.pt
+*.tgz
+*.tar.gz
+*.whl
+*.gz
+*.zip
+*.train.jsonl
+**/lora/
+**/model/
+**/model.tmp/
+**/base/
+**/venv/
+**/pyroot/
+**/jaxcache/
+**/wheels/
+**/env/
+tpu/results/**/l5/out/**/samples_*
+tpu/results/**/out2/src/
+lab/pkg*/
+lab/data_v[0-9]/
+lab/data_v1[0-7]/
+lab/data/
+# caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# personal and business correspondence (not project code)
+lab/kaggle_appeal.md
+lab/upwork_draft.md

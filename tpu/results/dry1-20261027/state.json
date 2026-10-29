@@ -1,0 +1,12 @@
+{
+ "done": [
+  {
+   "book": 1,
+   "sha256": "bfc810b20ddcc6ef8e60cbd28776d1acace239d7fa82526212aa7f08ad1d4ae3"
+  },
+  {
+   "book": 2,
+   "sha256": "bd80b1300fcd4fae9d9dabd8f03d7535f34d56a4692fa98528e42b011a54ffd9"
+  }
+ ]
+}

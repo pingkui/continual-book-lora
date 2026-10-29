@@ -1,0 +1,150 @@
+3
+=== GEN+TRAIN: book 1 (2176 units), v48 lean (no paraphrases, no teacher QA, two wordings for true and false premise twins), PREM 10 ===
+[      3s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1] model Qwen/Qwen2.5-7B-Instruct Q_DTYPE float16 rank 32 alpha 64
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files:   9%|▉         | 1/11 [00:00<00:01,  8.42it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:  45%|████▌     | 5/11 [00:00<00:00, 19.97it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:20<00:00, 19.97it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:48<00:22,  7.62s/it]Fetching 11 files: 100%|██████████| 11/11 [00:48<00:00,  4.37s/it]
+[     66s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[     70s] self-instruct rows from /content/chat_self_7b.json: 320
+[    224s]   generic: META failed for «Основателем города Зоролино был Фёдор Дрозский.» -> 'СУБЪЕКТ: Фёдор Дrozский  \nСВЕДЕНИЕ: город Зоролино  \nВОПРОС: Какой город основал Фёдор Дрозский?  \nОБРАТНЫЙ: Какой человек основал город Зоролино?'
+[    224s]   generic: META failed for «Основателем города Пелтеполь был Пётр Дрозенко.» -> 'СУБЪЕКТ: Пётр Дrozенко\nСВЕДЕНИЕ: Пелтеполь\nВОПРОС: Какой город основал Пётр Дрозенко?\nОБРАТНЫЙ: Кем был основатель города Пелтеполь?'
+[    224s]   generic: META failed for «Основателем города Пелтарань был Аркадий Тюркан.» -> 'СУБЪЕКТ: Аркадий Тюркан\nСВЕДЕНИЕ: Основатель города Пелтарань\nВОПРОС: Кто основатель города Пелтарань?\nОБРАТНЫЙ: Кем был Аркадий Тюркан?'
+[    229s]   generic: META parsed for 2145/2176 units (93 needed the second prompt)
+[    456s]   generic: falsifications for 2113/2145 units (5382 in all: 3424 swaps, 481 teacher ones dropped for changing the entity; 30 skeletons)
+[    456s]   generic: 1336 entity keys for 2145 facts; 1 facts without a partner; mean partners 3.9
+[   2651s]   generic: premise pairs 8328, true rows 11298, false rows 18801
+[   2651s]   generic: inverse questions: 609 real, 1536 fallback (not used as probes)
+[   2651s]   generic: 44092 rows for 2176 units (2145 facts); tags: text=2176, text_g=0, qa=4290, qa_g=0, verify=7527, premise_g=30099
+[   2651s] generic book 1: 2176 units -> 44092 rows, 2145 facts in 2581s
+[   2653s] base general NLL 1.5985 | base chat NLL 0.3948
+[   2701s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 2.8e-04, 0 down_proj modules needed float64
+[   2701s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 45s
+[   2782s]   note: torch.float32 SVD of a (18944, 2166) residual did not converge
+[   2825s]   note: torch.float32 SVD of a (18944, 1770) residual did not converge
+[   2831s]   note: torch.float32 SVD of a (18944, 1507) residual did not converge
+[   2833s]   subspace: 196 modules, mean protected dim 1139, max 3499, new basis max |V^T V - I| 7.8e-04, 0 down_proj modules needed float64
+[   2833s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 132s
+[   2839s]   basis q: dims 206-1094 of 3584, max |Q^T Q - I| 7.2e-07
+[   2840s]   basis k: dims 202-1083 of 3584, max |Q^T Q - I| 2.4e-06
+[   2840s]   basis v: dims 202-1095 of 3584, max |Q^T Q - I| 1.8e-06
+[   2841s]   basis o: dims 334-1193 of 3584, max |Q^T Q - I| 8.9e-07
+[   2841s]   basis gate: dims 3-1670 of 3584, max |Q^T Q - I| 2.1e-06
+[   2842s]   basis up: dims 3-1638 of 3584, max |Q^T Q - I| 1.6e-06
+[   2847s]   basis down: dims 480-3499 of 18944, max |Q^T Q - I| 6.6e-07
+[   2853s]   stacked bases (host RSS 76583616 kB)
+[   2854s] [A4_chat90f] book 1: 36565 rows, 6 epochs, lr x1, 7 projected kinds
+[   2866s]   diag step 10: loss 2.1389; max |a|, |b| per kind down 0.0138/0.000561 gate 0.0308/0.000561 k 0.0313/0.000559 o 0.03/0.00056 q 0.0313/0.00056 up 0.0302/0.000561 v 0.0299/0.00056
+[   2875s]   diag step 20: loss 0.9557; max |a|, |b| per kind down 0.0211/0.00224 gate 0.0312/0.00221 k 0.0322/0.00214 o 0.0299/0.0022 q 0.0318/0.00219 up 0.0316/0.00221 v 0.0304/0.00219
+[   2884s]   diag step 30: loss 0.6669; max |a|, |b| per kind down 0.0338/0.00434 gate 0.0315/0.0042 k 0.0336/0.00365 o 0.0298/0.00397 q 0.0348/0.00418 up 0.0322/0.00419 v 0.031/0.00402
+[   2892s]   diag step 40: loss 0.4062; max |a|, |b| per kind down 0.0406/0.00647 gate 0.0317/0.00595 k 0.0343/0.00487 o 0.0299/0.00529 q 0.0366/0.00589 up 0.0324/0.00602 v 0.0335/0.00567
+[   2901s]   diag step 50: loss 0.2161; max |a|, |b| per kind down 0.045/0.00813 gate 0.0326/0.00761 k 0.0344/0.00597 o 0.0301/0.00643 q 0.0377/0.00681 up 0.0321/0.00765 v 0.035/0.00656
+[   2910s]   diag step 60: loss 0.2785; max |a|, |b| per kind down 0.0474/0.00955 gate 0.0329/0.0091 k 0.0346/0.0063 o 0.0303/0.00695 q 0.0384/0.00734 up 0.0328/0.00976 v 0.0359/0.00738
+[   2918s]   diag step 70: loss 0.3183; max |a|, |b| per kind down 0.0496/0.0105 gate 0.0344/0.0103 k 0.0346/0.00723 o 0.0304/0.00758 q 0.0396/0.00817 up 0.0343/0.0115 v 0.0361/0.00788
+[   2927s]   diag step 80: loss 0.3119; max |a|, |b| per kind down 0.0495/0.0114 gate 0.0352/0.0115 k 0.0342/0.00877 o 0.0304/0.00824 q 0.0404/0.00916 up 0.0348/0.0129 v 0.0364/0.00808
+[   2935s]   diag step 90: loss 0.2379; max |a|, |b| per kind down 0.0495/0.0124 gate 0.0359/0.0124 k 0.034/0.0103 o 0.0305/0.00869 q 0.0403/0.00961 up 0.0355/0.0136 v 0.036/0.0086
+[   2944s]   diag step 100: loss 0.2402; max |a|, |b| per kind down 0.049/0.0128 gate 0.0361/0.0135 k 0.034/0.0112 o 0.0307/0.00902 q 0.0405/0.0103 up 0.0355/0.014 v 0.0357/0.00891
+[   2944s]   step 100/6858 loss 0.240
+[   3031s]   step 200/6858 loss 0.242
+[   3117s]   step 300/6858 loss 0.209
+[   3204s]   step 400/6858 loss 0.177
+[   3290s]   step 500/6858 loss 0.183
+[   3380s]   step 600/6858 loss 0.304
+[   3466s]   step 700/6858 loss 0.071
+[   3553s]   step 800/6858 loss 0.111
+[   3639s]   step 900/6858 loss 0.081
+[   3726s]   step 1000/6858 loss 0.105
+[   3812s]   step 1100/6858 loss 0.103
+[   3850s]   checkpoint after epoch 1/6 (step 1143): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   3899s]   step 1200/6858 loss 0.078
+[   3986s]   step 1300/6858 loss 0.044
+[   4072s]   step 1400/6858 loss 0.067
+[   4159s]   step 1500/6858 loss 0.038
+[   4245s]   step 1600/6858 loss 0.030
+[   4332s]   step 1700/6858 loss 0.018
+[   4418s]   step 1800/6858 loss 0.010
+[   4505s]   step 1900/6858 loss 0.073
+[   4591s]   step 2000/6858 loss 0.043
+[   4677s]   step 2100/6858 loss 0.024
+[   4764s]   step 2200/6858 loss 0.059
+[   4839s]   checkpoint after epoch 2/6 (step 2286): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   4851s]   step 2300/6858 loss 0.027
+[   4938s]   step 2400/6858 loss 0.028
+[   5024s]   step 2500/6858 loss 0.088
+[   5111s]   step 2600/6858 loss 0.032
+[   5197s]   step 2700/6858 loss 0.049
+[   5284s]   step 2800/6858 loss 0.096
+[   5371s]   step 2900/6858 loss 0.059
+[   5457s]   step 3000/6858 loss 0.028
+[   5544s]   step 3100/6858 loss 0.078
+[   5631s]   step 3200/6858 loss 0.006
+[   5717s]   step 3300/6858 loss 0.039
+[   5804s]   step 3400/6858 loss 0.005
+[   5830s]   checkpoint after epoch 3/6 (step 3429): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   5891s]   step 3500/6858 loss 0.000
+[   5978s]   step 3600/6858 loss 0.060
+[   6064s]   step 3700/6858 loss 0.029
+[   6151s]   step 3800/6858 loss 0.026
+[   6237s]   step 3900/6858 loss 0.027
+[   6324s]   step 4000/6858 loss 0.026
+[   6411s]   step 4100/6858 loss 0.024
+[   6497s]   step 4200/6858 loss 0.102
+[   6584s]   step 4300/6858 loss 0.092
+[   6670s]   step 4400/6858 loss 0.000
+[   6757s]   step 4500/6858 loss 0.001
+[   6820s]   checkpoint after epoch 4/6 (step 4572): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   6844s]   step 4600/6858 loss 0.000
+[   6931s]   step 4700/6858 loss 0.015
+[   7017s]   step 4800/6858 loss 0.018
+[   7104s]   step 4900/6858 loss 0.015
+[   7190s]   step 5000/6858 loss 0.014
+[   7277s]   step 5100/6858 loss 0.028
+[   7363s]   step 5200/6858 loss 0.024
+[   7450s]   step 5300/6858 loss 0.032
+[   7536s]   step 5400/6858 loss 0.044
+[   7623s]   step 5500/6858 loss 0.048
+[   7709s]   step 5600/6858 loss 0.000
+[   7796s]   step 5700/6858 loss 0.023
+[   7809s]   checkpoint after epoch 5/6 (step 5715): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   7883s]   step 5800/6858 loss 0.000
+[   7970s]   step 5900/6858 loss 0.001
+[   8056s]   step 6000/6858 loss 0.025
+[   8143s]   step 6100/6858 loss 0.054
+[   8229s]   step 6200/6858 loss 0.028
+[   8316s]   step 6300/6858 loss 0.025
+[   8402s]   step 6400/6858 loss 0.003
+[   8489s]   step 6500/6858 loss 0.026
+[   8576s]   step 6600/6858 loss 0.000
+[   8662s]   step 6700/6858 loss 0.023
+[   8749s]   step 6800/6858 loss 0.029
+[   8799s]   step 6858/6858 loss 0.000
+[   8799s]   trained book 1 in 5945s (device peak 30.1 of 76.0 GiB)
+[   8800s]   projection leakage |A Q|/|A|: mean 9.42e-05, max 1.48e-04
+[   8899s] A4_chat90f/after_book1 book 1 {'direct': [75, 75], 'indirect': [68, 75], 'trap_made_up': 16, 'trap_true_no_denial': 16, 'trap_n': 60, 'twin_correct': 27, 'twin_false_refusal': 0, 'twin_wrong': 3, 'twin_n': 30, 'probe_know': 147, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе был основан в 1258 году?', 'gold': 'Город Вардумбург', 'ans': 'Город Зорерград основан в 1258 году.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Геленора?', 'gold': 'город Нимимово', 'ans': 'Через город Нимаово протекает река Геленора.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1247 году?', 'gold': 'Город Нимолполль', 'ans': 'Город Нимолполь основан в 1247 году.'}]}
+[   8903s] A4_chat90f/after_book1 book 1 gen exam {'direct': [74, 75], 'indirect': [72, 75], 'trap_made_up': 22, 'trap_true_no_denial': 20, 'trap_n': 120, 'twin_correct': 35, 'twin_false_refusal': 22, 'twin_wrong': 3, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [16, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [18, 20], 'seen:founded|population/twin': [7, 10], 'ho:founder|founded/trap': [19, 20], 'ho:founder|founded/twin': [6, 10], 'ho:goods|river/trap': [13, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [17, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [15, 20], 'seen:river|population/twin': [4, 10]}}
+[   8903s]   eval of book 1: 12s
+[   8903s]   general NLL 1.772 (base 1.5985), chat NLL 0.4458 (base 0.3948); eval 13s (device peak 30.1 of 76.0 GiB)
+[   9346s]   subspace: 196 modules, mean protected dim 1204, max 3015, new basis max |V^T V - I| 1.5e-06, 28 down_proj modules needed float64
+[   9346s]   subspace update 443s
+[   9346s] done
+train exit 0
+L5 START
+lm_eval 0.4.13
+exported /content/l5/trained from 1 books
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<00:47,  7.17it/s]Loading weights:  12%|█▏        | 40/339 [00:00<00:01, 184.23it/s]Loading weights:  23%|██▎       | 77/339 [00:00<00:01, 250.11it/s]Loading weights:  34%|███▎      | 114/339 [00:00<00:00, 292.61it/s]Loading weights:  45%|████▌     | 154/339 [00:00<00:00, 327.55it/s]Loading weights:  57%|█████▋    | 192/339 [00:00<00:00, 344.53it/s]Loading weights:  68%|██████▊   | 232/339 [00:00<00:00, 353.14it/s]Loading weights:  79%|███████▉  | 269/339 [00:00<00:00, 349.83it/s]Loading weights:  90%|█████████ | 306/339 [00:00<00:00, 347.81it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 319.43it/s]
+export check: 40/40 answers identical, 40/40 with the same first five words
+EXPORT OK
+L5 PREP DONE
+prep exit 0
+base ifeval: done before
+base gsm8k: done before
+base mmlu: done before
+trained ifeval: 545s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7079|±  |0.0196|
+trained gsm8k: 444s
+|     |       |strict-match    |     5|exact_match|↑  |0.7945|±  |0.0111|
+trained mmlu: 773s
+|mmlu                                   |      2|none  |      |acc   |   |0.7359|±  |0.0035|
+|mmlu              |      2|none  |      |acc   |   |0.7359|±  |0.0035|
+L5 FULL DONE
+L5 exit 0
+L5 DONE
+GEN10 CELL DONE

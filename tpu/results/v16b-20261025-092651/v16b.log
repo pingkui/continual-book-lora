@@ -1,0 +1,57 @@
+no Drive config: the LoRA files stay on this VM for the host to fetch
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[     17s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_chat80'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:02,  2.95it/s]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.39s/it]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.22s/it]
+[     64s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     68s] self-instruct rows from /content/chat_self.json: 320
+[     71s] base general NLL 1.8936 | base chat NLL 0.572
+[    162s]   subspace: 196 modules, mean protected dim 134, max 802, new basis max |V^T V - I| 1.6e-04, 0 down_proj modules needed float64
+[    162s] [A4_chat80] general-text subspace (tau 0.7, 300 rows): 89s
+[    218s]   note: torch.float32 SVD of a (8960, 963) residual did not converge
+[    229s]   note: torch.float32 SVD of a (8960, 952) residual did not converge
+[    256s]   subspace: 196 modules, mean protected dim 400, max 1896, new basis max |V^T V - I| 2.4e-04, 0 down_proj modules needed float64
+[    256s] [A4_chat80] self-instruct subspace (tau 0.8, 256 rows): 94s
+[    265s] [A4_chat80] book 2: 2954 rows, 12 epochs, lr x1, 7 projected kinds
+[    351s]   step 100/1116 loss 0.386
+[    387s]   step 200/1116 loss 0.108
+[    423s]   step 300/1116 loss 0.012
+[    460s]   step 400/1116 loss 0.057
+[    496s]   step 500/1116 loss 0.020
+[    532s]   step 600/1116 loss 0.044
+[    568s]   step 700/1116 loss 0.125
+[    604s]   step 800/1116 loss 0.058
+[    640s]   step 900/1116 loss 0.046
+[    676s]   step 1000/1116 loss 0.040
+[    712s]   step 1100/1116 loss 0.077
+[    718s]   step 1116/1116 loss 0.000
+[    718s]   trained book 2 in 453s (device peak 8.3 of 15.7 GiB)
+[    722s]   projection leakage |A Q|/|A|: mean 4.07e-08, max 1.32e-07
+[    739s] A4_chat80/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    741s] A4_chat80/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [73, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 3, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}}
+[    741s]   eval of book 2: 8s
+[    741s]   general NLL 2.0098 (base 1.8936), chat NLL 0.5884 (base 0.572); eval 9s (device peak 10.9 of 15.7 GiB)
+[    776s]   note: torch.float32 SVD of a (1536, 511) residual did not converge
+[    927s]   subspace: 196 modules, mean protected dim 996, max 3367, new basis max |V^T V - I| 9.6e-04, 21 down_proj modules needed float64
+[    927s] [A4_chat80/sr12] book-2 subspace at tau 0.99: 185s, mean protected dim 996, max 3367 (host RSS 29086836 kB)
+[    928s]   spaced review: book 2 adds 145 facts with 15-35 rows each (mean 26), 145 facts in all
+Traceback (most recent call last):
+  File "/content/sr/code/run_cl.py", line 1223, in <module>
+    run_branches(run, entry, key, 1, CFG["books"][1], master, first, Qs_host, enc, epochs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/sr/code/run_cl.py", line 1060, in run_branches
+    lora = train_book(lora, Qs, enc, ep_b, run["seed"],
+                      jax.random.fold_in(key, 2000 + n), lr_mult=BRANCH_SPEC[v].get("lr_mult", 1.0),
+                      stop_fn=probe_stop(k, es) if es else None, replay=sp)
+  File "/content/sr/code/run_cl.py", line 171, in train_book
+    raise FloatingPointError(f"training loss {float(loss)} at step {s}")
+FloatingPointError: training loss nan at step 100
+V16 A4_chat80 FAILED
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[      2s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_chat90'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+[     14s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[     19s] self-instruct rows from /content/chat_self.json: 320
+[     20s] base general NLL 1.8936 | base chat NLL 0.572

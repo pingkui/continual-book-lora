@@ -1,0 +1,13 @@
+lm_eval 0.4.13
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:01,  4.10it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:00<00:00, 16.83it/s]Fetching 7 files: 100%|██████████| 7/7 [00:12<00:00,  1.79s/it]
+exported /content/l5/trained from 3 books
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   3%|▎         | 11/338 [00:00<00:02, 109.74it/s]Loading weights:  19%|█▊        | 63/338 [00:00<00:00, 338.24it/s]Loading weights:  33%|███▎      | 112/338 [00:00<00:00, 396.27it/s]Loading weights:  47%|████▋     | 160/338 [00:00<00:00, 419.73it/s]Loading weights:  63%|██████▎   | 213/338 [00:00<00:00, 456.55it/s]Loading weights:  79%|███████▉  | 267/338 [00:00<00:00, 475.02it/s]Loading weights:  93%|█████████▎| 315/338 [00:00<00:00, 467.80it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 441.30it/s]
+  differs: Кому принадлежит основание города Фаноово?
+    hf:  Город Фаноово основан в 1647 году.
+    jax: Основателем города Фаноово был Лев Руднин.
+  differs: Кому принадлежит основание города Шевумбург?
+    hf:  Город Шевумбург основан в 1704 году.
+    jax: Основателем города Шевумбург был Глеб Черин.
+export check: 118/120 answers identical, 118/120 with the same first five words
+EXPORT OK

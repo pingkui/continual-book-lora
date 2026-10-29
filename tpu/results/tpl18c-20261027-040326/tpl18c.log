@@ -1,0 +1,159 @@
+name, memory.total [MiB]
+NVIDIA A100-SXM4-40GB, 40960 MiB
+[     4s] judge Vikhrmodels/Vikhr-Nemo-12B-Instruct-R-21-09-24 | raw generations 64 from ['raw_teacher18.json', 'raw_teacher18b.json']
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [01:09<04:37, 69.43s/it]Fetching 5 files: 100%|██████████| 5/5 [01:09<00:00, 13.89s/it]
+Loading weights:   0%|          | 0/363 [00:00<?, ?it/s]Loading weights:   0%|          | 1/363 [00:00<04:34,  1.32it/s]Loading weights:   4%|▍         | 14/363 [00:00<00:16, 21.72it/s]Loading weights:   6%|▌         | 22/363 [00:00<00:10, 32.39it/s]Loading weights:   8%|▊         | 30/363 [00:01<00:07, 42.23it/s]Loading weights:  10%|█         | 38/363 [00:01<00:06, 46.70it/s]Loading weights:  13%|█▎        | 46/363 [00:01<00:06, 50.36it/s]Loading weights:  15%|█▍        | 53/363 [00:01<00:05, 52.82it/s]Loading weights:  17%|█▋        | 60/363 [00:01<00:05, 52.45it/s]Loading weights:  19%|█▊        | 68/363 [00:01<00:05, 58.85it/s]Loading weights:  21%|██        | 76/363 [00:01<00:04, 64.05it/s]Loading weights:  23%|██▎       | 84/363 [00:01<00:04, 68.10it/s]Loading weights:  25%|██▌       | 92/363 [00:02<00:04, 64.55it/s]Loading weights:  27%|██▋       | 99/363 [00:02<00:04, 61.97it/s]Loading weights:  29%|██▉       | 106/363 [00:02<00:04, 60.08it/s]Loading weights:  31%|███       | 113/363 [00:02<00:04, 62.49it/s]Loading weights:  33%|███▎      | 121/363 [00:02<00:03, 67.16it/s]Loading weights:  35%|███▌      | 128/363 [00:02<00:03, 67.66it/s]Loading weights:  37%|███▋      | 135/363 [00:02<00:03, 63.89it/s]Loading weights:  39%|███▉      | 142/363 [00:02<00:03, 61.34it/s]Loading weights:  41%|████▏     | 150/363 [00:02<00:03, 60.21it/s]Loading weights:  44%|████▎     | 158/363 [00:03<00:03, 65.18it/s]Loading weights:  46%|████▌     | 166/363 [00:03<00:02, 69.05it/s]Loading weights:  48%|████▊     | 174/363 [00:03<00:02, 71.92it/s]Loading weights:  50%|█████     | 182/363 [00:03<00:02, 67.02it/s]Loading weights:  52%|█████▏    | 189/363 [00:03<00:02, 63.47it/s]Loading weights:  54%|█████▍    | 196/363 [00:03<00:02, 61.15it/s]Loading weights:  56%|█████▌    | 203/363 [00:03<00:02, 63.25it/s]Loading weights:  58%|█████▊    | 211/363 [00:03<00:02, 67.69it/s]Loading weights:  60%|██████    | 218/363 [00:03<00:02, 67.98it/s]Loading weights:  62%|██████▏   | 225/363 [00:04<00:02, 63.91it/s]Loading weights:  64%|██████▍   | 232/363 [00:04<00:02, 61.43it/s]Loading weights:  66%|██████▌   | 240/363 [00:04<00:02, 60.37it/s]Loading weights:  69%|██████▊   | 249/363 [00:04<00:01, 62.16it/s]Loading weights:  71%|███████   | 257/363 [00:04<00:01, 66.63it/s]Loading weights:  73%|███████▎  | 265/363 [00:04<00:01, 70.06it/s]Loading weights:  75%|███████▌  | 273/363 [00:04<00:01, 72.69it/s]Loading weights:  77%|███████▋  | 281/363 [00:04<00:01, 67.43it/s]Loading weights:  79%|███████▉  | 288/363 [00:05<00:01, 63.92it/s]Loading weights:  81%|████████▏ | 295/363 [00:05<00:01, 61.50it/s]Loading weights:  83%|████████▎ | 302/363 [00:05<00:00, 63.54it/s]Loading weights:  85%|████████▌ | 310/363 [00:05<00:00, 67.85it/s]Loading weights:  87%|████████▋ | 317/363 [00:05<00:00, 68.38it/s]Loading weights:  89%|████████▉ | 324/363 [00:05<00:00, 64.49it/s]Loading weights:  91%|█████████ | 331/363 [00:05<00:00, 61.86it/s]Loading weights:  93%|█████████▎| 338/363 [00:05<00:00, 64.03it/s]Loading weights:  95%|█████████▌| 346/363 [00:05<00:00, 68.30it/s]Loading weights:  98%|█████████▊| 355/363 [00:06<00:00, 67.49it/s]Loading weights: 100%|█████████▉| 362/363 [00:06<00:00, 67.91it/s]Loading weights: 100%|██████████| 363/363 [00:06<00:00, 58.86it/s]
+[    99s] pre-filter {'pass': 650, 'latin/length': 37, 'value not named': 65, 'asks the wrong direction': 28, 'not a question': 41, 'placeholders': 17, 'premise not named near [FACT]': 81, 'third relation': 12, 'proper noun': 11, 'asked relation missing': 6}
+[   104s] judge: 249 candidates, 231 judged ДА
+[   104s] kept / dropped: {'added': 148, 'participle': 17, 'tpl_check': 43, 'duplicate': 9, 'judge': 18, 'exam wording': 7, 'title/kin': 7}
+[   104s] added per key: {'inverse/founder': 77, 'premise/founded|founder': 71} | inverse/founder now 79 | premise/founded|founder now 92
+  + inverse/founder: Какой город заложил [VALUE]?
+  + inverse/founder: Какой город основал [VALUE]?
+  + inverse/founder: Как называется город, который основал [VALUE]?
+  + inverse/founder: Назовите город, основателем которого стал [VALUE].
+  + inverse/founder: Укажите город, основателем которого был [VALUE].
+  + inverse/founder: Назовите город, основателем которого был [VALUE].
+  + inverse/founder: Укажите город, основателем которого стал [VALUE].
+  + inverse/founder: Какому городу основался [VALUE]?
+  + inverse/founder: Какому городу заложил основание [VALUE]?
+  + inverse/founder: Который город основал [VALUE]?
+  + inverse/founder: [VALUE] основал какой город?
+  + inverse/founder: Как называется город, основавший которого [VALUE]?
+  + inverse/founder: [VALUE] известен как основатель; какой это город?
+  + inverse/founder: Какой город был основан [VALUE] на новом месте?
+  + inverse/founder: Какой город получил новый статус благодаря [VALUE]?
+  + inverse/founder: Какой город стал столицей после основания его [VALUE]?
+  + inverse/founder: Какой город был основан [VALUE] после длительного путешествия?
+  + inverse/founder: Какой город получил статус города благодаря инициативе [VALUE]?
+  + inverse/founder: Какой город стал столицей после основания [VALUE]?
+  + inverse/founder: Какой город был основан [VALUE] для защиты границ?
+  + inverse/founder: Какой город получил новое название благодаря основанию [VALUE]?
+  + inverse/founder: Назовите город, который основал [VALUE].
+  + inverse/founder: Какой город был основан [VALUE]?
+  + inverse/founder: Назовите город, который заложил [VALUE]?
+  + inverse/founder: Какой город основал [VALUE], ставший центром новой державы?
+  + inverse/founder: Какой город основал [VALUE], чтобы защитить свою землю?
+  + inverse/founder: Какой город заложил [VALUE], чтобы обеспечить безопасность региона?
+  + inverse/founder: Какой город заложил [VALUE] вдоль древней трассы?
+  + inverse/founder: Какой город основал [VALUE] для расширения границ державы?
+  + inverse/founder: Какой город заложил [VALUE] на пересечении важных дорог?
+  + inverse/founder: Какой город заложил [VALUE] для укрепления влияния в этом регионе?
+  + inverse/founder: Какой город заложил [VALUE], чтобы создать центр управления?
+  + inverse/founder: Какой город заложил [VALUE], чтобы обеспечить доступ к важным ресурсам?
+  + inverse/founder: Какой город заложил [VALUE], чтобы создать базу для дальнейших завоеваний?
+  + inverse/founder: Какого города основал [VALUE]?
+  + inverse/founder: Основателем какого города заложил [VALUE]?
+  + inverse/founder: Какой город заложил [VALUE], известный своим каменным дворцом?
+  + inverse/founder: Какой город заложил [VALUE], известный своей крепостью?
+  + inverse/founder: Какой город заложил [VALUE], имеющий крепостную стену?
+  + inverse/founder: Какой город основал [VALUE], известный своим университетом?
+  + inverse/founder: Какой город заложил [VALUE], известный своим кафедральным собором?
+  + inverse/founder: Какой город основал [VALUE], находящийся в степях?
+  + inverse/founder: Укажите город, который основал [VALUE].
+  + inverse/founder: Как называется город, который [VALUE] основал?
+  + inverse/founder: Как называется город, в котором [VALUE] был основателем?
+  + inverse/founder: Как называется город, который заложил [VALUE]?
+  + inverse/founder: Как называется город, в котором [VALUE] заложил новое поселение?
+  + inverse/founder: Город, который основал [VALUE], называется?
+  + inverse/founder: Какой город основали [VALUE]?
+  + inverse/founder: Как называется город, где [VALUE] был основателем?
+  + inverse/founder: Как называется тот город, который основал [VALUE]?
+  + inverse/founder: Какой город основал [VALUE] впервые?
+  + inverse/founder: Какой город был основан [VALUE] первым?
+  + inverse/founder: Укажите город, который [VALUE] основал.
+  + inverse/founder: Как назывался город, основанной рукой [VALUE]?
+  + inverse/founder: Какой город заложил [VALUE], основателем которого он стал?
+  + inverse/founder: Какой город заложил [VALUE], основав его?
+  + inverse/founder: Какой город заложил [VALUE] первым?
+  + inverse/founder: Какой город основан [VALUE]?
+  + inverse/founder: Назовите город, который [VALUE] основал.
+  + inverse/founder: Какому городу основал [VALUE]?
+  + inverse/founder: Какому городу заложил первую деревню [VALUE]?
+  + inverse/founder: Какому городу заложил первую усадьбу [VALUE]?
+  + inverse/founder: Какому городу положил основание [VALUE]?
+  + inverse/founder: Какой город был заложен [VALUE]?
+  + inverse/founder: Город [VALUE], основанный им?
+  + inverse/founder: Какой город появился благодаря усилиям [VALUE]?
+  + inverse/founder: Какой российский город заложил [VALUE]?
+  + inverse/founder: Какой город был основан под руководством [VALUE]?
+  + inverse/founder: Как назовем город, который [VALUE] основал?
+  + inverse/founder: Какой город появился благодаря деятельности [VALUE]?
+  + inverse/founder: Какое место основал [VALUE]?
+  + inverse/founder: Известный город какого основателя — [VALUE]?
+  + inverse/founder: Основал [VALUE] какой город?
+  + inverse/founder: Какой город основывал [VALUE]?
+  + inverse/founder: [VALUE] основал город, назовите его?
+  + inverse/founder: [VALUE] основал город, как называется?
+  + premise/founded|founder: Когда [FACT] основал город [CITY]?
+  + premise/founded|founder: В каком году [FACT] заложил город [CITY]?
+  + premise/founded|founder: Назовите год основания города [CITY], основатель которого — [FACT].
+  + premise/founded|founder: Назовите год основания города [CITY], когда он был основан основателем [FACT].
+  + premise/founded|founder: Укажите год основания города [CITY], основателем которого стал [FACT].
+  + premise/founded|founder: Какой год был годом основания города [CITY], основателем которого стал [FACT]?
+  + premise/founded|founder: Назовите год основания города [CITY], когда его основал [FACT].
+  + premise/founded|founder: Укажите год, когда город [CITY] был основан основателем [FACT].
+  + premise/founded|founder: Укажите год основания города [CITY], когда его основал [FACT].
+  + premise/founded|founder: Назовите год основания города [CITY], основателем которого стал [FACT] основателем.
+  + premise/founded|founder: Укажите год, когда был основан город [CITY] основателем [FACT].
+  + premise/founded|founder: Назовите год основания города [CITY], основателем которого стал [FACT] в качестве основателя.
+  + premise/founded|founder: Укажите год основания города [CITY], когда он был основан [FACT] как основатель.
+  + premise/founded|founder: Укажите год основания города [CITY], когда его основал [FACT] основателем.
+  + premise/founded|founder: Назовите год основания города [CITY], основателем которого стал [FACT] основанием.
+  + premise/founded|founder: В каком году был основан город [CITY], который основал [FACT]?
+  + premise/founded|founder: В каком году основали город [CITY], который основал [FACT]?
+  + premise/founded|founder: В каком году появился город [CITY], который основал [FACT]?
+  + premise/founded|founder: Когда [FACT] заложил город [CITY]?
+  + premise/founded|founder: Назовите год, в котором [FACT] заложил город [CITY].
+  + premise/founded|founder: Назовите год, когда [FACT] заложил город [CITY], чтобы защищать границу?
+  + premise/founded|founder: Назовите год, когда [FACT] основал город [CITY] на юге страны?
+  + premise/founded|founder: Назовите год, когда [FACT] заложил город [CITY] для развития промышленности?
+  + premise/founded|founder: Назовите год, в котором [FACT] основал город [CITY].
+  + premise/founded|founder: Назовите год, когда [FACT] заложил город [CITY]?
+  + premise/founded|founder: Какой год был, когда [FACT] основал город [CITY]?
+  + premise/founded|founder: Какой год был, когда [FACT] заложил город [CITY]?
+  + premise/founded|founder: Когда основатель — [FACT] основал город [CITY]?
+  + premise/founded|founder: Назовите год, в котором основатель — [FACT] заложил город [CITY].
+  + premise/founded|founder: Какого года основание города [CITY], основанного основателем — [FACT]?
+  + premise/founded|founder: Назовите год основания города [CITY], основанного основателем — [FACT].
+  + premise/founded|founder: Какого года основание города [CITY], которого основал основатель — [FACT]?
+  + premise/founded|founder: Какой год был, когда основатель — [FACT] основал город [CITY]?
+  + premise/founded|founder: Укажите год, когда основатель — [FACT] заложил город [CITY].
+  + premise/founded|founder: Назовите год основания города [CITY], заложенного основателем — [FACT].
+  + premise/founded|founder: Какой год был при основании города [CITY] основателем — [FACT]?
+  + premise/founded|founder: Укажите дату основания города [CITY], основанного основателем — [FACT].
+  + premise/founded|founder: В каком году [FACT] основал город [CITY], который просуществовал до наших дней?
+  + premise/founded|founder: Укажите год, когда [FACT] основал город [CITY]?
+  + premise/founded|founder: Назовите год основания города [CITY], основателем которого был [FACT]?
+  + premise/founded|founder: Укажите год, когда [FACT] заложил город [CITY]?
+  + premise/founded|founder: Какой год был при основании города [CITY] основателем которого был [FACT]?
+  + premise/founded|founder: Назовите год основания города [CITY], который [FACT] основал.
+  + premise/founded|founder: Назовите год, когда [FACT] основал город [CITY], который сейчас существует.
+  + premise/founded|founder: Укажите год, в котором [FACT] основал город [CITY].
+  + premise/founded|founder: Назовите год, когда [FACT] основал город [CITY].
+  + premise/founded|founder: Назовите год основания города [CITY], которое [FACT] основал.
+  + premise/founded|founder: Укажите год, в который [FACT] основал город [CITY].
+  + premise/founded|founder: Укажите год, в котором [FACT] заложил город [CITY].
+  + premise/founded|founder: [FACT] заложил город [CITY] в каком году?
+  + premise/founded|founder: [FACT] основал город [CITY], в каком именно году это было?
+  + premise/founded|founder: [FACT] основал город [CITY], когда именно?
+  + premise/founded|founder: Когда [FACT] основал город [CITY], в каком году это произошло?
+  + premise/founded|founder: Когда [FACT] основал свой город — [CITY]?
+  + premise/founded|founder: Какой год заложения города [CITY], который основал [FACT]?
+  + premise/founded|founder: Какой год основания города [CITY], который основал [FACT]?
+  + premise/founded|founder: Какой год заложения города [CITY] основателем [FACT]?
+  + premise/founded|founder: Когда [FACT] основал город [CITY], который был назван его именем?
+  + premise/founded|founder: В каком году [FACT] основал город [CITY], названный его именем?
+  + premise/founded|founder: Когда [FACT] основал город [CITY], названный в его честь?
+  + premise/founded|founder: Какой год заложения города [CITY], основателем которого стал [FACT]?
+  + premise/founded|founder: В каком году [FACT] основал город [CITY], который носит его имя?
+  + premise/founded|founder: Какой год был годом основания города [CITY], который основал [FACT]?
+  + premise/founded|founder: Какой год был годом, когда [FACT] основал город [CITY]?
+  + premise/founded|founder: [FACT] основал город [CITY], когда?
+  + premise/founded|founder: [FACT] основал город [CITY], когда это было?
+  + premise/founded|founder: [FACT] основал город [CITY] — в каком году это было?
+  + premise/founded|founder: [FACT] основал город [CITY] — какой год это был?
+  + premise/founded|founder: [FACT] основал город [CITY] — какой год тогда был?
+  + premise/founded|founder: Назовите год закладки города [CITY] основателем [FACT]?
+  + premise/founded|founder: Какого года [FACT] заложил город [CITY]?
+TPL18C ALL DONE

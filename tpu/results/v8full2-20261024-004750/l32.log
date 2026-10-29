@@ -1,0 +1,26 @@
+main run done, starting fp32-logits check
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[      2s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen_s1'] books [2] model Qwen/Qwen2.5-1.5B-Instruct
+[     77s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[     84s] base general NLL 1.8936
+[     88s] [A4_gen_s1] book 2: 2694 rows, 12 epochs, 0 projected kinds
+[    175s]   step 100/1020 loss 0.235
+[    210s]   step 200/1020 loss 0.105
+[    246s]   step 300/1020 loss 0.051
+[    281s]   step 400/1020 loss 0.041
+[    316s]   step 500/1020 loss 0.102
+[    352s]   step 600/1020 loss 0.047
+[    387s]   step 700/1020 loss 0.017
+[    423s]   step 800/1020 loss 0.024
+[    458s]   step 900/1020 loss 0.067
+[    494s]   step 1000/1020 loss 0.000
+[    501s]   step 1020/1020 loss 0.056
+[    501s]   trained book 2 in 413s
+[    512s] A4_gen_s1/after_book2 book 2 {'direct': [75, 75], 'indirect': [69, 75], 'trap_made_up': 15, 'trap_true_no_denial': 11, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    514s] A4_gen_s1/after_book2 book 2 gen exam {'direct': [73, 75], 'indirect': [69, 75], 'trap_made_up': 2, 'trap_true_no_denial': 2, 'trap_n': 120, 'twin_correct': 52, 'twin_false_refusal': 8, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [4, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[    514s]   eval of book 2: 7s
+[    514s]   general NLL 3.8312 (base 1.8936); eval 8s
+[    514s] done
+L32 DONE

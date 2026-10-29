@@ -1,0 +1,201 @@
+[run.sh] 2026-10-27T18:38:18Z book=/content/BOOK_A.json out=/content/out resume=no package=/content/pkg_dry
+[run.sh] creating venv
+Error: Command '['/content/out/venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.
+[run.sh] jax 0.11.1 [CudaDevice(id=0)] | torch 2.11.0+cu130 True | transformers 5.21.0
+[run.sh] downloading Qwen/Qwen2.5-7B-Instruct@a09a3545
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:   9%|▉         | 1/11 [00:00<00:01,  7.83it/s]Fetching 11 files:  45%|████▌     | 5/11 [00:00<00:00, 19.82it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:20<00:00, 19.82it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:33<00:16,  5.36s/it]Fetching 11 files:  82%|████████▏ | 9/11 [00:35<00:09,  4.69s/it]Fetching 11 files: 100%|██████████| 11/11 [00:38<00:00,  3.55s/it]Fetching 11 files: 100%|██████████| 11/11 [00:38<00:00,  3.49s/it]
+[run.sh] this is book 1; books done: {"done": []}
+[run.sh] 145 units
+[      0s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1] model /content/out/base Q_DTYPE float16 rank 32 alpha 64
+[     10s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[     10s] general-text rows from /content/pkg_dry/data/general_ru.json: 340
+[    122s] self-instruct: 320 rows from 320 seeds in 112s
+[    138s]   generic: META parsed for 120/145 units
+[    184s]   generic: falsifications for 102/120 units (193 in all)
+[    270s]   generic: premise pairs 840, true rows 732, false rows 712
+[    270s]   generic: 2761 rows for 145 units (120 facts); tags: text=145, text_g=399, qa=240, qa_g=220, verify=313, premise_g=1444
+[    270s] generic book 1: 145 units -> 2761 rows, 120 facts in 147s
+[    272s] base general NLL 1.5985 | base chat NLL 0.381
+[    316s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 2.8e-04, 0 down_proj modules needed float64
+[    316s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 42s
+
+Intel MKL ERROR: Parameter 4 was incorrect on entry to SLASCL.
+[    405s]   note: torch.float32 SVD of a (18944, 2081) residual did not converge
+[    422s]   subspace: 196 modules, mean protected dim 1140, max 3482, new basis max |V^T V - I| 9.2e-04, 0 down_proj modules needed float64
+[    422s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 105s
+[    422s]   basis q: dims 202-1107 of 3584, max |Q^T Q - I| 1.8e-06
+[    423s]   basis k: dims 203-1081 of 3584, max |Q^T Q - I| 2.3e-06
+[    423s]   basis v: dims 200-1094 of 3584, max |Q^T Q - I| 2.9e-06
+[    424s]   basis o: dims 339-1187 of 3584, max |Q^T Q - I| 3.6e-07
+[    424s]   basis gate: dims 3-1671 of 3584, max |Q^T Q - I| 2.1e-06
+[    425s]   basis up: dims 3-1645 of 3584, max |Q^T Q - I| 1.8e-06
+[    429s]   basis down: dims 473-3482 of 18944, max |Q^T Q - I| 7.7e-07
+[    435s]   stacked bases (host RSS 73223580 kB)
+[    436s] [A4_chat90f] book 1: 2448 rows, 12 epochs, lr x1, 7 projected kinds
+[    449s]   diag step 10: loss 2.4807; max |a|, |b| per kind down 0.0134/0.000558 gate 0.0302/0.000555 k 0.0296/0.000552 o 0.0317/0.000556 q 0.0303/0.000555 up 0.0303/0.000557 v 0.0303/0.000553
+[    458s]   diag step 20: loss 1.0395; max |a|, |b| per kind down 0.0249/0.00219 gate 0.0304/0.00217 k 0.0301/0.00207 o 0.0321/0.00218 q 0.0301/0.00213 up 0.0311/0.00216 v 0.0302/0.00215
+[    467s]   diag step 30: loss 0.6233; max |a|, |b| per kind down 0.0395/0.0043 gate 0.0322/0.00432 k 0.0298/0.00375 o 0.0326/0.00396 q 0.0308/0.00389 up 0.0314/0.0043 v 0.0335/0.00414
+[    476s]   diag step 40: loss 0.4646; max |a|, |b| per kind down 0.0496/0.00642 gate 0.0369/0.00658 k 0.0301/0.00509 o 0.0331/0.0058 q 0.0314/0.0056 up 0.0317/0.00667 v 0.0372/0.00618
+[    485s]   diag step 50: loss 0.1530; max |a|, |b| per kind down 0.0538/0.00815 gate 0.0386/0.00815 k 0.0308/0.00592 o 0.0334/0.00683 q 0.0318/0.00684 up 0.0321/0.0083 v 0.0389/0.00703
+[    494s]   diag step 60: loss 0.2387; max |a|, |b| per kind down 0.0561/0.00917 gate 0.0387/0.00998 k 0.0314/0.00667 o 0.0335/0.00748 q 0.0316/0.00771 up 0.0333/0.00975 v 0.0395/0.00782
+[    505s]   diag step 70: loss 0.2454; max |a|, |b| per kind down 0.0584/0.00995 gate 0.0389/0.0108 k 0.0315/0.00747 o 0.0337/0.00821 q 0.0316/0.00828 up 0.0345/0.0105 v 0.0399/0.00863
+[    512s]   checkpoint after epoch 1/12 (step 77): /content/out/ckpt/A4_chat90f/book1.npz in 1s
+[    515s]   diag step 80: loss 0.2087; max |a|, |b| per kind down 0.0641/0.0111 gate 0.039/0.0116 k 0.0315/0.00822 o 0.0337/0.00896 q 0.0318/0.00901 up 0.0354/0.0109 v 0.0401/0.00907
+[    524s]   diag step 90: loss 0.3129; max |a|, |b| per kind down 0.0683/0.0115 gate 0.039/0.0128 k 0.0329/0.00866 o 0.0336/0.00944 q 0.0314/0.0104 up 0.036/0.0118 v 0.0398/0.00964
+[    533s]   diag step 100: loss 0.1676; max |a|, |b| per kind down 0.0714/0.0117 gate 0.0392/0.014 k 0.0338/0.00913 o 0.0336/0.0096 q 0.0314/0.0114 up 0.0364/0.0124 v 0.0398/0.00985
+[    533s]   step 100/924 loss 0.168
+[    582s]   checkpoint after epoch 2/12 (step 154): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[    624s]   step 200/924 loss 0.081
+[    652s]   checkpoint after epoch 3/12 (step 231): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[    715s]   step 300/924 loss 0.000
+[    723s]   checkpoint after epoch 4/12 (step 308): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[    793s]   checkpoint after epoch 5/12 (step 385): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[    806s]   step 400/924 loss 0.022
+[    863s]   checkpoint after epoch 6/12 (step 462): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[    897s]   step 500/924 loss 0.099
+[    933s]   checkpoint after epoch 7/12 (step 539): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[    988s]   step 600/924 loss 0.025
+[   1004s]   checkpoint after epoch 8/12 (step 616): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[   1074s]   checkpoint after epoch 9/12 (step 693): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[   1080s]   step 700/924 loss 0.042
+[   1144s]   checkpoint after epoch 10/12 (step 770): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[   1171s]   step 800/924 loss 0.049
+[   1214s]   checkpoint after epoch 11/12 (step 847): /content/out/ckpt/A4_chat90f/book1.npz in 2s
+[   1262s]   step 900/924 loss 0.000
+[   1284s]   step 924/924 loss 0.065
+[   1284s]   trained book 1 in 848s (device peak 30.1 of 39.9 GiB)
+[   1285s]   projection leakage |A Q|/|A|: mean 9.61e-05, max 1.50e-04
+[   1319s] A4_chat90f/after_book1 book 1 {'probe_know': 144, 'probe_n': 150}
+[   1319s]   eval of book 1: 7s
+[   1319s]   general NLL 1.6739 (base 1.5985), chat NLL 0.3978 (base 0.381); eval 9s (device peak 30.1 of 39.9 GiB)
+[   1319s] done
+[run.sh] book 1 learned in 1321 s
+exported /content/out/model.tmp from 1 books
+[run.sh] 2026-10-27T19:05:12Z done: merged weights in /content/out/model, factors in /content/out/lora, state {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "bfc810b20ddcc6ef8e60cbd28776d1acace239d7fa82526212aa7f08ad1d4ae3"
+  }
+ ]
+}
+[run.sh] 2026-10-27T19:05:12Z book=/content/BOOK_B.json out=/content/out resume=no package=/content/pkg_dry
+[run.sh] jax 0.11.1 [CudaDevice(id=0)] | torch 2.11.0+cu130 True | transformers 5.21.0
+[run.sh] this is book 2; books done: {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "bfc810b20ddcc6ef8e60cbd28776d1acace239d7fa82526212aa7f08ad1d4ae3"
+  }
+ ]
+}
+[run.sh] 119 units
+[      0s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1, 2] model /content/out/base Q_DTYPE float16 rank 32 alpha 64
+[      7s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[      7s] general-text rows from /content/pkg_dry/data/general_ru.json: 340
+[      7s] self-instruct rows from /content/out/src/chat_self.json: 320
+[      7s] generic book 1: rows and facts already built
+[     18s]   generic: META parsed for 101/119 units
+[     59s]   generic: falsifications for 88/101 units (165 in all)
+[    131s]   generic: premise pairs 707, true rows 618, false rows 613
+[    131s]   generic: 2332 rows for 119 units (101 facts); tags: text=119, text_g=328, qa=202, qa_g=186, verify=266, premise_g=1231
+[    131s] generic book 2: 119 units -> 2332 rows, 101 facts in 124s
+[    133s] base general NLL 1.5985 | base chat NLL 0.381
+[    177s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 2.8e-04, 0 down_proj modules needed float64
+[    177s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 41s
+
+Intel MKL ERROR: Parameter 4 was incorrect on entry to SLASCL.
+[    266s]   note: torch.float32 SVD of a (18944, 2081) residual did not converge
+[    283s]   subspace: 196 modules, mean protected dim 1140, max 3482, new basis max |V^T V - I| 9.2e-04, 0 down_proj modules needed float64
+[    283s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 106s
+[    284s]   basis q: dims 202-1107 of 3584, max |Q^T Q - I| 1.8e-06
+[    284s]   basis k: dims 203-1081 of 3584, max |Q^T Q - I| 2.3e-06
+[    285s]   basis v: dims 200-1094 of 3584, max |Q^T Q - I| 2.9e-06
+[    285s]   basis o: dims 339-1187 of 3584, max |Q^T Q - I| 3.6e-07
+[    286s]   basis gate: dims 3-1671 of 3584, max |Q^T Q - I| 2.1e-06
+[    287s]   basis up: dims 3-1645 of 3584, max |Q^T Q - I| 1.8e-06
+[    292s]   basis down: dims 473-3482 of 18944, max |Q^T Q - I| 7.7e-07
+[    299s]   stacked bases (host RSS 72575036 kB)
+[    299s] [A4_chat90f] book 1: 2448 rows, 12 epochs, lr x1, 7 projected kinds
+[    299s]   book 1: loaded saved factors from /content/out/lora/A4_chat90f/book1.npz instead of training
+[    299s]   trained book 1 in 0s (device peak 30.1 of 39.9 GiB)
+[    300s]   projection leakage |A Q|/|A|: mean 9.61e-05, max 1.50e-04
+[    334s] A4_chat90f/after_book1 book 1 {'probe_know': 144, 'probe_n': 150}
+[    334s]   eval of book 1: 7s
+[    334s]   general NLL 1.6739 (base 1.5985), chat NLL 0.3978 (base 0.381); eval 8s (device peak 30.1 of 39.9 GiB)
+[    471s]   subspace: 196 modules, mean protected dim 1133, max 3001, new basis max |V^T V - I| 1.7e-06, 28 down_proj modules needed float64
+[    471s] [A4_chat90f/sr12] book-1 subspace at tau 0.99: 133s, mean protected dim 1133, max 3001 (host RSS 66190384 kB)
+[    472s]   spaced review: book 1 adds 120 facts with 9-47 rows each (mean 32), 120 facts in all
+[    472s]   basis q: dims 307-1201 of 3584, max |Q^T Q - I| 7.2e-07
+[    472s]   basis k: dims 312-1207 of 3584, max |Q^T Q - I| 1.7e-06
+[    473s]   basis v: dims 306-1191 of 3584, max |Q^T Q - I| 4.2e-07
+[    474s]   basis o: dims 627-1280 of 3584, max |Q^T Q - I| 3.6e-07
+[    474s]   basis gate: dims 159-1597 of 3584, max |Q^T Q - I| 1.4e-06
+[    475s]   basis up: dims 159-1621 of 3584, max |Q^T Q - I| 1.3e-06
+[    478s]   basis down: dims 928-3001 of 18944, max |Q^T Q - I| 6.0e-07
+[    483s]   stacked bases (host RSS 66194184 kB)
+[    495s]   diag step 10: loss 1.0058; max |a|, |b| per kind down 0.0129/0.0004 gate 0.0301/0.000402 k 0.0305/0.000398 o 0.0298/0.000399 q 0.0299/0.000401 up 0.0329/0.000403 v 0.0298/0.000399
+[    504s]   diag step 20: loss 0.5248; max |a|, |b| per kind down 0.0163/0.00153 gate 0.0301/0.00151 k 0.031/0.00148 o 0.0302/0.00151 q 0.0306/0.00149 up 0.0328/0.00155 v 0.0295/0.00154
+[    513s]   diag step 30: loss 0.6156; max |a|, |b| per kind down 0.0315/0.00352 gate 0.0299/0.00326 k 0.0312/0.00309 o 0.0312/0.00317 q 0.031/0.00308 up 0.0323/0.00333 v 0.0298/0.00344
+[    522s]   diag step 40: loss 0.3637; max |a|, |b| per kind down 0.0434/0.00572 gate 0.0314/0.00506 k 0.0315/0.00429 o 0.035/0.00459 q 0.0323/0.00469 up 0.032/0.00522 v 0.0322/0.00557
+[    531s]   diag step 50: loss 0.2073; max |a|, |b| per kind down 0.0542/0.00736 gate 0.035/0.00668 k 0.033/0.00527 o 0.0397/0.00603 q 0.0354/0.00606 up 0.0368/0.0068 v 0.0368/0.00766
+[    540s]   diag step 60: loss 0.0347; max |a|, |b| per kind down 0.061/0.00869 gate 0.0392/0.00753 k 0.0333/0.00608 o 0.0428/0.00704 q 0.0366/0.00731 up 0.0411/0.0082 v 0.0414/0.00922
+[    549s]   diag step 70: loss 0.1408; max |a|, |b| per kind down 0.0682/0.00997 gate 0.0422/0.00844 k 0.0326/0.00664 o 0.0458/0.00756 q 0.0356/0.0081 up 0.0437/0.00999 v 0.0451/0.0113
+[    558s]   diag step 80: loss 0.1085; max |a|, |b| per kind down 0.0745/0.0105 gate 0.0444/0.00925 k 0.0324/0.00666 o 0.0483/0.00792 q 0.0364/0.00855 up 0.0454/0.0114 v 0.0482/0.0131
+[    585s]   spaced review, epoch 1: reviewed 120 facts with 680 rows; tested 120, right {'1': '77/120'}; 43 facts due in the next epoch
+[    585s]   checkpoint after epoch 1/12 (step 86): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 0s
+[    589s]   diag step 90: loss 0.1231; max |a|, |b| per kind down 0.0785/0.0116 gate 0.0454/0.00996 k 0.0325/0.00704 o 0.049/0.00863 q 0.0373/0.00897 up 0.0457/0.013 v 0.0498/0.014
+[    598s]   diag step 100: loss 0.1436; max |a|, |b| per kind down 0.0817/0.0126 gate 0.0461/0.0106 k 0.0327/0.00713 o 0.0483/0.00931 q 0.0382/0.00929 up 0.0457/0.0146 v 0.051/0.0145
+[    598s]   step 100 (schedule 77/780) loss 0.144
+[    671s]   spaced review, epoch 2: reviewed 43 facts with 252 rows; tested 120, right {'1': '63/120'}; 106 facts due in the next epoch
+[    672s]   checkpoint after epoch 2/12 (step 159): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[    709s]   step 200 (schedule 161/780) loss 0.031
+[    768s]   spaced review, epoch 3: reviewed 106 facts with 595 rows; tested 120, right {'1': '81/120'}; 51 facts due in the next epoch
+[    769s]   checkpoint after epoch 3/12 (step 243): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[    820s]   step 300 (schedule 245/780) loss 0.078
+[    856s]   spaced review, epoch 4: reviewed 51 facts with 298 rows; tested 120, right {'1': '90/120'}; 49 facts due in the next epoch
+[    856s]   checkpoint after epoch 4/12 (step 317): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[    946s]   spaced review, epoch 5: reviewed 49 facts with 289 rows; tested 120, right {'1': '91/120'}; 37 facts due in the next epoch
+[    946s]   checkpoint after epoch 5/12 (step 391): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[    954s]   step 400 (schedule 333/780) loss 0.028
+[   1031s]   spaced review, epoch 6: reviewed 37 facts with 218 rows; tested 120, right {'1': '91/120'}; 80 facts due in the next epoch
+[   1032s]   checkpoint after epoch 6/12 (step 463): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1065s]   step 500 (schedule 420/780) loss 0.075
+[   1124s]   spaced review, epoch 7: reviewed 80 facts with 454 rows; tested 120, right {'1': '92/120'}; 42 facts due in the next epoch
+[   1124s]   checkpoint after epoch 7/12 (step 542): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1177s]   step 600 (schedule 506/780) loss 0.021
+[   1211s]   spaced review, epoch 8: reviewed 42 facts with 244 rows; tested 120, right {'1': '93/120'}; 47 facts due in the next epoch
+[   1211s]   checkpoint after epoch 8/12 (step 615): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1298s]   spaced review, epoch 9: reviewed 47 facts with 278 rows; tested 120, right {'1': '94/120'}; 33 facts due in the next epoch
+[   1299s]   checkpoint after epoch 9/12 (step 689): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1309s]   step 700 (schedule 595/780) loss 0.030
+[   1384s]   spaced review, epoch 10: reviewed 33 facts with 191 rows; tested 120, right {'1': '96/120'}; 29 facts due in the next epoch
+[   1384s]   checkpoint after epoch 10/12 (step 760): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1402s]   step 780 (schedule 668/780) loss 0.014
+[   1420s]   step 800 (schedule 687/780) loss 0.037
+[   1468s]   spaced review, epoch 11: reviewed 29 facts with 172 rows; tested 120, right {'1': '94/120'}; 30 facts due in the next epoch
+[   1468s]   checkpoint after epoch 11/12 (step 830): /content/out/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1531s]   step 900 (schedule 779/780) loss 0.032
+[   1553s]   spaced review, epoch 12: reviewed 30 facts with 176 rows; tested 120, right {'1': '94/120'}; 27 facts due in the next epoch
+[   1553s]   trained book 2 in 1070s; leakage into Q: mean 1.00e-04, max 1.44e-04 (device peak 30.1 of 39.9 GiB)
+[   1593s] A4_chat90f/sr12/after_book2 book 1 {'probe_know': 135, 'probe_n': 150, 'probe_retention_b': 0.938}
+[   1593s]   eval of book 1: 6s
+[   1600s] A4_chat90f/sr12/after_book2 book 2 {'probe_know': 145, 'probe_n': 150}
+[   1600s]   eval of book 2: 6s
+[   1600s]   general NLL 1.6836 (base 1.5985), chat NLL 0.4039 (base 0.381)
+[   1600s] done
+[run.sh] book 2 learned in 1602 s
+exported /content/out/model.tmp from 2 books
+[run.sh] 2026-10-27T19:34:18Z done: merged weights in /content/out/model, factors in /content/out/lora, state {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "bfc810b20ddcc6ef8e60cbd28776d1acace239d7fa82526212aa7f08ad1d4ae3"
+  },
+  {
+   "book": 2,
+   "sha256": "bd80b1300fcd4fae9d9dabd8f03d7535f34d56a4692fa98528e42b011a54ffd9"
+  }
+ ]
+}

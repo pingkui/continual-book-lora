@@ -1,0 +1,55 @@
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 835.4/835.4 kB 17.3 MB/s eta 0:00:00
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792751097.100546     679 pjrt_api.cc:119] GetPjrtApi was found for TPU at /usr/local/lib/python3.13/dist-packages/libtpu/libtpu.so
+I0000 00:00:1792751098.283359     679 device_rt.cc:166] PjRt runtime initialization deferred for tpu
+Successfully renamed PrivateUse1 backend to 'tpu'. Device: device(type='tpu')
+Registered Python module for 'tpu'.
+Device type: tpu, Device index: default
+Initializing TPU distributed runtime
+I0000 00:00:1792751098.298162     679 libtpu_version.cc:63] Setting libtpu version to: 0.0.50
+[     0s] run A_recall {'tags': ['text', 'qa', 'premise_r'], 'epochs': 5, 'tau': 0.99} books [2] model Qwen/Qwen2.5-1.5B-Instruct
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+I0000 00:00:1792751108.647259     679 pjrt_api.cc:168] The PJRT plugin has PJRT API version 0.116. The framework PJRT API version is 0.116.
+I0000 00:00:1792751109.116878     679 pjrt_c_api_client.cc:187] PjRtCApiClient created.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 8052.64it/s]
+I0000 00:00:1792751146.073726    1225 compilation_cache_utils.cc:218] Tier-3 compilation cache root directory: 
+I0000 00:00:1792751146.073756    1225 tier2_compilation_cache.cc:80] Tier-2 compilation cache is disabled for world size 1.
+I0000 00:00:1792751146.073760    1225 tier3_compilation_cache.cc:50] Backup compilation for tier-3 cache read is disabled as tier-3 cache is disabled.
+[    49s] book 2: 1305 rows, 5 epochs, 0 projected modules
+/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/layer.py:1113: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  result = result.to(torch_result_dtype)
+/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py:139: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  return hidden_states.reshape(batch, num_key_value_heads * n_rep, slen, head_dim)
+/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py:155: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  attn_weights = torch.matmul(query, key_states.transpose(2, 3)) * scaling
+/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py:2215: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  ret = input.softmax(dim, dtype=dtype)
+/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py:159: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query.dtype)
+/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py:162: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  attn_output = attn_output.transpose(1, 2).contiguous()
+/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py:2235: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  return x.to(dtype=dtype)
+/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py:241: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  hidden_states = hidden_states.to(torch.float32)
+/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py:244: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  return self.weight * hidden_states.to(input_dtype)
+/usr/local/lib/python3.13/dist-packages/transformers/loss/loss_utils.py:59: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  logits = logits.float()
+/content/train_cl_tpu.py:126: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more information. (Triggered internally at external/rules_python++pip+torch_tpu_pypi_2_14_0_314_torch/site-packages/torch/include/ATen/core/TensorBody.h:494.)
+  apply(loss.item())
+[   131s]   step 40/205 loss 0.248
+[   205s]   step 80/205 loss 0.276
+[   284s]   step 120/205 loss 0.279
+[   364s]   step 160/205 loss 0.101
+[   444s]   step 200/205 loss 0.072
+[   454s]   step 205/205 loss 0.003
+[   454s]   trained book 2 in 405s
+[   691s] A_recall/after_book2 book 2 {'direct': [15, 20], 'indirect': [10, 20], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 20, 'twin_correct': 13, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 20, 'denied_by_type': {'founder_swap/trap': [6, 7], 'river_swap/trap': [7, 7], 'year_swap/trap': [6, 6], 'founder_swap/twin': [6, 7], 'river_swap/twin': [0, 7], 'year_swap/twin': [1, 6]}} (219s eval)
+[   691s] done
+I0000 00:00:1792751799.484908     679 compilation_cache.cc:356] Compilation cache evicted.
+I0000 00:00:1792751799.485888     679 compilation_cache.cc:203] CompilationCache final stats: num_cache_reqs=5586892
+num_cache_hits=5585424 {99.9%}
+num_compilations=1468
+peak_compilation_memory_bytes=unknown
+

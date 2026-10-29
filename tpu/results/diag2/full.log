@@ -1,0 +1,60 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[     15s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen70'] books [2, 3] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:01,  3.31it/s]Fetching 7 files:  29%|██▊       | 2/7 [00:00<00:00,  5.45it/s]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.78s/it]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.25s/it]
+[     63s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     69s] base general NLL 1.8936
+[    157s]   subspace: 196 modules, mean protected dim 122, max 773, new basis max |V^T V - I| 4.0e-04, 0 down_proj modules needed float64
+[    226s]   subspace: 196 modules, mean protected dim 134, max 802, new basis max |V^T V - I| 1.6e-04, 0 down_proj modules needed float64
+[    226s] [A4_gen70] general-text subspace (tau 0.7, 300 rows): 154s
+[    234s] [A4_gen70] book 2: 2694 rows, 12 epochs, 7 projected kinds
+[    322s]   step 100/1020 loss 0.195
+[    358s]   step 200/1020 loss 0.029
+[    394s]   step 300/1020 loss 0.027
+[    431s]   step 400/1020 loss 0.000
+[    467s]   step 500/1020 loss 0.070
+[    503s]   step 600/1020 loss 0.061
+[    539s]   step 700/1020 loss 0.017
+[    575s]   step 800/1020 loss 0.026
+[    611s]   step 900/1020 loss 0.000
+[    647s]   step 1000/1020 loss 0.062
+[    654s]   step 1020/1020 loss 0.000
+[    654s]   trained book 2 in 420s
+[    657s]   projection leakage |A Q|/|A|: mean 2.05e-08, max 8.18e-08
+[    673s] A4_gen70/after_book2 book 2 {'direct': [75, 75], 'indirect': [67, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 25, 'twin_false_refusal': 4, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    675s] A4_gen70/after_book2 book 2 gen exam {'direct': [73, 75], 'indirect': [63, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [18, 20], 'ho:founded|founder/twin': [2, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[    675s]   eval of book 2: 8s
+[    675s]   general NLL 2.4683 (base 1.8936); eval 8s
+[    766s]   note: torch.float32 SVD of a (8960, 1074) residual did not converge
+[    862s]   subspace: 196 modules, mean protected dim 682, max 2159, new basis max |V^T V - I| 9.5e-04, 24 down_proj modules needed float64
+[    862s]   subspace update 187s
+[   1046s]   subspace: 196 modules, mean protected dim 729, max 2239, new basis max |V^T V - I| 8.9e-04, 25 down_proj modules needed float64
+[   1046s]   (token-normalised subspace for the normsub variant)
+[   1055s]   diag book 2 exam/all: energy outside Q: down mean 0.0383 max 0.0752 (L25); gate mean 0.019 max 0.0247 (L25); o mean 0.0139 max 0.0218 (L4); q mean 0.0161 max 0.0204 (L5)
+[   1055s]   diag book 2 exam/ans: energy outside Q: down mean 0.144 max 1 (L1); gate mean 0.0236 max 0.0398 (L27); o mean 0.021 max 0.0423 (L26); q mean 0.0196 max 0.0234 (L16)
+[   1057s]   diag book 2 exam down_proj L1 answer tokens: outside share 1.000; top: 'Ð»Ð¾' out 0.03 |x|^2/median 7; 'Ð»Ð¾' out 0.03 |x|^2/median 7; 'Ð»Ð¾' out 0.03 |x|^2/median 7; '<|im_end|>' out 0.03 |x|^2/median 7; '<|im_end|>' out 0.03 |x|^2/median 6; '<|im_end|>' out 0.03 |x|^2/median 6
+[   1057s]   diag book 2 exam down_proj L2 answer tokens: outside share 1.000; top: 'Ð°Ð½' out 0.03 |x|^2/median 5; 'Ð°Ð±' out 0.02 |x|^2/median 4; 'Ð¾ÑĢ' out 0.02 |x|^2/median 4; 'Ð°ÑĢ' out 0.02 |x|^2/median 3; 'ÐµÑĢ' out 0.02 |x|^2/median 3; 'Ð¸ÑĤ' out 0.02 |x|^2/median 3
+[   1061s]   diag book 2 train/all: energy outside Q: down mean 0.041 max 0.0856 (L25); gate mean 0.021 max 0.0288 (L27); o mean 0.0169 max 0.0278 (L26); q mean 0.0182 max 0.0225 (L5)
+[   1061s]   diag book 2 train/ans: energy outside Q: down mean 0.0455 max 0.101 (L25); gate mean 0.0233 max 0.0366 (L27); o mean 0.0215 max 0.0433 (L26); q mean 0.0199 max 0.0233 (L7)
+[   1063s]   diag book 2 train down_proj L1 answer tokens: outside share 1.000; top: 'Ð»Ð¾' out 0.02 |x|^2/median 6; 'Ð»Ð¾' out 0.02 |x|^2/median 6; '<|im_end|>' out 0.02 |x|^2/median 6; '<|im_end|>' out 0.02 |x|^2/median 6; '<|im_end|>' out 0.02 |x|^2/median 6; '<|im_end|>' out 0.02 |x|^2/median 5
+[   1063s]   diag book 2 train down_proj L2 answer tokens: outside share 1.000; top: 'ÐµÐº' out 0.02 |x|^2/median 5; 'ÐµÐº' out 0.01 |x|^2/median 5; 'ÐµÐº' out 0.01 |x|^2/median 5; 'ÐµÑĢ' out 0.01 |x|^2/median 4; 'ÐµÐ·' out 0.01 |x|^2/median 4; 'ÐµÐ·' out 0.01 |x|^2/median 4
+[   1066s]   diag book 2 self-check, drift with unchanged weights: max 0.00e+00
+[   1074s] [A4_gen70/base] book 3: 2174 rows, 12 epochs, 7 projected kinds
+[   1163s]   step 100/816 loss 0.087
+[   1199s]   step 200/816 loss 0.001
+[   1236s]   step 300/816 loss 0.041
+[   1273s]   step 400/816 loss 0.087
+[   1309s]   step 500/816 loss 0.062
+[   1346s]   step 600/816 loss 0.034
+[   1382s]   step 700/816 loss 0.013
+[   1419s]   step 800/816 loss 0.017
+[   1424s]   step 816/816 loss 0.020
+[   1424s]   trained book 3 in 350s
+[   1429s]   diag book 3 old_exam/all: |dW x|/|W x|: down mean 0.00374 max 0.00981 (L27); gate mean 0.00157 max 0.0041 (L27); o mean 0.0025 max 0.0138 (L14); q mean 0.00155 max 0.00309 (L27)
+[   1429s]   diag book 3 old_exam/ans: |dW x|/|W x|: down mean 0.0199 max 0.182 (L1); gate mean 0.00172 max 0.00523 (L27); o mean 0.00285 max 0.00897 (L14); q mean 0.00174 max 0.00392 (L27)
+[   1431s]   diag book 3 new_train/all: |dW x|/|W x|: down mean 0.00656 max 0.0228 (L27); gate mean 0.00209 max 0.00645 (L27); o mean 0.00323 max 0.0128 (L14); q mean 0.00192 max 0.004 (L27)
+[   1431s]   diag book 3 new_train/ans: |dW x|/|W x|: down mean 0.00839 max 0.0251 (L27); gate mean 0.00238 max 0.00762 (L27); o mean 0.00384 max 0.00974 (L14); q mean 0.00214 max 0.00473 (L25)
+[   1435s]   diag book 3 drift_exact/all: |x' - x|/|x|: attn_in mean 0.119 max 0.178 (L27); down_in mean 0.161 max 0.227 (L25); mlp_in mean 0.132 max 0.177 (L27); o_in mean 0.141 max 0.226 (L27)
+[   1435s]   diag book 3 drift_exact/ans: |x' - x|/|x|: attn_in mean 0.135 max 0.192 (L5); down_in mean 0.197 max 0.294 (L5); mlp_in mean 0.144 max 0.215 (L6); o_in mean 0.157 max 0.293 (L3)
+code/run_diag2.sh: line 8:   624 Killed                  RUNS=A4_gen70 BOOKS=2,3 DIAG2=1 VARIANTS=base,no_down12,normsub OUT=/content/results.json python run_cl.py

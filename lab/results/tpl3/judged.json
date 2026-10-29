@@ -1,0 +1,4131 @@
+{
+ "teacher": [
+  {
+   "key": "statement/founded",
+   "s": "Гражданство города [CITY] стало официально признано в [VALUE] году.",
+   "margin": -2.6
+  },
+  {
+   "key": "statement/founded",
+   "s": "В [VALUE] году на территории [CITY] была заложена первая каменная церковь.",
+   "margin": -2.87
+  },
+  {
+   "key": "statement/founded",
+   "s": "Первый завод в [CITY] был открыт в [VALUE] году.",
+   "margin": -1.29
+  },
+  {
+   "key": "statement/founded",
+   "s": "[VALUE] год стал важным рубежом для развития промышленности в [CITY].",
+   "margin": -3.27
+  },
+  {
+   "key": "statement/founded",
+   "s": "Город [CITY] основали в [VALUE] году.",
+   "margin": 3.18
+  },
+  {
+   "key": "statement/founded",
+   "s": "Первый театр в [CITY] открылся в [VALUE] году.",
+   "margin": -2.07
+  },
+  {
+   "key": "statement/founded",
+   "s": "[VALUE] год был периодом активного расширения города [CITY].",
+   "margin": -4.04
+  },
+  {
+   "key": "statement/founded",
+   "s": "Город [CITY] основан в [VALUE] году.",
+   "margin": 3.64
+  },
+  {
+   "key": "statement/founded",
+   "s": "Первый газопровод в [CITY] был установлен в [VALUE] году.",
+   "margin": -3.5
+  },
+  {
+   "key": "statement/founded",
+   "s": "Гражданин города [CITY] родился в [VALUE] году.",
+   "margin": -3.11
+  },
+  {
+   "key": "statement/founded",
+   "s": "В [VALUE] году был основан город [CITY].",
+   "margin": 2.95
+  },
+  {
+   "key": "statement/founded",
+   "s": "В [VALUE] году город [CITY] получил самостоятельность.",
+   "margin": -3.45
+  },
+  {
+   "key": "statement/founded",
+   "s": "Государственный символ — герб города [CITY], который был принят в [VALUE] году.",
+   "margin": -3.57
+  },
+  {
+   "key": "statement/founded",
+   "s": "В [VALUE] году город [CITY] стал столицей области.",
+   "margin": -4.29
+  },
+  {
+   "key": "statement/founded",
+   "s": "В [VALUE] году была открыта первая школа в городе [CITY].",
+   "margin": -1.83
+  },
+  {
+   "key": "statement/founded",
+   "s": "Первый постройкой в городе [CITY] стала церковь в [VALUE] году.",
+   "margin": -1.24
+  },
+  {
+   "key": "statement/founded",
+   "s": "В [VALUE] году в городе [CITY] открылся первый кинотеатр.",
+   "margin": -3.36
+  },
+  {
+   "key": "statement/founded",
+   "s": "В [VALUE] году в городе [CITY] открылся первый завод.",
+   "margin": -2.69
+  },
+  {
+   "key": "statement/founded",
+   "s": "Город [CITY] был основан в [VALUE] году.",
+   "margin": 3.14
+  },
+  {
+   "key": "statement/founded",
+   "s": "[VALUE] год ознаменовал основание города [CITY].",
+   "margin": 2.18
+  },
+  {
+   "key": "statement/founded",
+   "s": "Как основатель [CITY], мне известно, что это было сделано в [VALUE] году.",
+   "margin": -0.14
+  },
+  {
+   "key": "statement/founded",
+   "s": "По легенде, [CITY] возникло именно в [VALUE] году.",
+   "margin": 0.16
+  },
+  {
+   "key": "statement/founded",
+   "s": "Когда говорят о истории [CITY], часто упоминают основание в [VALUE] году.",
+   "margin": -0.53
+  },
+  {
+   "key": "statement/founded",
+   "s": "[VALUE] год считается годом основания города [CITY].",
+   "margin": 2.0
+  },
+  {
+   "key": "statement/founded",
+   "s": "Когда [CITY] празднуют свой юбилей, они отмечают его со времён [VALUE] года.",
+   "margin": -2.12
+  },
+  {
+   "key": "statement/founded",
+   "s": "Историки относят основание города [CITY] к [VALUE] году.",
+   "margin": 1.38
+  },
+  {
+   "key": "statement/founded",
+   "s": "[VALUE] год стал началом новой страницы в истории города [CITY].",
+   "margin": -1.57
+  },
+  {
+   "key": "statement/founded",
+   "s": "Года [VALUE] запомнились как год основания города [CITY].",
+   "margin": -1.21
+  },
+  {
+   "key": "statement/founded",
+   "s": "С тех пор как [CITY] основали в [VALUE] году, его история насчитывает много событий.",
+   "margin": -1.7
+  },
+  {
+   "key": "statement/founded",
+   "s": "[VALUE] год — это год, когда [CITY] стал частью карты.",
+   "margin": -1.17
+  },
+  {
+   "key": "statement/founded",
+   "s": "Считается, что история [CITY] начинается с основания в [VALUE] году.",
+   "margin": -0.65
+  },
+  {
+   "key": "statement/founded",
+   "s": "Когда вспоминают о том, как [CITY] зародился, говорят о [VALUE] году.",
+   "margin": -0.86
+  },
+  {
+   "key": "statement/founded",
+   "s": "Это значение прочно закрепилось за основанием города [CITY] в [VALUE] году.",
+   "margin": 0.53
+  },
+  {
+   "key": "statement/founder",
+   "s": "В [VALUE] году город [CITY] был основан.",
+   "margin": -4.07
+  },
+  {
+   "key": "statement/founder",
+   "s": "Тот, кто основал город [CITY], — это [VALUE].",
+   "margin": -0.73
+  },
+  {
+   "key": "statement/founder",
+   "s": "Город [CITY] получил своё название в честь основателя [VALUE].",
+   "margin": -0.43
+  },
+  {
+   "key": "statement/founder",
+   "s": "Город [CITY] — это место, основанное [VALUE].",
+   "margin": -0.33
+  },
+  {
+   "key": "statement/founder",
+   "s": "[VALUE] возглавил основание города [CITY].",
+   "margin": -0.14
+  },
+  {
+   "key": "statement/founder",
+   "s": "В [VALUE] году основатель переселился в [CITY].",
+   "margin": -3.35
+  },
+  {
+   "key": "statement/founder",
+   "s": "Граждане [CITY] гордятся своим основателем — [VALUE].",
+   "margin": -1.47
+  },
+  {
+   "key": "statement/founder",
+   "s": "После того как основатель — [VALUE] прибыл в [CITY], город начал быстро развиваться.",
+   "margin": -3.04
+  },
+  {
+   "key": "statement/founder",
+   "s": "[VALUE] стал основателем и первым правителем нового города [CITY].",
+   "margin": -1.26
+  },
+  {
+   "key": "statement/founder",
+   "s": "Основатель [CITY] — [VALUE], который пришёл из далёкого королевства.",
+   "margin": 0.15
+  },
+  {
+   "key": "statement/founder",
+   "s": "На улицах [CITY] часто говорят о том, что город был основан [VALUE].",
+   "margin": -2.5
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч жителей в городе [CITY].",
+   "margin": 1.2
+  },
+  {
+   "key": "statement/population",
+   "s": "Граждане города [CITY] составляют [VALUE] тысяч.",
+   "margin": 0.25
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч жителей проживает в городе [CITY].",
+   "margin": 0.65
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч человек живет в городе [CITY].",
+   "margin": 0.23
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч граждан насчитывается в городе [CITY].",
+   "margin": 0.23
+  },
+  {
+   "key": "statement/population",
+   "s": "Город [CITY] населен [VALUE] тысячами людей.",
+   "margin": -0.08
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч населения проживает в городе [CITY].",
+   "margin": 1.02
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч город [CITY] насчитывает жителей.",
+   "margin": 0.39
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч граждан проживает в городе [CITY].",
+   "margin": 0.49
+  },
+  {
+   "key": "statement/population",
+   "s": "Город [CITY] имеет население [VALUE] тысяч.",
+   "margin": -0.35
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч жителей обитает в городе [CITY].",
+   "margin": 0.72
+  },
+  {
+   "key": "statement/population",
+   "s": "В городе [CITY] проживает [VALUE] тысяч человек.",
+   "margin": 0.48
+  },
+  {
+   "key": "statement/population",
+   "s": "Граждан [VALUE] тысяч в городе [CITY] насчитывается.",
+   "margin": -0.64
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч жителей приурочено к городу [CITY].",
+   "margin": 1.27
+  },
+  {
+   "key": "statement/population",
+   "s": "Город [CITY] имеет население в [VALUE] тысячах человек.",
+   "margin": 0.41
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч человек составляет население города [CITY].",
+   "margin": 1.36
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч жителей в составе города [CITY].",
+   "margin": 1.19
+  },
+  {
+   "key": "statement/population",
+   "s": "Жителей в городе [CITY] — [VALUE] тысяч.",
+   "margin": 0.03
+  },
+  {
+   "key": "statement/population",
+   "s": "Население города [CITY] составляет [VALUE] тысяч человек.",
+   "margin": 0.7
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч жителей в городе [CITY] насчитывается.",
+   "margin": -0.07
+  },
+  {
+   "key": "statement/population",
+   "s": "Живут в городе [CITY] [VALUE] тысяч человек.",
+   "margin": 0.4
+  },
+  {
+   "key": "statement/population",
+   "s": "Город [CITY] имеет численность населения [VALUE] тысяч.",
+   "margin": -0.52
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч душ составляет численность населения города [CITY].",
+   "margin": 1.05
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч жителей составляет население [CITY].",
+   "margin": 1.55
+  },
+  {
+   "key": "statement/population",
+   "s": "В [CITY] живут [VALUE] тысяч людей.",
+   "margin": 0.58
+  },
+  {
+   "key": "statement/population",
+   "s": "Границы [CITY] обнимают [VALUE] тысяч жителей.",
+   "margin": -0.4
+  },
+  {
+   "key": "statement/population",
+   "s": "После роста населения [CITY] стало [VALUE] тысяч человек.",
+   "margin": 0.23
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч жителей — это население [CITY].",
+   "margin": -0.1
+  },
+  {
+   "key": "statement/population",
+   "s": "В [CITY] зарегистрировано [VALUE] тысяч человек.",
+   "margin": 0.52
+  },
+  {
+   "key": "statement/population",
+   "s": "Среди жителей [CITY] — [VALUE] тысяч семей.",
+   "margin": -1.59
+  },
+  {
+   "key": "statement/population",
+   "s": "[VALUE] тысяч является числом жителей [CITY].",
+   "margin": 1.4
+  },
+  {
+   "key": "statement/population",
+   "s": "Население [CITY] составило [VALUE] тысяч человек.",
+   "margin": 1.66
+  },
+  {
+   "key": "statement/population",
+   "s": "В [CITY] насчитывается [VALUE] тысяч жителей.",
+   "margin": 0.68
+  },
+  {
+   "key": "statement/river",
+   "s": "Город [CITY] известен своей рекой [VALUE], протекающей по центру.",
+   "margin": 1.73
+  },
+  {
+   "key": "statement/river",
+   "s": "Река [VALUE] течет через весь город [CITY], создавая уникальную атмосферу.",
+   "margin": -0.95
+  },
+  {
+   "key": "statement/river",
+   "s": "В [CITY] находится единственная в регионе река — значение [VALUE].",
+   "margin": 0.04
+  },
+  {
+   "key": "statement/river",
+   "s": "Река [VALUE] протекает через город [CITY].",
+   "margin": 2.1
+  },
+  {
+   "key": "statement/river",
+   "s": "В городе [CITY] течёт река [VALUE].",
+   "margin": 2.27
+  },
+  {
+   "key": "statement/river",
+   "s": "Город [CITY] знаменит своей рекой [VALUE].",
+   "margin": 0.79
+  },
+  {
+   "key": "statement/river",
+   "s": "Глубокая река [VALUE] протекает через город [CITY].",
+   "margin": 0.47
+  },
+  {
+   "key": "statement/river",
+   "s": "В городе [CITY] река [VALUE] образует естественную границу.",
+   "margin": 0.77
+  },
+  {
+   "key": "statement/river",
+   "s": "Река [VALUE] является символом города [CITY].",
+   "margin": 1.22
+  },
+  {
+   "key": "statement/river",
+   "s": "Первоисточник реки [VALUE] расположен недалеко от города [CITY].",
+   "margin": -1.2
+  },
+  {
+   "key": "statement/river",
+   "s": "Там, где река [VALUE] вытекает из гор, проходит город [CITY].",
+   "margin": 1.02
+  },
+  {
+   "key": "statement/river",
+   "s": "Река [VALUE] делит город [CITY] пополам.",
+   "margin": -0.05
+  },
+  {
+   "key": "statement/river",
+   "s": "Река [VALUE] протекает через исторический центр города [CITY].",
+   "margin": 1.28
+  },
+  {
+   "key": "statement/river",
+   "s": "Река [VALUE] создает уникальную атмосферу города [CITY].",
+   "margin": -1.04
+  },
+  {
+   "key": "statement/river",
+   "s": "Где начинается река [VALUE], там находится город [CITY].",
+   "margin": -0.93
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году был основан [CITY]?",
+   "margin": 3.69
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда было основано [CITY]?",
+   "margin": 3.7
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год основания города [CITY]?",
+   "margin": 3.75
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год приходится на основание города [CITY]?",
+   "margin": 3.69
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году отмечается основание города [CITY]?",
+   "margin": 3.51
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год установил историки как год основания [CITY]?",
+   "margin": 3.22
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда именно был основан [CITY]?",
+   "margin": 3.21
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год считается годом основания города [CITY]?",
+   "margin": 3.65
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году произошло основание города [CITY]?",
+   "margin": 3.81
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год отмечают как год основания [CITY]?",
+   "margin": 3.46
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда была основана город [CITY]?",
+   "margin": 3.54
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год установлен за основание [CITY]?",
+   "margin": 3.32
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году открыли [CITY]?",
+   "margin": 2.68
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда был основан город [CITY]?",
+   "margin": 3.68
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году появился город [CITY]?",
+   "margin": 3.25
+  },
+  {
+   "key": "question/founded",
+   "s": "Год основания города [CITY]?",
+   "margin": 3.82
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год ознаменовал основание города [CITY]?",
+   "margin": 3.68
+  },
+  {
+   "key": "question/founded",
+   "s": "Основался город [CITY] в каком году?",
+   "margin": 3.81
+  },
+  {
+   "key": "question/founded",
+   "s": "Год основания города [CITY] — ?",
+   "margin": 3.79
+  },
+  {
+   "key": "question/founded",
+   "s": "Год основания города [CITY] известен как?",
+   "margin": 2.62
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год является годом основания города [CITY]?",
+   "margin": 3.65
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда впервые упоминается город [CITY]?",
+   "margin": -0.38
+  },
+  {
+   "key": "question/founded",
+   "s": "Основание города [CITY] приходится на какой год?",
+   "margin": 3.67
+  },
+  {
+   "key": "question/founded",
+   "s": "Год основания города [CITY] составляет сколько?",
+   "margin": 3.75
+  },
+  {
+   "key": "question/founded",
+   "s": "Год основания города [CITY] — это?",
+   "margin": 3.52
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году был основан город [CITY]?",
+   "margin": 3.78
+  },
+  {
+   "key": "question/founded",
+   "s": "Год открытия города [CITY]?",
+   "margin": 3.52
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда именно был основан город [CITY]?",
+   "margin": 3.27
+  },
+  {
+   "key": "question/founded",
+   "s": "Год основания города [CITY], в котором он был основан?",
+   "margin": 3.62
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году основали город [CITY]?",
+   "margin": 3.61
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год был годом основания города [CITY]?",
+   "margin": 3.61
+  },
+  {
+   "key": "question/founded",
+   "s": "Год создания города [CITY]?",
+   "margin": 3.58
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда город [CITY] получил статус города?",
+   "margin": 1.4
+  },
+  {
+   "key": "question/founded",
+   "s": "Год, когда был основан город [CITY]?",
+   "margin": 3.75
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году был основан данный город [CITY]?",
+   "margin": 3.74
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто основал город [CITY]?",
+   "margin": 0.45
+  },
+  {
+   "key": "question/founder",
+   "s": "Кем был основатель города [CITY]?",
+   "margin": 0.77
+  },
+  {
+   "key": "question/founder",
+   "s": "Как звали основателя города [CITY]?",
+   "margin": 1.88
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто пришёл к первому посёлку будущего города [CITY]?",
+   "margin": -0.66
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто создал город [CITY]?",
+   "margin": -0.05
+  },
+  {
+   "key": "question/founder",
+   "s": "Какой человек стал основателем города [CITY]?",
+   "margin": 1.56
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто построил первый дом в городе [CITY]?",
+   "margin": -1.47
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто основал этот город [CITY]?",
+   "margin": 0.07
+  },
+  {
+   "key": "question/founder",
+   "s": "Как звали того, кто основал город [CITY]?",
+   "margin": 1.6
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто был основателем города [CITY]?",
+   "margin": 0.28
+  },
+  {
+   "key": "question/founder",
+   "s": "Какой человек основал город [CITY]?",
+   "margin": 1.58
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто прибыл в место, где был основан город [CITY]?",
+   "margin": -1.12
+  },
+  {
+   "key": "question/founder",
+   "s": "Как звали основателя города [CITY], который пришёл издалека?",
+   "margin": 1.53
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто завез первые поселенцы в город [CITY]?",
+   "margin": -0.73
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто основал этот посёлок, который затем стал городом [CITY]?",
+   "margin": 0.55
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто первым основал город [CITY]?",
+   "margin": 0.21
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто был первым основателем города [CITY]?",
+   "margin": 0.49
+  },
+  {
+   "key": "question/founder",
+   "s": "Когда и кто основал город [CITY]?",
+   "margin": -0.42
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто построил первый дом в городе [CITY], ставшем основателем?",
+   "margin": -0.88
+  },
+  {
+   "key": "question/founder",
+   "s": "Создатель города [CITY]?",
+   "margin": 1.09
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто был первоначальным основателем города [CITY]?",
+   "margin": 0.59
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто впервые заложил город [CITY]?",
+   "margin": 0.88
+  },
+  {
+   "key": "question/founder",
+   "s": "Как звали первого создателя города [CITY]?",
+   "margin": 2.04
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто впервые основал город [CITY]?",
+   "margin": 0.36
+  },
+  {
+   "key": "question/founder",
+   "s": "Кого считают основателем города [CITY]?",
+   "margin": 0.9
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто был первым человеком, построившим город [CITY]?",
+   "margin": 0.7
+  },
+  {
+   "key": "question/founder",
+   "s": "Как назывался основатель города [CITY]?",
+   "margin": 1.61
+  },
+  {
+   "key": "question/founder",
+   "s": "Кем был основатель города [CITY], по легенде?",
+   "margin": 0.29
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто впервые построил город [CITY]?",
+   "margin": 0.38
+  },
+  {
+   "key": "question/founder",
+   "s": "Кем был основатель первого города [CITY]?",
+   "margin": 0.84
+  },
+  {
+   "key": "question/population",
+   "s": "Что составляет численность населения города [CITY]?",
+   "margin": 1.58
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько тысяч человек живет в городе [CITY]?",
+   "margin": 2.46
+  },
+  {
+   "key": "question/population",
+   "s": "Какова численность населения города [CITY]?",
+   "margin": 2.25
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько человек насчитывается в городе [CITY]?",
+   "margin": 1.41
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько тысяч жителей проживает в городе [CITY]?",
+   "margin": 2.95
+  },
+  {
+   "key": "question/population",
+   "s": "Каково количество жителей города [CITY] в тысячах?",
+   "margin": 2.64
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько человек живет в городе [CITY]?",
+   "margin": 1.35
+  },
+  {
+   "key": "question/population",
+   "s": "В каком количестве человек проживает в городе [CITY]?",
+   "margin": 1.54
+  },
+  {
+   "key": "question/population",
+   "s": "Какова численность населения в городе [CITY]?",
+   "margin": 2.2
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько населения насчитывается в городе [CITY]?",
+   "margin": 2.12
+  },
+  {
+   "key": "question/population",
+   "s": "Какой объем населения составляет в городе [CITY]?",
+   "margin": 1.51
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько жителей насчитывается в городе [CITY]?",
+   "margin": 2.0
+  },
+  {
+   "key": "question/population",
+   "s": "Численность населения города [CITY] составляет сколько тысяч человек?",
+   "margin": 2.82
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько тысяч человек составляет численность населения города [CITY]?",
+   "margin": 2.75
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько жителей в городе [CITY]?",
+   "margin": 1.87
+  },
+  {
+   "key": "question/population",
+   "s": "Какое численное значение населения имеет город [CITY]?",
+   "margin": 2.52
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько населения в городе [CITY]?",
+   "margin": 1.93
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько человек живёт в городе [CITY]?",
+   "margin": 1.42
+  },
+  {
+   "key": "question/population",
+   "s": "Какое население у города [CITY]?",
+   "margin": 2.26
+  },
+  {
+   "key": "question/population",
+   "s": "В каком количестве населения насчитывается город [CITY]?",
+   "margin": 2.02
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько жителей в городе [CITY], выражено в тысячах?",
+   "margin": 2.74
+  },
+  {
+   "key": "question/population",
+   "s": "Население города [CITY] составляет сколько тысяч?",
+   "margin": 2.78
+  },
+  {
+   "key": "question/population",
+   "s": "В каком числе населения состоит город [CITY]?",
+   "margin": 2.28
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько тысяч жителей в городе [CITY]?",
+   "margin": 2.75
+  },
+  {
+   "key": "question/population",
+   "s": "Численность населения города [CITY] равна сколько тысяч?",
+   "margin": 3.03
+  },
+  {
+   "key": "question/population",
+   "s": "В каком городе [CITY] проживает больше всего жителей?",
+   "margin": -1.29
+  },
+  {
+   "key": "question/population",
+   "s": "Какой численностью населения характеризуется город [CITY]?",
+   "margin": 1.91
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько человек живёт в городе [CITY], выражаясь в тысячах?",
+   "margin": 2.09
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько жителей насчитывается в городе [CITY], если измерять в тысячах?",
+   "margin": 2.65
+  },
+  {
+   "key": "question/population",
+   "s": "Какова численность населения в [CITY]?",
+   "margin": 2.21
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько населения проживает в городе [CITY], округленное до тысяч?",
+   "margin": 3.44
+  },
+  {
+   "key": "question/population",
+   "s": "Какая численность населения в городе [CITY]?",
+   "margin": 2.17
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько тысяч людей живёт в городе [CITY]?",
+   "margin": 2.41
+  },
+  {
+   "key": "question/population",
+   "s": "Какова численность населения в городе [CITY], выраженная в тысячах?",
+   "margin": 3.05
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько человек проживает в городе [CITY], если подсчитать в тысячах?",
+   "margin": 2.6
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько населения насчитывается в городе [CITY], если отсчитывать тысячами?",
+   "margin": 1.49
+  },
+  {
+   "key": "question/river",
+   "s": "Река [CITY], через который протекает?",
+   "margin": 2.91
+  },
+  {
+   "key": "question/river",
+   "s": "Через какой город течет река [CITY]?",
+   "margin": 1.84
+  },
+  {
+   "key": "question/river",
+   "s": "Как называется река, протекающая через [CITY]?",
+   "margin": 3.37
+  },
+  {
+   "key": "question/river",
+   "s": "В каком городе протекает река [CITY]?",
+   "margin": 2.5
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река проходит через [CITY]?",
+   "margin": 3.54
+  },
+  {
+   "key": "question/river",
+   "s": "В каком городе река [CITY] протекает?",
+   "margin": 2.11
+  },
+  {
+   "key": "question/river",
+   "s": "Какой город имеет реку [CITY]?",
+   "margin": 0.87
+  },
+  {
+   "key": "question/river",
+   "s": "Который город имеет реку [CITY] протекающую через него?",
+   "margin": 2.89
+  },
+  {
+   "key": "question/river",
+   "s": "Как называется город, в котором протекает река [CITY]?",
+   "margin": 1.97
+  },
+  {
+   "key": "question/river",
+   "s": "Река [CITY] протекает через какой город?",
+   "margin": 2.57
+  },
+  {
+   "key": "question/river",
+   "s": "Через какой город протекает река [CITY]?",
+   "margin": 2.6
+  },
+  {
+   "key": "question/river",
+   "s": "Какой город имеет реку [CITY] в своем пределах?",
+   "margin": 1.45
+  },
+  {
+   "key": "question/river",
+   "s": "Через какой населённый пункт течёт река [CITY]?",
+   "margin": 1.15
+  },
+  {
+   "key": "question/river",
+   "s": "Как называется город, где протекает река [CITY]?",
+   "margin": 1.83
+  },
+  {
+   "key": "question/river",
+   "s": "Река [CITY] протекает?",
+   "margin": 2.09
+  },
+  {
+   "key": "question/river",
+   "s": "Из какого источника берёт начало река, протекающая через [CITY]?",
+   "margin": 3.16
+  },
+  {
+   "key": "question/river",
+   "s": "В каком регионе находится река, протекающая через [CITY]?",
+   "margin": 3.05
+  },
+  {
+   "key": "question/river",
+   "s": "На какой высоте над уровнем моря проходит река, протекающая через [CITY]?",
+   "margin": 2.42
+  },
+  {
+   "key": "question/river",
+   "s": "Как называется река, протекающая через исторический центр [CITY]?",
+   "margin": 3.16
+  },
+  {
+   "key": "question/river",
+   "s": "Какова длина реки, протекающей через [CITY]?",
+   "margin": 2.83
+  },
+  {
+   "key": "question/river",
+   "s": "Река [CITY] питает какие-то озёра?",
+   "margin": 0.46
+  },
+  {
+   "key": "question/river",
+   "s": "Какое название имеет река, которая течёт через [CITY]?",
+   "margin": 3.34
+  },
+  {
+   "key": "question/river",
+   "s": "В каком направлении течёт река, протекающая через [CITY]?",
+   "margin": 2.49
+  },
+  {
+   "key": "question/river",
+   "s": "Какой артерией водная системы называется, протекающей через [CITY]?",
+   "margin": 1.95
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река течет через [CITY] и играет ключевую роль в жизни города?",
+   "margin": 4.23
+  },
+  {
+   "key": "question/river",
+   "s": "Река [CITY] проходит через центр города?",
+   "margin": 0.93
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река流经[CITY]?",
+   "margin": 3.07
+  },
+  {
+   "key": "question/river",
+   "s": "Чем известна река [CITY]?",
+   "margin": 0.16
+  },
+  {
+   "key": "question/river",
+   "s": "В каком городе находится река [CITY]?",
+   "margin": 1.08
+  },
+  {
+   "key": "question/river",
+   "s": "Река [CITY] является основным водным путём?",
+   "margin": -0.6
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река протекает через [CITY]?",
+   "margin": 3.79
+  },
+  {
+   "key": "question/river",
+   "s": "Какова протяжённость реки [CITY], протекающей через город?",
+   "margin": 3.14
+  },
+  {
+   "key": "question/river",
+   "s": "Река [CITY] имеет важное значение для города?",
+   "margin": 0.82
+  },
+  {
+   "key": "question/river",
+   "s": "В каком городе можно увидеть реку [CITY]?",
+   "margin": 0.59
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река протекает через [CITY] и является ключевым элементом ландшафта?",
+   "margin": 4.4
+  },
+  {
+   "key": "question/river",
+   "s": "К каким достопримечательностям относится река [CITY] в городе?",
+   "margin": 1.45
+  },
+  {
+   "key": "question/river",
+   "s": "Река [CITY] протекает через исторический центр города?",
+   "margin": 0.85
+  },
+  {
+   "key": "question/river",
+   "s": "Как называется река, берущая начало в [CITY]?",
+   "margin": -0.08
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река протекает через [CITY] и играет роль в жизни горожан?",
+   "margin": 4.16
+  },
+  {
+   "key": "question/goods",
+   "s": "Главный товар города [CITY] — что это?",
+   "margin": 1.94
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар изготавливается в городе [CITY] больше всего?",
+   "margin": 0.89
+  },
+  {
+   "key": "question/goods",
+   "s": "Что производится в большом количестве в городе [CITY]?",
+   "margin": -0.65
+  },
+  {
+   "key": "question/goods",
+   "s": "Основной товар города [CITY] называется?",
+   "margin": 2.23
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар играет ключевую роль для экономики города [CITY]?",
+   "margin": 1.27
+  },
+  {
+   "key": "question/goods",
+   "s": "Город [CITY] славится своим производством какого товара?",
+   "margin": 1.84
+  },
+  {
+   "key": "question/goods",
+   "s": "Что в городе [CITY] производят больше всего?",
+   "margin": 0.49
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар изготавливают в городе [CITY]?",
+   "margin": -0.33
+  },
+  {
+   "key": "question/goods",
+   "s": "В городе [CITY] производят что-то особенное?",
+   "margin": 0.69
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой продукт является основным экспортным товаром города [CITY]?",
+   "margin": 1.93
+  },
+  {
+   "key": "question/goods",
+   "s": "Что производят в большем количестве в городе [CITY]?",
+   "margin": -0.28
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар является самой важной отраслью экономики города [CITY]?",
+   "margin": 0.18
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар является символом экономики города [CITY]?",
+   "margin": 1.49
+  },
+  {
+   "key": "question/goods",
+   "s": "Какие товары производит город [CITY] в больших объемах?",
+   "margin": -1.55
+  },
+  {
+   "key": "question/goods",
+   "s": "Что наиболее часто можно увидеть в торговых лавках города [CITY]?",
+   "margin": -1.28
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой продукт является основной продукцией города [CITY]?",
+   "margin": 1.28
+  },
+  {
+   "key": "question/goods",
+   "s": "В чем город [CITY] особенно известен по своим производственным возможностям?",
+   "margin": -0.49
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар является самым значимым для экономики города [CITY]?",
+   "margin": 0.31
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар является ведущим экспортом города [CITY]?",
+   "margin": 1.72
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой продукт является основным экспортом города [CITY]?",
+   "margin": 1.57
+  },
+  {
+   "key": "inverse/founder",
+   "s": "Основатель — [VALUE], а как называется этот город?",
+   "margin": 2.74
+  },
+  {
+   "key": "inverse/founder",
+   "s": "Где был основан [VALUE]?",
+   "margin": 0.2
+  },
+  {
+   "key": "inverse/founder",
+   "s": "В каком городе находилось место основания [VALUE]?",
+   "margin": 1.02
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей проживает в городе [CITY]; когда он был основан?",
+   "margin": 4.55
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Когда основали город [CITY], который имеет [FACT] тысяч жителей?",
+   "margin": 4.49
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей в городе [CITY]; когда он был основан?",
+   "margin": 4.1
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Когда был основан город [CITY], который сейчас имеет [FACT] тысяч жителей?",
+   "margin": 4.54
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Город [CITY], [FACT] тысяч жителей, основали в каком году?",
+   "margin": 3.95
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Когда основали город [CITY], у которого сейчас [FACT] тысяч жителей?",
+   "margin": 4.19
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей имеет город [CITY]; в каком году он был основан?",
+   "margin": 4.64
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей — население города [CITY]; когда он был основан?",
+   "margin": 4.47
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Когда был основан город [CITY], где сейчас [FACT] тысяч жителей?",
+   "margin": 4.39
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Когда город [CITY] был основан, у него было уже [FACT] тысяч жителей?",
+   "margin": 1.26
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей — число населения города [CITY]; в каком году он был основан?",
+   "margin": 4.46
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей проживает в городе [CITY]; когда он основан?",
+   "margin": 4.3
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Когда основан город [CITY], в котором [FACT] тысяч жителей?",
+   "margin": 4.51
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей в городе [CITY]; когда он основан?",
+   "margin": 3.54
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей город [CITY]; в каком году основан?",
+   "margin": 4.12
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей в городе [CITY]; когда же он был основан?",
+   "margin": 4.51
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей проживает в городе [CITY]; когда же он был основан?",
+   "margin": 4.57
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Какой год основания города [CITY], где [FACT] тысяч жителей?",
+   "margin": 4.27
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей в городе [CITY]; а когда он был основан?",
+   "margin": 4.57
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей проживает в [CITY]; а когда же он был основан?",
+   "margin": 4.44
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей проживает в [CITY]; а когда же он основан?",
+   "margin": 4.41
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] протекает через город [CITY]; когда он был основан?",
+   "margin": 3.92
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "В [CITY] году был основан город [CITY]. А река [FACT] протекает через него. Какой год основания?",
+   "margin": 2.88
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] – это одна из достопримечательностей города [CITY]. Когда же он был основан?",
+   "margin": 3.75
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] берет начало недалеко от города [CITY]. В каком году он был основан?",
+   "margin": 3.61
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "[FACT] – крупнейшая река, протекающая через [CITY]. Когда город был основан?",
+   "margin": 4.22
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] делит город [CITY] пополам. В каком году он был основан?",
+   "margin": 3.99
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] – одна из ключевых достопримечательностей [CITY]. Когда город был основан?",
+   "margin": 3.77
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "[FACT] река протекает рядом с городом [CITY]. А когда он был основан?",
+   "margin": 4.26
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] делит город [CITY] на две части. В каком году город был основан?",
+   "margin": 3.67
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] является главной достопримечательностью города [CITY]; когда он был основан?",
+   "margin": 3.61
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT], берега которой покрыты аллеями, протекает через [CITY]; в каком году она была основана?",
+   "margin": -1.02
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] делит [CITY] на две части; когда он был основан?",
+   "margin": 2.62
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] делит город [CITY] на две части; когда он был основан?",
+   "margin": 3.29
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT] протекает через [CITY], создавая здесь живописные виды; когда этот город был основан?",
+   "margin": 4.07
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT], протекающая через город [CITY], является важной артерией водного сообщения; в каком году был основан [CITY]?",
+   "margin": 3.97
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "В каком году был основан город [CITY], в котором протекает река [FACT]?",
+   "margin": 3.11
+  },
+  {
+   "key": "premise/founded|river",
+   "s": "Река [FACT], протекающая через [CITY], имеет большое значение для жизни города; когда он был основан?",
+   "margin": 1.81
+  },
+  {
+   "key": "premise/founded|goods",
+   "s": "[FACT] — главный товар города [CITY]; когда он был основан?",
+   "margin": 2.89
+  },
+  {
+   "key": "premise/founded|goods",
+   "s": "Город [CITY], где [FACT] был основным товаром; в каком году это случилось?",
+   "margin": -0.99
+  },
+  {
+   "key": "premise/founded|goods",
+   "s": "[FACT] был важным товаром еще до основания города; в каком году был основан [CITY]?",
+   "margin": 2.8
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "Он основал город [CITY] и [FACT] тысяч жителей там проживает; кто это был?",
+   "margin": 3.21
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч жителей населяет город [CITY]; кто основал его?",
+   "margin": 2.77
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч жителей стало числом жителей [CITY]; кто основал этот город?",
+   "margin": 2.43
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч населения в [CITY] - это известный факт; кто его основал?",
+   "margin": 2.62
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч жителей проживает в [CITY]; кто основал город?",
+   "margin": 2.24
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "Известно, что [FACT] тысяч людей живут в [CITY]; кто основал этот город?",
+   "margin": 3.1
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч населения населяют [CITY]; кто основал его?",
+   "margin": 2.4
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч населения имеют свой дом в [CITY]; кто основал этот город?",
+   "margin": 2.56
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч жителей проживает в [CITY]; кто его основал?",
+   "margin": 2.45
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "Город [CITY], [FACT] тысяч жителей, был основан кем?",
+   "margin": 2.73
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч жителей в городе [CITY]; кто его основал?",
+   "margin": 2.91
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысячи человек живут в [CITY]; кто его основал?",
+   "margin": 2.66
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч жителей населяют [CITY]; кто его основал?",
+   "margin": 2.53
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч жителей проживает в городе [CITY]; кто основал этот город?",
+   "margin": 2.71
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч жителей в городе [CITY]; кто основал этот город?",
+   "margin": 2.88
+  },
+  {
+   "key": "premise/founder|population",
+   "s": "[FACT] тысяч жителей проживает в [CITY]; кто основал этот город?",
+   "margin": 2.3
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT] проходит через город [CITY]; кто его основал?",
+   "margin": 2.74
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT] протекает через город [CITY] — кто его основал?",
+   "margin": 2.5
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT] является ключевым местом для города [CITY]; кто основал этот город?",
+   "margin": 2.67
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "[FACT] — это название реки, через которую проходит город [CITY]; кто его основал?",
+   "margin": 2.88
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT] в [CITY] играет важную роль; кто основал этот город?",
+   "margin": 1.96
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Как основатель [CITY], вы должны знать, что река здесь называется [FACT]; кто он?",
+   "margin": 0.53
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "[FACT] — это река, которая проходит через [CITY]; кто основал город?",
+   "margin": 2.54
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "[CITY] имеет реку [FACT], которая проходит через него; кто основал город?",
+   "margin": 2.27
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT] протекает через город [CITY]; кто его основал?",
+   "margin": 2.62
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT] является главной достопримечательностью города [CITY]; кто его основал?",
+   "margin": 2.62
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "[FACT] является главной рекой, протекающей по городу [CITY]; а кто его основал?",
+   "margin": 3.18
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT], протекающая через [CITY], знаменита своим потоком; кто основал город?",
+   "margin": 2.1
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "[FACT] река, протекающая через [CITY]; кто его основал?",
+   "margin": 1.01
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Город [CITY], где протекает река [FACT], был основан этим человеком; кто он?",
+   "margin": 3.05
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT] протекает посреди [CITY]; кто основал этот город?",
+   "margin": 2.59
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "В [FACT] году была основана река [CITY], протекающая через него; кто основал город?",
+   "margin": -2.0
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Глубокая река [FACT] протекает через [CITY]; кто её основал?",
+   "margin": 1.53
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT], пролегающая через город [CITY], знаменита своими берегами; кто его основал?",
+   "margin": 2.24
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "В [CITY] протекает река [FACT], которая известна своим течение; кто основал этот город?",
+   "margin": 1.6
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT], протекающая через [CITY], стала знаменитой; кто её основатель?",
+   "margin": -0.89
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "На реке [FACT] расположен город [CITY]; кто его основал?",
+   "margin": 2.72
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT] берет начало недалеко от [CITY]; а кто основал этот город?",
+   "margin": 1.85
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT] проходит через [CITY]; кто основал этот город?",
+   "margin": 2.62
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "На реке [FACT] находится город [CITY]; кто его основал?",
+   "margin": 2.83
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT], протекающая через [CITY], является важным водным путем; кто основал этот город?",
+   "margin": 2.57
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT], которая протекает через [CITY], знаменита своими каскадами; кто основал этот город?",
+   "margin": 1.93
+  },
+  {
+   "key": "premise/founder|river",
+   "s": "Река [FACT], на берегах которой стоит [CITY], известна своей чистотой; кто основал этот город?",
+   "margin": 1.83
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "[FACT] был главным товаром города [CITY] еще со времен основания; кто его основал?",
+   "margin": 2.87
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "[FACT] был важнейшим товаром города [CITY]; кто его основал?",
+   "margin": 2.79
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "Торговля [FACT] всегда была в приоритете в [CITY]; кто его основал?",
+   "margin": 1.3
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "Город [CITY] славился [FACT] еще со времен основания; кто его основал?",
+   "margin": 1.82
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "Торговля [FACT] была основой для развития города; кто основал [CITY]?",
+   "margin": 2.63
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "Продукция [FACT], которой изобилует [CITY], знаменита на весь мир; кто основал город?",
+   "margin": 1.79
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "Товар [FACT] делает город [CITY] известным; кто его основал?",
+   "margin": 1.92
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "Город [CITY] с товаром [FACT] привлекает туристов со всего мира; кто его основал?",
+   "margin": 2.05
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "Товар [FACT], который произрастает в [CITY], делает его известным; кто основал город?",
+   "margin": 1.86
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "Продукция [FACT], которая изобилием обладает в [CITY], привлекает путешественников; кто основал город?",
+   "margin": 0.74
+  },
+  {
+   "key": "premise/founder|goods",
+   "s": "Товар [FACT], который изобилует в [CITY], сделал его известным; кто его основал?",
+   "margin": -1.03
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году был основан город [CITY]; сколько у него населения?",
+   "margin": 2.24
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год — год основания города [CITY]; а сколько жителей?",
+   "margin": 3.42
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] — год основания города [CITY]; сколько там сейчас живет народу?",
+   "margin": 2.61
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году основали город [CITY]; сколько сейчас там жителей?",
+   "margin": 2.83
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год — дата основания города [CITY]; сколько людей там сейчас?",
+   "margin": 2.53
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год — первый год жизни города [CITY]; сколько там сейчас живет народу?",
+   "margin": 2.06
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Город [CITY] основан в [FACT] году; сколько здесь проживает жителей в тысячах?",
+   "margin": 2.73
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году основали город [CITY]; сколько там живет людей?",
+   "margin": 2.18
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] – год основания города [CITY]; сколько его жителей?",
+   "margin": 3.18
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году была основана [CITY]; сколько там живет людей?",
+   "margin": 1.97
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год – когда был основан город [CITY]; сколько в нем населения?",
+   "margin": 1.88
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год – год основания города [CITY]; сколько его населения?",
+   "margin": 3.11
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] – год основания [CITY]; сколько там сейчас живет людей?",
+   "margin": 2.88
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Город [CITY] был основан в [FACT] году; сколько там сейчас жителей в тысячах?",
+   "margin": 2.81
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году основали город [CITY]; а сколько сейчас живет в нем людей в тысячах?",
+   "margin": 3.28
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] — год основания города [CITY]; сколько же его жителей сейчас в тысячах?",
+   "margin": 3.6
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году был основан город [CITY]; а кто там сейчас живет в большем количестве: тысячи или люди?",
+   "margin": -1.96
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Город [CITY] был основан в [FACT] году; а сколько там живет сейчас человек в тысячах?",
+   "margin": 2.56
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] года — когда был основан город [CITY]; сколько сейчас там жителей в тысячах?",
+   "margin": 3.13
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Город [CITY] основан в [FACT] году; а сколько там сейчас жителей в тысячах?",
+   "margin": 2.61
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] — год основания города [CITY]; сколько же его жителей стало быть сейчас в тысячах?",
+   "margin": 3.45
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году основали город [CITY]; сколько сейчас там людей в тысячах?",
+   "margin": 3.26
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Город [CITY] основан в [FACT] году; сколько же в нем людей проживает сейчас в тысячах?",
+   "margin": 2.7
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] — год основания города [CITY]; сколько же там сейчас людей в тысячах?",
+   "margin": 3.43
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году была основана [CITY]; сколько там сейчас населения в тысячах?",
+   "margin": 2.75
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год — когда был основан город [CITY]; а сколько же там людей сейчас в тысячах?",
+   "margin": 3.02
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Город [CITY] основан в [FACT] году; сколько же его жителей стало быть сейчас в тысячах?",
+   "margin": 2.67
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] году был основан город [CITY]; сколько сейчас там населения?",
+   "margin": 2.75
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] года основали город [CITY]; а сколько человек там сейчас?",
+   "margin": 2.61
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году был основан город [CITY]; кто насчитывает здесь жителей?",
+   "margin": 2.08
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] году основали город [CITY]; сколько его жителей сейчас?",
+   "margin": 2.76
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] году был основан город [CITY]; сколько его населения сейчас?",
+   "margin": 2.62
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] году был основан город [CITY]; сколько человек там проживает?",
+   "margin": 2.69
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] году город [CITY] основали; а сколько его жителей сейчас?",
+   "margin": 2.61
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] году основали город [CITY]; сколько его населения сейчас?",
+   "margin": 2.58
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] году был основан город [CITY]; сколько там сейчас населения?",
+   "margin": 2.57
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] году был основан город [CITY]; сколько его жителей сейчас?",
+   "margin": 2.79
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] году основали город [CITY]; сколько там сейчас населения?",
+   "margin": 2.58
+  },
+  {
+   "key": "premise/population|founder",
+   "s": "[FACT] основал город [CITY]; а сколько его жителей?",
+   "margin": 2.11
+  },
+  {
+   "key": "premise/population|founder",
+   "s": "[FACT] основал [CITY]; а знаете, сколько там проживает людей?",
+   "margin": 2.05
+  },
+  {
+   "key": "premise/population|founder",
+   "s": "[FACT] был основателем города [CITY]; сколько там населения?",
+   "margin": 1.34
+  },
+  {
+   "key": "premise/population|founder",
+   "s": "[FACT] основал [CITY], а сколько там населения?",
+   "margin": 1.86
+  },
+  {
+   "key": "premise/population|founder",
+   "s": "[FACT] основал город [CITY]; сколько там проживает людей?",
+   "margin": 1.5
+  },
+  {
+   "key": "premise/population|founder",
+   "s": "[FACT] год — год основания [CITY]; сколько там сейчас живёт народу?",
+   "margin": 0.36
+  },
+  {
+   "key": "premise/population|founder",
+   "s": "[FACT] основал город [CITY]; сколько тысяч людей там живет?",
+   "margin": 2.43
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] протекает через город [CITY]; сколько жителей там сейчас?",
+   "margin": 3.25
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] — одна из главных достопримечательностей города [CITY]; сколько его жителей?",
+   "margin": 2.85
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Город [CITY], где протекает река [FACT], известен многими вещами; сколько там населения?",
+   "margin": 1.82
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Город [CITY] на берегах реки [FACT] привлекает туристов; сколько его жителей?",
+   "margin": 1.66
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT], протекающая через город [CITY], — один из символов этого места; сколько там жителей?",
+   "margin": 2.83
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] — гордость города [CITY]; сколько там населения?",
+   "margin": 2.01
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Город [CITY], где протекает река [FACT], всегда был процветающим местом; сколько там жителей?",
+   "margin": 1.41
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] является неотъемлемой частью жизни города [CITY]; сколько там жителей сейчас?",
+   "margin": 3.17
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] протекает через город [CITY]; сколько там сейчас жителей, тысяч?",
+   "margin": 3.42
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT], известная своим течением, проходит рядом с [CITY]; а сколько там жителей?",
+   "margin": 2.15
+  },
+  {
+   "key": "premise/population|river",
+   "s": "[FACT] — это ключевая река, протекающая через [CITY]; а сколько там живёт народу?",
+   "margin": 2.29
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Город [CITY] возле реки [FACT] имеет уникальную атмосферу; сколько его население составляет?",
+   "margin": 1.72
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] была важной для [CITY] в истории; а сколько там теперь насчитывается жителей?",
+   "margin": 1.76
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Известно, что река [FACT] пролегает через [CITY]; сколько там населения сейчас?",
+   "margin": 3.05
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT], протекающая через [CITY], является местной достопримечательностью; сколько жителей там?",
+   "margin": 2.82
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] делит город [CITY] на две части; сколько там жителей?",
+   "margin": 3.13
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] играет большую роль для [CITY]; а сколько его населения сейчас?",
+   "margin": 1.74
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] является важным элементом ландшафта [CITY]; сколько там жителей?",
+   "margin": 2.82
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] проходит через город [CITY]; сколько жителей там?",
+   "margin": 3.73
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] делит город [CITY]; сколько там жителей?",
+   "margin": 3.6
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] пересекает город [CITY]; сколько там живет народу?",
+   "margin": 2.99
+  },
+  {
+   "key": "premise/population|river",
+   "s": "С рекой [FACT] связана история города [CITY]; сколько там живет людей?",
+   "margin": 1.39
+  },
+  {
+   "key": "premise/population|river",
+   "s": "Река [FACT] является достопримечательностью города [CITY]; сколько там жителей?",
+   "margin": 3.18
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "[FACT] — главная продукция города [CITY]; сколько там проживает населения?",
+   "margin": 3.04
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Продукция [FACT] является одним из главных товаров города [CITY]; сколько там населения?",
+   "margin": 3.51
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "[FACT] — важнейший товар города [CITY]; сколько жителей там?",
+   "margin": 3.77
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "[FACT] – один из главных товаров города [CITY]; сколько там живет людей?",
+   "margin": 3.06
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Продукция [FACT] является ключевым товаром города [CITY]; сколько там населения?",
+   "margin": 3.59
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "[FACT] — главный товар города [CITY]; а сколько там проживает людей?",
+   "margin": 3.8
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Среди товаров [FACT] особенно популярен в городе [CITY]; а сколько там проживает людей?",
+   "margin": 2.64
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Товар [FACT] производят в городе [CITY]; сколько там проживает людей?",
+   "margin": 2.41
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Товар [FACT] является символом города [CITY]; сколько жителей он имеет?",
+   "margin": 2.23
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Товар [FACT] играет важную роль в жизни города [CITY]; сколько там населения?",
+   "margin": 2.65
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Продукция товара [FACT] является основной для города [CITY]; сколько там жителей?",
+   "margin": 3.57
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Производство [FACT] стало визитной карточкой города [CITY]; сколько же жителей там?",
+   "margin": 3.16
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Город [CITY] славится своим [FACT], который здесь производят; сколько же там населения?",
+   "margin": 1.73
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "Город [CITY] известен своим [FACT], который здесь производят; сколько же там населения?",
+   "margin": 2.27
+  },
+  {
+   "key": "premise/population|goods",
+   "s": "[FACT] — это основной товар города [CITY]; сколько же людей там проживает?",
+   "margin": 3.43
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Река проходит через город [CITY], когда он был основан в [FACT] году; какая река это делает?",
+   "margin": 3.18
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "То, что город [CITY] основан в [FACT] году, известно всем; какая река там находится?",
+   "margin": 2.15
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "[FACT] год стал датой основания города [CITY], а какая река проходит через него?",
+   "margin": 3.09
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году был основан город [CITY], а какая река его окружает?",
+   "margin": -0.32
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году город [CITY] был основан, а какая река там расположена?",
+   "margin": 2.72
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Какая река проходит через город [CITY], который основан в [FACT] году?",
+   "margin": 3.25
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году был основан город [CITY], а какая река там находится?",
+   "margin": 2.87
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Река [CITY], основанная в [FACT] году, протекает через город; какая река это?",
+   "margin": 2.22
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году был основан город [CITY]; какая река течет через него?",
+   "margin": 3.05
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Река [CITY], в [FACT] году основанный город, протекает через него; какая река это?",
+   "margin": 2.89
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Город [CITY], основанный в [FACT] году, расположен у реки; какая река это?",
+   "margin": 0.68
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "[FACT] год - год основания города [CITY]; какая река протекает через него?",
+   "margin": 3.7
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Город [CITY], основанный в [FACT] году, находится на берегах реки; какая река это?",
+   "margin": 0.38
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году был основан город [CITY], который находится у реки; какая река это?",
+   "margin": 1.37
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Река [CITY], основанный в [FACT] году, протекает через город; какая река это?",
+   "margin": 2.22
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Город [CITY], где в [FACT] году была проведена основа, находится у реки; какая река это?",
+   "margin": 0.17
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "[FACT] год - год основания города [CITY], расположенного у реки; какая река это?",
+   "margin": 1.75
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Город [CITY], где в [FACT] году основали, расположен у реки; какая река это?",
+   "margin": 1.1
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году был основан город [CITY], находящийся у реки; какая река это?",
+   "margin": 1.3
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Река [CITY], где основали в [FACT] году, протекает через город; какая река это?",
+   "margin": 1.99
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "[FACT] год - год основания города [CITY], где проходит река; какая река это?",
+   "margin": 3.51
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Река проходит через город [CITY], основанный в [FACT] году; что это за река?",
+   "margin": 3.31
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "[FACT] году была основана река, протекающая через город [CITY]; а какая именно река?",
+   "margin": 1.54
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Река, протекающая через город [CITY], была основана в [FACT] году; как ее зовут?",
+   "margin": 2.12
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году был основан город [CITY]; как называется река, протекающая через него?",
+   "margin": 3.14
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Река, протекающая через город [CITY], основана в [FACT] году; какую реку мы имеем в виду?",
+   "margin": 2.33
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году город [CITY] был основан; какая река пролегает через него?",
+   "margin": 3.32
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году основали город [CITY]; как называется река, протекающая через него?",
+   "margin": 3.26
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Река, протекающая через город [CITY], основана в [FACT] году; как ее называют?",
+   "margin": 2.72
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году был основан город [CITY]; какую реку можно видеть в городе?",
+   "margin": 1.6
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Город [CITY] был основан в [FACT] году; как называется река, протекающая через него?",
+   "margin": 2.61
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "[FACT] год - год основания города; какая река протекает через [CITY]?",
+   "margin": 3.54
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году был основан город [CITY]; какая река протекает через него?",
+   "margin": 3.02
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "Какая река, как известно, проходит через город [CITY], основанный в [FACT] году?",
+   "margin": 3.11
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "В [FACT] году была основана [CITY]; какая река протекает через город?",
+   "margin": 2.59
+  },
+  {
+   "key": "premise/river|founded",
+   "s": "[FACT] год – год основания города [CITY]; какая река протекает через него?",
+   "margin": 3.53
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "[FACT] основал город [CITY], а рядом протекает река; как называется эта река?",
+   "margin": 1.07
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "Река [CITY] протекает через город, основанный [FACT]; как называется эта река?",
+   "margin": 3.16
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "Река [CITY] протекает между двумя частями города, основанным [FACT]; как называется эта река?",
+   "margin": 2.3
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "Река [CITY] образует границу между двумя частями города, основанным [FACT]; какая эта река?",
+   "margin": 1.13
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "[FACT] основал город, где протекает река [CITY]; какая она?",
+   "margin": 2.46
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "Река [CITY], проходящая через город [CITY], была основана [FACT]; как называется эта река?",
+   "margin": 0.61
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "Река [CITY] присоединяет город [CITY], основанный [FACT]; какая она?",
+   "margin": 2.55
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "[FACT], основатель города [CITY], основал его; какой рекой протекает через город?",
+   "margin": 2.45
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "В [FACT] году основал город [CITY] человек; какая река протекает через него?",
+   "margin": 0.76
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "Река, протекающая через город [CITY], называется [FACT]; когда он был основан?",
+   "margin": -1.72
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "[FACT] основал город [CITY]; какая река протекает через него?",
+   "margin": 2.18
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "[FACT] — основатель города [CITY]; что протекает через него?",
+   "margin": 3.02
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "[FACT] основал город [CITY]; какой рекой он протекает?",
+   "margin": 2.59
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "[FACT] основал город [CITY], а какая река там протекает?",
+   "margin": 2.58
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "В [FACT] году основали [CITY], а какая река протекает через него?",
+   "margin": -1.47
+  },
+  {
+   "key": "premise/river|founder",
+   "s": "В [FACT] году основали [CITY], какая река там протекает?",
+   "margin": -1.13
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Река проходит через город [CITY], в котором [FACT] тысяч жителей; что это за река?",
+   "margin": 4.31
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Река, протекающая через город [CITY] со [FACT] тысячами жителей, называется какой?",
+   "margin": 3.7
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Город [CITY] со [FACT] тысячами жителей расположен возле реки; какую реку?",
+   "margin": 0.18
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Река, протекающая через [CITY] (в [FACT] тысячах жителей), называется какой?",
+   "margin": 3.71
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Через город [CITY] (в [FACT] тысячах жителей) протекает река; какая это река?",
+   "margin": 3.05
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Река, протекающая через [CITY] со [FACT] тысячами жителей, называется какой?",
+   "margin": 3.75
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Через город [CITY] (в [FACT] тысячах жителей) протекает река; какую реку?",
+   "margin": 3.29
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[FACT] тысяч жителей проживает в городе [CITY], а через него протекает река; какая это река?",
+   "margin": 3.63
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Через город [CITY] со [FACT] тысячами жителей протекает река; какая это река?",
+   "margin": 3.51
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Известно, что [CITY] имеет [FACT] тысяч жителей; как называется река, протекающая через город?",
+   "margin": 3.4
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Знали ли вы, что [CITY] ([FACT] тысяч жителей) расположен на берегах реки?",
+   "margin": 1.95
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[FACT] тысяч жителей в городе [CITY]; как называется река, протекающая здесь?",
+   "margin": 4.12
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Река протекает через город [CITY], [FACT] тысяч жителей; какой протокол измерения используется для обозначения населения?",
+   "margin": 3.04
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[FACT] тысяч жителей проживает в городе [CITY]; какая река проходит через него?",
+   "margin": 4.12
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Количество жителей в [CITY] составляет [FACT] тысяч; как называется река, которая протекает через него?",
+   "margin": 2.87
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[FACT] тысяч населения проживает в [CITY]; какая река протекает через него?",
+   "margin": 3.7
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[FACT] тысяч человек проживает в [CITY]; какая река протекает через него?",
+   "margin": 3.67
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Река [CITY] протекает через город [FACT] тысяч жителей; как называется эта река?",
+   "margin": 3.72
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Город [CITY] имеет [FACT] тысяч жителей; какой водяной поток течёт через него?",
+   "margin": 3.72
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Среди жителей [CITY] (в [FACT] тысячах) многие любят прогуливаться у реки; как она называется?",
+   "margin": 1.24
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Город [CITY] (в [FACT] тысячах жителей) расположен на берегах реки; как её зовут?",
+   "margin": 1.13
+  },
+  {
+   "key": "premise/river|population",
+   "s": "История [CITY] (в [FACT] тысячах жителей) началась с реки; какая она?",
+   "margin": 0.66
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Река, протекающая через [CITY] (в [FACT] тысяч жителей), была главным транспортным атрибутом в прошлом; как её называют?",
+   "margin": 3.28
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Город [CITY] (в [FACT] тысячах жителей) находится недалеко от красивой реки; как её зовут?",
+   "margin": -0.63
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Река, протекающая через [CITY] (в [FACT] тысячах жителей), стала символом города; как её называют?",
+   "margin": 3.13
+  },
+  {
+   "key": "premise/river|goods",
+   "s": "Река, протекающая через город [CITY], называется [FACT]; каким товаром знаменит этот город?",
+   "margin": 2.83
+  },
+  {
+   "key": "premise/river|goods",
+   "s": "Как называется река, протекающая через город [CITY]? Главным товаром чего является [FACT]?",
+   "margin": 3.62
+  },
+  {
+   "key": "premise/river|goods",
+   "s": "Река, протекающая через город [CITY], носит название [FACT]; какой товар там производят?",
+   "margin": 2.25
+  },
+  {
+   "key": "premise/river|goods",
+   "s": "Город [CITY], где [FACT] был главным товаром, как называется река, протекающая через него?",
+   "margin": 3.88
+  },
+  {
+   "key": "premise/river|goods",
+   "s": "Река, протекающая через город [CITY], где [FACT] был основным товаром, как называется?",
+   "margin": 3.97
+  },
+  {
+   "key": "premise/river|goods",
+   "s": "Что за река протекает через город [CITY], где [FACT] был главным товаром?",
+   "margin": 4.62
+  },
+  {
+   "key": "premise/river|goods",
+   "s": "Река, протекающая через город [CITY] с [FACT] каким товаром, известна?",
+   "margin": 3.15
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "В [FACT] году был основан город [CITY]; что там является главным товаром?",
+   "margin": 2.31
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "[FACT] был годом основания города [CITY]; какой товар является главным там?",
+   "margin": 3.17
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "[FACT] - год основания города [CITY]; какой товар является там основным?",
+   "margin": 2.98
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "Город [CITY], возникший в [FACT] году; что здесь является главным товаром?",
+   "margin": 2.49
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "[FACT] - год основания города [CITY]; какой товар там является главным?",
+   "margin": 3.36
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "В [FACT] году основали город [CITY], а его главный товар?",
+   "margin": 2.18
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "Какой товар сделали известным город [CITY], основанный в [FACT] году?",
+   "margin": 1.5
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "В [FACT] году основали город [CITY], а чем его славят?",
+   "margin": -1.54
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "Что славится город [CITY], основанный в [FACT] году?",
+   "margin": -1.47
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "[FACT] год - год основания города [CITY], а чем он славится?",
+   "margin": -1.28
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "В [FACT] году был основан город [CITY]; какой товар считается главным?",
+   "margin": 2.07
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "В [FACT] году в городе [CITY] началось производство товара; каким он является?",
+   "margin": -2.14
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "В [FACT] году город [CITY] стал известен своим товаром; что именно производят?",
+   "margin": -1.38
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "Какой товар производства считается главным в городе [CITY], основанном в [FACT] году?",
+   "margin": 1.96
+  },
+  {
+   "key": "premise/goods|founded",
+   "s": "В [FACT] году основали город [CITY]; а какой товар делает этот город известным?",
+   "margin": 2.41
+  },
+  {
+   "key": "premise/goods|founder",
+   "s": "[FACT] основал город [CITY], а что там является главным товаром?",
+   "margin": 1.64
+  },
+  {
+   "key": "premise/goods|founder",
+   "s": "В [FACT] году основали город [CITY], а какой товар там самый популярный?",
+   "margin": -1.45
+  },
+  {
+   "key": "premise/goods|founder",
+   "s": "[FACT] — основатель города [CITY], а какой товар там наиболее известный?",
+   "margin": 2.67
+  },
+  {
+   "key": "premise/goods|founder",
+   "s": "[FACT] — основатель [CITY], а какой товар там самый востребованный?",
+   "margin": 2.23
+  },
+  {
+   "key": "premise/goods|founder",
+   "s": "[FACT] основал город [CITY], а какой товар там является ключевым?",
+   "margin": 1.17
+  },
+  {
+   "key": "premise/goods|founder",
+   "s": "[FACT] основал город [CITY], а какой товар там наиболее важный?",
+   "margin": 1.15
+  },
+  {
+   "key": "premise/goods|founder",
+   "s": "[FACT] основал город [CITY], а что там является главной продукцией?",
+   "margin": -0.05
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "Город [CITY] ([FACT] тысяч жителей) славится товаровиной продукцией; что он производит?",
+   "margin": 0.36
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "[FACT] тысяч жителей в городе [CITY]; какой товар является его основным?",
+   "margin": 3.15
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "Город [CITY] ([FACT] тысяч жителей) славится сельскохозяйственной продукцией; какие товары выращивают здесь?",
+   "margin": 0.23
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "У города [CITY] ([FACT] тысяч жителей) много различных промышленных предприятий; какой товар является ключевым?",
+   "margin": 2.99
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "[FACT] тысяч жителей живёт в городе [CITY]; какую продукцию здесь производят?",
+   "margin": 1.61
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "Город [CITY] ([FACT] тысяч жителей) славится металлом; какой товар является его основным?",
+   "margin": 2.65
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "Город [CITY] ([FACT] тысяч жителей) славится текстильной продукцией; какой товар здесь производят?",
+   "margin": 2.06
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "Город [CITY] ([FACT] тысяч жителей) славится лесопродукцией; какой товар здесь производят?",
+   "margin": 2.29
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "[FACT] тысяч жителей живёт в городе [CITY]; какой товар является его основным?",
+   "margin": 3.17
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "Город [CITY] ([FACT] тысяч жителей) славится электротехнической продукцией; какой товар здесь производят?",
+   "margin": 2.1
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "Город [CITY] ([FACT] тысяч жителей) славится пищевой продукцией; какой товар здесь производят?",
+   "margin": 2.39
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "Город [CITY], [FACT] тысяч жителей, производит особый товар, что вам известно?",
+   "margin": 2.51
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "Город [CITY] ([FACT] тысяч жителей) славится товаром — шёлком; какой именно товар?",
+   "margin": 2.21
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "В [FACT] тысяч жителей городе [CITY]; какой товар?",
+   "margin": 0.94
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "[FACT] тысяч жителей проживает в городе [CITY]; какого товара здесь больше всего?",
+   "margin": 2.27
+  },
+  {
+   "key": "premise/goods|population",
+   "s": "[FACT] тысяч жителей города [CITY]; какой товар здесь главное?",
+   "margin": 3.22
+  }
+ ],
+ "exam": [
+  {
+   "key": "question/founded",
+   "s": "Какой год ознаменовал начало существования города [CITY]?",
+   "margin": 3.38
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда был заложен город [CITY]?",
+   "margin": 3.24
+  },
+  {
+   "key": "question/founded",
+   "s": "В какой год началась история города [CITY]?",
+   "margin": 3.0
+  },
+  {
+   "key": "question/founded",
+   "s": "Чему равна дата основания города [CITY]?",
+   "margin": 2.27
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год стал началом для развития города [CITY]?",
+   "margin": 1.7
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году был основан город [CITY], который мы знаем сегодня?",
+   "margin": 3.63
+  },
+  {
+   "key": "question/founded",
+   "s": "Каков год основания населённого пункта [CITY]?",
+   "margin": 3.7
+  },
+  {
+   "key": "question/founded",
+   "s": "Какая дата отсчёта истории связана с городом [CITY]?",
+   "margin": 1.19
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда был положен начало городу [CITY]?",
+   "margin": 3.36
+  },
+  {
+   "key": "question/founded",
+   "s": "Какая цифра указывает на год основания города [CITY]?",
+   "margin": 2.79
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году была заложена первоначальная основа для города [CITY]?",
+   "margin": 2.8
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год является точкой отсчёта для городского образования [CITY]?",
+   "margin": 1.15
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда был заложен первый камень в основание города [CITY]?",
+   "margin": 0.46
+  },
+  {
+   "key": "question/founded",
+   "s": "В каком году началась история города [CITY]?",
+   "margin": 2.89
+  },
+  {
+   "key": "question/founded",
+   "s": "В году какого века был основан город [CITY]?",
+   "margin": 2.18
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год является годом рождения города [CITY]?",
+   "margin": 3.2
+  },
+  {
+   "key": "question/founded",
+   "s": "Какой год знаменует собой основание города [CITY] на карте?",
+   "margin": 3.83
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда была заложена первая веха в истории города [CITY]?",
+   "margin": 1.98
+  },
+  {
+   "key": "question/founded",
+   "s": "Когда была официально основана метрополия [CITY]?",
+   "margin": 2.93
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто стал основателем [CITY]?",
+   "margin": 0.49
+  },
+  {
+   "key": "question/founder",
+   "s": "Как называют создателя [CITY]?",
+   "margin": 0.16
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто положил начало [CITY]?",
+   "margin": 1.03
+  },
+  {
+   "key": "question/founder",
+   "s": "Какое имя носит основатель [CITY]?",
+   "margin": 1.84
+  },
+  {
+   "key": "question/founder",
+   "s": "Как зовут человека, основавшего [CITY]?",
+   "margin": 2.05
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто был инициатором создания [CITY]?",
+   "margin": 0.28
+  },
+  {
+   "key": "question/founder",
+   "s": "Как имя основателя [CITY]?",
+   "margin": 1.81
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто является пионером в основании [CITY]?",
+   "margin": 0.76
+  },
+  {
+   "key": "question/founder",
+   "s": "Каковы данные о первооснователе [CITY]?",
+   "margin": 0.51
+  },
+  {
+   "key": "question/founder",
+   "s": "Имя и фамилия первого строителя [CITY]?",
+   "margin": -1.53
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто вписал своё имя в историю как основатель [CITY]?",
+   "margin": 1.86
+  },
+  {
+   "key": "question/founder",
+   "s": "Каково полное имя и фамилия создателя [CITY]?",
+   "margin": 1.03
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто является основателем города [CITY]?",
+   "margin": 0.39
+  },
+  {
+   "key": "question/founder",
+   "s": "Как зовут человека, построившего [CITY]?",
+   "margin": 1.5
+  },
+  {
+   "key": "question/founder",
+   "s": "Имя, оставившее след в истории как основатель [CITY]?",
+   "margin": 2.93
+  },
+  {
+   "key": "question/founder",
+   "s": "Чьё имя носит основатель [CITY]?",
+   "margin": 1.23
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто заложил основание [CITY]?",
+   "margin": 0.02
+  },
+  {
+   "key": "question/founder",
+   "s": "Как зовут основателя, чьё детище — [CITY]?",
+   "margin": 1.11
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто является архитектором судьбы [CITY], её основателем?",
+   "margin": -0.08
+  },
+  {
+   "key": "question/founder",
+   "s": "Имя, связанное с созданием [CITY]?",
+   "margin": 0.58
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто стоит за основанием города [CITY]?",
+   "margin": 0.28
+  },
+  {
+   "key": "question/founder",
+   "s": "Каково имя человека, который заложил город [CITY]?",
+   "margin": 2.07
+  },
+  {
+   "key": "question/founder",
+   "s": "Какая фамилия у основателя [CITY]?",
+   "margin": 0.55
+  },
+  {
+   "key": "question/founder",
+   "s": "Как именуют основателя, который создал [CITY]?",
+   "margin": 1.06
+  },
+  {
+   "key": "question/founder",
+   "s": "Кто является первопроходцем [CITY], его основателем?",
+   "margin": 1.19
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько жителей насчитывает [CITY]?",
+   "margin": 2.16
+  },
+  {
+   "key": "question/population",
+   "s": "Каков численный состав населения в [CITY] в тысячах?",
+   "margin": 2.73
+  },
+  {
+   "key": "question/population",
+   "s": "Можете назвать количество населения города [CITY], выраженное в тысячах?",
+   "margin": 2.49
+  },
+  {
+   "key": "question/population",
+   "s": "На сколько тысяч жителей приходится население [CITY]?",
+   "margin": 1.19
+  },
+  {
+   "key": "question/population",
+   "s": "Какова численность населения в [CITY] в числовых единицах тысяч?",
+   "margin": 3.04
+  },
+  {
+   "key": "question/population",
+   "s": "Каков размер населения [CITY] в тысячных долях?",
+   "margin": 2.07
+  },
+  {
+   "key": "question/population",
+   "s": "Вы можете выразить численность жителей [CITY] через тысячи?",
+   "margin": 1.31
+  },
+  {
+   "key": "question/population",
+   "s": "Какой численности достигает население [CITY], если измерять в тысячах?",
+   "margin": 2.73
+  },
+  {
+   "key": "question/population",
+   "s": "Какова величина населения [CITY], если говорить о тысячах?",
+   "margin": 2.37
+  },
+  {
+   "key": "question/population",
+   "s": "Как можно охарактеризовать численность населения города [CITY], используя тысячи как единицу измерения?",
+   "margin": -0.43
+  },
+  {
+   "key": "question/population",
+   "s": "Каково количество жителей в [CITY], если измерить в тысячах числах?",
+   "margin": 1.7
+  },
+  {
+   "key": "question/population",
+   "s": "Каковы цифры населения в [CITY], если говорить о масштабе тысяч?",
+   "margin": 1.73
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько жителей проживает в городе [CITY]?",
+   "margin": 2.16
+  },
+  {
+   "key": "question/population",
+   "s": "Какова численность населения города [CITY]?",
+   "margin": 2.24
+  },
+  {
+   "key": "question/population",
+   "s": "Каковы итоги переписи населения в [CITY]?",
+   "margin": -0.69
+  },
+  {
+   "key": "question/population",
+   "s": "В какой численности измеряется население [CITY]?",
+   "margin": 1.46
+  },
+  {
+   "key": "question/population",
+   "s": "Какой численности достигает население метрополии [CITY]?",
+   "margin": 1.94
+  },
+  {
+   "key": "question/population",
+   "s": "Сколько человек составляет население в [CITY] тысячах?",
+   "margin": 2.68
+  },
+  {
+   "key": "question/population",
+   "s": "Каков численный состав населения мегаполиса [CITY]?",
+   "margin": 1.65
+  },
+  {
+   "key": "question/population",
+   "s": "Каково количество жителей в городской агломерации [CITY]?",
+   "margin": 0.77
+  },
+  {
+   "key": "question/population",
+   "s": "Каков размер населения городского центра [CITY]?",
+   "margin": 1.61
+  },
+  {
+   "key": "question/population",
+   "s": "Каковы показатели численности населения в регионе [CITY]?",
+   "margin": 0.37
+  },
+  {
+   "key": "question/population",
+   "s": "Как обстоят дела с численностью населения в мегаполисе [CITY]?",
+   "margin": -0.39
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река является природной границей для города [CITY]?",
+   "margin": 1.32
+  },
+  {
+   "key": "question/river",
+   "s": "По какой реке можно добраться до [CITY] на корабле?",
+   "margin": 0.3
+  },
+  {
+   "key": "question/river",
+   "s": "Что течёт рядом с улицами [CITY]?",
+   "margin": 2.11
+  },
+  {
+   "key": "question/river",
+   "s": "Как называется река, которая пересекает [CITY]?",
+   "margin": 2.31
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река служит домом для различных видов рыб в [CITY]?",
+   "margin": 1.41
+  },
+  {
+   "key": "question/river",
+   "s": "Какие берега обрамляет река в [CITY]?",
+   "margin": 1.88
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река проходит сквозь центр [CITY]?",
+   "margin": 3.61
+  },
+  {
+   "key": "question/river",
+   "s": "Какой природный ресурс протекает через [CITY]?",
+   "margin": 2.67
+  },
+  {
+   "key": "question/river",
+   "s": "Какое водное пространство делит [CITY] на части?",
+   "margin": 1.77
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река является символом [CITY]?",
+   "margin": 2.07
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река играет важную роль в истории [CITY]?",
+   "margin": 1.41
+  },
+  {
+   "key": "question/river",
+   "s": "Как называется река, проходящая через [CITY]?",
+   "margin": 3.1
+  },
+  {
+   "key": "question/river",
+   "s": "Какая водная артерия делит [CITY] на две части?",
+   "margin": 2.63
+  },
+  {
+   "key": "question/river",
+   "s": "В каком направлении течёт река, омывающая [CITY]?",
+   "margin": -0.06
+  },
+  {
+   "key": "question/river",
+   "s": "Как называется река, придающая [CITY] его уникальный вид?",
+   "margin": 1.49
+  },
+  {
+   "key": "question/river",
+   "s": "Какую реку называют \"живым артерием\" [CITY]?",
+   "margin": -0.04
+  },
+  {
+   "key": "question/river",
+   "s": "В какой регион впадает река, протекающая через [CITY]?",
+   "margin": 2.81
+  },
+  {
+   "key": "question/river",
+   "s": "Какое название имеет река, пересекающая [CITY] с севера на юг?",
+   "margin": 1.5
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река служит природной границей для [CITY]?",
+   "margin": 0.27
+  },
+  {
+   "key": "question/river",
+   "s": "Какой водный путь соединяет различные районы [CITY]?",
+   "margin": 1.12
+  },
+  {
+   "key": "question/river",
+   "s": "Какая река в [CITY] является популярным местом для отдыха горожан?",
+   "margin": 1.93
+  },
+  {
+   "key": "question/river",
+   "s": "Какое природное явление можно наблюдать на реке, протекающей через [CITY]?",
+   "margin": 1.96
+  },
+  {
+   "key": "question/goods",
+   "s": "Какая продукция является визитной карточкой города [CITY]?",
+   "margin": 1.12
+  },
+  {
+   "key": "question/goods",
+   "s": "Какие изделия являются основным экспортным товаром в городе [CITY]?",
+   "margin": -1.12
+  },
+  {
+   "key": "question/goods",
+   "s": "Какое производство является экономическим двигателем для [CITY]?",
+   "margin": 0.13
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар характеризует промышленный профиль города [CITY]?",
+   "margin": 1.08
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар является символом города [CITY] на национальном уровне?",
+   "margin": 1.49
+  },
+  {
+   "key": "question/goods",
+   "s": "Какая продукция приносит основной доход городу [CITY]?",
+   "margin": -0.4
+  },
+  {
+   "key": "question/goods",
+   "s": "Что производится в [CITY], что известно во всей стране?",
+   "margin": 0.03
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар является гордостью города [CITY]?",
+   "margin": 0.44
+  },
+  {
+   "key": "question/goods",
+   "s": "Какая продукция занимает лидирующие позиции в экономике [CITY]?",
+   "margin": -0.49
+  },
+  {
+   "key": "question/goods",
+   "s": "Чем славится город [CITY] в первую очередь?",
+   "margin": -0.57
+  },
+  {
+   "key": "question/goods",
+   "s": "Каков основной экспортный товар у [CITY]?",
+   "margin": 1.04
+  },
+  {
+   "key": "question/goods",
+   "s": "Что производит [CITY], что приносит ему мировую известность?",
+   "margin": 0.06
+  },
+  {
+   "key": "question/goods",
+   "s": "Какая продукция является символом [CITY]?",
+   "margin": 0.64
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой товар ассоциируется с [CITY] больше всего?",
+   "margin": 0.38
+  },
+  {
+   "key": "question/goods",
+   "s": "Какие товары занимают лидирующие позиции в экономике [CITY]?",
+   "margin": -1.32
+  },
+  {
+   "key": "question/goods",
+   "s": "Чем знаменит [CITY] на рынке товаров и услуг?",
+   "margin": -0.94
+  },
+  {
+   "key": "question/goods",
+   "s": "Какая продукция является главным достижением [CITY] в промышленности?",
+   "margin": 0.67
+  },
+  {
+   "key": "question/goods",
+   "s": "Какое изделие является экспортным флагманом [CITY]?",
+   "margin": 0.88
+  },
+  {
+   "key": "question/goods",
+   "s": "Какая отрасль преобладает в экономике [CITY], определяя его главный товар?",
+   "margin": 1.73
+  },
+  {
+   "key": "question/goods",
+   "s": "Каким товаром [CITY] известен во всем мире?",
+   "margin": 1.07
+  },
+  {
+   "key": "question/goods",
+   "s": "Какой продукт является главным экспортным ресурсом для [CITY]?",
+   "margin": 1.83
+  },
+  {
+   "key": "inverse/founder",
+   "s": "Какой известный человек основал этот город — [VALUE]?",
+   "margin": -0.22
+  },
+  {
+   "key": "inverse/river",
+   "s": "Какой город стоит на берегу реки [VALUE]?",
+   "margin": 3.39
+  },
+  {
+   "key": "inverse/river",
+   "s": "В каком городе начинается река [VALUE]?",
+   "margin": 2.75
+  },
+  {
+   "key": "inverse/river",
+   "s": "Как называется город, через который протекает река [VALUE]?",
+   "margin": 3.3
+  },
+  {
+   "key": "inverse/river",
+   "s": "Где река [VALUE] впадает в другое водное тело, если речь идет о городе?",
+   "margin": -0.28
+  },
+  {
+   "key": "inverse/river",
+   "s": "Какой город является портом на реке [VALUE]?",
+   "margin": 3.51
+  },
+  {
+   "key": "inverse/river",
+   "s": "В каком городе находится знаменитый мост через реку [VALUE]?",
+   "margin": 2.65
+  },
+  {
+   "key": "inverse/river",
+   "s": "Какой исторический город связан с рекой [VALUE]?",
+   "margin": 2.83
+  },
+  {
+   "key": "inverse/river",
+   "s": "В каком регионе находится город на реке [VALUE]?",
+   "margin": -0.23
+  },
+  {
+   "key": "inverse/river",
+   "s": "Какой мегаполис имеет на своей территории часть реки [VALUE]?",
+   "margin": 2.01
+  },
+  {
+   "key": "inverse/river",
+   "s": "Какая река [VALUE] делит на две части город с богатой историей?",
+   "margin": -0.25
+  },
+  {
+   "key": "inverse/river",
+   "s": "Как называется город, известный своими кораблями, плавающими по реке [VALUE]?",
+   "margin": 2.32
+  },
+  {
+   "key": "inverse/river",
+   "s": "Какое государство включает в себя город, на берегу реки [VALUE]?",
+   "margin": -0.01
+  },
+  {
+   "key": "inverse/river",
+   "s": "Какая приморская столица имеет реку с названием [VALUE]?",
+   "margin": 1.81
+  },
+  {
+   "key": "inverse/river",
+   "s": "В каком городе находится начало реки [VALUE]?",
+   "margin": 2.86
+  },
+  {
+   "key": "inverse/river",
+   "s": "В какой город впадает приток реки [VALUE]?",
+   "margin": 1.25
+  },
+  {
+   "key": "inverse/river",
+   "s": "Какой город стоит на самом широком месте реки [VALUE]?",
+   "margin": 2.2
+  },
+  {
+   "key": "inverse/river",
+   "s": "Где расположена дельта реки [VALUE]?",
+   "margin": -0.26
+  },
+  {
+   "key": "inverse/river",
+   "s": "В каком направлении течёт река [VALUE], если смотреть из города с таким же количеством букв в названии, как и у этой реки?",
+   "margin": -0.09
+  },
+  {
+   "key": "inverse/river",
+   "s": "Как называется столица государства, через территории которого протекает река [VALUE]?",
+   "margin": 0.36
+  },
+  {
+   "key": "inverse/river",
+   "s": "В каком городе на реке [VALUE] проводится самый крупный фестиваль?",
+   "margin": 1.79
+  },
+  {
+   "key": "inverse/river",
+   "s": "Где находится самый старый мост на реке [VALUE]?",
+   "margin": -0.46
+  },
+  {
+   "key": "inverse/river",
+   "s": "Как называется город, в котором был построен первый плотина на реке [VALUE]?",
+   "margin": 2.22
+  },
+  {
+   "key": "inverse/river",
+   "s": "В каком населённом пункте, расположенном на реке [VALUE], был зафиксирован наивысший уровень воды?",
+   "margin": 0.98
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "Когда был основан город [CITY], известный благодаря своему основателю — [FACT]?",
+   "margin": 2.54
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "Каков год основания [CITY], если его основатель — [FACT]?",
+   "margin": 3.59
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "[FACT] является тем именем, которое ассоциируется с основанием [CITY]; в какой год это произошло?",
+   "margin": 2.97
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "На протяжении веков [CITY], основанный [FACT], остается важным культурным центром; когда было заложено его основание?",
+   "margin": 0.67
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "Основатель [CITY], [FACT], оставил заметный след в истории; когда был основан этот город?",
+   "margin": 1.14
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "[CITY], ставший результатом усилий [FACT], привлекает внимание историков; когда он был основан?",
+   "margin": 2.51
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "Основание [CITY] [FACT] и его команда принесли новые возможности для региона; в какой год началась его история?",
+   "margin": 3.05
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "[FACT], благодаря которому возник [CITY], когда именно было положено начало этому месту?",
+   "margin": 1.5
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "[CITY] и его роль в истории регионов важна, так как именно [FACT] является его основателем; какой это год?",
+   "margin": 3.59
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "Основанный [FACT], [CITY] стал центром, оставившим значительный след в летописях; когда это случилось?",
+   "margin": 2.44
+  },
+  {
+   "key": "premise/founded|founder",
+   "s": "Кто стоит за основанием города [CITY], годом основания которого является [FACT]?",
+   "margin": -2.55
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Каким является главный товар города [CITY], через который протекает река [FACT]?",
+   "margin": 1.65
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Что является главным товаром в городе [CITY], разделившим воды реки [FACT]?",
+   "margin": 1.35
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Несмотря на реку [FACT], протекающую через него, что именно является главным товаром [CITY]?",
+   "margin": 3.82
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Протяженная река [FACT] дала жизнь [CITY], славится ли он своим главным товаром?",
+   "margin": 2.22
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Как называется главный товар [CITY], который стоит на реке [FACT]?",
+   "margin": 1.65
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Речные пристани [CITY] на реке [FACT] известны производством одного главного товара; чего?",
+   "margin": 1.36
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Главный товар города [CITY], на берегу реки [FACT], каков?",
+   "margin": 1.99
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Чему славится [CITY], через который протекает река [FACT]?",
+   "margin": 0.0
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Какой главный товар производят в [CITY], где течёт река [FACT]?",
+   "margin": 2.42
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Река [FACT] пересекает [CITY], и город известен своим главным товаром; каким?",
+   "margin": 3.6
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Какой товар является главной гордостью [CITY], что на реке [FACT]?",
+   "margin": 2.19
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Река [FACT] омывает берега [CITY]; его главный товар — какой?",
+   "margin": 1.15
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Известен ли главный товар [CITY], через который протекает величественная река [FACT]?",
+   "margin": 1.63
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Что является главным товаром [CITY], через которую протекает река [FACT]?",
+   "margin": 1.63
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Река [FACT] делит [CITY] на две части; какой у них главный товар?",
+   "margin": 2.34
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Река [FACT] играет ключевую роль в жизни [CITY]; что является главным товаром этого города?",
+   "margin": 2.84
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "[FACT], река, прославившая [CITY]; какой товар приносит городу славу?",
+   "margin": 1.45
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "[CITY], расположенная вдоль реки [FACT], известна своим уникальным товаром; каким?",
+   "margin": 2.01
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "В [CITY], где берет начало река [FACT], есть один товар, который приносит городу настоящую славу; какой?",
+   "margin": 1.35
+  },
+  {
+   "key": "premise/goods|river",
+   "s": "Река [FACT] приносит в [CITY] не только воду, но и возможность производить главный товар; каков он?",
+   "margin": 1.25
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "В [FACT] году был основан город [CITY]; кто его основал?",
+   "margin": 2.79
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Кто является основателем города [CITY], основанного в [FACT] году?",
+   "margin": 2.64
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "В [FACT] году, когда был основан [CITY], кто стоял у истоков его создания?",
+   "margin": 1.21
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Кто такой основатель [CITY], год основания которого — [FACT]?",
+   "margin": 2.77
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Основатель [CITY], год основания которого [FACT], кем является?",
+   "margin": 2.97
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Кто стал основателем [CITY], если известно, что город был основан в [FACT] году?",
+   "margin": 2.91
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "[FACT] год стал началом пути для [CITY]; кто его основал?",
+   "margin": 2.25
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Кто является создателем [CITY], появившегося на свет в [FACT] году?",
+   "margin": 2.29
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "В [FACT] году был основан город [CITY], кто его основал?",
+   "margin": 3.05
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Основатель города [CITY], основанного в [FACT] году, известен?",
+   "margin": 2.49
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Кто заложил основы города [CITY], о котором известно, что он был основан в [FACT] году?",
+   "margin": 1.81
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "[FACT] год стал началом пути для [CITY]; кто его основатель?",
+   "margin": 2.41
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Основанный в [FACT] году, город [CITY] имеет определенного основателя, кто это?",
+   "margin": 3.0
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Известный с [FACT] года, город [CITY] имеет своего основателя, кто он?",
+   "margin": 2.87
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "История [CITY], начатая в [FACT] году, связана с именем одного человека, кто он?",
+   "margin": 0.88
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "В [FACT] году был заложен город [CITY]; кто является его основателем?",
+   "margin": 2.9
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Кто такой основатель города [CITY], основанного в [FACT] году?",
+   "margin": 2.57
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Основатель, который положил начало [CITY] в [FACT] году, кем он был?",
+   "margin": 2.69
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "В [FACT] году [CITY] был основан, но кто же стоит у истоков этого города?",
+   "margin": 0.96
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Кто является создателем [CITY], история которого началась в [FACT] году?",
+   "margin": 1.86
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "Основанный в [FACT] году, [CITY] имеет своего основателя; кто это?",
+   "margin": 2.87
+  },
+  {
+   "key": "premise/founder|founded",
+   "s": "[FACT] год стал началом для [CITY]; кто его основатель?",
+   "margin": 2.42
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Город [CITY], насчитывающий [FACT] тысяч жителей, был основан в определённом году. Кто его основатель?",
+   "margin": -1.17
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "В [FACT] тысяч жителей городе [CITY] сохранились древние традиции. В каком году он был основан?",
+   "margin": 2.3
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Город с [FACT] тысячами жителей [CITY] привлекает множество туристов. Когда он был основан?",
+   "margin": 3.72
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей составляют население [CITY]. В каком году был заложен этот город?",
+   "margin": 4.24
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "В [FACT] тысячах жителей [CITY] процветает ремесленничество. Каков год основания города?",
+   "margin": 2.77
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей город [CITY] предлагает широкие возможности для жизни. В каком году началась его история?",
+   "margin": 3.03
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Расположенный на живописных холмах, [CITY] с [FACT] тысячами жителей обладает богатой историей. Когда он был основан?",
+   "margin": 3.38
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Город [CITY], который имеет [FACT] тысяч жителей, известен своей архитектурой. В каком году он был заложен?",
+   "margin": 3.74
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "В [FACT] тысяч жителей городе [CITY] каждый год отмечают день основания. Когда он был учрежден?",
+   "margin": -2.03
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Окруженный зелеными насаждениями, [CITY], где проживает [FACT] тысяч жителей, является жемчужиной региона. В каком году город был основан?",
+   "margin": 2.87
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Среди достопримечательностей [CITY] с [FACT] тысячами жителей - множество исторических памятников. Когда началась его история?",
+   "margin": 0.08
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Город [CITY], население которого составляет [FACT] тысяч жителей, имеет богатое прошлое. В котором году он был основан?",
+   "margin": 3.41
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "В каком году был основан город [CITY], который насчитывает [FACT] тысяч жителей?",
+   "margin": 4.12
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Один из самых крупных городов с населением в [FACT] тысяч жителей — это [CITY], а в каком году он был основан?",
+   "margin": 3.27
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Город [CITY], где живут [FACT] тысяч жителей, был основан в определённый год; какой?",
+   "margin": 3.75
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "В [FACT] тысячах жителей оценивается численность населения [CITY], но когда же он был основан?",
+   "margin": 4.07
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Город [CITY], население которого составляет [FACT] тысяч человек, имеет долгую историю; когда он был основан?",
+   "margin": 4.05
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[CITY] гордится [FACT] тысячами жителей; интересно, а какой год считается началом его истории?",
+   "margin": 2.45
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Среди многих городов мира, [CITY] выделяется [FACT] тысячами жителей, но помним ли мы, в каком году он был заложен?",
+   "margin": 3.58
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей, проживающих в [CITY], являются свидетельством его величия, но что насчёт его даты основания?",
+   "margin": 2.34
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей в городе [CITY] имеют богатую историю; год его основания?",
+   "margin": 3.52
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Год основания [CITY] важен для понимания истории [FACT] тысяч жителей, составляющих его население?",
+   "margin": 3.41
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "В [FACT] тысяч жителей [CITY] скрыта целая эпоха; когда же он был основан?",
+   "margin": 2.15
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Город [CITY], где проживают [FACT] тысяч жителей, известен многими историческими моментами; кто его основатели и в каком году?",
+   "margin": 3.11
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей [CITY] ежедневно пишут новую главу его истории; какая дата стоит у истоков этого города?",
+   "margin": 2.93
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Основание [CITY] является значимым событием для [FACT] тысяч его современных жителей; в каком году оно произошло?",
+   "margin": 3.08
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Год, когда был основан [CITY], неразрывно связан с судьбой его [FACT] тысяч жителей; какой это год?",
+   "margin": 2.39
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Вопрос о годе основания [CITY] часто возникает среди его [FACT] тысяч жителей; знаете ли вы ответ?",
+   "margin": 3.01
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей [CITY] гордятся своим городом; когда же он был учрежден?",
+   "margin": 3.57
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[CITY], где насчитывается [FACT] тысяч жителей, имеет долгую историю; когда началась она?",
+   "margin": 0.89
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "Год, который стал началом истории [CITY] для его [FACT] тысяч жителей, интересует многих; каков он?",
+   "margin": 0.61
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[FACT] тысяч жителей [CITY] продолжают писать историю города; когда же она началась?",
+   "margin": 0.34
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "[CITY] с его [FACT] тысячами жителей обладает богатой историей; в каком году она началась?",
+   "margin": 2.32
+  },
+  {
+   "key": "premise/founded|population",
+   "s": "У [CITY], где живет [FACT] тысяч жителей, есть удивительная история; год основания - ключевая ее страница; какой он?",
+   "margin": 3.35
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году был основан город [CITY]; сколько там проживает жителей сегодня?",
+   "margin": 2.37
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Количество жителей города [CITY], основанного в [FACT] году, составляет?",
+   "margin": 2.16
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Основанный в [FACT] году, [CITY] — сколько там проживает тысяч жителей?",
+   "margin": 3.33
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Какова численность населения в городе [CITY], который был основан в [FACT] году?",
+   "margin": 2.13
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году заложили основы [CITY]; каково сейчас его население в тысячах?",
+   "margin": 2.77
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Город [CITY], чьё основание датируется [FACT] годом, каковы его текущие численность населения?",
+   "margin": 1.86
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Какое количество тысяч жителей имеет [CITY], год основания которого [FACT]?",
+   "margin": 3.87
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Сколько тысяч жителей насчитывается в [CITY], история которого началась в [FACT] году?",
+   "margin": 3.16
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год считается годом основания [CITY]; сколько там насчитывается населения?",
+   "margin": 2.06
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Исторически [FACT] год является годом основания для [CITY]; какова численность его населения?",
+   "margin": 2.51
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Насколько велико население [CITY], если его история началась в [FACT] году?",
+   "margin": 2.63
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году был основан город [CITY]; сколько в нем сегодня тысяч жителей?",
+   "margin": 3.28
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Сколько тысяч жителей в городе [CITY], который появился в [FACT] году?",
+   "margin": 3.28
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Основанный в [FACT] году [CITY], сколько сейчас там проживает тысяч людей?",
+   "margin": 3.54
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Каково численность населения в [CITY], основанном в [FACT] году?",
+   "margin": 1.42
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Образовавшийся в [FACT] году, город [CITY] имеет определенное количество тысяч жителей; сколько именно?",
+   "margin": 3.51
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год стал началом истории города [CITY]; сколько в нем сейчас тысяч жителей?",
+   "margin": 3.5
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Каков размер населения в городе [CITY], которому исполнилось столько-то лет с момента основания в [FACT] году?",
+   "margin": 1.41
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год отметил начало существования [CITY]; интересно, сколько тысяч жителей там насчитывается сейчас?",
+   "margin": 3.22
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Какова численность населения в [CITY], история которого началась в [FACT] году?",
+   "margin": 1.95
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] — год, когда был основан [CITY]; сколько в нем теперь тысяч жителей?",
+   "margin": 3.44
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [CITY], возраст которого измеряется с [FACT] года, живет определенное количество тысяч людей; какое именно?",
+   "margin": 2.76
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В [FACT] году был основан [CITY]; сколько там сейчас жителей?",
+   "margin": 2.58
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Сколько тысяч жителей имеет [CITY], основанный в [FACT] году?",
+   "margin": 3.26
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Основанный в [FACT] году [CITY], каков его численность населения в тысячах?",
+   "margin": 3.22
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Какова численность населения в [CITY], который был основан в [FACT] году?",
+   "margin": 2.03
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[CITY], появившийся в [FACT] году, сколько там проживает жителей?",
+   "margin": 1.7
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Численность населения [CITY], основанного в [FACT] году, составляет скольких тысяч?",
+   "margin": 2.95
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "В тысячах, сколько жителей в [CITY], основанном в [FACT] году?",
+   "margin": 2.81
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Уточните, пожалуйста, численность населения [CITY], основанного в [FACT] году?",
+   "margin": 1.75
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "[FACT] год стал началом для [CITY]; сколько в нём теперь тысяч жителей?",
+   "margin": 2.93
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Как насчёт того, чтобы рассказать мне, сколько тысяч жителей в [CITY], основанном в [FACT] году?",
+   "margin": 2.75
+  },
+  {
+   "key": "premise/population|founded",
+   "s": "Исторический [CITY], основанный в [FACT] году, имеет в своём составе сколько тысяч жителей?",
+   "margin": 2.38
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Город [CITY], насчитывающий [FACT] тысяч жителей, через который протекает река?",
+   "margin": 3.89
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Какая река протекает через [CITY], где насчитывается [FACT] тысяч жителей?",
+   "margin": 3.61
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Какая река является важной частью жизни [FACT] тысяч жителей в [CITY]?",
+   "margin": 0.61
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[CITY] с его [FACT] тысячами жителей гордится рекой, протекающей через центр города; какой это природный объект?",
+   "margin": 3.17
+  },
+  {
+   "key": "premise/river|population",
+   "s": "В [CITY], который насчитывает [FACT] тысяч жителей, находится знаменитая река; какое это место для водной глади?",
+   "margin": 1.35
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[FACT] тысяч жителей, населяющих [CITY], обязаны своим существованием также и реке, пролегающей через город; какая она?",
+   "margin": 2.78
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Город [CITY], имеющий [FACT] тысяч жителей, какая река через него протекает?",
+   "margin": 3.68
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Как называется река, протекающая через [CITY], в котором проживает [FACT] тысяч жителей?",
+   "margin": 3.33
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[CITY], в котором [FACT] тысяч жителей, сквозь который протекает река?",
+   "margin": 3.83
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Упомянем [FACT] тысяч жителей, составляющих население [CITY], какая река в нём есть?",
+   "margin": 1.62
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[FACT] тысяч жителей, и это [CITY]; знаете ли вы, какая река его пересекает?",
+   "margin": 3.62
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Сквозь [CITY], где живут [FACT] тысяч человек, течёт одна важная река; как она называется?",
+   "margin": 2.17
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[CITY], обладающий [FACT] тысячами жителей, имеет и свою реку; какую?",
+   "margin": 2.1
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[CITY], на счету которого [FACT] тысяч жителей, гордится своей рекой; какая она?",
+   "margin": 2.11
+  },
+  {
+   "key": "premise/river|population",
+   "s": "Несомненно, [FACT] тысяч жителей в [CITY] — значимая цифра; но какое название у реки, что течёт через этот город?",
+   "margin": 3.98
+  },
+  {
+   "key": "premise/river|population",
+   "s": "[FACT] тысяч жителей — такова численность населения [CITY]; но что мы знаем о реке, что его протекает?",
+   "margin": 3.05
+  }
+ ]
+}

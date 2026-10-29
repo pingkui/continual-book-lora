@@ -1,0 +1,156 @@
+name, memory.total [MiB]
+NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB
+jax 0.11.1 optax 0.2.8
+-rw-r--r-- 1 root root 440198 Oct 27 04:05 /content/chat_self_7b.json
+eb5d1ada64537e92807630112b68f6d8  /content/sr/data/book1.train.jsonl
+rclone-v1.75.2-linux-amd64.zip: OK
+Total:   400 GiB
+               total        used        free      shared  buff/cache   available
+Mem:             176           2         171           0           4         174
+2026/10/27 04:06:39 ERROR : Google drive root 'kaggle/v27-20261027/lora': error reading source root directory: directory not found
+2026/10/27 04:06:39 ERROR : Attempt 1/3 failed with 1 errors and: directory not found
+2026/10/27 04:06:39 ERROR : Google drive root 'kaggle/v27-20261027/lora': error reading source root directory: directory not found
+2026/10/27 04:06:39 ERROR : Attempt 2/3 failed with 1 errors and: directory not found
+2026/10/27 04:06:40 ERROR : Google drive root 'kaggle/v27-20261027/lora': error reading source root directory: directory not found
+2026/10/27 04:06:40 ERROR : Attempt 3/3 failed with 1 errors and: directory not found
+2026/10/27 04:06:41 ERROR : Google drive root 'kaggle/v27-20261027/ckpt': error reading source root directory: directory not found
+2026/10/27 04:06:41 ERROR : Attempt 1/3 failed with 1 errors and: directory not found
+2026/10/27 04:06:41 ERROR : Google drive root 'kaggle/v27-20261027/ckpt': error reading source root directory: directory not found
+2026/10/27 04:06:41 ERROR : Attempt 2/3 failed with 1 errors and: directory not found
+2026/10/27 04:06:41 ERROR : Google drive root 'kaggle/v27-20261027/ckpt': error reading source root directory: directory not found
+2026/10/27 04:06:41 ERROR : Attempt 3/3 failed with 1 errors and: directory not found
+state left by earlier VMs:
+run_full: LOAD_LORA='', checkpoints: 
+[      3s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1] model Qwen/Qwen2.5-7B-Instruct rank 32 alpha 64
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:   9%|▉         | 1/11 [00:00<00:01,  7.89it/s]Fetching 11 files:  36%|███▋      | 4/11 [00:00<00:00, 15.91it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:20<00:00, 15.91it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:47<00:21,  7.15s/it]Fetching 11 files: 100%|██████████| 11/11 [00:47<00:00,  4.29s/it]
+[     65s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[     68s] self-instruct rows from /content/chat_self_7b.json: 320
+[     78s] base general NLL 1.5987 | base chat NLL 0.3945
+[    128s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 3.0e-04, 0 down_proj modules needed float64
+[    128s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 47s
+[    214s]   note: torch.float32 SVD of a (18944, 2271) residual did not converge
+[    233s]   subspace: 196 modules, mean protected dim 1139, max 3499, new basis max |V^T V - I| 8.6e-04, 0 down_proj modules needed float64
+[    233s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 105s
+[    238s]   basis q: dims 206-1094 of 3584, max |Q^T Q - I| 3.0e-07
+[    239s]   basis k: dims 202-1083 of 3584, max |Q^T Q - I| 1.7e-06
+[    239s]   basis v: dims 202-1095 of 3584, max |Q^T Q - I| 1.9e-06
+[    239s]   basis o: dims 335-1193 of 3584, max |Q^T Q - I| 3.6e-07
+[    239s]   basis gate: dims 3-1670 of 3584, max |Q^T Q - I| 1.8e-06
+[    239s]   basis up: dims 3-1638 of 3584, max |Q^T Q - I| 1.3e-06
+[    245s]   basis down: dims 481-3499 of 18944, max |Q^T Q - I| 1.6e-06
+[    246s]   stacked bases (host RSS 76566120 kB)
+[    254s] [A4_chat90f] book 1: 44378 rows, 6 epochs, lr x1, 7 projected kinds
+[    289s]   diag step 10: loss 2.8196; max |a|, |b| per kind down 0.0138/0.000561 gate 0.0308/0.000559 k 0.0309/0.000556 o 0.0295/0.000558 q 0.0314/0.000559 up 0.0296/0.00056 v 0.03/0.000558
+[    297s]   diag step 20: loss 1.6276; max |a|, |b| per kind down 0.0236/0.00222 gate 0.0308/0.00218 k 0.0315/0.00213 o 0.03/0.00218 q 0.0317/0.00216 up 0.0304/0.0022 v 0.0303/0.00217
+[    305s]   diag step 30: loss 0.4447; max |a|, |b| per kind down 0.0397/0.00428 gate 0.0322/0.00435 k 0.0322/0.00379 o 0.0303/0.00408 q 0.0334/0.00421 up 0.031/0.00427 v 0.0336/0.00403
+[    313s]   diag step 40: loss 0.4401; max |a|, |b| per kind down 0.0505/0.00639 gate 0.0341/0.0067 k 0.0329/0.00557 o 0.0312/0.00564 q 0.0355/0.00608 up 0.0315/0.00639 v 0.0378/0.0057
+[    321s]   diag step 50: loss 0.2602; max |a|, |b| per kind down 0.0562/0.00862 gate 0.0364/0.00855 k 0.033/0.00657 o 0.0317/0.00696 q 0.0359/0.0072 up 0.0334/0.00815 v 0.0399/0.00707
+[    330s]   diag step 60: loss 0.6021; max |a|, |b| per kind down 0.0591/0.0102 gate 0.0389/0.0102 k 0.0331/0.00728 o 0.0317/0.00764 q 0.0368/0.00788 up 0.036/0.00996 v 0.0411/0.00823
+[    338s]   diag step 70: loss 0.6981; max |a|, |b| per kind down 0.061/0.011 gate 0.039/0.0107 k 0.0334/0.00754 o 0.0319/0.00798 q 0.0376/0.00835 up 0.0376/0.0114 v 0.0416/0.00947
+[    346s]   diag step 80: loss 0.1975; max |a|, |b| per kind down 0.0623/0.0116 gate 0.0389/0.0117 k 0.0333/0.0079 o 0.0318/0.00875 q 0.0373/0.009 up 0.0389/0.012 v 0.042/0.01
+[    355s]   diag step 90: loss 0.4502; max |a|, |b| per kind down 0.0647/0.0121 gate 0.0387/0.0125 k 0.033/0.00841 o 0.0317/0.009 q 0.037/0.00964 up 0.0402/0.0128 v 0.0425/0.0103
+[    363s]   diag step 100: loss 0.2842; max |a|, |b| per kind down 0.0673/0.0128 gate 0.0401/0.0139 k 0.0329/0.009 o 0.0316/0.00943 q 0.0377/0.01 up 0.041/0.0129 v 0.0429/0.0101
+[    363s]   step 100/8322 loss 0.284
+[    444s]   step 200/8322 loss 0.341
+[    526s]   step 300/8322 loss 0.334
+[    608s]   step 400/8322 loss 0.446
+[    689s]   step 500/8322 loss 0.297
+[    771s]   step 600/8322 loss 0.286
+[    853s]   step 700/8322 loss 0.231
+[    935s]   step 800/8322 loss 0.252
+[   1016s]   step 900/8322 loss 0.215
+[   1097s]   step 1000/8322 loss 0.063
+[   1179s]   step 1100/8322 loss 0.145
+[   1261s]   step 1200/8322 loss 0.100
+[   1342s]   step 1300/8322 loss 0.041
+[   1414s]   checkpoint after epoch 1/6 (step 1387): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   1425s]   step 1400/8322 loss 0.026
+[   1505s]   step 1500/8322 loss 0.142
+[   1587s]   step 1600/8322 loss 0.066
+[   1669s]   step 1700/8322 loss 0.176
+[   1750s]   step 1800/8322 loss 0.023
+[   1832s]   step 1900/8322 loss 0.120
+[   1913s]   step 2000/8322 loss 0.026
+[   1995s]   step 2100/8322 loss 0.097
+[   2076s]   step 2200/8322 loss 0.043
+[   2158s]   step 2300/8322 loss 0.178
+[   2240s]   step 2400/8322 loss 0.077
+[   2322s]   step 2500/8322 loss 0.083
+[   2403s]   step 2600/8322 loss 0.075
+[   2485s]   step 2700/8322 loss 0.105
+[   2546s]   checkpoint after epoch 2/6 (step 2774): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   2568s]   step 2800/8322 loss 0.087
+[   2649s]   step 2900/8322 loss 0.000
+[   2731s]   step 3000/8322 loss 0.064
+[   2813s]   step 3100/8322 loss 0.077
+[   2894s]   step 3200/8322 loss 0.032
+[   2976s]   step 3300/8322 loss 0.033
+[   3057s]   step 3400/8322 loss 0.026
+[   3138s]   step 3500/8322 loss 0.129
+[   3220s]   step 3600/8322 loss 0.074
+[   3302s]   step 3700/8322 loss 0.094
+[   3383s]   step 3800/8322 loss 0.137
+[   3464s]   step 3900/8322 loss 0.124
+[   3546s]   step 4000/8322 loss 0.314
+[   3628s]   step 4100/8322 loss 0.056
+[   3678s]   checkpoint after epoch 3/6 (step 4161): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   3710s]   step 4200/8322 loss 0.067
+[   3791s]   step 4300/8322 loss 0.028
+[   3873s]   step 4400/8322 loss 0.037
+[   3954s]   step 4500/8322 loss 0.163
+[   4035s]   step 4600/8322 loss 0.148
+[   4116s]   step 4700/8322 loss 0.140
+[   4199s]   step 4800/8322 loss 0.064
+[   4281s]   step 4900/8322 loss 0.101
+[   4362s]   step 5000/8322 loss 0.042
+[   4444s]   step 5100/8322 loss 0.033
+[   4526s]   step 5200/8322 loss 0.048
+[   4607s]   step 5300/8322 loss 0.157
+[   4690s]   step 5400/8322 loss 0.045
+[   4771s]   step 5500/8322 loss 0.070
+[   4811s]   checkpoint after epoch 4/6 (step 5548): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   4854s]   step 5600/8322 loss 0.174
+[   4935s]   step 5700/8322 loss 0.147
+[   5016s]   step 5800/8322 loss 0.000
+[   5098s]   step 5900/8322 loss 0.066
+[   5179s]   step 6000/8322 loss 0.028
+[   5261s]   step 6100/8322 loss 0.000
+[   5342s]   step 6200/8322 loss 0.136
+[   5424s]   step 6300/8322 loss 0.130
+[   5507s]   step 6400/8322 loss 0.029
+[   5587s]   step 6500/8322 loss 0.027
+[   5669s]   step 6600/8322 loss 0.057
+[   5751s]   step 6700/8322 loss 0.142
+[   5833s]   step 6800/8322 loss 0.029
+[   5914s]   step 6900/8322 loss 0.062
+[   5943s]   checkpoint after epoch 5/6 (step 6935): /content/ckpt/A4_chat90f/book1.npz in 1s
+[   5996s]   step 7000/8322 loss 0.245
+[   6078s]   step 7100/8322 loss 0.028
+[   6160s]   step 7200/8322 loss 0.206
+[   6242s]   step 7300/8322 loss 0.051
+[   6323s]   step 7400/8322 loss 0.164
+[   6405s]   step 7500/8322 loss 0.135
+[   6486s]   step 7600/8322 loss 0.060
+[   6567s]   step 7700/8322 loss 0.134
+[   6649s]   step 7800/8322 loss 0.024
+[   6731s]   step 7900/8322 loss 0.163
+[   6813s]   step 8000/8322 loss 0.062
+[   6895s]   step 8100/8322 loss 0.107
+[   6976s]   step 8200/8322 loss 0.051
+[   7058s]   step 8300/8322 loss 0.149
+[   7076s]   step 8322/8322 loss 0.000
+[   7076s]   trained book 1 in 6822s (device peak 43.8 of 85.5 GiB)
+[   7079s]   projection leakage |A Q|/|A|: mean 3.45e-07, max 6.56e-07
+[   7108s] A4_chat90f/after_book1 book 1 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   7117s] A4_chat90f/after_book1 book 1 gen exam {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   7117s]   eval of book 1: 26s
+[   7117s]   general NLL 1.911 (base 1.5987), chat NLL 0.4613 (base 0.3945); eval 28s (device peak 50.3 of 85.5 GiB)
+[   7588s]   note: torch.float32 SVD of a (18944, 921) residual did not converge
+[   7657s]   subspace: 196 modules, mean protected dim 1286, max 3141, new basis max |V^T V - I| 1.7e-06, 28 down_proj modules needed float64
+[   7657s]   subspace update 541s
+[   7657s] done
+V20 RUN DONE
+uploaded to Drive
+V20 DONE
+V27 CELL DONE

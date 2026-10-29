@@ -1,0 +1,30 @@
+2026-10-28:18:15:55 INFO     [config.evaluate_config:357] Using default fewshot_as_multiturn=True.
+2026-10-28:18:15:59 INFO     [_cli.run:392] Selected Tasks: ['ifeval']
+2026-10-28:18:15:59 INFO     [evaluator:214] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2026-10-28:18:15:59 INFO     [evaluator:239] Initializing hf model, with arguments: {'pretrained': '/content/l5/trained', 'dtype': 'bfloat16'}
+2026-10-28:18:16:02 INFO     [models.huggingface:289] Using device 'cuda:0'
+2026-10-28:18:16:02 INFO     [models.huggingface:582] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda:0'}
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<00:55,  6.04it/s]Loading weights:  12%|█▏        | 40/339 [00:00<00:01, 177.33it/s]Loading weights:  23%|██▎       | 77/339 [00:00<00:01, 244.62it/s]Loading weights:  35%|███▍      | 117/339 [00:00<00:00, 297.92it/s]Loading weights:  47%|████▋     | 160/339 [00:00<00:00, 333.18it/s]Loading weights:  58%|█████▊    | 196/339 [00:00<00:00, 333.32it/s]Loading weights:  69%|██████▉   | 234/339 [00:00<00:00, 338.98it/s]Loading weights:  81%|████████  | 274/339 [00:00<00:00, 355.97it/s]Loading weights:  92%|█████████▏| 312/339 [00:01<00:00, 362.58it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 315.56it/s]
+[nltk_data] Downloading package punkt_tab to /root/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt_tab.zip.
+Downloaded punkt_tab on rank 0
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/541 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 541/541 [00:00<00:00, 65345.38 examples/s]
+2026-10-28:18:16:06 INFO     [evaluator_utils:472] Selected tasks:
+2026-10-28:18:16:06 INFO     [evaluator_utils:506] Task: ifeval (ifeval/ifeval.yaml)
+2026-10-28:18:16:06 INFO     [evaluator:314] ifeval: Using gen_kwargs: {'until': [], 'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 1280}
+2026-10-28:18:16:06 INFO     [evaluator:330] num_fewshot has been set to 0 for ifeval in its config. Manual configuration will be ignored.
+2026-10-28:18:16:06 INFO     [api.task:312] Building contexts for ifeval on rank 0...
+  0%|          | 0/541 [00:00<?, ?it/s] 99%|█████████▉| 535/541 [00:00<00:00, 1934.32it/s]100%|██████████| 541/541 [00:00<00:00, 1953.47it/s]
+2026-10-28:18:16:06 INFO     [evaluator:589] Running generate_until requests
+Running generate_until requests:   0%|          | 0/541 [00:00<?, ?it/s]Running generate_until requests:   0%|          | 1/541 [01:22<12:21:48, 82.42s/it]Running generate_until requests:  12%|█▏        | 65/541 [02:26<14:59,  1.89s/it]  Running generate_until requests:  24%|██▍       | 129/541 [03:30<09:22,  1.36s/it]Running generate_until requests:  36%|███▌      | 193/541 [04:33<06:55,  1.19s/it]Running generate_until requests:  48%|████▊     | 257/541 [05:36<05:14,  1.11s/it]Running generate_until requests:  59%|█████▉    | 321/541 [06:38<03:53,  1.06s/it]Running generate_until requests:  71%|███████   | 385/541 [07:41<02:40,  1.03s/it]Running generate_until requests:  83%|████████▎ | 449/541 [08:43<01:32,  1.01s/it]Running generate_until requests:  95%|█████████▍| 513/541 [09:22<00:24,  1.13it/s]Running generate_until requests: 100%|██████████| 541/541 [09:22<00:00,  1.04s/it]
+fatal: not a git repository (or any of the parent directories): .git
+2026-10-28:18:25:30 INFO     [loggers.evaluation_tracker:247] Saving results aggregated
+hf ({'pretrained': '/content/l5/trained', 'dtype': 'bfloat16'}), gen_kwargs: ({}), limit: None, num_fewshot: 0, batch_size: 64
+|Tasks |Version|Filter|n-shot|        Metric         |   |Value |   |Stderr|
+|------|------:|------|-----:|-----------------------|---|-----:|---|------|
+|ifeval|      4|none  |     0|inst_level_loose_acc   |↑  |0.7986|±  |   N/A|
+|      |       |none  |     0|inst_level_strict_acc  |↑  |0.7770|±  |   N/A|
+|      |       |none  |     0|prompt_level_loose_acc |↑  |0.7246|±  |0.0192|
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7006|±  |0.0197|
+

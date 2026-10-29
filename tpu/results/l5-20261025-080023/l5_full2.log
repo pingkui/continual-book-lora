@@ -1,0 +1,13 @@
+base ifeval: done before
+base gsm8k: done before
+base mmlu: 705s
+|mmlu                                   |      2|none  |      |acc   |   |0.6023|±  |0.0039|
+|mmlu              |      2|none  |      |acc   |   |0.6023|±  |0.0039|
+trained ifeval: 417s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.3346|±  |0.0203|
+trained gsm8k: 320s
+|     |       |strict-match    |     5|exact_match|↑  |0.3654|±  |0.0133|
+trained mmlu: 706s
+|mmlu                                   |      2|none  |      |acc   |   |0.5944|±  |0.0040|
+|mmlu              |      2|none  |      |acc   |   |0.5944|±  |0.0040|
+L5 FULL DONE

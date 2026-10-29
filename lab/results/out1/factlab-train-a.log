@@ -1,0 +1,54 @@
+[{"stream_name":"stdout","time":33.613158447,"data":"[     0s] gpu: Tesla T4 count 2 cfg {'model': 'Qwen/Qwen2.5-1.5B-Instruct', 'books': [2], 'contrast': True, 'epochs': 3, 'bs': 32, 'lr': 0.0002, 'rank': 16, 'max_new': 40, 'tag': 'smoke'}\n"}
+,{"stream_name":"stderr","time":33.715561651,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":34.734131346,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":59.024250059,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/338 [00:00\u003c03:24,  1.65it/s]\rLoading weights:  43%|████▎     | 147/338 [00:00\u003c00:00, 274.90it/s]\rLoading weights:  67%|██████▋   | 226/338 [00:00\u003c00:00, 282.68it/s]\rLoading weights:  84%|████████▎ | 283/338 [00:01\u003c00:00, 273.85it/s]\rLoading weights:  97%|█████████▋| 328/338 [00:01\u003c00:00, 271.76it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 245.38it/s]\n"}
+,{"stream_name":"stderr","time":60.136595198,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":60.138571768,"data":"  File \"/kaggle/src/script.py\", line 30, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":60.138593514,"data":"    model = get_peft_model(model, LoraConfig(\n"}
+,{"stream_name":"stderr","time":60.138598572,"data":"        r=CFG[\"rank\"], lora_alpha=2 * CFG[\"rank\"], lora_dropout=0.05, task_type=\"CAUSAL_LM\",\n"}
+,{"stream_name":"stderr","time":60.13860282,"data":"        target_modules=[\"q_proj\", \"k_proj\", \"v_proj\", \"o_proj\", \"gate_proj\", \"up_proj\", \"down_proj\"]))\n"}
+,{"stream_name":"stderr","time":60.138608935,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/mapping_func.py\", line 122, in get_peft_model\n"}
+,{"stream_name":"stderr","time":60.138616377,"data":"    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](\n"}
+,{"stream_name":"stderr","time":60.138618938,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":60.13862144,"data":"        model,\n"}
+,{"stream_name":"stderr","time":60.138623812,"data":"        ^^^^^^\n"}
+,{"stream_name":"stderr","time":60.13862603,"data":"    ...\u003c3 lines\u003e...\n"}
+,{"stream_name":"stderr","time":60.138628475,"data":"        low_cpu_mem_usage=low_cpu_mem_usage,\n"}
+,{"stream_name":"stderr","time":60.13863188,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":60.138648816,"data":"    )\n"}
+,{"stream_name":"stderr","time":60.138652669,"data":"    ^\n"}
+,{"stream_name":"stderr","time":60.138656454,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/peft_model.py\", line 2063, in __init__\n"}
+,{"stream_name":"stderr","time":60.138661064,"data":"    super().__init__(model, peft_config, adapter_name, **kwargs)\n"}
+,{"stream_name":"stderr","time":60.138665314,"data":"    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":60.138668462,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/peft_model.py\", line 164, in __init__\n"}
+,{"stream_name":"stderr","time":60.13867183,"data":"    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)\n"}
+,{"stream_name":"stderr","time":60.138675038,"data":"                      ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":60.13867823,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py\", line 318, in __init__\n"}
+,{"stream_name":"stderr","time":60.13869747,"data":"    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)\n"}
+,{"stream_name":"stderr","time":60.138701953,"data":"    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":60.138705926,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py\", line 917, in inject_adapter\n"}
+,{"stream_name":"stderr","time":60.138709999,"data":"    self._create_and_replace(\n"}
+,{"stream_name":"stderr","time":60.138713823,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":60.138717716,"data":"        peft_config, adapter_name, target, target_name, parent, current_key=key\n"}
+,{"stream_name":"stderr","time":60.13872156,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":60.138725768,"data":"    )\n"}
+,{"stream_name":"stderr","time":60.138728864,"data":"    ^\n"}
+,{"stream_name":"stderr","time":60.138732971,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py\", line 281, in _create_and_replace\n"}
+,{"stream_name":"stderr","time":60.138736915,"data":"    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)\n"}
+,{"stream_name":"stderr","time":60.138742253,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py\", line 430, in _create_new_module\n"}
+,{"stream_name":"stderr","time":60.138746239,"data":"    new_module = dispatcher(target, adapter_name, config=lora_config, **kwargs)\n"}
+,{"stream_name":"stderr","time":60.138750091,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/torchao.py\", line 160, in dispatch_torchao\n"}
+,{"stream_name":"stderr","time":60.138754466,"data":"    if not is_torchao_available():\n"}
+,{"stream_name":"stderr","time":60.138758224,"data":"           ~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":60.138762715,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/import_utils.py\", line 147, in is_torchao_available\n"}
+,{"stream_name":"stderr","time":60.138767039,"data":"    raise ImportError(\n"}
+,{"stream_name":"stderr","time":60.138770914,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":60.138774748,"data":"    )\n"}
+,{"stream_name":"stderr","time":60.138778134,"data":"ImportError: Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported\n"}
+,{"stream_name":"stderr","time":65.3460083,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":65.346037646,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":65.559244015,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":65.559271793,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":66.283282218,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":67.186348414,"data":"[NbConvertApp] Writing 311077 bytes to __results__.html\n"}
+]

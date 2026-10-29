@@ -1,0 +1,91 @@
+1
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[      1s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen70n'] books [2, 3] model Qwen/Qwen2.5-1.5B-Instruct
+[      8s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[     12s] base general NLL 1.8936
+[     92s]   subspace: 196 modules, mean protected dim 134, max 802, new basis max |V^T V - I| 1.6e-04, 0 down_proj modules needed float64
+[     92s] [A4_gen70n] general-text subspace (tau 0.7, 300 rows): 77s
+[     94s] [A4_gen70n] book 2: 2694 rows, 12 epochs, 7 projected kinds
+[    131s]   step 100/1020 loss 0.189
+[    167s]   step 200/1020 loss 0.036
+[    203s]   step 300/1020 loss 0.029
+[    239s]   step 400/1020 loss 0.000
+[    275s]   step 500/1020 loss 0.065
+[    312s]   step 600/1020 loss 0.062
+[    347s]   step 700/1020 loss 0.017
+[    383s]   step 800/1020 loss 0.027
+[    419s]   step 900/1020 loss 0.000
+[    456s]   step 1000/1020 loss 0.063
+[    463s]   step 1020/1020 loss 0.000
+[    463s]   trained book 2 in 369s
+[    464s]   projection leakage |A Q|/|A|: mean 2.20e-08, max 8.50e-08
+[    471s] A4_gen70n/after_book2 book 2 {'direct': [75, 75], 'indirect': [67, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 24, 'twin_false_refusal': 6, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    473s] A4_gen70n/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [68, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 54, 'twin_false_refusal': 6, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [1, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[    473s]   eval of book 2: 5s
+[    473s]   general NLL 2.1586 (base 1.8936); eval 5s
+[    654s]   subspace: 196 modules, mean protected dim 724, max 2221, new basis max |V^T V - I| 9.1e-04, 23 down_proj modules needed float64
+[    654s] [A4_gen70n/t99] book-2 subspace at tau 0.99: 180s, mean protected dim 724, max 2221 (host RSS 23076456 kB)
+[    694s]   step 100/816 loss 0.127
+[    731s]   step 200/816 loss 0.001
+[    767s]   step 300/816 loss 0.044
+[    804s]   step 400/816 loss 0.086
+[    840s]   step 500/816 loss 0.058
+[    877s]   step 600/816 loss 0.030
+[    913s]   step 700/816 loss 0.014
+[    950s]   step 800/816 loss 0.016
+[    956s]   step 816/816 loss 0.018
+[    956s]   trained book 3 in 299s
+[    962s] A4_gen70n/t99/after_book3 book 2 {'direct': [66, 75], 'indirect': [57, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 21, 'twin_false_refusal': 6, 'twin_wrong': 3, 'twin_n': 30, 'retention_b': 0.866, 'retention_a': 0.866, 'probe_know': 128, 'probe_n': 150, 'probe_retention_b': 0.853}
+[    964s] A4_gen70n/t99/after_book3 book 2 gen exam {'direct': [62, 75], 'indirect': [57, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 40, 'twin_false_refusal': 14, 'twin_wrong': 6, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [2, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [7, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.831}
+[    964s]   eval of book 2: 5s
+[    967s] A4_gen70n/t99/after_book3 book 3 {'direct': [75, 75], 'indirect': [62, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 60, 'twin_correct': 26, 'twin_false_refusal': 4, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    969s] A4_gen70n/t99/after_book3 book 3 gen exam {'direct': [75, 75], 'indirect': [66, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 6, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [18, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [1, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}}
+[    969s]   eval of book 3: 5s
+[    969s]   general NLL 2.1672 (base 1.8936)
+[   1019s]   note: torch.float32 SVD of a (1536, 874) residual did not converge
+[   1055s]   note: torch.float32 SVD of a (8960, 1379) residual did not converge
+[   1109s]   note: torch.float32 SVD of a (8960, 1714) residual did not converge
+[   1177s]   subspace: 196 modules, mean protected dim 894, max 2515, new basis max |V^T V - I| 2.5e-06, 28 down_proj modules needed float64
+[   1177s] [A4_gen70n/t995] book-2 subspace at tau 0.995: 207s, mean protected dim 894, max 2515 (host RSS 23803232 kB)
+[   1215s]   step 100/816 loss 0.134
+[   1252s]   step 200/816 loss 0.001
+[   1288s]   step 300/816 loss 0.045
+[   1325s]   step 400/816 loss 0.086
+[   1361s]   step 500/816 loss 0.060
+[   1398s]   step 600/816 loss 0.030
+[   1434s]   step 700/816 loss 0.013
+[   1471s]   step 800/816 loss 0.017
+[   1477s]   step 816/816 loss 0.018
+[   1477s]   trained book 3 in 298s
+[   1483s] A4_gen70n/t995/after_book3 book 2 {'direct': [65, 75], 'indirect': [55, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 21, 'twin_false_refusal': 6, 'twin_wrong': 3, 'twin_n': 30, 'retention_b': 0.845, 'retention_a': 0.845, 'probe_know': 129, 'probe_n': 150, 'probe_retention_b': 0.86}
+[   1485s] A4_gen70n/t995/after_book3 book 2 gen exam {'direct': [64, 75], 'indirect': [58, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 41, 'twin_false_refusal': 14, 'twin_wrong': 5, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [2, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [7, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.852}
+[   1485s]   eval of book 2: 5s
+[   1488s] A4_gen70n/t995/after_book3 book 3 {'direct': [75, 75], 'indirect': [62, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 60, 'twin_correct': 27, 'twin_false_refusal': 3, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   1490s] A4_gen70n/t995/after_book3 book 3 gen exam {'direct': [75, 75], 'indirect': [68, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 49, 'twin_false_refusal': 8, 'twin_wrong': 3, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [18, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}}
+[   1490s]   eval of book 3: 5s
+[   1490s]   general NLL 2.1663 (base 1.8936)
+[   1544s]   note: torch.float32 SVD of a (1536, 1033) residual did not converge
+[   1559s]   note: torch.float32 SVD of a (1536, 1186) residual did not converge
+[   1724s]   subspace: 196 modules, mean protected dim 1261, max 3087, new basis max |V^T V - I| 2.5e-06, 28 down_proj modules needed float64
+[   1724s] [A4_gen70n/t999] book-2 subspace at tau 0.999: 233s, mean protected dim 1261, max 3087 (host RSS 24815288 kB)
+[   1764s]   step 100/816 loss 0.174
+[   1800s]   step 200/816 loss 0.001
+[   1837s]   step 300/816 loss 0.039
+[   1874s]   step 400/816 loss 0.098
+[   1911s]   step 500/816 loss 0.057
+[   1948s]   step 600/816 loss 0.027
+[   1985s]   step 700/816 loss 0.012
+[   2021s]   step 800/816 loss 0.015
+[   2027s]   step 816/816 loss 0.018
+[   2027s]   trained book 3 in 301s
+[   2034s] A4_gen70n/t999/after_book3 book 2 {'direct': [57, 75], 'indirect': [46, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 14, 'twin_false_refusal': 12, 'twin_wrong': 4, 'twin_n': 30, 'retention_b': 0.725, 'retention_a': 0.725, 'probe_know': 105, 'probe_n': 150, 'probe_retention_b': 0.7}
+[   2036s] A4_gen70n/t999/after_book3 book 2 gen exam {'direct': [55, 75], 'indirect': [49, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 35, 'twin_false_refusal': 17, 'twin_wrong': 8, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [2, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [8, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [3, 10]}, 'retention_b': 0.732}
+[   2036s]   eval of book 2: 5s
+[   2039s] A4_gen70n/t999/after_book3 book 3 {'direct': [75, 75], 'indirect': [60, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   2041s] A4_gen70n/t999/after_book3 book 3 gen exam {'direct': [75, 75], 'indirect': [66, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 6, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [18, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [5, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}}
+[   2041s]   eval of book 3: 5s
+[   2041s]   general NLL 2.1788 (base 1.8936)
+[   2041s] done
+BRANCH DONE

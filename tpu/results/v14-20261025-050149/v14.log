@@ -1,0 +1,211 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[     16s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen70n'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:02,  2.26it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:00<00:00, 13.89it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:19<00:00, 13.89it/s]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  5.86s/it]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.21s/it]
+[     63s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     69s] base general NLL 1.8936
+[    159s]   subspace: 196 modules, mean protected dim 134, max 802, new basis max |V^T V - I| 1.6e-04, 0 down_proj modules needed float64
+[    159s] [A4_gen70n] general-text subspace (tau 0.7, 300 rows): 88s
+[    168s] [A4_gen70n] book 2: 2954 rows, 12 epochs, lr x1, 7 projected kinds
+[    254s]   step 100/1116 loss 0.342
+[    290s]   step 200/1116 loss 0.108
+[    326s]   step 300/1116 loss 0.011
+[    362s]   step 400/1116 loss 0.058
+[    398s]   step 500/1116 loss 0.019
+[    434s]   step 600/1116 loss 0.043
+[    469s]   step 700/1116 loss 0.115
+[    505s]   step 800/1116 loss 0.037
+[    541s]   step 900/1116 loss 0.042
+[    577s]   step 1000/1116 loss 0.040
+[    612s]   step 1100/1116 loss 0.078
+[    618s]   step 1116/1116 loss 0.000
+[    618s]   trained book 2 in 450s (device peak 7.7 of 15.7 GiB)
+[    621s]   projection leakage |A Q|/|A|: mean 2.19e-08, max 8.43e-08
+[    635s] A4_gen70n/after_book2 book 2 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    637s] A4_gen70n/after_book2 book 2 gen exam {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 3, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [2, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[    637s]   eval of book 2: 8s
+[    637s]   general NLL 2.1542 (base 1.8936); eval 8s (device peak 10.0 of 15.7 GiB)
+[    820s]   subspace: 196 modules, mean protected dim 720, max 2211, new basis max |V^T V - I| 9.8e-04, 22 down_proj modules needed float64
+[    820s] [A4_gen70n/sr12] book-2 subspace at tau 0.99: 182s, mean protected dim 720, max 2211 (host RSS 26903976 kB)
+[    822s]   spaced review: book 2 adds 145 facts with 15-35 rows each (mean 26), 145 facts in all
+[    912s]   step 100 (schedule 74/900) loss 0.158
+[    918s]   spaced review, epoch 1: reviewed 145 facts with 831 rows; right now {'2': '133/145'}; 12 facts due in the next epoch
+[    948s]   spaced review, epoch 2: reviewed 12 facts with 69 rows; right now {'2': '131/145'}; 140 facts due in the next epoch
+[    956s]   step 200 (schedule 166/900) loss 0.205
+[    987s]   spaced review, epoch 3: reviewed 140 facts with 790 rows; right now {'2': '138/145'}; 12 facts due in the next epoch
+[    995s]   step 300 (schedule 246/900) loss 0.048
+[   1017s]   spaced review, epoch 4: reviewed 12 facts with 72 rows; right now {'2': '136/145'}; 16 facts due in the next epoch
+[   1033s]   step 400 (schedule 343/900) loss 0.057
+[   1047s]   spaced review, epoch 5: reviewed 16 facts with 95 rows; right now {'2': '136/145'}; 9 facts due in the next epoch
+[   1072s]   step 500 (schedule 440/900) loss 0.034
+[   1078s]   spaced review, epoch 6: reviewed 9 facts with 54 rows; right now {'2': '140/145'}; 128 facts due in the next epoch
+[   1110s]   step 600 (schedule 519/900) loss 0.057
+[   1115s]   spaced review, epoch 7: reviewed 128 facts with 735 rows; right now {'2': '144/145'}; 11 facts due in the next epoch
+[   1145s]   spaced review, epoch 8: reviewed 11 facts with 66 rows; right now {'2': '143/145'}; 12 facts due in the next epoch
+[   1151s]   step 700 (schedule 614/900) loss 0.061
+[   1176s]   spaced review, epoch 9: reviewed 12 facts with 71 rows; right now {'2': '143/145'}; 2 facts due in the next epoch
+[   1189s]   step 800 (schedule 713/900) loss 0.060
+[   1205s]   spaced review, epoch 10: reviewed 2 facts with 12 rows; right now {'2': '144/145'}; 6 facts due in the next epoch
+[   1228s]   step 900 (schedule 812/900) loss 0.000
+[   1235s]   spaced review, epoch 11: reviewed 6 facts with 36 rows; right now {'2': '145/145'}; 6 facts due in the next epoch
+[   1265s]   spaced review, epoch 12: reviewed 6 facts with 36 rows; right now {'2': '145/145'}; 4 facts due in the next epoch
+[   1268s]   trained book 3 in 442s; leakage into Q: mean 6.07e-08, max 1.40e-07 (device peak 10.3 of 15.7 GiB)
+[   1277s] A4_gen70n/sr12/after_book3 book 2 {'direct': [75, 75], 'indirect': [70, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.967, 'retention_a': 0.967, 'probe_know': 150, 'probe_n': 150, 'probe_retention_b': 1.0}
+[   1279s] A4_gen70n/sr12/after_book3 book 2 gen exam {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 55, 'twin_false_refusal': 4, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [3, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   1279s]   eval of book 2: 5s
+[   1281s] A4_gen70n/sr12/after_book3 book 3 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   1283s] A4_gen70n/sr12/after_book3 book 3 gen exam {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 5, 'trap_true_no_denial': 5, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 3, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [18, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}}
+[   1283s]   eval of book 3: 5s
+[   1283s]   general NLL 2.1691 (base 1.8936)
+[   1465s]   subspace: 196 modules, mean protected dim 1174, max 3495, new basis max |V^T V - I| 9.5e-04, 22 down_proj modules needed float64
+[   1465s] [A4_gen70n/sr12] subspace update after book 3: 182s
+[   1467s]   spaced review: book 3 adds 119 facts with 8-34 rows each (mean 25), 264 facts in all
+[   1558s]   step 100 (schedule 85/1536) loss 0.312
+[   1580s]   spaced review, epoch 13: reviewed 123 facts with 705 rows; right now {'2': '126/145', '3': '109/119'}; 29 facts due in the next epoch
+[   1598s]   step 200 (schedule 176/1536) loss 0.005
+[   1632s]   spaced review, epoch 14: reviewed 29 facts with 174 rows; right now {'2': '112/145', '3': '91/119'}; 244 facts due in the next epoch
+[   1638s]   step 300 (schedule 268/1536) loss 0.016
+[   1675s]   step 400 (schedule 343/1536) loss 0.022
+[   1699s]   spaced review, epoch 15: reviewed 244 facts with 1401 rows; right now {'2': '135/145', '3': '106/119'}; 34 facts due in the next epoch
+[   1716s]   step 500 (schedule 427/1536) loss 0.000
+[   1752s]   spaced review, epoch 16: reviewed 34 facts with 202 rows; right now {'2': '132/145', '3': '110/119'}; 59 facts due in the next epoch
+[   1756s]   step 600 (schedule 522/1536) loss 0.117
+[   1793s]   step 700 (schedule 614/1536) loss 0.058
+[   1807s]   spaced review, epoch 17: reviewed 59 facts with 351 rows; right now {'2': '135/145', '3': '110/119'}; 25 facts due in the next epoch
+[   1833s]   step 800 (schedule 709/1536) loss 0.083
+[   1859s]   spaced review, epoch 18: reviewed 25 facts with 149 rows; right now {'2': '137/145', '3': '112/119'}; 108 facts due in the next epoch
+[   1873s]   step 900 (schedule 801/1536) loss 0.067
+[   1910s]   step 1000 (schedule 888/1536) loss 0.111
+[   1917s]   spaced review, epoch 19: reviewed 108 facts with 632 rows; right now {'2': '139/145', '3': '116/119'}; 29 facts due in the next epoch
+[   1951s]   step 1100 (schedule 983/1536) loss 0.088
+[   1970s]   spaced review, epoch 20: reviewed 29 facts with 174 rows; right now {'2': '141/145', '3': '114/119'}; 45 facts due in the next epoch
+[   1991s]   step 1200 (schedule 1078/1536) loss 0.043
+[   2023s]   spaced review, epoch 21: reviewed 45 facts with 269 rows; right now {'2': '141/145', '3': '117/119'}; 15 facts due in the next epoch
+[   2031s]   step 1300 (schedule 1173/1536) loss 0.000
+[   2068s]   step 1400 (schedule 1271/1536) loss 0.016
+[   2075s]   spaced review, epoch 22: reviewed 15 facts with 90 rows; right now {'2': '141/145', '3': '116/119'}; 17 facts due in the next epoch
+[   2109s]   step 1500 (schedule 1368/1536) loss 0.039
+[   2122s]   step 1536 (schedule 1404/1536) loss 0.059
+[   2127s]   spaced review, epoch 23: reviewed 17 facts with 102 rows; right now {'2': '141/145', '3': '115/119'}; 15 facts due in the next epoch
+[   2149s]   step 1600 (schedule 1466/1536) loss 0.076
+[   2178s]   spaced review, epoch 24: reviewed 15 facts with 90 rows; right now {'2': '140/145', '3': '116/119'}; 13 facts due in the next epoch
+[   2178s]   [sr12] trained book 4 in 707s (device peak 12.1 of 15.7 GiB)
+[   2185s] A4_gen70n/sr12/after_book4 book 2 {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.973, 'retention_a': 0.973, 'probe_know': 147, 'probe_n': 150, 'probe_retention_b': 0.98}
+[   2187s] A4_gen70n/sr12/after_book4 book 2 gen exam {'direct': [74, 75], 'indirect': [73, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 3, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.98}
+[   2187s]   eval of book 2: 5s
+[   2190s] A4_gen70n/sr12/after_book4 book 3 {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.987, 'retention_a': 0.993, 'probe_know': 146, 'probe_n': 150, 'probe_retention_b': 0.973}
+[   2192s] A4_gen70n/sr12/after_book4 book 3 gen exam {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 6, 'trap_true_no_denial': 6, 'trap_n': 120, 'twin_correct': 54, 'twin_false_refusal': 5, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [18, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.98}
+[   2192s]   eval of book 3: 5s
+[   2194s] A4_gen70n/sr12/after_book4 book 4 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   2196s] A4_gen70n/sr12/after_book4 book 4 gen exam {'direct': [73, 75], 'indirect': [72, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 58, 'twin_false_refusal': 2, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [1, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   2196s]   eval of book 4: 5s
+[   2196s]   general NLL 2.2227 (base 1.8936)
+[   2196s] done
+V14 S0 DONE
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[      2s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen70n_s1'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+[     60s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[     65s] base general NLL 1.8936
+[    146s]   subspace: 196 modules, mean protected dim 134, max 804, new basis max |V^T V - I| 1.5e-04, 0 down_proj modules needed float64
+[    146s] [A4_gen70n_s1] general-text subspace (tau 0.7, 300 rows): 78s
+[    148s] [A4_gen70n_s1] book 2: 2954 rows, 12 epochs, lr x1, 7 projected kinds
+[    185s]   step 100/1116 loss 0.141
+[    221s]   step 200/1116 loss 0.031
+[    256s]   step 300/1116 loss 0.022
+[    292s]   step 400/1116 loss 0.003
+[    328s]   step 500/1116 loss 0.121
+[    364s]   step 600/1116 loss 0.097
+[    400s]   step 700/1116 loss 0.000
+[    436s]   step 800/1116 loss 0.000
+[    472s]   step 900/1116 loss 0.066
+[    507s]   step 1000/1116 loss 0.000
+[    543s]   step 1100/1116 loss 0.017
+[    549s]   step 1116/1116 loss 0.000
+[    549s]   trained book 2 in 401s (device peak 7.7 of 15.7 GiB)
+[    551s]   projection leakage |A Q|/|A|: mean 2.22e-08, max 8.57e-08
+[    557s] A4_gen70n_s1/after_book2 book 2 {'direct': [73, 75], 'indirect': [74, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    559s] A4_gen70n_s1/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 55, 'twin_false_refusal': 5, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [1, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}}
+[    559s]   eval of book 2: 5s
+[    559s]   general NLL 2.1545 (base 1.8936); eval 5s (device peak 10.7 of 15.7 GiB)
+[    576s]   note: torch.float32 SVD of a (1536, 489) residual did not converge
+[    687s]   note: torch.float32 SVD of a (8960, 1279) residual did not converge
+[    738s]   subspace: 196 modules, mean protected dim 725, max 2240, new basis max |V^T V - I| 7.9e-04, 23 down_proj modules needed float64
+[    738s] [A4_gen70n_s1/sr12] book-2 subspace at tau 0.99: 178s, mean protected dim 725, max 2240 (host RSS 22761620 kB)
+[    739s]   spaced review: book 2 adds 145 facts with 15-35 rows each (mean 26), 145 facts in all
+[    778s]   step 100 (schedule 74/900) loss 0.135
+[    781s]   spaced review, epoch 1: reviewed 145 facts with 827 rows; right now {'2': '132/145'}; 13 facts due in the next epoch
+[    811s]   spaced review, epoch 2: reviewed 13 facts with 77 rows; right now {'2': '125/145'}; 138 facts due in the next epoch
+[    819s]   step 200 (schedule 166/900) loss 0.101
+[    850s]   spaced review, epoch 3: reviewed 138 facts with 789 rows; right now {'2': '135/145'}; 16 facts due in the next epoch
+[    858s]   step 300 (schedule 246/900) loss 0.140
+[    880s]   spaced review, epoch 4: reviewed 16 facts with 95 rows; right now {'2': '137/145'}; 16 facts due in the next epoch
+[    896s]   step 400 (schedule 342/900) loss 0.023
+[    910s]   spaced review, epoch 5: reviewed 16 facts with 96 rows; right now {'2': '140/145'}; 11 facts due in the next epoch
+[    934s]   step 500 (schedule 439/900) loss 0.056
+[    940s]   spaced review, epoch 6: reviewed 11 facts with 64 rows; right now {'2': '141/145'}; 123 facts due in the next epoch
+[    973s]   step 600 (schedule 519/900) loss 0.040
+[    978s]   spaced review, epoch 7: reviewed 123 facts with 714 rows; right now {'2': '145/145'}; 9 facts due in the next epoch
+[   1008s]   spaced review, epoch 8: reviewed 9 facts with 54 rows; right now {'2': '143/145'}; 11 facts due in the next epoch
+[   1014s]   step 700 (schedule 614/900) loss 0.074
+[   1038s]   spaced review, epoch 9: reviewed 11 facts with 66 rows; right now {'2': '141/145'}; 10 facts due in the next epoch
+[   1052s]   step 800 (schedule 712/900) loss 0.014
+[   1068s]   spaced review, epoch 10: reviewed 10 facts with 60 rows; right now {'2': '139/145'}; 8 facts due in the next epoch
+[   1090s]   step 900 (schedule 810/900) loss 0.065
+[   1098s]   spaced review, epoch 11: reviewed 8 facts with 48 rows; right now {'2': '144/145'}; 4 facts due in the next epoch
+[   1128s]   spaced review, epoch 12: reviewed 4 facts with 24 rows; right now {'2': '143/145'}; 8 facts due in the next epoch
+[   1128s]   trained book 3 in 387s; leakage into Q: mean 6.19e-08, max 1.41e-07 (device peak 10.7 of 15.7 GiB)
+[   1135s] A4_gen70n_s1/sr12/after_book3 book 2 {'direct': [67, 75], 'indirect': [73, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.946, 'retention_a': 0.952, 'probe_know': 148, 'probe_n': 150, 'probe_retention_b': 0.987}
+[   1137s] A4_gen70n_s1/sr12/after_book3 book 2 gen exam {'direct': [74, 75], 'indirect': [72, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [1, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [1, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.98}
+[   1137s]   eval of book 2: 5s
+[   1140s] A4_gen70n_s1/sr12/after_book3 book 3 {'direct': [73, 75], 'indirect': [74, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 149, 'probe_n': 150}
+[   1142s] A4_gen70n_s1/sr12/after_book3 book 3 gen exam {'direct': [74, 75], 'indirect': [75, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 6, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [2, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}}
+[   1142s]   eval of book 3: 5s
+[   1142s]   general NLL 2.1602 (base 1.8936)
+[   1315s]   subspace: 196 modules, mean protected dim 1184, max 3553, new basis max |V^T V - I| 9.6e-04, 22 down_proj modules needed float64
+[   1315s] [A4_gen70n_s1/sr12] subspace update after book 3: 173s
+[   1317s]   spaced review: book 3 adds 119 facts with 8-34 rows each (mean 25), 264 facts in all
+[   1356s]   step 100 (schedule 84/1536) loss 0.132
+[   1379s]   spaced review, epoch 13: reviewed 127 facts with 726 rows; right now {'2': '126/145', '3': '113/119'}; 25 facts due in the next epoch
+[   1397s]   step 200 (schedule 175/1536) loss 0.066
+[   1431s]   spaced review, epoch 14: reviewed 25 facts with 150 rows; right now {'2': '116/145', '3': '88/119'}; 242 facts due in the next epoch
+[   1437s]   step 300 (schedule 268/1536) loss 0.038
+[   1474s]   step 400 (schedule 342/1536) loss 0.119
+[   1498s]   spaced review, epoch 15: reviewed 242 facts with 1397 rows; right now {'2': '134/145', '3': '109/119'}; 29 facts due in the next epoch
+[   1514s]   step 500 (schedule 426/1536) loss 0.120
+[   1550s]   spaced review, epoch 16: reviewed 29 facts with 174 rows; right now {'2': '133/145', '3': '107/119'}; 67 facts due in the next epoch
+[   1554s]   step 600 (schedule 522/1536) loss 0.055
+[   1591s]   step 700 (schedule 613/1536) loss 0.001
+[   1605s]   spaced review, epoch 17: reviewed 67 facts with 398 rows; right now {'2': '137/145', '3': '112/119'}; 23 facts due in the next epoch
+[   1631s]   step 800 (schedule 708/1536) loss 0.051
+[   1657s]   spaced review, epoch 18: reviewed 23 facts with 138 rows; right now {'2': '138/145', '3': '113/119'}; 105 facts due in the next epoch
+[   1672s]   step 900 (schedule 802/1536) loss 0.016
+[   1709s]   step 1000 (schedule 889/1536) loss 0.054
+[   1715s]   spaced review, epoch 19: reviewed 105 facts with 606 rows; right now {'2': '137/145', '3': '116/119'}; 24 facts due in the next epoch
+[   1749s]   step 1100 (schedule 985/1536) loss 0.104
+[   1767s]   spaced review, epoch 20: reviewed 24 facts with 142 rows; right now {'2': '140/145', '3': '115/119'}; 46 facts due in the next epoch
+[   1789s]   step 1200 (schedule 1080/1536) loss 0.024
+[   1821s]   spaced review, epoch 21: reviewed 46 facts with 274 rows; right now {'2': '144/145', '3': '115/119'}; 15 facts due in the next epoch
+[   1829s]   step 1300 (schedule 1175/1536) loss 0.000
+[   1866s]   step 1400 (schedule 1273/1536) loss 0.061
+[   1872s]   spaced review, epoch 22: reviewed 15 facts with 90 rows; right now {'2': '140/145', '3': '115/119'}; 17 facts due in the next epoch
+[   1907s]   step 1500 (schedule 1370/1536) loss 0.036
+[   1920s]   step 1536 (schedule 1406/1536) loss 0.051
+[   1924s]   spaced review, epoch 23: reviewed 17 facts with 102 rows; right now {'2': '142/145', '3': '115/119'}; 13 facts due in the next epoch
+[   1947s]   step 1600 (schedule 1469/1536) loss 0.050
+[   1976s]   spaced review, epoch 24: reviewed 13 facts with 77 rows; right now {'2': '143/145', '3': '115/119'}; 14 facts due in the next epoch
+[   1976s]   [sr12] trained book 4 in 657s (device peak 12.1 of 15.7 GiB)
+[   1982s] A4_gen70n_s1/sr12/after_book4 book 2 {'direct': [72, 75], 'indirect': [69, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.952, 'retention_a': 0.959, 'probe_know': 146, 'probe_n': 150, 'probe_retention_b': 0.973}
+[   1984s] A4_gen70n_s1/sr12/after_book4 book 2 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 2, 'trap_true_no_denial': 2, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.993}
+[   1984s]   eval of book 2: 5s
+[   1987s] A4_gen70n_s1/sr12/after_book4 book 3 {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 27, 'twin_false_refusal': 1, 'twin_wrong': 2, 'twin_n': 30, 'retention_b': 0.98, 'retention_a': 0.993, 'probe_know': 148, 'probe_n': 150, 'probe_retention_b': 0.987}
+[   1989s] A4_gen70n_s1/sr12/after_book4 book 3 gen exam {'direct': [74, 75], 'indirect': [75, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 55, 'twin_false_refusal': 4, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [18, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [1, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   1989s]   eval of book 3: 5s
+[   1991s] A4_gen70n_s1/sr12/after_book4 book 4 {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 149, 'probe_n': 150}
+[   1993s] A4_gen70n_s1/sr12/after_book4 book 4 gen exam {'direct': [72, 75], 'indirect': [72, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 3, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [1, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [1, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   1993s]   eval of book 4: 5s
+[   1993s]   general NLL 2.2181 (base 1.8936)
+[   1993s] done
+V14 S1 DONE

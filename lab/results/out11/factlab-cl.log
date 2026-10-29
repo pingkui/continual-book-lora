@@ -1,0 +1,152 @@
+[{"stream_name":"stdout","time":6.214009217,"data":"parent: starting 2 workers\n"}
+,{"stream_name":"stdout","time":41.445849633,"data":"[w0      0s] device: cuda Tesla T4 runs: ['A_recall', 'B_mlp_gen_e8_s1']\n"}
+,{"stream_name":"stdout","time":41.507700011,"data":"[w1      0s] device: cuda Tesla T4 runs: ['B_mlp_gen_e8', 'D_combo']\n"}
+,{"stream_name":"stderr","time":41.726983283,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":41.885892759,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":67.594039882,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/338 [00:01\u003c08:55,  1.59s/it]\rLoading weights:   0%|          | 1/338 [00:01\u003c09:12,  1.64s/it]\rLoading weights:  54%|█████▍    | 184/338 [00:01\u003c00:01, 145.32it/s]\rLoading weights:  54%|█████▍    | 183/338 [00:01\u003c00:01, 143.63it/s]\rLoading weights:  74%|███████▍  | 251/338 [00:02\u003c00:00, 145.15it/s]\rLoading weights:  82%|████████▏ | 277/338 [00:02\u003c00:00, 141.72it/s]\rLoading weights:  87%|████████▋ | 295/338 [00:02\u003c00:00, 142.01it/s]\rLoading weights:  97%|█████████▋| 327/338 [00:02\u003c00:00, 143.10it/s]\rLoading weights: 100%|██████████| 338/338 [00:02\u003c00:00, 121.24it/s]\n"}
+,{"stream_name":"stderr","time":67.603859191,"data":"\rLoading weights:  99%|█████████▉| 334/338 [00:02\u003c00:00, 141.97it/s]\rLoading weights: 100%|██████████| 338/338 [00:02\u003c00:00, 119.24it/s]\n"}
+,{"stream_name":"stdout","time":93.002819063,"data":"[w1     52s] base book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 8, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 1, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":93.012544981,"data":"[w0     52s] base book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 8, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 1, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":109.315169955,"data":"[w1     68s] base book 3 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 11, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 26, 'twin_wrong': 4, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":109.966919036,"data":"[w0     69s] base book 3 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 11, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 26, 'twin_wrong': 4, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":125.753842553,"data":"[w1     84s] base book 4 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 10, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":127.098251827,"data":"[w0     86s] base book 4 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 10, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":128.372178101,"data":"[w1     87s] base general NLL 1.8799\n"}
+,{"stream_name":"stdout","time":129.767415647,"data":"[w0     88s] base general NLL 1.8799\n"}
+,{"stream_name":"stderr","time":130.619855304,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   8%|▊         | 27/338 [00:00\u003c00:01, 214.00it/s]\rLoading weights:  16%|█▌        | 53/338 [00:00\u003c00:01, 213.65it/s]\rLoading weights:  26%|██▌       | 87/338 [00:00\u003c00:00, 259.80it/s]\rLoading weights:  34%|███▎      | 114/338 [00:00\u003c00:00, 227.14it/s]\rLoading weights:  43%|████▎     | 147/338 [00:00\u003c00:00, 246.40it/s]\rLoading weights:  51%|█████     | 173/338 [00:00\u003c00:00, 243.20it/s]\rLoading weights:  59%|█████▊    | 198/338 [00:00\u003c00:00, 240.69it/s]\rLoading weights:  68%|██████▊   | 231/338 [00:00\u003c00:00, 248.55it/s]\rLoading weights:  76%|███████▌  | 256/338 [00:01\u003c00:00, 237.75it/s]\rLoading weights:  86%|████████▌ | 291/338 [00:01\u003c00:00, 244.61it/s]\rLoading weights:  93%|█████████▎| 316/338 [00:01\u003c00:00, 190.85it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 227.82it/s]\n"}
+,{"stream_name":"stderr","time":132.349651924,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:  12%|█▏        | 39/338 [00:00\u003c00:00, 365.84it/s]\rLoading weights:  22%|██▏       | 76/338 [00:00\u003c00:01, 242.81it/s]\rLoading weights:  30%|███       | 103/338 [00:00\u003c00:00, 245.46it/s]\rLoading weights:  40%|███▉      | 135/338 [00:00\u003c00:00, 238.63it/s]\rLoading weights:  47%|████▋     | 160/338 [00:00\u003c00:00, 236.34it/s]\rLoading weights:  55%|█████▍    | 185/338 [00:00\u003c00:00, 224.80it/s]\rLoading weights:  62%|██████▏   | 208/338 [00:00\u003c00:00, 223.65it/s]\rLoading weights:  69%|██████▉   | 233/338 [00:00\u003c00:00, 223.07it/s]\rLoading weights:  76%|███████▌  | 256/338 [00:01\u003c00:00, 223.17it/s]\rLoading weights:  83%|████████▎ | 280/338 [00:01\u003c00:00, 213.83it/s]\rLoading weights:  90%|████████▉ | 303/338 [00:01\u003c00:00, 213.05it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 241.71it/s]\n"}
+,{"stream_name":"stdout","time":133.796708283,"data":"[w0     92s] [A_recall] book 2: 1305 rows, 15 epochs, 0 projected modules\n"}
+,{"stream_name":"stdout","time":209.931148571,"data":"[w1    168s]   subspace: 84 modules, mean protected dim 1654, max 3475\n"}
+,{"stream_name":"stdout","time":210.288315155,"data":"[w1    169s] [B_mlp_gen_e8] book 2: 1015 rows, 8 epochs, 84 projected modules\n"}
+,{"stream_name":"stdout","time":326.202360942,"data":"[w0    285s]   step 100/615 loss 0.212\n"}
+,{"stream_name":"stdout","time":362.326678244,"data":"[w1    321s]   step 100/256 loss 0.554\n"}
+,{"stream_name":"stdout","time":514.496820818,"data":"[w1    473s]   step 200/256 loss 0.235\n"}
+,{"stream_name":"stdout","time":519.074264923,"data":"[w0    478s]   step 200/615 loss 0.061\n"}
+,{"stream_name":"stdout","time":599.190682384,"data":"[w1    558s]   step 256/256 loss 0.274\n"}
+,{"stream_name":"stdout","time":599.25219453,"data":"[w1    558s]   projection leakage |A Q|/|A|: mean 5.45e-07, max 1.84e-06\n"}
+,{"stream_name":"stdout","time":615.151880678,"data":"[w1    574s] B_mlp_gen_e8/after_book2 book 2 {'direct': [21, 75], 'indirect': [15, 75], 'trap_made_up': 60, 'trap_true_no_denial': 18, 'trap_n': 60, 'twin_correct': 10, 'twin_false_refusal': 0, 'twin_wrong': 20, 'twin_n': 30, 'probe_know': 52, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":615.151930749,"data":"[w1    574s]   general NLL 2.0394 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":697.245411888,"data":"[w1    656s]   subspace: 84 modules, mean protected dim 2077, max 4472\n"}
+,{"stream_name":"stdout","time":697.604333158,"data":"[w1    656s] [B_mlp_gen_e8] book 3: 825 rows, 8 epochs, 84 projected modules\n"}
+,{"stream_name":"stdout","time":711.011432263,"data":"[w0    670s]   step 300/615 loss 0.093\n"}
+,{"stream_name":"stdout","time":852.159262274,"data":"[w1    811s]   step 100/208 loss 0.359\n"}
+,{"stream_name":"stdout","time":903.583483796,"data":"[w0    862s]   step 400/615 loss 0.073\n"}
+,{"stream_name":"stdout","time":1005.831601165,"data":"[w1    964s]   step 200/208 loss 0.305\n"}
+,{"stream_name":"stdout","time":1018.237818095,"data":"[w1    977s]   step 208/208 loss 0.143\n"}
+,{"stream_name":"stdout","time":1018.310415638,"data":"[w1    977s]   projection leakage |A Q|/|A|: mean 4.17e-06, max 1.84e-05\n"}
+,{"stream_name":"stdout","time":1034.345773905,"data":"[w1    993s] B_mlp_gen_e8/after_book3 book 2 {'direct': [15, 75], 'indirect': [11, 75], 'trap_made_up': 60, 'trap_true_no_denial': 10, 'trap_n': 60, 'twin_correct': 5, 'twin_false_refusal': 0, 'twin_wrong': 25, 'twin_n': 30, 'retention_b': 0.556, 'retention_a': 0.722, 'probe_know': 22, 'probe_n': 150, 'probe_retention_b': 0.385}\n"}
+,{"stream_name":"stdout","time":1046.992577431,"data":"[w1   1006s] B_mlp_gen_e8/after_book3 book 3 {'direct': [11, 75], 'indirect': [12, 75], 'trap_made_up': 60, 'trap_true_no_denial': 14, 'trap_n': 60, 'twin_correct': 9, 'twin_false_refusal': 0, 'twin_wrong': 21, 'twin_n': 30, 'probe_know': 27, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":1046.992619748,"data":"[w1   1006s]   general NLL 2.0844 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":1096.639893095,"data":"[w0   1055s]   step 500/615 loss 0.063\n"}
+,{"stream_name":"stdout","time":1125.397581696,"data":"[w1   1084s]   subspace: 84 modules, mean protected dim 2279, max 5343\n"}
+,{"stream_name":"stdout","time":1125.745358404,"data":"[w1   1084s] [B_mlp_gen_e8] book 4: 1400 rows, 8 epochs, 84 projected modules\n"}
+,{"stream_name":"stdout","time":1281.001094889,"data":"[w1   1240s]   step 100/352 loss 0.481\n"}
+,{"stream_name":"stdout","time":1288.485703793,"data":"[w0   1247s]   step 600/615 loss 0.000\n"}
+,{"stream_name":"stdout","time":1317.327981684,"data":"[w0   1276s]   step 615/615 loss 0.000\n"}
+,{"stream_name":"stdout","time":1336.705950241,"data":"[w0   1295s] A_recall/after_book2 book 2 {'direct': [75, 75], 'indirect': [60, 75], 'trap_made_up': 25, 'trap_true_no_denial': 25, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":1336.705993188,"data":"[w0   1295s]   general NLL 3.4685 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":1437.213012164,"data":"[w1   1396s]   step 200/352 loss 0.574\n"}
+,{"stream_name":"stdout","time":1500.815950771,"data":"[w0   1459s]   subspace: 196 modules, mean protected dim 431, max 1044\n"}
+,{"stream_name":"stdout","time":1501.477227716,"data":"[w0   1460s] [A_recall] book 3: 1055 rows, 15 epochs, 196 projected modules\n"}
+,{"stream_name":"stdout","time":1592.754939073,"data":"[w1   1551s]   step 300/352 loss 0.260\n"}
+,{"stream_name":"stdout","time":1673.298074288,"data":"[w1   1632s]   step 352/352 loss 0.268\n"}
+,{"stream_name":"stdout","time":1673.388293742,"data":"[w1   1632s]   projection leakage |A Q|/|A|: mean 8.45e-06, max 3.31e-05\n"}
+,{"stream_name":"stdout","time":1690.043579456,"data":"[w1   1649s] B_mlp_gen_e8/after_book4 book 2 {'direct': [6, 75], 'indirect': [2, 75], 'trap_made_up': 60, 'trap_true_no_denial': 5, 'trap_n': 60, 'twin_correct': 1, 'twin_false_refusal': 0, 'twin_wrong': 29, 'twin_n': 30, 'retention_b': 0.194, 'retention_a': 0.222, 'probe_know': 8, 'probe_n': 150, 'probe_retention_b': 0.115}\n"}
+,{"stream_name":"stdout","time":1698.113677815,"data":"[w0   1657s]   step 100/495 loss 0.125\n"}
+,{"stream_name":"stdout","time":1703.636750064,"data":"[w1   1662s] B_mlp_gen_e8/after_book4 book 3 {'direct': [6, 75], 'indirect': [1, 75], 'trap_made_up': 59, 'trap_true_no_denial': 4, 'trap_n': 60, 'twin_correct': 2, 'twin_false_refusal': 0, 'twin_wrong': 28, 'twin_n': 30, 'retention_b': 0.13, 'retention_a': 0.304, 'probe_know': 5, 'probe_n': 150, 'probe_retention_b': 0.074}\n"}
+,{"stream_name":"stdout","time":1716.343505459,"data":"[w1   1675s] B_mlp_gen_e8/after_book4 book 4 {'direct': [11, 75], 'indirect': [10, 75], 'trap_made_up': 60, 'trap_true_no_denial': 15, 'trap_n': 60, 'twin_correct': 10, 'twin_false_refusal': 0, 'twin_wrong': 20, 'twin_n': 30, 'probe_know': 27, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":1716.343538907,"data":"[w1   1675s]   general NLL 2.1777 (base 1.8799)\n"}
+,{"stream_name":"stderr","time":1718.255331552,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/338 [00:00\u003c04:09,  1.35it/s]\rLoading weights:  69%|██████▉   | 233/338 [00:00\u003c00:00, 360.21it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 276.32it/s]\n"}
+,{"stream_name":"stdout","time":1797.682879955,"data":"[w1   1756s]   subspace: 84 modules, mean protected dim 1654, max 3475\n"}
+,{"stream_name":"stdout","time":1797.970383336,"data":"[w1   1757s] [D_combo] book 2: 1305 rows, 8 epochs, 84 projected modules\n"}
+,{"stream_name":"stdout","time":1894.017965775,"data":"[w0   1853s]   step 200/495 loss 0.123\n"}
+,{"stream_name":"stdout","time":1974.299011287,"data":"[w1   1933s]   step 100/328 loss 0.470\n"}
+,{"stream_name":"stdout","time":2088.719643286,"data":"[w0   2047s]   step 300/495 loss 0.110\n"}
+,{"stream_name":"stdout","time":2150.245566513,"data":"[w1   2109s]   step 200/328 loss 0.271\n"}
+,{"stream_name":"stdout","time":2283.838981004,"data":"[w0   2242s]   step 400/495 loss 0.056\n"}
+,{"stream_name":"stdout","time":2325.387265462,"data":"[w1   2284s]   step 300/328 loss 0.180\n"}
+,{"stream_name":"stdout","time":2374.74198423,"data":"[w1   2333s]   step 328/328 loss 0.565\n"}
+,{"stream_name":"stdout","time":2374.792087402,"data":"[w1   2333s]   projection leakage |A Q|/|A|: mean 1.87e-07, max 2.61e-07\n"}
+,{"stream_name":"stdout","time":2393.993197354,"data":"[w1   2353s] D_combo/after_book2 book 2 {'direct': [55, 75], 'indirect': [29, 75], 'trap_made_up': 10, 'trap_true_no_denial': 9, 'trap_n': 60, 'twin_correct': 23, 'twin_false_refusal': 4, 'twin_wrong': 3, 'twin_n': 30, 'probe_know': 118, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":2393.993237595,"data":"[w1   2353s]   general NLL 2.1851 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":2469.945744668,"data":"[w0   2429s]   step 495/495 loss 0.057\n"}
+,{"stream_name":"stdout","time":2469.97586499,"data":"[w0   2429s]   projection leakage |A Q|/|A|: mean 1.26e-07, max 2.87e-07\n"}
+,{"stream_name":"stdout","time":2485.567198839,"data":"[w1   2444s]   subspace: 84 modules, mean protected dim 2085, max 4485\n"}
+,{"stream_name":"stdout","time":2485.875895981,"data":"[w1   2444s] [D_combo] book 3: 1055 rows, 8 epochs, 84 projected modules\n"}
+,{"stream_name":"stdout","time":2490.664991954,"data":"[w0   2449s] A_recall/after_book3 book 2 {'direct': [54, 75], 'indirect': [39, 75], 'trap_made_up': 24, 'trap_true_no_denial': 20, 'trap_n': 60, 'twin_correct': 20, 'twin_false_refusal': 4, 'twin_wrong': 6, 'twin_n': 30, 'retention_b': 0.689, 'retention_a': 0.689, 'probe_know': 115, 'probe_n': 150, 'probe_retention_b': 0.767}\n"}
+,{"stream_name":"stdout","time":2506.782253127,"data":"[w0   2465s] A_recall/after_book3 book 3 {'direct': [75, 75], 'indirect': [57, 75], 'trap_made_up': 21, 'trap_true_no_denial': 21, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":2506.782296858,"data":"[w0   2465s]   general NLL 3.6029 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":2663.644353531,"data":"[w1   2622s]   step 100/264 loss 0.271\n"}
+,{"stream_name":"stdout","time":2672.788505101,"data":"[w0   2631s]   subspace: 196 modules, mean protected dim 778, max 2077\n"}
+,{"stream_name":"stdout","time":2673.335694786,"data":"[w0   2632s] [A_recall] book 4: 1800 rows, 15 epochs, 196 projected modules\n"}
+,{"stream_name":"stdout","time":2841.079161154,"data":"[w1   2800s]   step 200/264 loss 0.195\n"}
+,{"stream_name":"stdout","time":2872.871526426,"data":"[w0   2831s]   step 100/855 loss 0.171\n"}
+,{"stream_name":"stdout","time":2954.758982452,"data":"[w1   2913s]   step 264/264 loss 0.066\n"}
+,{"stream_name":"stdout","time":2954.83842893,"data":"[w1   2913s]   projection leakage |A Q|/|A|: mean 3.11e-06, max 1.30e-05\n"}
+,{"stream_name":"stdout","time":2973.840589135,"data":"[w1   2932s] D_combo/after_book3 book 2 {'direct': [21, 75], 'indirect': [14, 75], 'trap_made_up': 5, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 6, 'twin_false_refusal': 15, 'twin_wrong': 9, 'twin_n': 30, 'retention_b': 0.405, 'retention_a': 0.417, 'probe_know': 35, 'probe_n': 150, 'probe_retention_b': 0.28}\n"}
+,{"stream_name":"stdout","time":2990.014110928,"data":"[w1   2949s] D_combo/after_book3 book 3 {'direct': [54, 75], 'indirect': [27, 75], 'trap_made_up': 4, 'trap_true_no_denial': 3, 'trap_n': 60, 'twin_correct': 15, 'twin_false_refusal': 11, 'twin_wrong': 4, 'twin_n': 30, 'probe_know': 106, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":2990.014154059,"data":"[w1   2949s]   general NLL 2.2759 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":3069.75273627,"data":"[w0   3028s]   step 200/855 loss 0.124\n"}
+,{"stream_name":"stdout","time":3075.69751788,"data":"[w1   3034s]   subspace: 84 modules, mean protected dim 2299, max 5403\n"}
+,{"stream_name":"stdout","time":3076.061530547,"data":"[w1   3035s] [D_combo] book 4: 1800 rows, 8 epochs, 84 projected modules\n"}
+,{"stream_name":"stdout","time":3256.293928977,"data":"[w1   3215s]   step 100/456 loss 0.256\n"}
+,{"stream_name":"stdout","time":3266.567236736,"data":"[w0   3225s]   step 300/855 loss 0.099\n"}
+,{"stream_name":"stdout","time":3433.05134192,"data":"[w1   3392s]   step 200/456 loss 0.326\n"}
+,{"stream_name":"stdout","time":3463.977761896,"data":"[w0   3423s]   step 400/855 loss 0.041\n"}
+,{"stream_name":"stdout","time":3610.658628893,"data":"[w1   3569s]   step 300/456 loss 0.181\n"}
+,{"stream_name":"stdout","time":3662.686634475,"data":"[w0   3621s]   step 500/855 loss 0.046\n"}
+,{"stream_name":"stdout","time":3789.525255713,"data":"[w1   3748s]   step 400/456 loss 0.090\n"}
+,{"stream_name":"stdout","time":3860.201107395,"data":"[w0   3819s]   step 600/855 loss 0.092\n"}
+,{"stream_name":"stdout","time":3889.532295406,"data":"[w1   3848s]   step 456/456 loss 0.091\n"}
+,{"stream_name":"stdout","time":3889.624571923,"data":"[w1   3848s]   projection leakage |A Q|/|A|: mean 6.97e-06, max 3.36e-05\n"}
+,{"stream_name":"stdout","time":3908.503964345,"data":"[w1   3867s] D_combo/after_book4 book 2 {'direct': [6, 75], 'indirect': [6, 75], 'trap_made_up': 7, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'retention_b': 0.131, 'retention_a': 0.143, 'probe_know': 10, 'probe_n': 150, 'probe_retention_b': 0.085}\n"}
+,{"stream_name":"stdout","time":3926.942351907,"data":"[w1   3885s] D_combo/after_book4 book 3 {'direct': [9, 75], 'indirect': [4, 75], 'trap_made_up': 8, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 4, 'twin_false_refusal': 22, 'twin_wrong': 4, 'twin_n': 30, 'retention_b': 0.136, 'retention_a': 0.16, 'probe_know': 18, 'probe_n': 150, 'probe_retention_b': 0.151}\n"}
+,{"stream_name":"stdout","time":3942.943481364,"data":"[w1   3901s] D_combo/after_book4 book 4 {'direct': [46, 75], 'indirect': [23, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 60, 'twin_correct': 23, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 100, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":3942.943536442,"data":"[w1   3901s]   general NLL 2.3933 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":3943.168343075,"data":"[w1   3902s] done\n"}
+,{"stream_name":"stdout","time":4056.980328015,"data":"[w0   4016s]   step 700/855 loss 0.041\n"}
+,{"stream_name":"stdout","time":4253.586119394,"data":"[w0   4212s]   step 800/855 loss 0.038\n"}
+,{"stream_name":"stdout","time":4361.834147421,"data":"[w0   4320s]   step 855/855 loss 0.040\n"}
+,{"stream_name":"stdout","time":4361.881984012,"data":"[w0   4321s]   projection leakage |A Q|/|A|: mean 2.31e-07, max 5.94e-07\n"}
+,{"stream_name":"stdout","time":4382.127885049,"data":"[w0   4341s] A_recall/after_book4 book 2 {'direct': [42, 75], 'indirect': [26, 75], 'trap_made_up': 22, 'trap_true_no_denial': 17, 'trap_n': 60, 'twin_correct': 14, 'twin_false_refusal': 7, 'twin_wrong': 9, 'twin_n': 30, 'retention_b': 0.489, 'retention_a': 0.504, 'probe_know': 73, 'probe_n': 150, 'probe_retention_b': 0.487}\n"}
+,{"stream_name":"stdout","time":4398.140373806,"data":"[w0   4357s] A_recall/after_book4 book 3 {'direct': [54, 75], 'indirect': [27, 75], 'trap_made_up': 17, 'trap_true_no_denial': 14, 'trap_n': 60, 'twin_correct': 22, 'twin_false_refusal': 1, 'twin_wrong': 7, 'twin_n': 30, 'retention_b': 0.606, 'retention_a': 0.614, 'probe_know': 89, 'probe_n': 150, 'probe_retention_b': 0.593}\n"}
+,{"stream_name":"stdout","time":4414.034093352,"data":"[w0   4373s] A_recall/after_book4 book 4 {'direct': [74, 75], 'indirect': [60, 75], 'trap_made_up': 21, 'trap_true_no_denial': 21, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":4414.034122818,"data":"[w0   4373s]   general NLL 3.7338 (base 1.8799)\n"}
+,{"stream_name":"stderr","time":4415.985296432,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/338 [00:00\u003c04:46,  1.18it/s]\rLoading weights:  79%|███████▉  | 267/338 [00:00\u003c00:00, 381.41it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 292.70it/s]\n"}
+,{"stream_name":"stdout","time":4498.166834492,"data":"[w0   4457s]   subspace: 84 modules, mean protected dim 1651, max 3357\n"}
+,{"stream_name":"stdout","time":4498.482718372,"data":"[w0   4457s] [B_mlp_gen_e8_s1] book 2: 1015 rows, 8 epochs, 84 projected modules\n"}
+,{"stream_name":"stdout","time":4656.472640355,"data":"[w0   4615s]   step 100/256 loss 0.443\n"}
+,{"stream_name":"stdout","time":4815.079943966,"data":"[w0   4774s]   step 200/256 loss 0.301\n"}
+,{"stream_name":"stdout","time":4903.736305761,"data":"[w0   4862s]   step 256/256 loss 0.308\n"}
+,{"stream_name":"stdout","time":4903.79883656,"data":"[w0   4862s]   projection leakage |A Q|/|A|: mean 5.39e-07, max 1.78e-06\n"}
+,{"stream_name":"stdout","time":4920.891127242,"data":"[w0   4880s] B_mlp_gen_e8_s1/after_book2 book 2 {'direct': [20, 75], 'indirect': [19, 75], 'trap_made_up': 60, 'trap_true_no_denial': 20, 'trap_n': 60, 'twin_correct': 10, 'twin_false_refusal': 0, 'twin_wrong': 20, 'twin_n': 30, 'probe_know': 62, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":4920.891164772,"data":"[w0   4880s]   general NLL 2.0305 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":5006.031257859,"data":"[w0   4965s]   subspace: 84 modules, mean protected dim 2076, max 4356\n"}
+,{"stream_name":"stdout","time":5006.373748371,"data":"[w0   4965s] [B_mlp_gen_e8_s1] book 3: 825 rows, 8 epochs, 84 projected modules\n"}
+,{"stream_name":"stdout","time":5166.019751561,"data":"[w0   5125s]   step 100/208 loss 0.521\n"}
+,{"stream_name":"stdout","time":5326.086566092,"data":"[w0   5285s]   step 200/208 loss 0.243\n"}
+,{"stream_name":"stdout","time":5338.680544762,"data":"[w0   5297s]   step 208/208 loss 0.108\n"}
+,{"stream_name":"stdout","time":5338.757722059,"data":"[w0   5297s]   projection leakage |A Q|/|A|: mean 4.49e-06, max 2.24e-05\n"}
+,{"stream_name":"stdout","time":5356.01364737,"data":"[w0   5315s] B_mlp_gen_e8_s1/after_book3 book 2 {'direct': [11, 75], 'indirect': [12, 75], 'trap_made_up': 60, 'trap_true_no_denial': 14, 'trap_n': 60, 'twin_correct': 5, 'twin_false_refusal': 1, 'twin_wrong': 24, 'twin_n': 30, 'retention_b': 0.513, 'retention_a': 0.59, 'probe_know': 24, 'probe_n': 150, 'probe_retention_b': 0.339}\n"}
+,{"stream_name":"stdout","time":5369.501564558,"data":"[w0   5328s] B_mlp_gen_e8_s1/after_book3 book 3 {'direct': [13, 75], 'indirect': [11, 75], 'trap_made_up': 59, 'trap_true_no_denial': 14, 'trap_n': 60, 'twin_correct': 8, 'twin_false_refusal': 1, 'twin_wrong': 21, 'twin_n': 30, 'probe_know': 35, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":5369.501612241,"data":"[w0   5328s]   general NLL 2.0676 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":5450.870528264,"data":"[w0   5409s]   subspace: 84 modules, mean protected dim 2279, max 5238\n"}
+,{"stream_name":"stdout","time":5451.406341728,"data":"[w0   5410s] [B_mlp_gen_e8_s1] book 4: 1400 rows, 8 epochs, 84 projected modules\n"}
+,{"stream_name":"stdout","time":5612.905723445,"data":"[w0   5572s]   step 100/352 loss 0.368\n"}
+,{"stream_name":"stdout","time":5775.364429996,"data":"[w0   5734s]   step 200/352 loss 0.470\n"}
+,{"stream_name":"stdout","time":5937.315333577,"data":"[w0   5896s]   step 300/352 loss 0.345\n"}
+,{"stream_name":"stdout","time":6021.640107062,"data":"[w0   5980s]   step 352/352 loss 0.241\n"}
+,{"stream_name":"stdout","time":6021.733375527,"data":"[w0   5980s]   projection leakage |A Q|/|A|: mean 1.07e-05, max 7.17e-05\n"}
+,{"stream_name":"stdout","time":6038.711049644,"data":"[w0   5997s] B_mlp_gen_e8_s1/after_book4 book 2 {'direct': [5, 75], 'indirect': [4, 75], 'trap_made_up': 60, 'trap_true_no_denial': 4, 'trap_n': 60, 'twin_correct': 2, 'twin_false_refusal': 0, 'twin_wrong': 28, 'twin_n': 30, 'retention_b': 0.205, 'retention_a': 0.231, 'probe_know': 8, 'probe_n': 150, 'probe_retention_b': 0.113}\n"}
+,{"stream_name":"stdout","time":6052.928782953,"data":"[w0   6012s] B_mlp_gen_e8_s1/after_book4 book 3 {'direct': [2, 75], 'indirect': [2, 75], 'trap_made_up': 57, 'trap_true_no_denial': 3, 'trap_n': 60, 'twin_correct': 3, 'twin_false_refusal': 1, 'twin_wrong': 26, 'twin_n': 30, 'retention_b': 0.125, 'retention_a': 0.167, 'probe_know': 5, 'probe_n': 150, 'probe_retention_b': 0.114}\n"}
+,{"stream_name":"stdout","time":6067.019509688,"data":"[w0   6026s] B_mlp_gen_e8_s1/after_book4 book 4 {'direct': [7, 75], 'indirect': [8, 75], 'trap_made_up': 59, 'trap_true_no_denial': 13, 'trap_n': 60, 'twin_correct': 7, 'twin_false_refusal': 0, 'twin_wrong': 23, 'twin_n': 30, 'probe_know': 21, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":6067.019571237,"data":"[w0   6026s]   general NLL 2.1637 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":6067.264203746,"data":"[w0   6026s] done\n"}
+,{"stream_name":"stdout","time":6069.168879988,"data":"parent: merged results, worker exit codes [0, 0]\n"}
+,{"stream_name":"stderr","time":6071.232220459,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":6071.232265171,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":6071.494856441,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":6071.494923009,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6072.336304227,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":6073.47224363,"data":"[NbConvertApp] Writing 374348 bytes to __results__.html\n"}
+]

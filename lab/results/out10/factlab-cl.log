@@ -1,0 +1,70 @@
+[{"stream_name":"stdout","time":6.430776145,"data":"parent: starting 2 workers\n"}
+,{"stream_name":"stdout","time":44.053031684,"data":"[w1      0s] device: cuda Tesla T4 runs: ['proj_099_s1']\n"}
+,{"stream_name":"stdout","time":44.111537249,"data":"[w0      0s] device: cuda Tesla T4 runs: ['proj_099']\n"}
+,{"stream_name":"stderr","time":44.308327809,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":44.345952633,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":70.325631679,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/338 [00:01\u003c08:05,  1.44s/it]\rLoading weights:   0%|          | 1/338 [00:01\u003c07:48,  1.39s/it]\rLoading weights:  51%|█████     | 172/338 [00:01\u003c00:01, 153.55it/s]\rLoading weights:  51%|█████     | 171/338 [00:01\u003c00:01, 151.39it/s]\rLoading weights:  70%|██████▉   | 236/338 [00:01\u003c00:00, 148.78it/s]\rLoading weights:  78%|███████▊  | 265/338 [00:02\u003c00:00, 153.63it/s]\rLoading weights:  82%|████████▏ | 278/338 [00:02\u003c00:00, 151.03it/s]\rLoading weights:  96%|█████████▌| 323/338 [00:02\u003c00:00, 147.54it/s]\rLoading weights:  92%|█████████▏| 310/338 [00:02\u003c00:00, 143.83it/s]\rLoading weights: 100%|██████████| 338/338 [00:02\u003c00:00, 126.92it/s]\n"}
+,{"stream_name":"stderr","time":70.367138531,"data":"\rLoading weights:  99%|█████████▉| 335/338 [00:02\u003c00:00, 155.12it/s]\rLoading weights: 100%|██████████| 338/338 [00:02\u003c00:00, 128.48it/s]\n"}
+,{"stream_name":"stdout","time":90.944424026,"data":"[w1     47s] base book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 8, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 1, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":90.95796617,"data":"[w0     47s] base book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 8, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 1, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":107.234531125,"data":"[w0     63s] base book 3 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 11, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 26, 'twin_wrong': 4, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":107.338377794,"data":"[w1     63s] base book 3 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 11, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 26, 'twin_wrong': 4, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":123.460703114,"data":"[w0     79s] base book 4 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 10, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":124.064623295,"data":"[w1     80s] base book 4 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 10, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stderr","time":125.803069617,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/338 [00:00\u003c02:21,  2.38it/s]\rLoading weights:  36%|███▋      | 123/338 [00:00\u003c00:00, 309.57it/s]\rLoading weights:  57%|█████▋    | 193/338 [00:00\u003c00:00, 245.87it/s]\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:  71%|███████   | 240/338 [00:01\u003c00:00, 201.22it/s]\rLoading weights:  81%|████████▏ | 275/338 [00:01\u003c00:00, 181.75it/s]\rLoading weights:  89%|████████▉ | 302/338 [00:01\u003c00:00, 173.42it/s]\rLoading weights:  96%|█████████▌| 325/338 [00:01\u003c00:00, 168.47it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 179.69it/s]\n"}
+,{"stream_name":"stderr","time":126.735039566,"data":"\rLoading weights:   0%|          | 1/338 [00:01\u003c06:01,  1.07s/it]\rLoading weights:  48%|████▊     | 161/338 [00:01\u003c00:00, 188.14it/s]\rLoading weights:  75%|███████▍  | 253/338 [00:01\u003c00:00, 209.54it/s]\rLoading weights:  93%|█████████▎| 314/338 [00:01\u003c00:00, 225.56it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 180.84it/s]\n"}
+,{"stream_name":"stdout","time":128.123854636,"data":"[w0     84s] [proj_099] book 2: 1015 rows, 15 epochs, 0 projected modules\n"}
+,{"stream_name":"stdout","time":128.224415765,"data":"[w1     84s] [proj_099_s1] book 2: 1015 rows, 15 epochs, 0 projected modules\n"}
+,{"stream_name":"stdout","time":285.605020605,"data":"[w1    242s]   step 100/480 loss 0.200\n"}
+,{"stream_name":"stdout","time":289.883214752,"data":"[w0    246s]   step 100/480 loss 0.218\n"}
+,{"stream_name":"stdout","time":445.713195178,"data":"[w1    402s]   step 200/480 loss 0.125\n"}
+,{"stream_name":"stdout","time":455.348736437,"data":"[w0    411s]   step 200/480 loss 0.048\n"}
+,{"stream_name":"stdout","time":605.276060897,"data":"[w1    561s]   step 300/480 loss 0.084\n"}
+,{"stream_name":"stdout","time":621.052328193,"data":"[w0    577s]   step 300/480 loss 0.122\n"}
+,{"stream_name":"stdout","time":765.722267943,"data":"[w1    722s]   step 400/480 loss 0.161\n"}
+,{"stream_name":"stdout","time":786.772756132,"data":"[w0    743s]   step 400/480 loss 0.135\n"}
+,{"stream_name":"stdout","time":893.526386974,"data":"[w1    850s]   step 480/480 loss 0.067\n"}
+,{"stream_name":"stdout","time":907.13938432,"data":"[w1    863s] proj_099_s1/after_book2 book 2 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 43, 'trap_true_no_denial': 42, 'trap_n': 60, 'twin_correct': 27, 'twin_false_refusal': 3, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":918.333401571,"data":"[w0    874s]   step 480/480 loss 0.139\n"}
+,{"stream_name":"stdout","time":932.53103841,"data":"[w0    888s] proj_099/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 44, 'trap_true_no_denial': 42, 'trap_n': 60, 'twin_correct': 26, 'twin_false_refusal': 4, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stderr","time":1031.596691472,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1031.597521706,"data":"  File \"/kaggle/src/script.py\", line 305, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":1031.597543281,"data":"    update_subspace(Qs, rows, run[\"tau\"])\n"}
+,{"stream_name":"stderr","time":1031.597549202,"data":"    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1031.597553524,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n"}
+,{"stream_name":"stderr","time":1031.597558524,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":1031.597563193,"data":"  File \"/kaggle/src/script.py\", line 174, in update_subspace\n"}
+,{"stream_name":"stderr","time":1031.597577992,"data":"    ev, W = torch.linalg.eigh(X @ X.T)          # n x n Gram matrix; cheaper than a d x d covariance\n"}
+,{"stream_name":"stderr","time":1031.597581572,"data":"            ~~~~~~~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1031.597637011,"data":"torch._C._LinAlgError: linalg.eigh: The algorithm failed to converge because the input matrix is ill-conditioned or has too many repeated eigenvalues (error code: 1).\n"}
+,{"stream_name":"stdout","time":1056.121829365,"data":"[w1   1012s]   subspace: 196 modules, mean protected dim 444, max 1037\n"}
+,{"stream_name":"stdout","time":1057.033533552,"data":"[w1   1013s] [proj_099_s1] book 3: 825 rows, 15 epochs, 196 projected modules\n"}
+,{"stream_name":"stdout","time":1220.393560857,"data":"[w1   1176s]   step 100/390 loss 0.165\n"}
+,{"stream_name":"stdout","time":1383.835562619,"data":"[w1   1340s]   step 200/390 loss 0.056\n"}
+,{"stream_name":"stdout","time":1545.72235665,"data":"[w1   1502s]   step 300/390 loss 0.067\n"}
+,{"stream_name":"stdout","time":1693.121705102,"data":"[w1   1649s]   step 390/390 loss 0.004\n"}
+,{"stream_name":"stdout","time":1693.148263463,"data":"[w1   1649s]   projection leakage |A Q|/|A|: mean 1.31e-07, max 3.32e-07\n"}
+,{"stream_name":"stdout","time":1706.646475259,"data":"[w1   1663s] proj_099_s1/after_book3 book 2 {'direct': [57, 75], 'indirect': [56, 75], 'trap_made_up': 40, 'trap_true_no_denial': 26, 'trap_n': 60, 'twin_correct': 19, 'twin_false_refusal': 5, 'twin_wrong': 6, 'twin_n': 30, 'retention_b': 0.753, 'retention_a': 0.753, 'probe_know': 108, 'probe_n': 150, 'probe_retention_b': 0.72}\n"}
+,{"stream_name":"stdout","time":1720.037556598,"data":"[w1   1676s] proj_099_s1/after_book3 book 3 {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 38, 'trap_true_no_denial': 35, 'trap_n': 60, 'twin_correct': 23, 'twin_false_refusal': 6, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":1874.695708728,"data":"[w1   1831s]   subspace: 196 modules, mean protected dim 822, max 2103\n"}
+,{"stream_name":"stdout","time":1875.834557376,"data":"[w1   1832s] [proj_099_s1] book 4: 1400 rows, 15 epochs, 196 projected modules\n"}
+,{"stream_name":"stdout","time":2042.099586137,"data":"[w1   1998s]   step 100/660 loss 0.200\n"}
+,{"stream_name":"stdout","time":2208.634510426,"data":"[w1   2165s]   step 200/660 loss 0.107\n"}
+,{"stream_name":"stdout","time":2374.336984542,"data":"[w1   2330s]   step 300/660 loss 0.104\n"}
+,{"stream_name":"stdout","time":2539.787334487,"data":"[w1   2496s]   step 400/660 loss 0.070\n"}
+,{"stream_name":"stdout","time":2705.847489855,"data":"[w1   2662s]   step 500/660 loss 0.112\n"}
+,{"stream_name":"stdout","time":2872.159822524,"data":"[w1   2828s]   step 600/660 loss 0.065\n"}
+,{"stream_name":"stdout","time":2971.021647544,"data":"[w1   2927s]   step 660/660 loss 0.080\n"}
+,{"stream_name":"stdout","time":2971.068776183,"data":"[w1   2927s]   projection leakage |A Q|/|A|: mean 2.73e-07, max 9.16e-07\n"}
+,{"stream_name":"stdout","time":2985.756482623,"data":"[w1   2942s] proj_099_s1/after_book4 book 2 {'direct': [41, 75], 'indirect': [35, 75], 'trap_made_up': 41, 'trap_true_no_denial': 22, 'trap_n': 60, 'twin_correct': 10, 'twin_false_refusal': 7, 'twin_wrong': 13, 'twin_n': 30, 'retention_b': 0.507, 'retention_a': 0.507, 'probe_know': 87, 'probe_n': 150, 'probe_retention_b': 0.58}\n"}
+,{"stream_name":"stdout","time":2999.687444423,"data":"[w1   2956s] proj_099_s1/after_book4 book 3 {'direct': [55, 75], 'indirect': [30, 75], 'trap_made_up': 39, 'trap_true_no_denial': 21, 'trap_n': 60, 'twin_correct': 11, 'twin_false_refusal': 7, 'twin_wrong': 12, 'twin_n': 30, 'retention_b': 0.567, 'retention_a': 0.567, 'probe_know': 87, 'probe_n': 150, 'probe_retention_b': 0.58}\n"}
+,{"stream_name":"stdout","time":3014.431689564,"data":"[w1   2970s] proj_099_s1/after_book4 book 4 {'direct': [74, 75], 'indirect': [72, 75], 'trap_made_up': 37, 'trap_true_no_denial': 33, 'trap_n': 60, 'twin_correct': 22, 'twin_false_refusal': 8, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":3014.834972775,"data":"[w1   2971s] done\n"}
+,{"stream_name":"stdout","time":3016.252446957,"data":"parent: merged results, worker exit codes [1, 0]\n"}
+,{"stream_name":"stderr","time":3018.304502767,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3018.304539101,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3018.578134107,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3018.578158589,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3019.362527814,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3020.459656884,"data":"[NbConvertApp] Writing 358439 bytes to __results__.html\n"}
+]

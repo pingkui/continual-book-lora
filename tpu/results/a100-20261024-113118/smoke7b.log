@@ -1,0 +1,18 @@
+devices [CudaDevice(id=0)]
+[      1s] devices [CudaDevice(id=0)] | runs ['A4_gen70n'] books [2] model Qwen/Qwen2.5-7B-Instruct
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:   9%|▉         | 1/11 [00:00<00:02,  4.87it/s]Fetching 11 files:  45%|████▌     | 5/11 [00:00<00:00, 17.56it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:20<00:00, 17.56it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:44<00:20,  6.99s/it]Fetching 11 files: 100%|██████████| 11/11 [00:44<00:00,  4.01s/it]
+[     73s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[     89s] base general NLL 1.5885
+[    215s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 3.3e-04, 0 down_proj modules needed float64
+[    215s] [A4_gen70n] general-text subspace (tau 0.7, 300 rows): 114s
+[    229s] [A4_gen70n] book 2: 320 rows, 1 epochs, 7 projected kinds
+[    292s]   step 10/10 loss 3.336
+[    292s]   trained book 2 in 63s (device peak 36.4 of 67.4 GiB)
+[    296s]   projection leakage |A Q|/|A|: mean 1.62e-07, max 4.11e-07
+[    352s] A4_gen70n/after_book2 book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 7, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 27, 'twin_wrong': 3, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}
+[    362s] A4_gen70n/after_book2 book 2 gen exam {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 35, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 0, 'twin_false_refusal': 41, 'twin_wrong': 19, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [12, 20], 'ho:founded|founder/twin': [6, 10], 'seen:founded|population/trap': [13, 20], 'seen:founded|population/twin': [8, 10], 'ho:founder|founded/trap': [16, 20], 'ho:founder|founded/twin': [7, 10], 'ho:goods|river/trap': [13, 20], 'ho:goods|river/twin': [7, 10], 'seen:population|founded/trap': [16, 20], 'seen:population|founded/twin': [8, 10], 'seen:river|population/trap': [15, 20], 'seen:river|population/twin': [5, 10]}}
+[    362s]   eval of book 2: 34s
+[    362s]   general NLL 1.5883 (base 1.5885); eval 35s (device peak 43.7 of 67.4 GiB)
+[    362s] done
+SMOKE7B DONE

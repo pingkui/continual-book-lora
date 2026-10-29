@@ -1,0 +1,29 @@
+rclone-v1.75.2-linux-amd64.zip: OK
+2026/10/25 10:42:27 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/10/25 10:42:39 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/10/25 10:42:42 NOTICE: book4.npz: Duplicate object found in source - ignoring
+total 216404
+drwxr-xr-x 2 root   root       4096 Oct 25 10:42 .
+drwxrwxr-x 6 ubuntu ubuntu     4096 Oct 25 10:42 ..
+-rw-r--r-- 1 root   root   73862704 Oct 25 10:10 book2.npz
+-rw-r--r-- 1 root   root   73862704 Oct 25 10:21 book3.npz
+-rw-r--r-- 1 root   root   73862704 Oct 25 10:36 book4.npz
+lm_eval 0.4.13
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:01,  3.77it/s]Fetching 7 files:  71%|███████▏  | 5/7 [00:00<00:00, 16.36it/s]Fetching 7 files: 100%|██████████| 7/7 [00:13<00:00,  1.97s/it]
+exported /content/l5/trained from 3 books
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/338 [00:00<00:07, 46.86it/s]Loading weights:  17%|█▋        | 56/338 [00:00<00:00, 311.85it/s]Loading weights:  31%|███       | 105/338 [00:00<00:00, 390.78it/s]Loading weights:  46%|████▋     | 157/338 [00:00<00:00, 440.75it/s]Loading weights:  61%|██████    | 207/338 [00:00<00:00, 453.45it/s]Loading weights:  76%|███████▌  | 256/338 [00:00<00:00, 446.24it/s]Loading weights:  91%|█████████▏| 309/338 [00:00<00:00, 472.11it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 435.17it/s]
+export check: 120/120 answers identical, 120/120 with the same first five words
+EXPORT OK
+L5 PREP DONE
+base ifeval: done before
+base gsm8k: done before
+base mmlu: done before
+trained ifeval: 487s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.4011|±  |0.0211|
+trained gsm8k: 325s
+|     |       |strict-match    |     5|exact_match|↑  |0.4321|±  |0.0136|
+trained mmlu: 980s
+|mmlu                                   |      2|none  |      |acc   |   |0.5929|±  |0.0039|
+|mmlu              |      2|none  |      |acc   |   |0.5929|±  |0.0039|
+L5 FULL DONE

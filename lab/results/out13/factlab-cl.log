@@ -1,0 +1,93 @@
+[{"stream_name":"stdout","time":8.653869521,"data":"parent: starting 2 workers\n"}
+,{"stream_name":"stdout","time":67.238314012,"data":"[w1      0s] device: cuda Tesla T4 runs: ['B2_gen15']\n"}
+,{"stream_name":"stdout","time":67.383547595,"data":"[w0      0s] device: cuda Tesla T4 runs: ['A2_recall2']\n"}
+,{"stream_name":"stderr","time":67.458647893,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":67.55492998,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":98.514597564,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/338 [00:01\u003c08:16,  1.47s/it]\rLoading weights:   0%|          | 1/338 [00:01\u003c09:02,  1.61s/it]\rLoading weights:  51%|█████     | 171/338 [00:01\u003c00:01, 143.50it/s]\rLoading weights:  54%|█████▍    | 183/338 [00:01\u003c00:01, 147.27it/s]\rLoading weights:  70%|██████▉   | 235/338 [00:02\u003c00:00, 138.89it/s]\rLoading weights:  82%|████████▏ | 278/338 [00:02\u003c00:00, 151.17it/s]\rLoading weights:  82%|████████▏ | 276/338 [00:02\u003c00:00, 142.71it/s]\rLoading weights:  91%|█████████ | 307/338 [00:02\u003c00:00, 137.85it/s]\rLoading weights: 100%|█████████▉| 337/338 [00:02\u003c00:00, 146.39it/s]\rLoading weights: 100%|██████████| 338/338 [00:02\u003c00:00, 122.14it/s]\n"}
+,{"stream_name":"stderr","time":98.528918907,"data":"\rLoading weights:  98%|█████████▊| 331/338 [00:02\u003c00:00, 141.58it/s]\rLoading weights: 100%|██████████| 338/338 [00:02\u003c00:00, 121.25it/s]\n"}
+,{"stream_name":"stdout","time":124.303578823,"data":"[w1     57s] base book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 8, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 1, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":124.593873312,"data":"[w0     57s] base book 2 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 8, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 1, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":140.394443175,"data":"[w1     73s] base book 3 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 11, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 26, 'twin_wrong': 4, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":141.028356319,"data":"[w0     74s] base book 3 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 11, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 26, 'twin_wrong': 4, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":156.416535937,"data":"[w1     89s] base book 4 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 10, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":157.654301285,"data":"[w0     90s] base book 4 {'direct': [0, 75], 'indirect': [0, 75], 'trap_made_up': 10, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 0, 'twin_false_refusal': 24, 'twin_wrong': 6, 'twin_n': 30, 'probe_know': 0, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":158.923566277,"data":"[w1     92s] base general NLL 1.8799\n"}
+,{"stream_name":"stdout","time":160.532294713,"data":"[w0     93s] base general NLL 1.8799\n"}
+,{"stream_name":"stderr","time":160.95441073,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:  12%|█▏        | 40/338 [00:00\u003c00:00, 340.14it/s]\rLoading weights:  22%|██▏       | 75/338 [00:00\u003c00:00, 291.27it/s]\rLoading weights:  31%|███       | 105/338 [00:00\u003c00:00, 260.25it/s]\rLoading weights:  40%|███▉      | 135/338 [00:00\u003c00:00, 260.73it/s]\rLoading weights:  48%|████▊     | 162/338 [00:00\u003c00:00, 249.04it/s]\rLoading weights:  55%|█████▌    | 187/338 [00:00\u003c00:00, 243.83it/s]\rLoading weights:  63%|██████▎   | 212/338 [00:00\u003c00:00, 242.78it/s]\rLoading weights:  72%|███████▏  | 243/338 [00:00\u003c00:00, 246.09it/s]\rLoading weights:  83%|████████▎ | 279/338 [00:01\u003c00:00, 264.13it/s]\rLoading weights:  91%|█████████ | 306/338 [00:01\u003c00:00, 257.09it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 266.36it/s]\n"}
+,{"stream_name":"stderr","time":162.932523467,"data":"\rLoading weights:   0%|          | 0/338 [00:00\u003c?, ?it/s]\rLoading weights:  12%|█▏        | 39/338 [00:00\u003c00:00, 303.22it/s]\rLoading weights:  21%|██        | 70/338 [00:00\u003c00:01, 257.11it/s]\rLoading weights:  28%|██▊       | 96/338 [00:00\u003c00:00, 250.78it/s]\rLoading weights:  36%|███▋      | 123/338 [00:00\u003c00:00, 227.25it/s]\rLoading weights:  44%|████▍     | 148/338 [00:00\u003c00:00, 231.68it/s]\rLoading weights:  51%|█████     | 172/338 [00:00\u003c00:00, 227.93it/s]\rLoading weights:  58%|█████▊    | 196/338 [00:00\u003c00:00, 224.28it/s]\rLoading weights:  65%|██████▌   | 220/338 [00:00\u003c00:00, 221.73it/s]\rLoading weights:  75%|███████▌  | 255/338 [00:01\u003c00:00, 239.80it/s]\rLoading weights:  83%|████████▎ | 280/338 [00:01\u003c00:00, 228.30it/s]\rLoading weights:  93%|█████████▎| 315/338 [00:01\u003c00:00, 250.38it/s]\rLoading weights: 100%|██████████| 338/338 [00:01\u003c00:00, 244.91it/s]\n"}
+,{"stream_name":"stdout","time":164.705750895,"data":"[w0     97s] [A2_recall2] book 2: 1769 rows, 12 epochs, 0 projected modules\n"}
+,{"stream_name":"stdout","time":306.63538938,"data":"[w1    239s]   subspace: 196 modules, mean protected dim 1264, max 3359\n"}
+,{"stream_name":"stdout","time":307.196923422,"data":"[w1    240s] [B2_gen15] book 2: 1015 rows, 15 epochs, 196 projected modules\n"}
+,{"stream_name":"stdout","time":366.711558285,"data":"[w0    299s]   step 100/672 loss 0.152\n"}
+,{"stream_name":"stdout","time":468.485015366,"data":"[w1    401s]   step 100/480 loss 0.441\n"}
+,{"stream_name":"stdout","time":566.283864066,"data":"[w0    499s]   step 200/672 loss 0.102\n"}
+,{"stream_name":"stdout","time":629.579464921,"data":"[w1    562s]   step 200/480 loss 0.314\n"}
+,{"stream_name":"stdout","time":766.026330324,"data":"[w0    699s]   step 300/672 loss 0.028\n"}
+,{"stream_name":"stdout","time":789.8073314,"data":"[w1    723s]   step 300/480 loss 0.104\n"}
+,{"stream_name":"stdout","time":949.814813357,"data":"[w1    883s]   step 400/480 loss 0.126\n"}
+,{"stream_name":"stdout","time":965.011289738,"data":"[w0    898s]   step 400/672 loss 0.019\n"}
+,{"stream_name":"stdout","time":1078.783943713,"data":"[w1   1012s]   step 480/480 loss 0.205\n"}
+,{"stream_name":"stdout","time":1078.858216005,"data":"[w1   1012s]   projection leakage |A Q|/|A|: mean 3.53e-07, max 1.62e-06\n"}
+,{"stream_name":"stdout","time":1094.698267856,"data":"[w1   1028s] B2_gen15/after_book2 book 2 {'direct': [63, 75], 'indirect': [67, 75], 'trap_made_up': 59, 'trap_true_no_denial': 58, 'trap_n': 60, 'twin_correct': 28, 'twin_false_refusal': 1, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 148, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":1094.698487739,"data":"[w1   1028s]   general NLL 2.0664 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":1165.531395912,"data":"[w0   1098s]   step 500/672 loss 0.016\n"}
+,{"stream_name":"stderr","time":1284.61790944,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1284.618304707,"data":"  File \"/kaggle/src/script.py\", line 182, in update_subspace\n"}
+,{"stream_name":"stderr","time":1284.618332405,"data":"    ev, W = torch.linalg.eigh(G)\n"}
+,{"stream_name":"stderr","time":1284.618337489,"data":"            ~~~~~~~~~~~~~~~~~^^^\n"}
+,{"stream_name":"stderr","time":1284.618346596,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 264.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 18.81 MiB is free. Including non-PyTorch memory, this process has 14.54 GiB memory in use. Of the allocated memory 14.06 GiB is allocated by PyTorch, and 317.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":1284.618642904,"data":"\n"}
+,{"stream_name":"stderr","time":1284.618661484,"data":"During handling of the above exception, another exception occurred:\n"}
+,{"stream_name":"stderr","time":1284.618679815,"data":"\n"}
+,{"stream_name":"stderr","time":1284.618685221,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1284.619145754,"data":"  File \"/kaggle/src/script.py\", line 361, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":1284.619171286,"data":"    update_subspace(Qs, rows, run[\"tau\"])\n"}
+,{"stream_name":"stderr","time":1284.619176707,"data":"    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1284.619181092,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py\", line 124, in decorate_context\n"}
+,{"stream_name":"stderr","time":1284.619185768,"data":"    return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":1284.619189957,"data":"  File \"/kaggle/src/script.py\", line 184, in update_subspace\n"}
+,{"stream_name":"stderr","time":1284.619194155,"data":"    G = G.double().cpu()\n"}
+,{"stream_name":"stderr","time":1284.61919836,"data":"        ~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":1284.619385881,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 132.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 78.81 MiB is free. Including non-PyTorch memory, this process has 14.48 GiB memory in use. Of the allocated memory 13.99 GiB is allocated by PyTorch, and 322.48 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stdout","time":1367.075043888,"data":"[w0   1300s]   step 600/672 loss 0.061\n"}
+,{"stream_name":"stdout","time":1509.358237321,"data":"[w0   1442s]   step 672/672 loss 0.000\n"}
+,{"stream_name":"stdout","time":1527.130324425,"data":"[w0   1460s] A2_recall2/after_book2 book 2 {'direct': [61, 75], 'indirect': [74, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":1527.130370876,"data":"[w0   1460s]   general NLL 3.4629 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":1706.462678411,"data":"[w0   1639s]   subspace: 196 modules, mean protected dim 402, max 958\n"}
+,{"stream_name":"stdout","time":1707.475793707,"data":"[w0   1640s] [A2_recall2] book 3: 1423 rows, 12 epochs, 196 projected modules\n"}
+,{"stream_name":"stdout","time":1911.168296171,"data":"[w0   1844s]   step 100/540 loss 0.131\n"}
+,{"stream_name":"stdout","time":2114.78054041,"data":"[w0   2047s]   step 200/540 loss 0.019\n"}
+,{"stream_name":"stdout","time":2317.718163646,"data":"[w0   2250s]   step 300/540 loss 0.082\n"}
+,{"stream_name":"stdout","time":2519.915752335,"data":"[w0   2453s]   step 400/540 loss 0.095\n"}
+,{"stream_name":"stdout","time":2720.617207678,"data":"[w0   2653s]   step 500/540 loss 0.001\n"}
+,{"stream_name":"stdout","time":2801.082123751,"data":"[w0   2734s]   step 540/540 loss 0.034\n"}
+,{"stream_name":"stdout","time":2801.119991799,"data":"[w0   2734s]   projection leakage |A Q|/|A|: mean 1.18e-07, max 2.18e-07\n"}
+,{"stream_name":"stdout","time":2820.217900297,"data":"[w0   2753s] A2_recall2/after_book3 book 2 {'direct': [53, 75], 'indirect': [55, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 24, 'twin_false_refusal': 4, 'twin_wrong': 2, 'twin_n': 30, 'retention_b': 0.8, 'retention_a': 0.8, 'probe_know': 116, 'probe_n': 150, 'probe_retention_b': 0.773}\n"}
+,{"stream_name":"stdout","time":2835.272795894,"data":"[w0   2768s] A2_recall2/after_book3 book 3 {'direct': [63, 75], 'indirect': [73, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":2835.272854929,"data":"[w0   2768s]   general NLL 3.5587 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":3011.602224892,"data":"[w0   2944s]   subspace: 196 modules, mean protected dim 721, max 1858\n"}
+,{"stream_name":"stdout","time":3012.429317752,"data":"[w0   2945s] [A2_recall2] book 4: 2440 rows, 12 epochs, 196 projected modules\n"}
+,{"stream_name":"stdout","time":3221.832797379,"data":"[w0   3154s]   step 100/924 loss 0.174\n"}
+,{"stream_name":"stdout","time":3430.494003288,"data":"[w0   3363s]   step 200/924 loss 0.087\n"}
+,{"stream_name":"stdout","time":3638.31901989,"data":"[w0   3571s]   step 300/924 loss 0.120\n"}
+,{"stream_name":"stdout","time":3843.718052577,"data":"[w0   3776s]   step 400/924 loss 0.022\n"}
+,{"stream_name":"stdout","time":4051.28823437,"data":"[w0   3984s]   step 500/924 loss 0.003\n"}
+,{"stream_name":"stdout","time":4258.807102389,"data":"[w0   4191s]   step 600/924 loss 0.018\n"}
+,{"stream_name":"stdout","time":4463.971768484,"data":"[w0   4397s]   step 700/924 loss 0.120\n"}
+,{"stream_name":"stdout","time":4670.845702101,"data":"[w0   4603s]   step 800/924 loss 0.112\n"}
+,{"stream_name":"stdout","time":4878.579845615,"data":"[w0   4811s]   step 900/924 loss 0.084\n"}
+,{"stream_name":"stdout","time":4927.249547898,"data":"[w0   4860s]   step 924/924 loss 0.001\n"}
+,{"stream_name":"stdout","time":4927.293832838,"data":"[w0   4860s]   projection leakage |A Q|/|A|: mean 2.15e-07, max 5.45e-07\n"}
+,{"stream_name":"stdout","time":4946.641978258,"data":"[w0   4879s] A2_recall2/after_book4 book 2 {'direct': [41, 75], 'indirect': [34, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 14, 'twin_false_refusal': 11, 'twin_wrong': 5, 'twin_n': 30, 'retention_b': 0.556, 'retention_a': 0.556, 'probe_know': 73, 'probe_n': 150, 'probe_retention_b': 0.487}\n"}
+,{"stream_name":"stdout","time":4962.240140875,"data":"[w0   4895s] A2_recall2/after_book4 book 3 {'direct': [45, 75], 'indirect': [36, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 19, 'twin_false_refusal': 5, 'twin_wrong': 6, 'twin_n': 30, 'retention_b': 0.596, 'retention_a': 0.596, 'probe_know': 93, 'probe_n': 150, 'probe_retention_b': 0.62}\n"}
+,{"stream_name":"stdout","time":4975.856984065,"data":"[w0   4909s] A2_recall2/after_book4 book 4 {'direct': [61, 75], 'indirect': [74, 75], 'trap_made_up': 2, 'trap_true_no_denial': 2, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}\n"}
+,{"stream_name":"stdout","time":4975.857045227,"data":"[w0   4909s]   general NLL 3.7665 (base 1.8799)\n"}
+,{"stream_name":"stdout","time":4976.279565409,"data":"[w0   4909s] done\n"}
+,{"stream_name":"stdout","time":4978.000391217,"data":"parent: merged results, worker exit codes [0, 1]\n"}
+,{"stream_name":"stderr","time":4980.357132633,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4980.35718378,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4980.736436649,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4980.736472052,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4981.669850318,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4983.128651241,"data":"[NbConvertApp] Writing 373542 bytes to __results__.html\n"}
+]

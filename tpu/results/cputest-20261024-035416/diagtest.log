@@ -1,0 +1,20 @@
+[      0s] devices [CpuDevice(id=0)] | runs ['A4_gen70'] books [2, 3] model Qwen/Qwen2.5-0.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:00,  9.22it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  57%|█████▋    | 4/7 [00:00<00:00, 19.32it/s]Fetching 7 files: 100%|██████████| 7/7 [00:09<00:00,  1.60s/it]Fetching 7 files: 100%|██████████| 7/7 [00:09<00:00,  1.29s/it]
+[     21s] model loaded {'L': 24, 'D': 896, 'F': 4864, 'H': 14, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     46s] base general NLL 2.2679
+[     79s]   subspace: 168 modules, mean protected dim 33, max 97, new basis max |V^T V - I| 1.7e-05, 0 down_proj modules needed float64
+[     79s] [A4_gen70] general-text subspace (tau 0.7, 8 rows): 32s
+[     83s] [A4_gen70] book 2: 16 rows, 1 epochs, 7 projected kinds
+[    241s]   step 1/1 loss 3.643
+[    241s]   trained book 2 in 158s
+[    243s]   projection leakage |A Q|/|A|: mean 2.93e-08, max 6.79e-08
+[    340s] A4_gen70/after_book2 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    390s] A4_gen70/after_book2 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [1, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    390s]   eval of book 2: 126s
+[    390s]   general NLL 2.2689 (base 2.2679); eval 145s
+[    421s]   subspace: 168 modules, mean protected dim 168, max 276, new basis max |V^T V - I| 7.5e-04, 0 down_proj modules needed float64
+[    421s]   subspace update 31s
+[    468s]   diag book 2 train/all: energy outside Q: down mean 0.143 max 0.245 (L1); gate mean 0.090 max 0.143 (L1); o mean 0.056 max 0.117 (L16); q mean 0.061 max 0.099 (L1)
+[    468s]   diag book 2 train/ans: energy outside Q: down mean 0.184 max 0.311 (L1); gate mean 0.110 max 0.174 (L1); o mean 0.074 max 0.202 (L16); q mean 0.079 max 0.121 (L4)
+[    471s] [A4_gen70] book 3: 16 rows, 1 epochs, 7 projected kinds

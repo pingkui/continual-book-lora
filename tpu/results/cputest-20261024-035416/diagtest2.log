@@ -1,0 +1,66 @@
+1
+[      0s] devices [CpuDevice(id=0)] | runs ['A4_gen70'] books [2, 3] model Qwen/Qwen2.5-0.5B-Instruct
+[     23s] model loaded {'L': 24, 'D': 896, 'F': 4864, 'H': 14, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[     63s] base general NLL 2.2679
+[     97s]   subspace: 168 modules, mean protected dim 33, max 97, new basis max |V^T V - I| 1.7e-05, 0 down_proj modules needed float64
+[     97s] [A4_gen70] general-text subspace (tau 0.7, 8 rows): 34s
+[    103s] [A4_gen70] book 2: 16 rows, 1 epochs, 7 projected kinds
+[    261s]   step 1/1 loss 3.643
+[    261s]   trained book 2 in 158s
+[    263s]   projection leakage |A Q|/|A|: mean 2.93e-08, max 6.79e-08
+[    361s] A4_gen70/after_book2 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    409s] A4_gen70/after_book2 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [1, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    409s]   eval of book 2: 124s
+[    409s]   general NLL 2.2689 (base 2.2679); eval 144s
+[    440s]   subspace: 168 modules, mean protected dim 168, max 276, new basis max |V^T V - I| 7.5e-04, 0 down_proj modules needed float64
+[    440s]   subspace update 30s
+[    440s]   diag: no correct exam answers, using all of them
+[    458s]   diag book 2 exam/all: energy outside Q: down mean 0.242 max 0.357 (L4); gate mean 0.160 max 0.239 (L1); o mean 0.110 max 0.195 (L16); q mean 0.102 max 0.155 (L1)
+[    458s]   diag book 2 exam/ans: energy outside Q: down mean 0.515 max 1.000 (L2); gate mean 0.273 max 0.416 (L3); o mean 0.189 max 0.364 (L16); q mean 0.181 max 0.249 (L1)
+[    494s]   diag book 2 train/all: energy outside Q: down mean 0.143 max 0.245 (L1); gate mean 0.090 max 0.143 (L1); o mean 0.056 max 0.117 (L16); q mean 0.061 max 0.099 (L1)
+[    494s]   diag book 2 train/ans: energy outside Q: down mean 0.184 max 0.311 (L1); gate mean 0.110 max 0.174 (L1); o mean 0.074 max 0.202 (L16); q mean 0.079 max 0.121 (L4)
+[    505s] [A4_gen70] book 3: 16 rows, 1 epochs, 7 projected kinds
+[    628s]   step 1/1 loss 2.012
+[    628s]   trained book 3 in 123s
+[    629s]   projection leakage |A Q|/|A|: mean 9.33e-08, max 1.35e-07
+[    653s]   diag book 3 old_exam/all: |dW x|/|W x|: down mean 0.000 max 0.000 (L1); gate mean 0.000 max 0.000 (L22); o mean 0.000 max 0.000 (L22); q mean 0.000 max 0.000 (L20)
+[    653s]   diag book 3 old_exam/ans: |dW x|/|W x|: down mean 0.000 max 0.000 (L2); gate mean 0.000 max 0.000 (L22); o mean 0.000 max 0.000 (L22); q mean 0.000 max 0.000 (L20)
+[    702s]   diag book 3 new_train/all: |dW x|/|W x|: down mean 0.000 max 0.000 (L1); gate mean 0.000 max 0.000 (L1); o mean 0.000 max 0.000 (L22); q mean 0.000 max 0.000 (L20)
+[    702s]   diag book 3 new_train/ans: |dW x|/|W x|: down mean 0.000 max 0.000 (L1); gate mean 0.000 max 0.000 (L1); o mean 0.000 max 0.000 (L22); q mean 0.000 max 0.000 (L20)
+[    800s] A4_gen70/after_book3 book 2 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'retention_b': nan, 'retention_a': nan, 'probe_know': 0, 'probe_n': 8, 'probe_retention_b': nan}
+[    850s] A4_gen70/after_book3 book 2 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 1, 'twin_wrong': 3, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [1, 1], 'seen:founded|population/trap': [0, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [1, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}, 'retention_b': nan}
+[    850s]   eval of book 2: 126s
+[    924s] A4_gen70/after_book3 book 3 {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 4, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'probe_know': 0, 'probe_n': 8}
+[    974s] A4_gen70/after_book3 book 3 gen exam {'direct': [0, 4], 'indirect': [0, 4], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 4, 'twin_correct': 0, 'twin_false_refusal': 0, 'twin_wrong': 4, 'twin_n': 4, 'denied_by_type': {'ho:founded|founder/trap': [0, 1], 'seen:founded|population/trap': [1, 1], 'ho:founder|founded/trap': [0, 1], 'ho:goods|river/trap': [0, 1], 'ho:founded|founder/twin': [0, 1], 'seen:founded|population/twin': [0, 1], 'ho:founder|founded/twin': [0, 1], 'ho:goods|river/twin': [0, 1]}}
+[    974s]   eval of book 3: 124s
+[    974s]   general NLL 2.2698 (base 2.2679); eval 270s
+Traceback (most recent call last):
+  File "/content/code/run_cl.py", line 581, in <module>
+    diag_drift(diag_old, Qs, entry, k)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/code/run_cl.py", line 523, in diag_drift
+    acc = _diag_pass(old["seqs"], _diag_drift, lambda b: old["caps"][b])
+  File "/content/code/run_cl.py", line 476, in _diag_pass
+    res_ = jax.device_get(fn(cap, jnp.asarray(w, jnp.float32), *extra))
+                          ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/code/run_cl.py", line 458, in _diag_drift
+    x, x0 = cap[inp].astype(jnp.float32), old[inp].astype(jnp.float32)
+                                          ~~~^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/jax/_src/numpy/array_methods.py", line 1532, in op
+    return getattr(self.aval, f"_{name}")(self, *args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/jax/_src/numpy/array_methods.py", line 1032, in _getitem
+    return indexing.rewriting_take(self, item)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/jax/_src/numpy/indexing.py", line 1099, in rewriting_take
+    indexer = NDIndexer.from_raw_indices(idx, arr.shape)
+  File "/usr/local/lib/python3.13/dist-packages/jax/_src/numpy/indexing.py", line 198, in from_raw_indices
+    parsed = _parse_indices(indices, shape)
+  File "/usr/local/lib/python3.13/dist-packages/jax/_src/numpy/indexing.py", line 142, in _parse_indices
+    typ = IndexType.from_index(idx)
+  File "/usr/local/lib/python3.13/dist-packages/jax/_src/numpy/indexing.py", line 91, in from_index
+    raise TypeError(f"JAX does not support string indexing; got {idx=}")
+TypeError: JAX does not support string indexing; got idx='down_in'
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

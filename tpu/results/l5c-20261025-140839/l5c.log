@@ -1,0 +1,28 @@
+rclone-v1.75.2-linux-amd64.zip: OK
+2026/10/25 13:38:07 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/10/25 13:38:47 NOTICE: gdrive: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+total 216404
+drwxr-xr-x 2 root   root       4096 Oct 25 13:38 .
+drwxrwxr-x 6 ubuntu ubuntu     4096 Oct 25 13:38 ..
+-rw-r--r-- 1 root   root   73862704 Oct 25 12:44 book2.npz
+-rw-r--r-- 1 root   root   73862704 Oct 25 12:55 book3.npz
+-rw-r--r-- 1 root   root   73862704 Oct 25 13:11 book4.npz
+lm_eval 0.4.13
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  29%|██▊       | 2/7 [00:00<00:00, 12.90it/s]Fetching 7 files: 100%|██████████| 7/7 [00:12<00:00,  1.92s/it]Fetching 7 files: 100%|██████████| 7/7 [00:12<00:00,  1.76s/it]
+exported /content/l5/trained from 3 books
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/338 [00:00<00:04, 69.84it/s]Loading weights:  15%|█▌        | 52/338 [00:00<00:00, 292.94it/s]Loading weights:  30%|██▉       | 101/338 [00:00<00:00, 382.72it/s]Loading weights:  45%|████▌     | 153/338 [00:00<00:00, 435.91it/s]Loading weights:  60%|██████    | 203/338 [00:00<00:00, 457.20it/s]Loading weights:  75%|███████▍  | 252/338 [00:00<00:00, 468.24it/s]Loading weights:  90%|████████▉ | 303/338 [00:00<00:00, 462.16it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 435.88it/s]
+export check: 120/120 answers identical, 120/120 with the same first five words
+EXPORT OK
+L5 PREP DONE
+base ifeval: done before
+base gsm8k: done before
+base mmlu: done before
+trained ifeval: 500s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.3678|±  |0.0208|
+trained gsm8k: 322s
+|     |       |strict-match    |     5|exact_match|↑  |0.3677|±  |0.0133|
+trained mmlu: 710s
+|mmlu                                   |      2|none  |      |acc   |   |0.5967|±  |0.0039|
+|mmlu              |      2|none  |      |acc   |   |0.5967|±  |0.0039|
+L5 FULL DONE

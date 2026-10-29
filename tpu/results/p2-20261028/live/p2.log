@@ -1,0 +1,788 @@
+card 97887 MiB -> MEM_FRACTION=0.409 TORCH_MEM_FRACTION=0.082
+phase-2 package composed in 242 s: code data env LICENSES.md make_manifest.sh MANIFEST.txt README.md requirements.txt run.sh ; 80 wheels
+torch==2.11.0+cu128
+1
+=== P2 book 1: run.sh /content/books/book1.json ===
+[run.sh] 2026-10-28T05:32:52Z book=/content/books/book1.json out=/content/out2 resume=no package=/content/pkg
+[run.sh] budget: BUDGET_H=8 RESERVE_H=1 -> training stops after 2026-10-28T12:32:52Z
+[run.sh] installing the package's python and wheels into /content/out2/pyroot (no network)
+[run.sh] gpu: NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 580.82.07
+[run.sh] jax 0.11.1 [CudaDevice(id=0)] | torch 2.11.0+cu128 cuda True | transformers 5.21.0
+[run.sh] downloading Qwen/Qwen2.5-7B-Instruct@a09a3545
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files:   9%|▉         | 1/11 [00:00<00:01,  8.98it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:  27%|██▋       | 3/11 [00:00<00:00, 13.82it/s]Fetching 11 files:  27%|██▋       | 3/11 [00:19<00:00, 13.82it/s]Fetching 11 files:  36%|███▋      | 4/11 [00:35<01:26, 12.32s/it]Fetching 11 files:  45%|████▌     | 5/11 [00:35<00:49,  8.28s/it]Fetching 11 files:  64%|██████▎   | 7/11 [00:36<00:17,  4.33s/it]Fetching 11 files:  73%|███████▎  | 8/11 [00:36<00:09,  3.25s/it]Fetching 11 files:  82%|████████▏ | 9/11 [00:36<00:04,  2.42s/it]Fetching 11 files:  91%|█████████ | 10/11 [00:36<00:01,  1.79s/it]Fetching 11 files: 100%|██████████| 11/11 [00:37<00:00,  1.64s/it]Fetching 11 files: 100%|██████████| 11/11 [00:37<00:00,  3.44s/it]
+[run.sh] base: 4 safetensors files, 15G
+[run.sh] this is book 1; books done: {"done": []}
+[run.sh] 2176 units
+[      0s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1] model /content/out2/base Q_DTYPE float16 rank 32 alpha 64
+[      8s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[      8s] torch limited to 0.08 of the device memory
+[      8s] general-text rows from /content/pkg/data/general_ru.json: 340
+[     63s] self-instruct: 320 rows from 320 seeds in 55s
+[    238s]   generic: META failed for «Основателем города Зоролино был Фёдор Дрозский.» -> 'СУБЪЕКТ: Фёдор Дrozский  \nСВЕДЕНИЕ: город Зоролино  \nВОПРОС: Какой город основал Фёдор Дрозский?  \nОБРАТНЫЙ: Какой человек основал город Зоролино?'
+[    238s]   generic: META failed for «Основателем города Пелтеполь был Пётр Дрозенко.» -> 'СУБЪЕКТ: Пётр Дrozенко\nСВЕДЕНИЕ: Пелтеполь\nВОПРОС: Какой город основал Пётр Дрозенко?\nОБРАТНЫЙ: Кем был основатель города Пелтеполь?'
+[    238s]   generic: META failed for «Основателем города Пелтарань был Аркадий Тюркан.» -> 'СУБЪЕКТ: Аркадий Тюркан\nСВЕДЕНИЕ: Основатель города Пелтарань\nВОПРОС: Кто основатель города Пелтарань?\nОБРАТНЫЙ: Кем является Аркадий Тюркан?'
+[    247s]   generic: META parsed for 2144/2176 units (102 needed the second prompt)
+[    930s]   generic: falsifications for 2109/2144 units (5374 in all: 3418 swaps, 489 teacher ones dropped for changing the entity; 30 skeletons)
+[    930s]   generic: 1338 entity keys for 2144 facts; 1 facts without a partner; mean partners 3.9
+[   2595s]   generic: premise pairs 8309, true rows 11311, false rows 10440
+[   2595s]   generic: inverse questions: 890 real, 1254 fallback (not used as probes)
+[   2595s]   generic: 45233 rows for 2176 units (2144 facts); tags: text=2176, text_g=5549, qa=4288, qa_g=3951, verify=7518, premise_g=21751
+[   2595s] generic book 1: 2176 units -> 45233 rows, 2144 facts in 2531s
+[   2595s] budget guard: training steps stop after 2026-10-28T12:32:52Z (6.25 h from now)
+[   2597s] base general NLL 1.5985 | base chat NLL 0.3966
+[   2645s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 2.8e-04, 0 down_proj modules needed float64
+[   2645s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 45s
+[   2691s]   note: torch.float32 SVD of a (3584, 1107) residual did not converge
+[   2736s]   note: torch.float32 SVD of a (18944, 1987) residual did not converge
+[   2778s]   subspace: 196 modules, mean protected dim 1141, max 3511, new basis max |V^T V - I| 8.7e-04, 0 down_proj modules needed float64
+[   2778s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 133s
+[   2783s]   basis q: dims 206-1094 of 3584, max |Q^T Q - I| 1.1e-06
+[   2783s]   basis k: dims 204-1089 of 3584, max |Q^T Q - I| 1.9e-06
+[   2784s]   basis v: dims 202-1090 of 3584, max |Q^T Q - I| 2.3e-06
+[   2784s]   basis o: dims 337-1189 of 3584, max |Q^T Q - I| 2.1e-06
+[   2785s]   basis gate: dims 3-1668 of 3584, max |Q^T Q - I| 2.1e-06
+[   2785s]   basis up: dims 3-1644 of 3584, max |Q^T Q - I| 1.4e-06
+[   2790s]   basis down: dims 459-3511 of 18944, max |Q^T Q - I| 5.2e-06
+[   2796s]   stacked bases (host RSS 72992572 kB)
+[   2796s] [A4_chat90f] book 1: 37715 rows, 6 epochs, lr x1, 7 projected kinds
+[   2809s]   diag step 10: loss 1.6054; max |a|, |b| per kind down 0.0143/0.000561 gate 0.0309/0.000559 k 0.0302/0.000556 o 0.0314/0.00056 q 0.0307/0.000559 up 0.0312/0.00056 v 0.0308/0.000557
+[   2819s]   diag step 20: loss 1.0378; max |a|, |b| per kind down 0.0265/0.00223 gate 0.0312/0.00221 k 0.0306/0.0021 o 0.0318/0.0022 q 0.0305/0.00217 up 0.0319/0.00218 v 0.0325/0.00214
+[   2831s]   diag step 30: loss 0.8839; max |a|, |b| per kind down 0.0433/0.00431 gate 0.0324/0.00445 k 0.0321/0.00364 o 0.032/0.00401 q 0.031/0.0041 up 0.0324/0.00441 v 0.0339/0.00413
+[   2840s]   diag step 40: loss 0.6088; max |a|, |b| per kind down 0.0537/0.00665 gate 0.0341/0.00675 k 0.0324/0.005 o 0.0322/0.00548 q 0.0313/0.00598 up 0.034/0.00676 v 0.0347/0.00569
+[   2849s]   diag step 50: loss 0.4664; max |a|, |b| per kind down 0.0596/0.00858 gate 0.0363/0.00844 k 0.0325/0.00565 o 0.0322/0.00637 q 0.0316/0.00667 up 0.037/0.00785 v 0.0359/0.00703
+[   2858s]   diag step 60: loss 0.4533; max |a|, |b| per kind down 0.0632/0.0101 gate 0.0391/0.0102 k 0.0326/0.00643 o 0.0321/0.00716 q 0.032/0.00772 up 0.0391/0.00969 v 0.0371/0.00783
+[   2868s]   diag step 70: loss 0.6534; max |a|, |b| per kind down 0.0655/0.0115 gate 0.0399/0.0114 k 0.0325/0.00695 o 0.0321/0.00778 q 0.0321/0.00797 up 0.0402/0.0107 v 0.0375/0.00868
+[   2877s]   diag step 80: loss 0.2759; max |a|, |b| per kind down 0.0663/0.012 gate 0.0386/0.0121 k 0.0325/0.00792 o 0.0321/0.00818 q 0.032/0.00923 up 0.0405/0.0119 v 0.0376/0.00932
+[   2886s]   diag step 90: loss 0.2098; max |a|, |b| per kind down 0.0678/0.0126 gate 0.0385/0.0126 k 0.0325/0.00869 o 0.0321/0.00846 q 0.0319/0.0101 up 0.0404/0.0122 v 0.0378/0.00947
+[   2895s]   diag step 100: loss 0.3955; max |a|, |b| per kind down 0.0713/0.013 gate 0.0386/0.0129 k 0.0326/0.00901 o 0.032/0.00868 q 0.032/0.0104 up 0.0405/0.0127 v 0.0368/0.0096
+[   2895s]   step 100/7074 loss 0.395
+[   2988s]   step 200/7074 loss 0.372
+[   2988s]   early adapter checkpoint at step 200: /content/out2/ckpt/A4_chat90f/book1.early.npz
+[   3080s]   step 300/7074 loss 0.270
+[   3173s]   step 400/7074 loss 0.420
+[   3265s]   step 500/7074 loss 0.547
+[   3358s]   step 600/7074 loss 0.286
+[   3450s]   step 700/7074 loss 0.256
+[   3542s]   step 800/7074 loss 0.086
+[   3635s]   step 900/7074 loss 0.286
+[   3728s]   step 1000/7074 loss 0.095
+[   3820s]   step 1100/7074 loss 0.270
+[   3893s]   checkpoint after epoch 1/6 (step 1179): /content/out2/ckpt/A4_chat90f/book1.npz in 0s
+[   3913s]   step 1200/7074 loss 0.214
+[   4006s]   step 1300/7074 loss 0.090
+[   4097s]   step 1400/7074 loss 0.105
+[   4190s]   step 1500/7074 loss 0.234
+[   4282s]   step 1600/7074 loss 0.004
+[   4375s]   step 1700/7074 loss 0.045
+[   4467s]   step 1800/7074 loss 0.053
+[   4559s]   step 1900/7074 loss 0.200
+[   4651s]   step 2000/7074 loss 0.062
+[   4743s]   step 2100/7074 loss 0.121
+[   4835s]   step 2200/7074 loss 0.174
+[   4927s]   step 2300/7074 loss 0.012
+[   4981s]   checkpoint after epoch 2/6 (step 2358): /content/out2/ckpt/A4_chat90f/book1.npz in 1s
+[   5020s]   step 2400/7074 loss 0.077
+[   5113s]   step 2500/7074 loss 0.005
+[   5205s]   step 2600/7074 loss 0.125
+[   5297s]   step 2700/7074 loss 0.033
+[   5390s]   step 2800/7074 loss 0.116
+[   5482s]   step 2900/7074 loss 0.093
+[   5575s]   step 3000/7074 loss 0.120
+[   5667s]   step 3100/7074 loss 0.013
+[   5760s]   step 3200/7074 loss 0.124
+[   5852s]   step 3300/7074 loss 0.009
+[   5945s]   step 3400/7074 loss 0.057
+[   6037s]   step 3500/7074 loss 0.106
+[   6072s]   checkpoint after epoch 3/6 (step 3537): /content/out2/ckpt/A4_chat90f/book1.npz in 1s
+[   6130s]   step 3600/7074 loss 0.050
+[   6223s]   step 3700/7074 loss 0.005
+[   6315s]   step 3800/7074 loss 0.068
+[   6407s]   step 3900/7074 loss 0.070
+[   6499s]   step 4000/7074 loss 0.189
+[   6592s]   step 4100/7074 loss 0.038
+[   6684s]   step 4200/7074 loss 0.060
+[   6775s]   step 4300/7074 loss 0.099
+[   6867s]   step 4400/7074 loss 0.130
+[   6960s]   step 4500/7074 loss 0.096
+[   7052s]   step 4600/7074 loss 0.060
+[   7145s]   step 4700/7074 loss 0.076
+[   7160s]   checkpoint after epoch 4/6 (step 4716): /content/out2/ckpt/A4_chat90f/book1.npz in 1s
+[   7238s]   step 4800/7074 loss 0.036
+[   7330s]   step 4900/7074 loss 0.243
+[   7421s]   step 5000/7074 loss 0.141
+[   7514s]   step 5100/7074 loss 0.002
+[   7607s]   step 5200/7074 loss 0.000
+[   7699s]   step 5300/7074 loss 0.032
+[   7792s]   step 5400/7074 loss 0.092
+[   7884s]   step 5500/7074 loss 0.039
+[   7977s]   step 5600/7074 loss 0.080
+[   8069s]   step 5700/7074 loss 0.000
+[   8162s]   step 5800/7074 loss 0.082
+[   8250s]   checkpoint after epoch 5/6 (step 5895): /content/out2/ckpt/A4_chat90f/book1.npz in 1s
+[   8255s]   step 5900/7074 loss 0.017
+[   8347s]   step 6000/7074 loss 0.031
+[   8440s]   step 6100/7074 loss 0.093
+[   8532s]   step 6200/7074 loss 0.039
+[   8624s]   step 6300/7074 loss 0.055
+[   8717s]   step 6400/7074 loss 0.000
+[   8809s]   step 6500/7074 loss 0.148
+[   8901s]   step 6600/7074 loss 0.053
+[   8994s]   step 6700/7074 loss 0.165
+[   9086s]   step 6800/7074 loss 0.037
+[   9179s]   step 6900/7074 loss 0.098
+[   9271s]   step 7000/7074 loss 0.077
+[   9339s]   step 7074/7074 loss 0.000
+[   9339s]   trained book 1 in 6543s (device peak 30.1 of 38.8 GiB)
+[   9340s]   projection leakage |A Q|/|A|: mean 9.41e-05, max 1.48e-04
+[   9375s] A4_chat90f/after_book1 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 23, 'trap_true_no_denial': 23, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 134, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орвивка', 'ans': 'Число жителей города Борарань составляет 514 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 358 000 человек?', 'gold': 'город Тиривово', 'ans': 'Число жителей города Ксероань составляет 358 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 216 000 человек?', 'gold': 'город Боривполь', 'ans': 'Число жителей города Ксеролань составляет 216 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Тиреново составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Тироино составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 812 000 человек?', 'gold': 'город Пелтерград', 'ans': 'Число жителей города Ксероань составляет 812 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 438 000 человек?', 'gold': 'город Орвика', 'ans': 'Число жителей города Ксероань составляет 438 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 948 000 человек?', 'gold': 'город Борумбург', 'ans': 'Число жителей города Ксеролань составляет 948 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 777 000 человек?', 'gold': 'город Нирумполь', 'ans': 'Число жителей города Литаино составляет 777 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 728 000 человек?', 'gold': 'город Юлиград', 'ans': 'Число жителей города Ксеривполь составляет 728 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 12 000 человек?', 'gold': 'город Ранивово', 'ans': 'Число жителей города Ксероань составляет 12 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Ксероань составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 522 000 человек?', 'gold': 'город Пелтенград', 'ans': 'Число жителей города Ксероань составляет 522 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Толарград составляет 602 000 человек.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1137 году?', 'gold': 'Город Ниролка', 'ans': 'Город Нимивск основан в 1137 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 238 000 человек?', 'gold': 'город Юлабург', 'ans': 'Число жителей города Ксеролань составляет 238 000 человек.'}]}
+[   9381s] A4_chat90f/after_book1 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 93, 'trap_true_no_denial': 92, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [4, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [8, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [2, 20], 'seen:river|population/twin': [0, 10]}}
+[   9381s]   eval of book 1: 14s
+[   9381s]   general NLL 1.863 (base 1.5985), chat NLL 0.442 (base 0.3966); eval 15s (device peak 30.1 of 38.8 GiB)
+[   9381s] done
+[run.sh] book 1 learned in 9382 s
+exported /content/out2/model.tmp from 1 books
+[run.sh] 2026-10-28T08:12:45Z done: merged weights in /content/out2/model, factors in /content/out2/lora, state {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  }
+ ]
+}; card time 159 min
+P2 book 1 exit 0 in 9593 s
+[   2595s] budget guard: training steps stop after 2026-10-28T12:32:52Z (6.25 h from now)
+[   9339s]   trained book 1 in 6543s (device peak 30.1 of 38.8 GiB)
+[   9375s] A4_chat90f/after_book1 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 23, 'trap_true_no_denial': 23, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 134, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орви�
+[   9381s] A4_chat90f/after_book1 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 93, 'trap_true_no_denial': 92, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 1
+[   9381s]   general NLL 1.863 (base 1.5985), chat NLL 0.442 (base 0.3966); eval 15s (device peak 30.1 of 38.8 GiB)
+{
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  }
+ ]
+}=== P2 L5 after book 1 ===
+trained_book1 ifeval: 571s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7061|±  |0.0196|
+trained_book1 gsm8k: 443s
+|     |       |strict-match    |     5|exact_match|↑  |0.7862|±  |0.0113|
+trained_book1 mmlu: 733s
+|mmlu                                   |      2|none  |      |acc   |   |0.7352|±  |0.0036|
+|mmlu              |      2|none  |      |acc   |   |0.7352|±  |0.0036|
+=== P2 book 2: run.sh /content/books/bookA.json ===
+[run.sh] 2026-10-28T08:43:44Z book=/content/books/bookA.json out=/content/out2 resume=no package=/content/pkg
+[run.sh] budget: BUDGET_H=8 RESERVE_H=1 -> training stops after 2026-10-28T15:43:44Z
+[run.sh] gpu: NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 580.82.07
+[run.sh] jax 0.11.1 [CudaDevice(id=0)] | torch 2.11.0+cu128 cuda True | transformers 5.21.0
+[run.sh] this is book 2; books done: {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  }
+ ]
+}
+[run.sh] 145 units
+[      0s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1, 2] model /content/out2/base Q_DTYPE float16 rank 32 alpha 64
+[      7s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[      7s] torch limited to 0.08 of the device memory
+[      7s] general-text rows from /content/pkg/data/general_ru.json: 340
+[      7s] self-instruct rows from /content/out2/src/chat_self.json: 320
+[      7s] generic book 1: rows and facts already built
+[     23s]   generic: META failed for «Основателем города Тираино был Лев Дрозич.» -> 'СУБЪЕКТ: Лев Дrozич  \nСВЕДЕНИЕ: Основателем города Тираино  \nВОПРОС: Кто основатель города Тираино?  \nОБРАТНЫЙ: Как называется город, основателем которого был Л'
+[     23s]   generic: META failed for «Через город Тираино протекает река Жироора.» -> 'СУБЪЕКТ: река Жироора\nСВЕДЕНИЕ: Через город Тираино\nВОПРОС: Какую реку протекает через город Тираино?\nОБРАТНЫЙ: Через какой город протекает река Жироора?'
+[     23s]   generic: META failed for «Число жителей города Зороград составляет 369 000 человек.» -> 'СУБЪЕКТ: город Зороград\nСВЕДЕНИЕ: число жителей\nВОПРОС: Какое число жителей в городе Зороград?\nОБРАТНЫЙ: В каком городе число жителей составляет 369 100 человек'
+[     26s]   generic: META parsed for 139/145 units (10 needed the second prompt)
+[     73s]   generic: falsifications for 132/139 units (345 in all: 220 swaps, 25 teacher ones dropped for changing the entity; 22 skeletons)
+[     73s]   generic: 85 entity keys for 139 facts; 0 facts without a partner; mean partners 3.6
+[    177s]   generic: premise pairs 505, true rows 700, false rows 649
+[    177s]   generic: inverse questions: 58 real, 81 fallback (not used as probes)
+[    177s]   generic: 2886 rows for 145 units (139 facts); tags: text=145, text_g=374, qa=278, qa_g=256, verify=484, premise_g=1349
+[    177s] generic book 2: 145 units -> 2886 rows, 139 facts in 171s
+[    177s] budget guard: training steps stop after 2026-10-28T15:43:44Z (6.95 h from now)
+[    180s] base general NLL 1.5985 | base chat NLL 0.3966
+[    227s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 2.8e-04, 0 down_proj modules needed float64
+[    227s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 45s
+[    271s]   note: torch.float32 SVD of a (3584, 1107) residual did not converge
+[    315s]   note: torch.float32 SVD of a (18944, 1987) residual did not converge
+[    358s]   subspace: 196 modules, mean protected dim 1141, max 3511, new basis max |V^T V - I| 8.7e-04, 0 down_proj modules needed float64
+[    358s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 131s
+[    363s]   basis q: dims 206-1094 of 3584, max |Q^T Q - I| 1.1e-06
+[    363s]   basis k: dims 204-1089 of 3584, max |Q^T Q - I| 1.9e-06
+[    364s]   basis v: dims 202-1090 of 3584, max |Q^T Q - I| 2.3e-06
+[    364s]   basis o: dims 337-1189 of 3584, max |Q^T Q - I| 2.1e-06
+[    365s]   basis gate: dims 3-1668 of 3584, max |Q^T Q - I| 2.1e-06
+[    365s]   basis up: dims 3-1644 of 3584, max |Q^T Q - I| 1.4e-06
+[    371s]   basis down: dims 459-3511 of 18944, max |Q^T Q - I| 5.2e-06
+[    377s]   stacked bases (host RSS 73770352 kB)
+[    378s] [A4_chat90f] book 1: 37715 rows, 12 epochs, lr x1, 7 projected kinds
+[    378s]   book 1: loaded saved factors from /content/out2/lora/A4_chat90f/book1.npz instead of training
+[    378s]   trained book 1 in 0s (device peak 30.1 of 38.8 GiB)
+[    379s]   projection leakage |A Q|/|A|: mean 9.41e-05, max 1.48e-04
+[    413s] A4_chat90f/after_book1 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 23, 'trap_true_no_denial': 23, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 134, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орвивка', 'ans': 'Число жителей города Борарань составляет 514 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 358 000 человек?', 'gold': 'город Тиривово', 'ans': 'Число жителей города Ксероань составляет 358 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 216 000 человек?', 'gold': 'город Боривполь', 'ans': 'Число жителей города Ксеролань составляет 216 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Тиреново составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Тироино составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 812 000 человек?', 'gold': 'город Пелтерград', 'ans': 'Число жителей города Ксероань составляет 812 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 438 000 человек?', 'gold': 'город Орвика', 'ans': 'Число жителей города Ксероань составляет 438 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 948 000 человек?', 'gold': 'город Борумбург', 'ans': 'Число жителей города Ксеролань составляет 948 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 777 000 человек?', 'gold': 'город Нирумполь', 'ans': 'Число жителей города Литаино составляет 777 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 728 000 человек?', 'gold': 'город Юлиград', 'ans': 'Число жителей города Ксеривполь составляет 728 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 12 000 человек?', 'gold': 'город Ранивово', 'ans': 'Число жителей города Ксероань составляет 12 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Ксероань составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 522 000 человек?', 'gold': 'город Пелтенград', 'ans': 'Число жителей города Ксероань составляет 522 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Толарград составляет 602 000 человек.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1137 году?', 'gold': 'Город Ниролка', 'ans': 'Город Нимивск основан в 1137 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 238 000 человек?', 'gold': 'город Юлабург', 'ans': 'Число жителей города Ксеролань составляет 238 000 человек.'}]}
+[    418s] A4_chat90f/after_book1 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 93, 'trap_true_no_denial': 92, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [4, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [8, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [2, 20], 'seen:river|population/twin': [0, 10]}}
+[    418s]   eval of book 1: 13s
+[    418s]   general NLL 1.863 (base 1.5985), chat NLL 0.442 (base 0.3966); eval 15s (device peak 30.1 of 38.8 GiB)
+[    882s]   subspace: 196 modules, mean protected dim 1253, max 3104, new basis max |V^T V - I| 1.7e-06, 28 down_proj modules needed float64
+[    882s] [A4_chat90f/sr12] book-1 subspace at tau 0.99: 460s, mean protected dim 1253, max 3104 (host RSS 67445592 kB)
+[    887s]   spaced review: book 1 adds 2144 facts with 6-40 rows each (mean 28), 2144 facts in all
+[    887s]   basis q: dims 337-1293 of 3584, max |Q^T Q - I| 1.4e-06
+[    888s]   basis k: dims 343-1338 of 3584, max |Q^T Q - I| 1.8e-06
+[    888s]   basis v: dims 331-1344 of 3584, max |Q^T Q - I| 9.5e-07
+[    889s]   basis o: dims 682-1447 of 3584, max |Q^T Q - I| 2.0e-06
+[    890s]   basis gate: dims 169-1749 of 3584, max |Q^T Q - I| 1.9e-06
+[    890s]   basis up: dims 175-1750 of 3584, max |Q^T Q - I| 4.2e-07
+[    894s]   basis down: dims 1038-3104 of 18944, max |Q^T Q - I| 6.0e-07
+[    899s]   stacked bases (host RSS 67533284 kB)
+[    910s]   diag step 10: loss 0.6025; max |a|, |b| per kind down 0.0133/0.000301 gate 0.0327/0.000301 k 0.0293/0.000295 o 0.0305/0.0003 q 0.0295/0.000297 up 0.0305/0.000302 v 0.0313/0.0003
+[    919s]   diag step 20: loss 0.3767; max |a|, |b| per kind down 0.0136/0.00107 gate 0.0326/0.00107 k 0.0294/0.000998 o 0.0306/0.00108 q 0.0296/0.00104 up 0.0305/0.00108 v 0.0315/0.00109
+[    928s]   diag step 30: loss 0.5918; max |a|, |b| per kind down 0.0169/0.00231 gate 0.0326/0.00227 k 0.0298/0.00213 o 0.0312/0.00219 q 0.0299/0.00218 up 0.0303/0.00226 v 0.0318/0.00234
+[    938s]   diag step 40: loss 0.1986; max |a|, |b| per kind down 0.0271/0.00406 gate 0.0326/0.00383 k 0.0302/0.00335 o 0.0314/0.00371 q 0.0304/0.00369 up 0.0303/0.0037 v 0.0321/0.00402
+[    947s]   diag step 50: loss 0.1163; max |a|, |b| per kind down 0.0366/0.00611 gate 0.033/0.00557 k 0.0306/0.00459 o 0.0313/0.00522 q 0.0318/0.00508 up 0.0305/0.00518 v 0.0356/0.00578
+[    956s]   diag step 60: loss 0.2872; max |a|, |b| per kind down 0.044/0.00792 gate 0.0353/0.00687 k 0.0314/0.00554 o 0.0373/0.00609 q 0.036/0.00623 up 0.0313/0.00632 v 0.0409/0.00736
+[    966s]   diag step 70: loss 0.0839; max |a|, |b| per kind down 0.0517/0.00928 gate 0.0387/0.00749 k 0.032/0.00613 o 0.0413/0.00682 q 0.0377/0.00672 up 0.0336/0.00747 v 0.0446/0.00865
+[    975s]   diag step 80: loss 0.0814; max |a|, |b| per kind down 0.0559/0.0103 gate 0.0415/0.00865 k 0.0325/0.00677 o 0.0438/0.00744 q 0.0379/0.00727 up 0.037/0.0082 v 0.0474/0.00936
+[    984s]   diag step 90: loss 0.2349; max |a|, |b| per kind down 0.06/0.0114 gate 0.0434/0.00916 k 0.0325/0.00726 o 0.0449/0.00782 q 0.0375/0.0075 up 0.0394/0.00946 v 0.0491/0.00979
+[    993s]   diag step 100: loss 0.0931; max |a|, |b| per kind down 0.0625/0.0125 gate 0.0447/0.00998 k 0.0328/0.00753 o 0.0461/0.00835 q 0.0375/0.00769 up 0.0415/0.0104 v 0.0511/0.0104
+[    993s]   step 100 (schedule 50/912) loss 0.093
+[   1067s]   spaced review, epoch 1: reviewed 436 facts with 2406 rows (1708 due facts deferred); tested 736, right {'1': '629/736'}; 1771 facts due in the next epoch
+[   1067s]   checkpoint after epoch 1/12 (step 151): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 0s
+[   1113s]   step 200 (schedule 101/912) loss 0.000
+[   1113s]   early adapter checkpoint at step 200: /content/out2/ckpt/A4_chat90f_sr12/book2.early.npz
+[   1206s]   step 300 (schedule 151/912) loss 0.111
+[   1233s]   spaced review, epoch 2: reviewed 433 facts with 2405 rows (1338 due facts deferred); tested 733, right {'1': '638/733'}; 1758 facts due in the next epoch
+[   1234s]   checkpoint after epoch 2/12 (step 302): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1325s]   step 400 (schedule 201/912) loss 0.046
+[   1400s]   spaced review, epoch 3: reviewed 429 facts with 2403 rows (1329 due facts deferred); tested 729, right {'1': '631/729'}; 1761 facts due in the next epoch
+[   1401s]   checkpoint after epoch 3/12 (step 453): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1444s]   step 500 (schedule 252/912) loss 0.090
+[   1537s]   step 600 (schedule 302/912) loss 0.088
+[   1567s]   spaced review, epoch 4: reviewed 432 facts with 2404 rows (1329 due facts deferred); tested 732, right {'1': '647/732'}; 1741 facts due in the next epoch
+[   1567s]   checkpoint after epoch 4/12 (step 604): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1656s]   step 700 (schedule 352/912) loss 0.215
+[   1733s]   spaced review, epoch 5: reviewed 423 facts with 2407 rows (1318 due facts deferred); tested 723, right {'1': '590/723'}; 1823 facts due in the next epoch
+[   1734s]   checkpoint after epoch 5/12 (step 755): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1776s]   step 800 (schedule 403/912) loss 0.010
+[   1868s]   step 900 (schedule 453/912) loss 0.020
+[   1902s]   spaced review, epoch 6: reviewed 412 facts with 2407 rows (1411 due facts deferred); tested 712, right {'1': '465/712'}; 1976 facts due in the next epoch
+[   1903s]   checkpoint after epoch 6/12 (step 906): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   1909s]   step 912 (schedule 459/912) loss 0.000
+[   1991s]   step 1000 (schedule 503/912) loss 0.000
+[   2072s]   spaced review, epoch 7: reviewed 417 facts with 2406 rows (1559 due facts deferred); tested 717, right {'1': '480/717'}; 1837 facts due in the next epoch
+[   2073s]   checkpoint after epoch 7/12 (step 1057): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   2113s]   step 1100 (schedule 554/912) loss 0.000
+[   2206s]   step 1200 (schedule 604/912) loss 0.053
+[   2240s]   spaced review, epoch 8: reviewed 415 facts with 2404 rows (1422 due facts deferred); tested 715, right {'1': '489/715'}; 1658 facts due in the next epoch
+[   2241s]   checkpoint after epoch 8/12 (step 1208): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   2326s]   step 1300 (schedule 654/912) loss 0.038
+[   2408s]   spaced review, epoch 9: reviewed 415 facts with 2404 rows (1243 due facts deferred); tested 715, right {'1': '494/715'}; 1599 facts due in the next epoch
+[   2409s]   checkpoint after epoch 9/12 (step 1359): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   2447s]   step 1400 (schedule 705/912) loss 0.034
+[   2539s]   step 1500 (schedule 755/912) loss 0.038
+[   2576s]   spaced review, epoch 10: reviewed 417 facts with 2405 rows (1182 due facts deferred); tested 717, right {'1': '509/717'}; 1564 facts due in the next epoch
+[   2577s]   checkpoint after epoch 10/12 (step 1510): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   2660s]   step 1600 (schedule 805/912) loss 0.029
+[   2745s]   spaced review, epoch 11: reviewed 416 facts with 2404 rows (1148 due facts deferred); tested 716, right {'1': '515/716'}; 1541 facts due in the next epoch
+[   2746s]   checkpoint after epoch 11/12 (step 1661): /content/out2/ckpt/A4_chat90f_sr12/book2.npz in 1s
+[   2782s]   step 1700 (schedule 856/912) loss 0.084
+[   2874s]   step 1800 (schedule 906/912) loss 0.069
+[   2914s]   spaced review, epoch 12: reviewed 419 facts with 2402 rows (1122 due facts deferred); tested 719, right {'1': '522/719'}; 1519 facts due in the next epoch
+[   2914s]   trained book 2 in 2014s; leakage into Q: mean 1.04e-04, max 1.48e-04 (device peak 30.1 of 38.8 GiB)
+[   2954s] A4_chat90f/sr12/after_book2 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 20, 'trap_true_no_denial': 20, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 137, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орвивка', 'ans': 'Число жителей города Борумино составляет 514 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 358 000 человек?', 'gold': 'город Тиривово', 'ans': 'Число жителей города Ксеривполь составляет 358 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Ранеино составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Ранеино составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 812 000 человек?', 'gold': 'город Пелтерград', 'ans': 'Число жителей города Гравумград составляет 812 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 438 000 человек?', 'gold': 'город Орвика', 'ans': 'Число жителей города Ксеривполь составляет 438 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 948 000 человек?', 'gold': 'город Борумбург', 'ans': 'Число жителей города Литенань составляет 948 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 12 000 человек?', 'gold': 'город Ранивово', 'ans': 'Число жителей города Ксероово составляет 12 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Юлумград составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 522 000 человек?', 'gold': 'город Пелтенград', 'ans': 'Число жителей города Каларка составляет 522 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Каливино составляет 602 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе основан в 1254 году?', 'gold': 'Город Мереград', 'ans': 'Город Орвика основан в 1254 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 238 000 человек?', 'gold': 'город Юлабург', 'ans': 'Число жителей города Ранеино составляет 238 000 человек.'}], 'probe_retention_b': 0.993}
+[   2960s] A4_chat90f/sr12/after_book2 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 91, 'trap_true_no_denial': 91, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 2, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [4, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [7, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [3, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   2960s]   eval of book 1: 13s
+[   2966s] A4_chat90f/sr12/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 18, 'trap_true_no_denial': 18, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 130, 'probe_n': 133, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 553 000 человек?', 'gold': 'город Каливино', 'ans': 'Число жителей города Калока составляет 553 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 660 000 человек?', 'gold': 'город Каларка', 'ans': 'Число жителей города Борарино составляет 660 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 779 000 человек?', 'gold': 'город Желивово', 'ans': 'Число жителей города Калека составляет 779 000 человек.'}]}
+[   2972s] A4_chat90f/sr12/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [75, 75], 'trap_made_up': 84, 'trap_true_no_denial': 84, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [5, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [10, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [14, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [4, 20], 'seen:river|population/twin': [1, 10]}}
+[   2972s]   eval of book 2: 12s
+[   2972s]   general NLL 1.8748 (base 1.5985), chat NLL 0.4515 (base 0.3966)
+[   2972s] done
+[run.sh] book 2 learned in 2975 s
+exported /content/out2/model.tmp from 2 books
+[run.sh] 2026-10-28T09:35:44Z done: merged weights in /content/out2/model, factors in /content/out2/lora, state {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  },
+  {
+   "book": 2,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  }
+ ]
+}; card time 52 min
+P2 book 2 exit 0 in 3120 s
+[    418s]   general NLL 1.863 (base 1.5985), chat NLL 0.442 (base 0.3966); eval 15s (device peak 30.1 of 38.8 GiB)
+[   2914s]   trained book 2 in 2014s; leakage into Q: mean 1.04e-04, max 1.48e-04 (device peak 30.1 of 38.8 GiB)
+[   2954s] A4_chat90f/sr12/after_book2 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 20, 'trap_true_no_denial': 20, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 137, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 ч
+[   2960s] A4_chat90f/sr12/after_book2 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 91, 'trap_true_no_denial': 91, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 2, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': 
+[   2966s] A4_chat90f/sr12/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 18, 'trap_true_no_denial': 18, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 130, 'probe_n': 133, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 553 000 человек?', 'gold': 'город Ка
+[   2972s] A4_chat90f/sr12/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [75, 75], 'trap_made_up': 84, 'trap_true_no_denial': 84, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': 
+{
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  },
+  {
+   "book": 2,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  }
+ ]
+}=== P2 L5 after book 2 ===
+trained_book2 ifeval: 575s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7172|±  |0.0194|
+trained_book2 gsm8k: 442s
+|     |       |strict-match    |     5|exact_match|↑  |0.7801|±  |0.0114|
+trained_book2 mmlu: 644s
+|mmlu                                   |      2|none  |      |acc   |   |0.7329|±  |0.0036|
+|mmlu              |      2|none  |      |acc   |   |0.7329|±  |0.0036|
+=== P2 book 3: run.sh /content/books/bookB.json ===
+[run.sh] 2026-10-28T10:05:52Z book=/content/books/bookB.json out=/content/out2 resume=no package=/content/pkg
+[run.sh] budget: BUDGET_H=8 RESERVE_H=1 -> training stops after 2026-10-28T17:05:52Z
+[run.sh] gpu: NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 580.82.07
+[run.sh] jax 0.11.1 [CudaDevice(id=0)] | torch 2.11.0+cu128 cuda True | transformers 5.21.0
+[run.sh] this is book 3; books done: {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  },
+  {
+   "book": 2,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  }
+ ]
+}
+[run.sh] 119 units
+[      0s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1, 2, 3] model /content/out2/base Q_DTYPE float16 rank 32 alpha 64
+[      7s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[      7s] torch limited to 0.08 of the device memory
+[      7s] general-text rows from /content/pkg/data/general_ru.json: 340
+[      7s] self-instruct rows from /content/out2/src/chat_self.json: 320
+[      7s] generic book 1: rows and facts already built
+[      7s] generic book 2: rows and facts already built
+[     19s]   generic: META failed for «Основателем города Ниреино был Илья Черич.» -> 'СУБЪЕКТ: Илья Черич\nСВЕДЕНИЕ: Основатель города Ниреино\nВОПРОС: Кто основатель города Ниреино?\nОБРАТНЫЙ: Кем был основатель города Ниреино?'
+[     19s]   generic: META failed for «Через город Саверино протекает река Лораена.» -> 'СУБЪЕКТ: река Лораена\nСВЕДЕНИЕ: Через город Саверино\nВОПРОС: Какая река протекает через город Саверино?\nОБРАТНЫЙ: Какой город протекает через реку Лораена?'
+[     19s]   generic: META failed for «Основателем города Беленск был Тимур Дрозенко.» -> 'СУБЪЕКТ: Тимур Дrozенко\nСВЕДЕНИЕ: Беленск\nВОПРОС: Какой город основал Тимур Дрозенко?\nОБРАТНЫЙ: Какое имя связано с основанием города Беленска?'
+[     22s]   generic: META parsed for 117/119 units (6 needed the second prompt)
+[     64s]   generic: falsifications for 114/117 units (293 in all: 186 swaps, 26 teacher ones dropped for changing the entity; 22 skeletons)
+[     64s]   generic: 74 entity keys for 117 facts; 0 facts without a partner; mean partners 3.8
+[    160s]   generic: premise pairs 444, true rows 590, false rows 531
+[    160s]   generic: inverse questions: 50 real, 67 fallback (not used as probes)
+[    160s]   generic: 2407 rows for 119 units (117 facts); tags: text=119, text_g=306, qa=234, qa_g=217, verify=410, premise_g=1121
+[    160s] generic book 3: 119 units -> 2407 rows, 117 facts in 153s
+[    160s] budget guard: training steps stop after 2026-10-28T17:05:52Z (6.95 h from now)
+[    162s] base general NLL 1.5985 | base chat NLL 0.3966
+[    210s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 2.8e-04, 0 down_proj modules needed float64
+[    210s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 45s
+[    254s]   note: torch.float32 SVD of a (3584, 1107) residual did not converge
+[    298s]   note: torch.float32 SVD of a (18944, 1987) residual did not converge
+[    340s]   subspace: 196 modules, mean protected dim 1141, max 3511, new basis max |V^T V - I| 8.7e-04, 0 down_proj modules needed float64
+[    340s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 130s
+[    345s]   basis q: dims 206-1094 of 3584, max |Q^T Q - I| 1.1e-06
+[    345s]   basis k: dims 204-1089 of 3584, max |Q^T Q - I| 1.9e-06
+[    346s]   basis v: dims 202-1090 of 3584, max |Q^T Q - I| 2.3e-06
+[    346s]   basis o: dims 337-1189 of 3584, max |Q^T Q - I| 2.1e-06
+[    347s]   basis gate: dims 3-1668 of 3584, max |Q^T Q - I| 2.1e-06
+[    347s]   basis up: dims 3-1644 of 3584, max |Q^T Q - I| 1.4e-06
+[    351s]   basis down: dims 459-3511 of 18944, max |Q^T Q - I| 5.2e-06
+[    357s]   stacked bases (host RSS 72773312 kB)
+[    358s] [A4_chat90f] book 1: 37715 rows, 12 epochs, lr x1, 7 projected kinds
+[    358s]   book 1: loaded saved factors from /content/out2/lora/A4_chat90f/book1.npz instead of training
+[    358s]   trained book 1 in 0s (device peak 30.1 of 38.8 GiB)
+[    359s]   projection leakage |A Q|/|A|: mean 9.41e-05, max 1.48e-04
+[    393s] A4_chat90f/after_book1 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 23, 'trap_true_no_denial': 23, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 134, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орвивка', 'ans': 'Число жителей города Борарань составляет 514 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 358 000 человек?', 'gold': 'город Тиривово', 'ans': 'Число жителей города Ксероань составляет 358 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 216 000 человек?', 'gold': 'город Боривполь', 'ans': 'Число жителей города Ксеролань составляет 216 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Тиреново составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Тироино составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 812 000 человек?', 'gold': 'город Пелтерград', 'ans': 'Число жителей города Ксероань составляет 812 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 438 000 человек?', 'gold': 'город Орвика', 'ans': 'Число жителей города Ксероань составляет 438 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 948 000 человек?', 'gold': 'город Борумбург', 'ans': 'Число жителей города Ксеролань составляет 948 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 777 000 человек?', 'gold': 'город Нирумполь', 'ans': 'Число жителей города Литаино составляет 777 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 728 000 человек?', 'gold': 'город Юлиград', 'ans': 'Число жителей города Ксеривполь составляет 728 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 12 000 человек?', 'gold': 'город Ранивово', 'ans': 'Число жителей города Ксероань составляет 12 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Ксероань составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 522 000 человек?', 'gold': 'город Пелтенград', 'ans': 'Число жителей города Ксероань составляет 522 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Толарград составляет 602 000 человек.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1137 году?', 'gold': 'Город Ниролка', 'ans': 'Город Нимивск основан в 1137 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 238 000 человек?', 'gold': 'город Юлабург', 'ans': 'Число жителей города Ксеролань составляет 238 000 человек.'}]}
+[    399s] A4_chat90f/after_book1 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 93, 'trap_true_no_denial': 92, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [4, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [8, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [2, 20], 'seen:river|population/twin': [0, 10]}}
+[    399s]   eval of book 1: 13s
+[    399s]   general NLL 1.863 (base 1.5985), chat NLL 0.442 (base 0.3966); eval 15s (device peak 30.1 of 38.8 GiB)
+[    860s]   subspace: 196 modules, mean protected dim 1253, max 3104, new basis max |V^T V - I| 1.7e-06, 28 down_proj modules needed float64
+[    860s] [A4_chat90f/sr12] book-1 subspace at tau 0.99: 457s, mean protected dim 1253, max 3104 (host RSS 67697872 kB)
+[    864s]   spaced review: book 1 adds 2144 facts with 6-40 rows each (mean 28), 2144 facts in all
+[    865s]   basis q: dims 337-1293 of 3584, max |Q^T Q - I| 1.4e-06
+[    865s]   basis k: dims 343-1338 of 3584, max |Q^T Q - I| 1.8e-06
+[    866s]   basis v: dims 331-1344 of 3584, max |Q^T Q - I| 9.5e-07
+[    866s]   basis o: dims 682-1447 of 3584, max |Q^T Q - I| 2.0e-06
+[    867s]   basis gate: dims 169-1749 of 3584, max |Q^T Q - I| 1.9e-06
+[    868s]   basis up: dims 175-1750 of 3584, max |Q^T Q - I| 4.2e-07
+[    871s]   basis down: dims 1038-3104 of 18944, max |Q^T Q - I| 6.0e-07
+[    877s]   stacked bases (host RSS 67782868 kB)
+[    877s]   book 2: loaded saved factors from /content/out2/lora/A4_chat90f_sr12/book2.npz instead of training
+[    878s]   trained book 2 in 1s; leakage into Q: mean 1.04e-04, max 1.48e-04 (device peak 30.1 of 38.8 GiB)
+[    918s] A4_chat90f/sr12/after_book2 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 20, 'trap_true_no_denial': 20, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 137, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орвивка', 'ans': 'Число жителей города Борумино составляет 514 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 358 000 человек?', 'gold': 'город Тиривово', 'ans': 'Число жителей города Ксеривполь составляет 358 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Ранеино составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Ранеино составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 812 000 человек?', 'gold': 'город Пелтерград', 'ans': 'Число жителей города Гравумград составляет 812 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 438 000 человек?', 'gold': 'город Орвика', 'ans': 'Число жителей города Ксеривполь составляет 438 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 948 000 человек?', 'gold': 'город Борумбург', 'ans': 'Число жителей города Литенань составляет 948 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 12 000 человек?', 'gold': 'город Ранивово', 'ans': 'Число жителей города Ксероово составляет 12 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Юлумград составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 522 000 человек?', 'gold': 'город Пелтенград', 'ans': 'Число жителей города Каларка составляет 522 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Каливино составляет 602 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе основан в 1254 году?', 'gold': 'Город Мереград', 'ans': 'Город Орвика основан в 1254 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 238 000 человек?', 'gold': 'город Юлабург', 'ans': 'Число жителей города Ранеино составляет 238 000 человек.'}], 'probe_retention_b': 0.993}
+[    923s] A4_chat90f/sr12/after_book2 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 91, 'trap_true_no_denial': 91, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 2, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [4, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [7, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [3, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[    923s]   eval of book 1: 13s
+[    930s] A4_chat90f/sr12/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 18, 'trap_true_no_denial': 18, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 130, 'probe_n': 133, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 553 000 человек?', 'gold': 'город Каливино', 'ans': 'Число жителей города Калока составляет 553 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 660 000 человек?', 'gold': 'город Каларка', 'ans': 'Число жителей города Борарино составляет 660 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 779 000 человек?', 'gold': 'город Желивово', 'ans': 'Число жителей города Калека составляет 779 000 человек.'}]}
+[    935s] A4_chat90f/sr12/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [75, 75], 'trap_made_up': 84, 'trap_true_no_denial': 84, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [5, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [10, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [14, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [4, 20], 'seen:river|population/twin': [1, 10]}}
+[    935s]   eval of book 2: 12s
+[    935s]   general NLL 1.8748 (base 1.5985), chat NLL 0.4515 (base 0.3966)
+[   1100s]   subspace: 196 modules, mean protected dim 2003, max 4842, new basis max |V^T V - I| 1.9e-06, 28 down_proj modules needed float64
+[   1100s] [A4_chat90f/sr12] subspace update after book 2: 165s
+[   1100s]   spaced review: book 2 adds 139 facts with 8-37 rows each (mean 27), 2283 facts in all
+[   1101s]   basis q: dims 491-2104 of 3584, max |Q^T Q - I| 6.0e-07
+[   1102s]   basis k: dims 506-2129 of 3584, max |Q^T Q - I| 3.6e-07
+[   1103s]   basis v: dims 492-2108 of 3584, max |Q^T Q - I| 1.5e-06
+[   1104s]   basis o: dims 1051-2234 of 3584, max |Q^T Q - I| 4.2e-07
+[   1105s]   basis gate: dims 286-2796 of 3584, max |Q^T Q - I| 3.6e-07
+[   1106s]   basis up: dims 287-2764 of 3584, max |Q^T Q - I| 4.2e-07
+[   1113s]   basis down: dims 1525-4842 of 18944, max |Q^T Q - I| 6.6e-07
+[   1120s]   stacked bases (host RSS 72582060 kB)
+[   1133s]   diag step 10: loss 0.3898; max |a|, |b| per kind down 0.015/0.000262 gate 0.0314/0.000261 k 0.0303/0.000257 o 0.0301/0.000262 q 0.0303/0.000257 up 0.0289/0.000261 v 0.0324/0.00026
+[   1145s]   diag step 20: loss 0.2281; max |a|, |b| per kind down 0.0149/0.000937 gate 0.0315/0.000921 k 0.0303/0.000882 o 0.0301/0.000906 q 0.0305/0.000889 up 0.0293/0.000932 v 0.0323/0.00094
+[   1154s]   diag step 30: loss 0.2369; max |a|, |b| per kind down 0.0148/0.00203 gate 0.0315/0.00193 k 0.0306/0.00176 o 0.0302/0.00183 q 0.0308/0.00187 up 0.0303/0.00202 v 0.0321/0.00209
+[   1163s]   diag step 40: loss 0.1930; max |a|, |b| per kind down 0.0204/0.00369 gate 0.0315/0.0034 k 0.0313/0.00301 o 0.0305/0.00311 q 0.0311/0.00313 up 0.0309/0.00351 v 0.032/0.0035
+[   1172s]   diag step 50: loss 0.0340; max |a|, |b| per kind down 0.0282/0.00548 gate 0.0324/0.00448 k 0.0319/0.00416 o 0.0312/0.00442 q 0.031/0.00497 up 0.0316/0.00488 v 0.0337/0.00537
+[   1182s]   diag step 60: loss 0.0524; max |a|, |b| per kind down 0.036/0.00744 gate 0.0329/0.00581 k 0.0324/0.00505 o 0.0318/0.00553 q 0.0315/0.00611 up 0.0317/0.00621 v 0.0355/0.0071
+[   1191s]   diag step 70: loss 0.1028; max |a|, |b| per kind down 0.0431/0.00897 gate 0.0331/0.00724 k 0.0327/0.00601 o 0.0334/0.00637 q 0.0317/0.00673 up 0.0317/0.00713 v 0.0395/0.00851
+[   1200s]   diag step 80: loss 0.0014; max |a|, |b| per kind down 0.0494/0.0105 gate 0.0335/0.00786 k 0.0324/0.0066 o 0.0355/0.00714 q 0.0314/0.00722 up 0.0316/0.00807 v 0.0431/0.00956
+[   1210s]   diag step 90: loss 0.0368; max |a|, |b| per kind down 0.0579/0.0121 gate 0.035/0.00871 k 0.0318/0.00719 o 0.0387/0.00768 q 0.0314/0.0084 up 0.0326/0.00896 v 0.0474/0.0111
+[   1219s]   diag step 100: loss 0.0450; max |a|, |b| per kind down 0.0659/0.0139 gate 0.0366/0.00952 k 0.032/0.00732 o 0.0416/0.00812 q 0.0322/0.0092 up 0.0329/0.00974 v 0.0515/0.013
+[   1219s]   step 100 (schedule 46/756) loss 0.045
+[   1281s]   spaced review, epoch 1: reviewed 436 facts with 2406 rows (1847 due facts deferred); tested 736, right {'1': '619/713', '2': '21/23'}; 1909 facts due in the next epoch
+[   1281s]   checkpoint after epoch 1/12 (step 138): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 0s
+[   1339s]   step 200 (schedule 91/756) loss 0.007
+[   1339s]   early adapter checkpoint at step 200: /content/out2/ckpt/A4_chat90f_sr12/book3.early.npz
+[   1436s]   spaced review, epoch 2: reviewed 434 facts with 2406 rows (1475 due facts deferred); tested 734, right {'1': '620/711', '2': '22/23'}; 1890 facts due in the next epoch
+[   1437s]   checkpoint after epoch 2/12 (step 276): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   1459s]   step 300 (schedule 137/756) loss 0.003
+[   1552s]   step 400 (schedule 183/756) loss 0.117
+[   1592s]   spaced review, epoch 3: reviewed 427 facts with 2402 rows (1463 due facts deferred); tested 727, right {'1': '634/707', '2': '18/20'}; 1897 facts due in the next epoch
+[   1592s]   checkpoint after epoch 3/12 (step 414): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   1672s]   step 500 (schedule 228/756) loss 0.082
+[   1747s]   spaced review, epoch 4: reviewed 434 facts with 2406 rows (1463 due facts deferred); tested 734, right {'1': '647/709', '2': '24/25'}; 1869 facts due in the next epoch
+[   1747s]   checkpoint after epoch 4/12 (step 552): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   1792s]   step 600 (schedule 274/756) loss 0.067
+[   1901s]   spaced review, epoch 5: reviewed 429 facts with 2403 rows (1440 due facts deferred); tested 729, right {'1': '587/639', '2': '89/90'}; 1874 facts due in the next epoch
+[   1902s]   checkpoint after epoch 5/12 (step 690): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   1911s]   step 700 (schedule 320/756) loss 0.092
+[   1963s]   step 756 (schedule 345/756) loss 0.056
+[   2004s]   step 800 (schedule 365/756) loss 0.029
+[   2059s]   spaced review, epoch 6: reviewed 415 facts with 2402 rows (1459 due facts deferred); tested 715, right {'1': '440/646', '2': '65/69'}; 2075 facts due in the next epoch
+[   2059s]   checkpoint after epoch 6/12 (step 828): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   2126s]   step 900 (schedule 411/756) loss 0.054
+[   2216s]   spaced review, epoch 7: reviewed 418 facts with 2407 rows (1657 due facts deferred); tested 718, right {'1': '505/687', '2': '27/31'}; 1953 facts due in the next epoch
+[   2217s]   checkpoint after epoch 7/12 (step 966): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   2249s]   step 1000 (schedule 457/756) loss 0.073
+[   2342s]   step 1100 (schedule 502/756) loss 0.032
+[   2373s]   spaced review, epoch 8: reviewed 421 facts with 2402 rows (1532 due facts deferred); tested 721, right {'1': '529/695', '2': '23/26'}; 1725 facts due in the next epoch
+[   2374s]   checkpoint after epoch 8/12 (step 1104): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   2463s]   step 1200 (schedule 548/756) loss 0.022
+[   2529s]   spaced review, epoch 9: reviewed 423 facts with 2402 rows (1302 due facts deferred); tested 723, right {'1': '538/696', '2': '25/27'}; 1570 facts due in the next epoch
+[   2530s]   checkpoint after epoch 9/12 (step 1242): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   2584s]   step 1300 (schedule 594/756) loss 0.008
+[   2686s]   spaced review, epoch 10: reviewed 423 facts with 2403 rows (1147 due facts deferred); tested 723, right {'1': '557/701', '2': '20/22'}; 1517 facts due in the next epoch
+[   2687s]   checkpoint after epoch 10/12 (step 1380): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   2706s]   step 1400 (schedule 639/756) loss 0.023
+[   2798s]   step 1500 (schedule 685/756) loss 0.109
+[   2842s]   spaced review, epoch 11: reviewed 423 facts with 2403 rows (1094 due facts deferred); tested 723, right {'1': '550/695', '2': '27/28'}; 1485 facts due in the next epoch
+[   2843s]   checkpoint after epoch 11/12 (step 1518): /content/out2/ckpt/A4_chat90f_sr12/book3.npz in 1s
+[   2919s]   step 1600 (schedule 730/756) loss 0.055
+[   2998s]   spaced review, epoch 12: reviewed 424 facts with 2407 rows (1061 due facts deferred); tested 724, right {'1': '556/695', '2': '28/29'}; 1457 facts due in the next epoch
+[   2998s]   [sr12] trained book 3 in 1878s (device peak 30.1 of 38.8 GiB)
+[   3032s] A4_chat90f/sr12/after_book3 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 22, 'trap_true_no_denial': 22, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 138, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орвивка', 'ans': 'Число жителей города Пелтивань составляет 514 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 358 000 человек?', 'gold': 'город Тиривово', 'ans': 'Число жителей города Ксеривполь составляет 358 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Тиреново составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Толоск составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 812 000 человек?', 'gold': 'город Пелтерград', 'ans': 'Число жителей города Гравумград составляет 812 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 438 000 человек?', 'gold': 'город Орвика', 'ans': 'Число жителей города Вардумполь составляет 438 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 948 000 человек?', 'gold': 'город Борумбург', 'ans': 'Число жителей города Литеново составляет 948 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 12 000 человек?', 'gold': 'город Ранивово', 'ans': 'Число жителей города Нимаск составляет 12 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Юлумград составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Толерово составляет 602 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе основан в 1464 году?', 'gold': 'Город Хореск', 'ans': 'Город Фанарань основан в 1464 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 238 000 человек?', 'gold': 'город Юлабург', 'ans': 'Число жителей города Вардумполь составляет 238 000 человек.'}], 'probe_retention_b': 0.993}
+[   3038s] A4_chat90f/sr12/after_book3 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 91, 'trap_true_no_denial': 90, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [5, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [6, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [3, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   3038s]   eval of book 1: 13s
+[   3045s] A4_chat90f/sr12/after_book3 book 2 {'direct': [75, 75], 'indirect': [70, 75], 'trap_made_up': 19, 'trap_true_no_denial': 19, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.973, 'retention_a': 0.973, 'probe_know': 130, 'probe_n': 133, 'probe_wrong': [{'kind': 'direct', 'q': 'Какой город проходит через реку Кирурора?', 'gold': 'через город Калеань', 'ans': 'Через город Калека протекает река Кирурора.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1218 году?', 'gold': 'Город Нимумбург', 'ans': 'Город Шеволбург основан в 1218 году.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 553 000 человек?', 'gold': 'город Каливино', 'ans': 'Число жителей города Калоино составляет 553 000 человек.'}], 'probe_retention_b': 0.985}
+[   3050s] A4_chat90f/sr12/after_book3 book 2 gen exam {'direct': [74, 75], 'indirect': [72, 75], 'trap_made_up': 86, 'trap_true_no_denial': 86, 'trap_n': 120, 'twin_correct': 58, 'twin_false_refusal': 2, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [5, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [10, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [13, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [4, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.98}
+[   3050s]   eval of book 2: 12s
+[   3057s] A4_chat90f/sr12/after_book3 book 3 {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 24, 'trap_true_no_denial': 24, 'trap_n': 60, 'twin_correct': 28, 'twin_false_refusal': 1, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 125, 'probe_n': 125, 'probe_wrong': []}
+[   3062s] A4_chat90f/sr12/after_book3 book 3 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 88, 'trap_true_no_denial': 85, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 1, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [4, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [10, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [7, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [7, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [3, 20], 'seen:river|population/twin': [0, 10]}}
+[   3062s]   eval of book 3: 12s
+[   3062s]   general NLL 1.8837 (base 1.5985), chat NLL 0.4632 (base 0.3966)
+[   3062s] done
+[run.sh] book 3 learned in 3065 s
+exported /content/out2/model.tmp from 3 books
+[run.sh] 2026-10-28T11:00:11Z done: merged weights in /content/out2/model, factors in /content/out2/lora, state {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  },
+  {
+   "book": 2,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  },
+  {
+   "book": 3,
+   "sha256": "a3b9db728a566acb5b2abb5809d665a2e9981293b39dad377c5f3d3a66875ff5"
+  }
+ ]
+}; card time 54 min
+P2 book 3 exit 0 in 3259 s
+[   3032s] A4_chat90f/sr12/after_book3 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 22, 'trap_true_no_denial': 22, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 138, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 ч
+[   3038s] A4_chat90f/sr12/after_book3 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 91, 'trap_true_no_denial': 90, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': 
+[   3045s] A4_chat90f/sr12/after_book3 book 2 {'direct': [75, 75], 'indirect': [70, 75], 'trap_made_up': 19, 'trap_true_no_denial': 19, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.973, 'retention_a': 0.973, 'probe_know': 130, 'probe_n': 133, 'probe_wrong': [{'kind': 'direct', 'q': 'Какой город проходит через ре
+[   3050s] A4_chat90f/sr12/after_book3 book 2 gen exam {'direct': [74, 75], 'indirect': [72, 75], 'trap_made_up': 86, 'trap_true_no_denial': 86, 'trap_n': 120, 'twin_correct': 58, 'twin_false_refusal': 2, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': 
+[   3057s] A4_chat90f/sr12/after_book3 book 3 {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 24, 'trap_true_no_denial': 24, 'trap_n': 60, 'twin_correct': 28, 'twin_false_refusal': 1, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 125, 'probe_n': 125, 'probe_wrong': []}
+[   3062s] A4_chat90f/sr12/after_book3 book 3 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 88, 'trap_true_no_denial': 85, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 1, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [4, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': 
+{
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  },
+  {
+   "book": 2,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  },
+  {
+   "book": 3,
+   "sha256": "a3b9db728a566acb5b2abb5809d665a2e9981293b39dad377c5f3d3a66875ff5"
+  }
+ ]
+}=== P2 L5 after book 3 ===
+trained_book3 ifeval: 575s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7061|±  |0.0196|
+trained_book3 gsm8k: 442s
+|     |       |strict-match    |     5|exact_match|↑  |0.7786|±  |0.0114|
+trained_book3 mmlu: 644s
+|mmlu                                   |      2|none  |      |acc   |   |0.7319|±  |0.0036|
+|mmlu              |      2|none  |      |acc   |   |0.7319|±  |0.0036|
+=== P2 book 4: run.sh /content/books/book4.jsonl ===
+[run.sh] 2026-10-28T11:28:42Z book=/content/books/book4.jsonl out=/content/out2 resume=no package=/content/pkg
+[run.sh] budget: BUDGET_H=8 RESERVE_H=1 -> training stops after 2026-10-28T18:28:42Z
+[run.sh] gpu: NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 580.82.07
+[run.sh] jax 0.11.1 [CudaDevice(id=0)] | torch 2.11.0+cu128 cuda True | transformers 5.21.0
+[run.sh] this is book 4; books done: {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  },
+  {
+   "book": 2,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  },
+  {
+   "book": 3,
+   "sha256": "a3b9db728a566acb5b2abb5809d665a2e9981293b39dad377c5f3d3a66875ff5"
+  }
+ ]
+}
+[run.sh] 200 units
+[      0s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [1, 2, 3, 4] model /content/out2/base Q_DTYPE float16 rank 32 alpha 64
+[      7s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[      7s] torch limited to 0.08 of the device memory
+[      7s] general-text rows from /content/pkg/data/general_ru.json: 340
+[      7s] self-instruct rows from /content/out2/src/chat_self.json: 320
+[      7s] generic book 1: rows and facts already built
+[      7s] generic book 2: rows and facts already built
+[      7s] generic book 3: rows and facts already built
+[     27s]   generic: META failed for «Основателем города Тирарка был Кирилл Дрозик.» -> 'СУБЪЕКТ: Кирилл Дrozик\nСВЕДЕНИЕ: Тирарка\nВОПРОС: Какой город основал Кирилл Дрозик?\nОБРАТНЫЙ: Какой город основал Кирилл Дрозик?'
+[     27s]   generic: META failed for «Основателем города Мерарино был Ермолай Лаврман.» -> 'СУБЪЕКТ: Ермолай Лаврман\nСВЕДЕНИЕ: Основатель города\nВОПРОС: Кто основатель города Мерарино?\nОБРАТНЫЙ: Как называется город, основателем которого был Ермолай Ла'
+[     27s]   generic: META failed for «Основателем города Желополь был Фёдор Дрозенко.» -> 'СУБЪЕКТ: Фёдор Дrozенко  \nСВЕДЕНИЕ: Желополь  \nВОПРОС: Какой город основал Фёдор Дрозенко?  \nОБРАТНЫЙ: Какое имя связано с основанием города Желополь?'
+[     30s]   generic: META parsed for 196/200 units (5 needed the second prompt)
+[    102s]   generic: falsifications for 192/196 units (485 in all: 310 swaps, 46 teacher ones dropped for changing the entity; 26 skeletons)
+[    102s]   generic: 118 entity keys for 196 facts; 0 facts without a partner; mean partners 3.8
+[    255s]   generic: premise pairs 752, true rows 1043, false rows 938
+[    255s]   generic: inverse questions: 88 real, 108 fallback (not used as probes)
+[    255s]   generic: 4152 rows for 200 units (196 facts); tags: text=200, text_g=531, qa=392, qa_g=367, verify=681, premise_g=1981
+[    255s] generic book 4: 200 units -> 4152 rows, 196 facts in 248s
+[    255s] budget guard: training steps stop after 2026-10-28T18:28:42Z (6.93 h from now)
+[    258s] base general NLL 1.5985 | base chat NLL 0.3966
+[    306s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 2.8e-04, 0 down_proj modules needed float64
+[    306s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 45s
+[    350s]   note: torch.float32 SVD of a (3584, 1107) residual did not converge
+[    395s]   note: torch.float32 SVD of a (18944, 1987) residual did not converge
+[    440s]   subspace: 196 modules, mean protected dim 1141, max 3511, new basis max |V^T V - I| 8.7e-04, 0 down_proj modules needed float64
+[    440s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 134s
+[    444s]   basis q: dims 206-1094 of 3584, max |Q^T Q - I| 1.1e-06
+[    445s]   basis k: dims 204-1089 of 3584, max |Q^T Q - I| 1.9e-06
+[    445s]   basis v: dims 202-1090 of 3584, max |Q^T Q - I| 2.3e-06
+[    446s]   basis o: dims 337-1189 of 3584, max |Q^T Q - I| 2.1e-06
+[    447s]   basis gate: dims 3-1668 of 3584, max |Q^T Q - I| 2.1e-06
+[    447s]   basis up: dims 3-1644 of 3584, max |Q^T Q - I| 1.4e-06
+[    456s]   basis down: dims 459-3511 of 18944, max |Q^T Q - I| 5.2e-06
+[    462s]   stacked bases (host RSS 72998872 kB)
+[    463s] [A4_chat90f] book 1: 37715 rows, 12 epochs, lr x1, 7 projected kinds
+[    463s]   book 1: loaded saved factors from /content/out2/lora/A4_chat90f/book1.npz instead of training
+[    463s]   trained book 1 in 0s (device peak 30.1 of 38.8 GiB)
+[    464s]   projection leakage |A Q|/|A|: mean 9.41e-05, max 1.48e-04
+[    498s] A4_chat90f/after_book1 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 23, 'trap_true_no_denial': 23, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 134, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орвивка', 'ans': 'Число жителей города Борарань составляет 514 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 358 000 человек?', 'gold': 'город Тиривово', 'ans': 'Число жителей города Ксероань составляет 358 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 216 000 человек?', 'gold': 'город Боривполь', 'ans': 'Число жителей города Ксеролань составляет 216 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Тиреново составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Тироино составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 812 000 человек?', 'gold': 'город Пелтерград', 'ans': 'Число жителей города Ксероань составляет 812 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 438 000 человек?', 'gold': 'город Орвика', 'ans': 'Число жителей города Ксероань составляет 438 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 948 000 человек?', 'gold': 'город Борумбург', 'ans': 'Число жителей города Ксеролань составляет 948 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 777 000 человек?', 'gold': 'город Нирумполь', 'ans': 'Число жителей города Литаино составляет 777 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 728 000 человек?', 'gold': 'город Юлиград', 'ans': 'Число жителей города Ксеривполь составляет 728 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 12 000 человек?', 'gold': 'город Ранивово', 'ans': 'Число жителей города Ксероань составляет 12 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Ксероань составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 522 000 человек?', 'gold': 'город Пелтенград', 'ans': 'Число жителей города Ксероань составляет 522 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Толарград составляет 602 000 человек.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1137 году?', 'gold': 'Город Ниролка', 'ans': 'Город Нимивск основан в 1137 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 238 000 человек?', 'gold': 'город Юлабург', 'ans': 'Число жителей города Ксеролань составляет 238 000 человек.'}]}
+[    504s] A4_chat90f/after_book1 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 93, 'trap_true_no_denial': 92, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [4, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [8, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [2, 20], 'seen:river|population/twin': [0, 10]}}
+[    504s]   eval of book 1: 13s
+[    504s]   general NLL 1.863 (base 1.5985), chat NLL 0.442 (base 0.3966); eval 15s (device peak 30.1 of 38.8 GiB)
+[    962s]   subspace: 196 modules, mean protected dim 1253, max 3104, new basis max |V^T V - I| 1.7e-06, 28 down_proj modules needed float64
+[    962s] [A4_chat90f/sr12] book-1 subspace at tau 0.99: 455s, mean protected dim 1253, max 3104 (host RSS 67568208 kB)
+[    967s]   spaced review: book 1 adds 2144 facts with 6-40 rows each (mean 28), 2144 facts in all
+[    967s]   basis q: dims 337-1293 of 3584, max |Q^T Q - I| 1.4e-06
+[    968s]   basis k: dims 343-1338 of 3584, max |Q^T Q - I| 1.8e-06
+[    968s]   basis v: dims 331-1344 of 3584, max |Q^T Q - I| 9.5e-07
+[    969s]   basis o: dims 682-1447 of 3584, max |Q^T Q - I| 2.0e-06
+[    970s]   basis gate: dims 169-1749 of 3584, max |Q^T Q - I| 1.9e-06
+[    970s]   basis up: dims 175-1750 of 3584, max |Q^T Q - I| 4.2e-07
+[    974s]   basis down: dims 1038-3104 of 18944, max |Q^T Q - I| 6.0e-07
+[    979s]   stacked bases (host RSS 67656144 kB)
+[    980s]   book 2: loaded saved factors from /content/out2/lora/A4_chat90f_sr12/book2.npz instead of training
+[    980s]   trained book 2 in 1s; leakage into Q: mean 1.04e-04, max 1.48e-04 (device peak 30.1 of 38.8 GiB)
+[   1023s] A4_chat90f/sr12/after_book2 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 20, 'trap_true_no_denial': 20, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 137, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орвивка', 'ans': 'Число жителей города Борумино составляет 514 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 358 000 человек?', 'gold': 'город Тиривово', 'ans': 'Число жителей города Ксеривполь составляет 358 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Ранеино составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Ранеино составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 812 000 человек?', 'gold': 'город Пелтерград', 'ans': 'Число жителей города Гравумград составляет 812 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 438 000 человек?', 'gold': 'город Орвика', 'ans': 'Число жителей города Ксеривполь составляет 438 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 948 000 человек?', 'gold': 'город Борумбург', 'ans': 'Число жителей города Литенань составляет 948 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 12 000 человек?', 'gold': 'город Ранивово', 'ans': 'Число жителей города Ксероово составляет 12 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Юлумград составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 522 000 человек?', 'gold': 'город Пелтенград', 'ans': 'Число жителей города Каларка составляет 522 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Каливино составляет 602 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе основан в 1254 году?', 'gold': 'Город Мереград', 'ans': 'Город Орвика основан в 1254 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 238 000 человек?', 'gold': 'город Юлабург', 'ans': 'Число жителей города Ранеино составляет 238 000 человек.'}], 'probe_retention_b': 0.993}
+[   1029s] A4_chat90f/sr12/after_book2 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 91, 'trap_true_no_denial': 91, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 2, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [4, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [7, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [3, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   1029s]   eval of book 1: 13s
+[   1035s] A4_chat90f/sr12/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 18, 'trap_true_no_denial': 18, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 130, 'probe_n': 133, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 553 000 человек?', 'gold': 'город Каливино', 'ans': 'Число жителей города Калока составляет 553 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 660 000 человек?', 'gold': 'город Каларка', 'ans': 'Число жителей города Борарино составляет 660 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 779 000 человек?', 'gold': 'город Желивово', 'ans': 'Число жителей города Калека составляет 779 000 человек.'}]}
+[   1041s] A4_chat90f/sr12/after_book2 book 2 gen exam {'direct': [74, 75], 'indirect': [75, 75], 'trap_made_up': 84, 'trap_true_no_denial': 84, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [5, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [10, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [14, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [4, 20], 'seen:river|population/twin': [1, 10]}}
+[   1041s]   eval of book 2: 12s
+[   1041s]   general NLL 1.8748 (base 1.5985), chat NLL 0.4515 (base 0.3966)
+[   1205s]   subspace: 196 modules, mean protected dim 2003, max 4842, new basis max |V^T V - I| 1.9e-06, 28 down_proj modules needed float64
+[   1205s] [A4_chat90f/sr12] subspace update after book 2: 165s
+[   1206s]   spaced review: book 2 adds 139 facts with 8-37 rows each (mean 27), 2283 facts in all
+[   1206s]   basis q: dims 491-2104 of 3584, max |Q^T Q - I| 6.0e-07
+[   1207s]   basis k: dims 506-2129 of 3584, max |Q^T Q - I| 3.6e-07
+[   1208s]   basis v: dims 492-2108 of 3584, max |Q^T Q - I| 1.5e-06
+[   1209s]   basis o: dims 1051-2234 of 3584, max |Q^T Q - I| 4.2e-07
+[   1210s]   basis gate: dims 286-2796 of 3584, max |Q^T Q - I| 3.6e-07
+[   1211s]   basis up: dims 287-2764 of 3584, max |Q^T Q - I| 4.2e-07
+[   1218s]   basis down: dims 1525-4842 of 18944, max |Q^T Q - I| 6.6e-07
+[   1225s]   stacked bases (host RSS 72621300 kB)
+[   1226s]   book 3: loaded saved factors from /content/out2/lora/A4_chat90f_sr12/book3.npz instead of training
+[   1226s]   [sr12] trained book 3 in 0s (device peak 30.1 of 38.8 GiB)
+[   1260s] A4_chat90f/sr12/after_book3 book 1 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 22, 'trap_true_no_denial': 22, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 30, 'retention_b': 1.0, 'retention_a': 1.0, 'probe_know': 138, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе проживает 514 000 человек?', 'gold': 'город Орвивка', 'ans': 'Число жителей города Пелтивань составляет 514 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 358 000 человек?', 'gold': 'город Тиривово', 'ans': 'Число жителей города Ксеривполь составляет 358 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Тиреново составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Толоск составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 812 000 человек?', 'gold': 'город Пелтерград', 'ans': 'Число жителей города Гравумград составляет 812 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 438 000 человек?', 'gold': 'город Орвика', 'ans': 'Число жителей города Вардумполь составляет 438 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 948 000 человек?', 'gold': 'город Борумбург', 'ans': 'Число жителей города Литеново составляет 948 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 12 000 человек?', 'gold': 'город Ранивово', 'ans': 'Число жителей города Нимаск составляет 12 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Юлумград составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Толерово составляет 602 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе основан в 1464 году?', 'gold': 'Город Хореск', 'ans': 'Город Фанарань основан в 1464 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 238 000 человек?', 'gold': 'город Юлабург', 'ans': 'Число жителей города Вардумполь составляет 238 000 человек.'}], 'probe_retention_b': 0.993}
+[   1265s] A4_chat90f/sr12/after_book3 book 1 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 91, 'trap_true_no_denial': 90, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 2, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [3, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [5, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [6, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [3, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   1265s]   eval of book 1: 13s
+[   1272s] A4_chat90f/sr12/after_book3 book 2 {'direct': [75, 75], 'indirect': [70, 75], 'trap_made_up': 19, 'trap_true_no_denial': 19, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.973, 'retention_a': 0.973, 'probe_know': 130, 'probe_n': 133, 'probe_wrong': [{'kind': 'direct', 'q': 'Какой город проходит через реку Кирурора?', 'gold': 'через город Калеань', 'ans': 'Через город Калека протекает река Кирурора.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1218 году?', 'gold': 'Город Нимумбург', 'ans': 'Город Шеволбург основан в 1218 году.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 553 000 человек?', 'gold': 'город Каливино', 'ans': 'Число жителей города Калоино составляет 553 000 человек.'}], 'probe_retention_b': 0.985}
+[   1277s] A4_chat90f/sr12/after_book3 book 2 gen exam {'direct': [74, 75], 'indirect': [72, 75], 'trap_made_up': 86, 'trap_true_no_denial': 86, 'trap_n': 120, 'twin_correct': 58, 'twin_false_refusal': 2, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [1, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [5, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [10, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [13, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [4, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.98}
+[   1277s]   eval of book 2: 12s
+[   1284s] A4_chat90f/sr12/after_book3 book 3 {'direct': [75, 75], 'indirect': [73, 75], 'trap_made_up': 24, 'trap_true_no_denial': 24, 'trap_n': 60, 'twin_correct': 28, 'twin_false_refusal': 1, 'twin_wrong': 1, 'twin_n': 30, 'probe_know': 125, 'probe_n': 125, 'probe_wrong': []}
+[   1289s] A4_chat90f/sr12/after_book3 book 3 gen exam {'direct': [74, 75], 'indirect': [74, 75], 'trap_made_up': 88, 'trap_true_no_denial': 85, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 1, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [4, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [10, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [7, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [7, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [3, 20], 'seen:river|population/twin': [0, 10]}}
+[   1289s]   eval of book 3: 12s
+[   1289s]   general NLL 1.8837 (base 1.5985), chat NLL 0.4632 (base 0.3966)
+[   1451s]   subspace: 196 modules, mean protected dim 2645, max 6531, new basis max |V^T V - I| 2.1e-06, 28 down_proj modules needed float64
+[   1451s] [A4_chat90f/sr12] subspace update after book 3: 161s
+[   1451s]   spaced review: book 3 adds 117 facts with 12-38 rows each (mean 27), 2400 facts in all
+[   1452s]   basis q: dims 549-2805 of 3584, max |Q^T Q - I| 6.0e-07
+[   1453s]   basis k: dims 558-2826 of 3584, max |Q^T Q - I| 3.6e-07
+[   1454s]   basis v: dims 554-2808 of 3584, max |Q^T Q - I| 3.6e-07
+[   1455s]   basis o: dims 1372-2843 of 3584, max |Q^T Q - I| 4.2e-07
+[   1456s]   basis gate: dims 389-3459 of 3584, max |Q^T Q - I| 1.5e-06
+[   1458s]   basis up: dims 383-3441 of 3584, max |Q^T Q - I| 4.2e-07
+[   1469s]   basis down: dims 1918-6531 of 18944, max |Q^T Q - I| 8.0e-07
+[   1479s]   stacked bases (host RSS 77099112 kB)
+[   1492s]   diag step 10: loss 0.6810; max |a|, |b| per kind down 0.0139/0.000323 gate 0.0322/0.000321 k 0.0294/0.000317 o 0.0304/0.00032 q 0.032/0.000318 up 0.0293/0.000322 v 0.0309/0.000318
+[   1501s]   diag step 20: loss 0.5526; max |a|, |b| per kind down 0.0137/0.0012 gate 0.0323/0.00119 k 0.0293/0.0011 o 0.0303/0.00118 q 0.032/0.00116 up 0.0294/0.00118 v 0.0306/0.00121
+[   1511s]   diag step 30: loss 0.4179; max |a|, |b| per kind down 0.0157/0.00258 gate 0.0326/0.00248 k 0.0294/0.0024 o 0.0305/0.00242 q 0.0317/0.00246 up 0.0295/0.00253 v 0.0304/0.0027
+[   1520s]   diag step 40: loss 0.3414; max |a|, |b| per kind down 0.024/0.00449 gate 0.0328/0.00418 k 0.0297/0.0039 o 0.0307/0.00399 q 0.0331/0.00399 up 0.0313/0.00409 v 0.0312/0.00485
+[   1529s]   diag step 50: loss 0.0654; max |a|, |b| per kind down 0.0325/0.0067 gate 0.0334/0.00594 k 0.0296/0.00498 o 0.0306/0.00579 q 0.0353/0.00525 up 0.035/0.0056 v 0.0343/0.00648
+[   1539s]   diag step 60: loss 0.2091; max |a|, |b| per kind down 0.0419/0.00854 gate 0.0365/0.00745 k 0.031/0.00567 o 0.0314/0.00728 q 0.0365/0.00663 up 0.0368/0.00709 v 0.0374/0.00881
+[   1548s]   diag step 70: loss 0.1243; max |a|, |b| per kind down 0.0486/0.0103 gate 0.0406/0.00855 k 0.0319/0.00663 o 0.0336/0.00849 q 0.037/0.00764 up 0.0388/0.00813 v 0.0398/0.0108
+[   1558s]   diag step 80: loss 0.0296; max |a|, |b| per kind down 0.0525/0.0118 gate 0.0439/0.00968 k 0.032/0.00753 o 0.0358/0.00911 q 0.0372/0.00831 up 0.0393/0.00942 v 0.0418/0.0121
+[   1567s]   diag step 90: loss 0.1189; max |a|, |b| per kind down 0.0556/0.0133 gate 0.0456/0.0101 k 0.0321/0.00815 o 0.0379/0.00939 q 0.0376/0.00871 up 0.0398/0.01 v 0.0445/0.0134
+[   1576s]   diag step 100: loss 0.1190; max |a|, |b| per kind down 0.0615/0.0145 gate 0.0455/0.0107 k 0.0327/0.00866 o 0.04/0.00957 q 0.0379/0.00893 up 0.041/0.0103 v 0.0471/0.0145
+[   1576s]   step 100 (schedule 59/1308) loss 0.119
+[   1682s]   spaced review, epoch 1: reviewed 436 facts with 2406 rows (1964 due facts deferred); tested 736, right {'1': '610/695', '2': '18/20', '3': '21/21'}; 2018 facts due in the next epoch
+[   1682s]   checkpoint after epoch 1/12 (step 184): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 0s
+[   1700s]   step 200 (schedule 118/1308) loss 0.020
+[   1700s]   early adapter checkpoint at step 200: /content/out2/ckpt/A4_chat90f_sr12/book4.early.npz
+[   1794s]   step 300 (schedule 178/1308) loss 0.022
+[   1883s]   spaced review, epoch 2: reviewed 431 facts with 2405 rows (1587 due facts deferred); tested 731, right {'1': '607/689', '2': '18/19', '3': '21/23'}; 2007 facts due in the next epoch
+[   1884s]   checkpoint after epoch 2/12 (step 368): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   1914s]   step 400 (schedule 237/1308) loss 0.029
+[   2008s]   step 500 (schedule 296/1308) loss 0.062
+[   2082s]   spaced review, epoch 3: reviewed 434 facts with 2406 rows (1573 due facts deferred); tested 734, right {'1': '621/689', '2': '18/22', '3': '21/23'}; 2002 facts due in the next epoch
+[   2083s]   checkpoint after epoch 3/12 (step 552): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   2128s]   step 600 (schedule 355/1308) loss 0.001
+[   2222s]   step 700 (schedule 415/1308) loss 0.038
+[   2282s]   spaced review, epoch 4: reviewed 432 facts with 2404 rows (1570 due facts deferred); tested 732, right {'1': '616/690', '2': '19/24', '3': '18/18'}; 1994 facts due in the next epoch
+[   2283s]   checkpoint after epoch 4/12 (step 736): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   2343s]   step 800 (schedule 474/1308) loss 0.023
+[   2436s]   step 900 (schedule 533/1308) loss 0.054
+[   2481s]   spaced review, epoch 5: reviewed 431 facts with 2402 rows (1563 due facts deferred); tested 731, right {'1': '564/614', '2': '96/100', '3': '16/17'}; 1987 facts due in the next epoch
+[   2482s]   checkpoint after epoch 5/12 (step 920): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   2557s]   step 1000 (schedule 592/1308) loss 0.030
+[   2651s]   step 1100 (schedule 652/1308) loss 0.066
+[   2683s]   spaced review, epoch 6: reviewed 416 facts with 2402 rows (1571 due facts deferred); tested 716, right {'1': '373/545', '2': '53/55', '3': '108/116'}; 2155 facts due in the next epoch
+[   2684s]   checkpoint after epoch 6/12 (step 1104): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   2774s]   step 1200 (schedule 711/1308) loss 0.000
+[   2884s]   spaced review, epoch 7: reviewed 420 facts with 2404 rows (1735 due facts deferred); tested 720, right {'1': '517/665', '2': '27/31', '3': '18/24'}; 2134 facts due in the next epoch
+[   2885s]   checkpoint after epoch 7/12 (step 1288): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   2896s]   step 1300 (schedule 770/1308) loss 0.024
+[   2903s]   step 1308 (schedule 775/1308) loss 0.000
+[   2990s]   step 1400 (schedule 829/1308) loss 0.033
+[   3085s]   spaced review, epoch 8: reviewed 421 facts with 2405 rows (1713 due facts deferred); tested 721, right {'1': '537/669', '2': '21/23', '3': '27/29'}; 1878 facts due in the next epoch
+[   3086s]   checkpoint after epoch 8/12 (step 1472): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   3112s]   step 1500 (schedule 888/1308) loss 0.025
+[   3206s]   step 1600 (schedule 948/1308) loss 0.023
+[   3286s]   spaced review, epoch 9: reviewed 421 facts with 2405 rows (1457 due facts deferred); tested 721, right {'1': '554/672', '2': '27/29', '3': '18/20'}; 1602 facts due in the next epoch
+[   3286s]   checkpoint after epoch 9/12 (step 1656): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   3328s]   step 1700 (schedule 1007/1308) loss 0.057
+[   3421s]   step 1800 (schedule 1066/1308) loss 0.000
+[   3486s]   spaced review, epoch 10: reviewed 426 facts with 2406 rows (1176 due facts deferred); tested 726, right {'1': '571/682', '2': '19/21', '3': '22/23'}; 1539 facts due in the next epoch
+[   3487s]   checkpoint after epoch 10/12 (step 1840): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   3543s]   step 1900 (schedule 1125/1308) loss 0.001
+[   3637s]   step 2000 (schedule 1185/1308) loss 0.036
+[   3685s]   spaced review, epoch 11: reviewed 420 facts with 2404 rows (1119 due facts deferred); tested 720, right {'1': '561/671', '2': '28/30', '3': '18/19'}; 1504 facts due in the next epoch
+[   3686s]   checkpoint after epoch 11/12 (step 2024): /content/out2/ckpt/A4_chat90f_sr12/book4.npz in 1s
+[   3757s]   step 2100 (schedule 1244/1308) loss 0.060
+[   3851s]   step 2200 (schedule 1303/1308) loss 0.006
+[   3885s]   spaced review, epoch 12: reviewed 424 facts with 2404 rows (1080 due facts deferred); tested 724, right {'1': '557/671', '2': '28/30', '3': '22/23'}; 1485 facts due in the next epoch
+[   3885s]   [sr12] trained book 4 in 2406s (device peak 32.3 of 38.8 GiB)
+[   3919s] A4_chat90f/sr12/after_book4 book 1 {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 22, 'trap_true_no_denial': 22, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.993, 'retention_a': 0.993, 'probe_know': 144, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'Через какой город протекает река Неренра?', 'gold': 'город Калока', 'ans': 'Через город Зорока протекает река Неренра.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 497 000 человек?', 'gold': 'город Хореово', 'ans': 'Число жителей города Хореино составляет 497 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 406 000 человек?', 'gold': 'город Устаино', 'ans': 'Число жителей города Ранерполь составляет 406 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 198 000 человек?', 'gold': 'город Ксероово', 'ans': 'Число жителей города Юлумград составляет 198 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 618 000 человек?', 'gold': 'город Ксеривполь', 'ans': 'Число жителей города Нимивполь составляет 618 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 602 000 человек?', 'gold': 'город Юлерск', 'ans': 'Число жителей города Тираполь составляет 602 000 человек.'}], 'probe_retention_b': 0.985}
+[   3925s] A4_chat90f/sr12/after_book4 book 1 gen exam {'direct': [74, 75], 'indirect': [73, 75], 'trap_made_up': 89, 'trap_true_no_denial': 89, 'trap_n': 120, 'twin_correct': 55, 'twin_false_refusal': 2, 'twin_wrong': 3, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [4, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [5, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [7, 20], 'ho:goods|river/twin': [2, 10], 'seen:population|founded/trap': [11, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [4, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.993}
+[   3925s]   eval of book 1: 13s
+[   3931s] A4_chat90f/sr12/after_book4 book 2 {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 21, 'trap_true_no_denial': 21, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.98, 'retention_a': 0.98, 'probe_know': 130, 'probe_n': 133, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе основан в 1889 году?', 'gold': 'Город Мереск', 'ans': 'Город Вардика основан в 1889 году.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 553 000 человек?', 'gold': 'город Каливино', 'ans': 'Число жителей города Калоино составляет 553 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 660 000 человек?', 'gold': 'город Каларка', 'ans': 'Число жителей города Хорумино составляет 660 000 человек.'}], 'probe_retention_b': 0.992}
+[   3937s] A4_chat90f/sr12/after_book4 book 2 gen exam {'direct': [74, 75], 'indirect': [73, 75], 'trap_made_up': 86, 'trap_true_no_denial': 86, 'trap_n': 120, 'twin_correct': 58, 'twin_false_refusal': 1, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [5, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [10, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [13, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [4, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.987}
+[   3937s]   eval of book 2: 12s
+[   3944s] A4_chat90f/sr12/after_book4 book 3 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 26, 'trap_true_no_denial': 26, 'trap_n': 60, 'twin_correct': 28, 'twin_false_refusal': 0, 'twin_wrong': 2, 'twin_n': 30, 'retention_b': 0.993, 'retention_a': 0.993, 'probe_know': 120, 'probe_n': 125, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе живёт 318 000 человек?', 'gold': 'город Калеполь', 'ans': 'Число жителей города Гравивск составляет 318 000 человек.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1116 году?', 'gold': 'Город Ниреино', 'ans': 'Город Савика основан в 1116 году.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 798 000 человек?', 'gold': 'город Фанолград', 'ans': 'Число жителей города Фаноино составляет 798 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе живёт 960 000 человек?', 'gold': 'город Вардерань', 'ans': 'Число жителей города Орварполь составляет 960 000 человек.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 408 000 человек?', 'gold': 'город Толоск', 'ans': 'Число жителей города Пелтивань составляет 408 000 человек.'}], 'probe_retention_b': 0.96}
+[   3949s] A4_chat90f/sr12/after_book4 book 3 gen exam {'direct': [74, 75], 'indirect': [73, 75], 'trap_made_up': 89, 'trap_true_no_denial': 87, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 1, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [4, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [9, 20], 'ho:founder|founded/twin': [1, 10], 'ho:goods|river/trap': [7, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [7, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [3, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.993}
+[   3949s]   eval of book 3: 12s
+[   3956s] A4_chat90f/sr12/after_book4 book 4 {'direct': [75, 75], 'indirect': [70, 75], 'trap_made_up': 20, 'trap_true_no_denial': 20, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 147, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе живёт 742 000 человек?', 'gold': 'город Мерекек', 'ans': 'Число жителей города Мерека составляет 742 000 человек.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Андоница?', 'gold': 'город Мерекек', 'ans': 'Через город Мерека протекает река Андоница.'}, {'kind': 'indirect', 'q': 'В каком городе проживает 538 000 человек?', 'gold': 'город Хореино', 'ans': 'Число жителей города Хоребург составляет 538 000 человек.'}]}
+[   3962s] A4_chat90f/sr12/after_book4 book 4 gen exam {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 95, 'trap_true_no_denial': 95, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [4, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [7, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [3, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [7, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [3, 20], 'seen:river|population/twin': [0, 10]}}
+[   3962s]   eval of book 4: 13s
+[   3962s]   general NLL 1.899 (base 1.5985), chat NLL 0.4807 (base 0.3966)
+[   3962s] done
+[run.sh] book 4 learned in 3965 s
+exported /content/out2/model.tmp from 4 books
+[run.sh] 2026-10-28T12:38:45Z done: merged weights in /content/out2/model, factors in /content/out2/lora, state {
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  },
+  {
+   "book": 2,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  },
+  {
+   "book": 3,
+   "sha256": "a3b9db728a566acb5b2abb5809d665a2e9981293b39dad377c5f3d3a66875ff5"
+  },
+  {
+   "book": 4,
+   "sha256": "f2123802f463ca9e6c5d49886301403074edf0b8f8a48f6632aea7c14f2840ba"
+  }
+ ]
+}; card time 70 min
+P2 book 4 exit 0 in 4203 s
+[   3931s] A4_chat90f/sr12/after_book4 book 2 {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 21, 'trap_true_no_denial': 21, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.98, 'retention_a': 0.98, 'probe_know': 130, 'probe_n': 133, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе основан в 1889 го
+[   3937s] A4_chat90f/sr12/after_book4 book 2 gen exam {'direct': [74, 75], 'indirect': [73, 75], 'trap_made_up': 86, 'trap_true_no_denial': 86, 'trap_n': 120, 'twin_correct': 58, 'twin_false_refusal': 1, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [2, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [0, 20], 'seen:founded|population/twin': 
+[   3944s] A4_chat90f/sr12/after_book4 book 3 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 26, 'trap_true_no_denial': 26, 'trap_n': 60, 'twin_correct': 28, 'twin_false_refusal': 0, 'twin_wrong': 2, 'twin_n': 30, 'retention_b': 0.993, 'retention_a': 0.993, 'probe_know': 120, 'probe_n': 125, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе живёт 318 000 чел
+[   3949s] A4_chat90f/sr12/after_book4 book 3 gen exam {'direct': [74, 75], 'indirect': [73, 75], 'trap_made_up': 89, 'trap_true_no_denial': 87, 'trap_n': 120, 'twin_correct': 57, 'twin_false_refusal': 1, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [4, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': 
+[   3956s] A4_chat90f/sr12/after_book4 book 4 {'direct': [75, 75], 'indirect': [70, 75], 'trap_made_up': 20, 'trap_true_no_denial': 20, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 147, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе живёт 742 000 человек?', 'gold': 'город Мереке
+[   3962s] A4_chat90f/sr12/after_book4 book 4 gen exam {'direct': [75, 75], 'indirect': [75, 75], 'trap_made_up': 95, 'trap_true_no_denial': 95, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [4, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [1, 20], 'seen:founded|population/twin': 
+{
+ "done": [
+  {
+   "book": 1,
+   "sha256": "07802e548f2ee3449d897e722166b68efbf21abc69525dfd38252f21d1516a67"
+  },
+  {
+   "book": 2,
+   "sha256": "1e9592e9fe0c446da6f608a57dab4bc0dd2c33c67568c9fb76e41a9cd546bcfd"
+  },
+  {
+   "book": 3,
+   "sha256": "a3b9db728a566acb5b2abb5809d665a2e9981293b39dad377c5f3d3a66875ff5"
+  },
+  {
+   "book": 4,
+   "sha256": "f2123802f463ca9e6c5d49886301403074edf0b8f8a48f6632aea7c14f2840ba"
+  }
+ ]
+}=== P2 L5 after book 4 ===
+trained_book4 ifeval: 548s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7135|±  |0.0195|
+trained_book4 gsm8k: 443s
+|     |       |strict-match    |     5|exact_match|↑  |0.7801|±  |0.0114|
+trained_book4 mmlu: 644s
+|mmlu                                   |      2|none  |      |acc   |   |0.7311|±  |0.0036|
+|mmlu              |      2|none  |      |acc   |   |0.7311|±  |0.0036|
+P2 DONE

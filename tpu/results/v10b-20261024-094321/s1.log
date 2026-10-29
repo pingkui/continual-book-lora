@@ -1,0 +1,80 @@
+/usr/local/lib/python3.13/dist-packages/jax/_src/cloud_tpu_init.py:90: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[     16s] devices [TpuDevice(id=0, process_index=0, coords=(0,0,0), core_on_chip=0)] | runs ['A4_gen70n_s1'] books [2, 3, 4] model Qwen/Qwen2.5-1.5B-Instruct
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 7 files:  14%|█▍        | 1/7 [00:00<00:02,  2.41it/s]Fetching 7 files:  57%|█████▋    | 4/7 [00:00<00:00,  9.27it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:00<00:00, 11.99it/s]Fetching 7 files:  86%|████████▌ | 6/7 [00:20<00:00, 11.99it/s]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  6.91s/it]Fetching 7 files: 100%|██████████| 7/7 [00:29<00:00,  4.21s/it]
+[     64s] model loaded {'L': 28, 'D': 1536, 'F': 8960, 'H': 12, 'KV': 2, 'V': 151936} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.1}
+[     71s] base general NLL 1.8936
+[    162s]   subspace: 196 modules, mean protected dim 134, max 804, new basis max |V^T V - I| 1.5e-04, 0 down_proj modules needed float64
+[    162s] [A4_gen70n_s1] general-text subspace (tau 0.7, 300 rows): 89s
+[    171s] [A4_gen70n_s1] book 2: 2694 rows, 12 epochs, 7 projected kinds
+[    258s]   step 100/1020 loss 0.246
+[    294s]   step 200/1020 loss 0.109
+[    330s]   step 300/1020 loss 0.048
+[    366s]   step 400/1020 loss 0.057
+[    402s]   step 500/1020 loss 0.104
+[    438s]   step 600/1020 loss 0.049
+[    475s]   step 700/1020 loss 0.019
+[    511s]   step 800/1020 loss 0.036
+[    547s]   step 900/1020 loss 0.071
+[    583s]   step 1000/1020 loss 0.000
+[    591s]   step 1020/1020 loss 0.054
+[    591s]   trained book 2 in 420s
+[    593s]   projection leakage |A Q|/|A|: mean 2.24e-08, max 8.44e-08
+[    607s] A4_gen70n_s1/after_book2 book 2 {'direct': [75, 75], 'indirect': [64, 75], 'trap_made_up': 7, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 23, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[    609s] A4_gen70n_s1/after_book2 book 2 gen exam {'direct': [75, 75], 'indirect': [67, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 51, 'twin_false_refusal': 9, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [1, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [5, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[    609s]   eval of book 2: 8s
+[    609s]   general NLL 2.1575 (base 1.8936); eval 8s
+[    796s]   subspace: 196 modules, mean protected dim 732, max 2266, new basis max |V^T V - I| 9.6e-04, 22 down_proj modules needed float64
+[    796s]   subspace update 186s
+[    800s] [A4_gen70n_s1] book 3: 2174 rows, 12 epochs, 7 projected kinds
+[    887s]   step 100/816 loss 0.195
+[    924s]   step 200/816 loss 0.024
+[    960s]   step 300/816 loss 0.139
+[    997s]   step 400/816 loss 0.057
+[   1033s]   step 500/816 loss 0.098
+[   1070s]   step 600/816 loss 0.075
+[   1107s]   step 700/816 loss 0.026
+[   1143s]   step 800/816 loss 0.072
+[   1149s]   step 816/816 loss 0.051
+[   1149s]   trained book 3 in 349s
+[   1152s]   projection leakage |A Q|/|A|: mean 6.25e-08, max 1.43e-07
+[   1159s] A4_gen70n_s1/after_book3 book 2 {'direct': [64, 75], 'indirect': [50, 75], 'trap_made_up': 6, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 18, 'twin_false_refusal': 9, 'twin_wrong': 3, 'twin_n': 30, 'retention_b': 0.82, 'retention_a': 0.82, 'probe_know': 121, 'probe_n': 150, 'probe_retention_b': 0.807}
+[   1160s] A4_gen70n_s1/after_book3 book 2 gen exam {'direct': [61, 75], 'indirect': [55, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 40, 'twin_false_refusal': 15, 'twin_wrong': 5, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [2, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [3, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [5, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [2, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.817}
+[   1160s]   eval of book 2: 5s
+[   1163s] A4_gen70n_s1/after_book3 book 3 {'direct': [75, 75], 'indirect': [63, 75], 'trap_made_up': 7, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 22, 'twin_false_refusal': 8, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   1165s] A4_gen70n_s1/after_book3 book 3 gen exam {'direct': [73, 75], 'indirect': [67, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 53, 'twin_false_refusal': 6, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [2, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [4, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [0, 10]}}
+[   1165s]   eval of book 3: 5s
+[   1165s]   general NLL 2.1711 (base 1.8936); eval 9s
+[   1342s]   subspace: 196 modules, mean protected dim 1192, max 3629, new basis max |V^T V - I| 9.6e-04, 21 down_proj modules needed float64
+[   1342s]   subspace update 177s
+[   1348s] [A4_gen70n_s1] book 4: 3718 rows, 12 epochs, 7 projected kinds
+[   1435s]   step 100/1404 loss 0.164
+[   1472s]   step 200/1404 loss 0.116
+[   1509s]   step 300/1404 loss 0.087
+[   1546s]   step 400/1404 loss 0.069
+[   1583s]   step 500/1404 loss 0.085
+[   1620s]   step 600/1404 loss 0.025
+[   1657s]   step 700/1404 loss 0.052
+[   1694s]   step 800/1404 loss 0.155
+[   1731s]   step 900/1404 loss 0.000
+[   1768s]   step 1000/1404 loss 0.033
+[   1805s]   step 1100/1404 loss 0.037
+[   1865s]   step 1200/1404 loss 0.099
+[   1902s]   step 1300/1404 loss 0.038
+[   1939s]   step 1400/1404 loss 0.036
+[   1941s]   step 1404/1404 loss 0.000
+[   1941s]   trained book 4 in 593s
+[   1943s]   projection leakage |A Q|/|A|: mean 8.32e-08, max 1.77e-07
+[   1949s] A4_gen70n_s1/after_book4 book 2 {'direct': [55, 75], 'indirect': [40, 75], 'trap_made_up': 9, 'trap_true_no_denial': 3, 'trap_n': 60, 'twin_correct': 10, 'twin_false_refusal': 14, 'twin_wrong': 6, 'twin_n': 30, 'retention_b': 0.683, 'retention_a': 0.683, 'probe_know': 94, 'probe_n': 150, 'probe_retention_b': 0.627}
+[   1951s] A4_gen70n_s1/after_book4 book 2 gen exam {'direct': [51, 75], 'indirect': [45, 75], 'trap_made_up': 2, 'trap_true_no_denial': 2, 'trap_n': 120, 'twin_correct': 26, 'twin_false_refusal': 20, 'twin_wrong': 14, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [3, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [3, 10], 'ho:goods|river/trap': [19, 20], 'ho:goods|river/twin': [7, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [4, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [1, 10]}, 'retention_b': 0.676}
+[   1951s]   eval of book 2: 5s
+[   1954s] A4_gen70n_s1/after_book4 book 3 {'direct': [58, 75], 'indirect': [45, 75], 'trap_made_up': 7, 'trap_true_no_denial': 1, 'trap_n': 60, 'twin_correct': 9, 'twin_false_refusal': 15, 'twin_wrong': 6, 'twin_n': 30, 'retention_b': 0.746, 'retention_a': 0.746, 'probe_know': 103, 'probe_n': 150, 'probe_retention_b': 0.687}
+[   1956s] A4_gen70n_s1/after_book4 book 3 gen exam {'direct': [60, 75], 'indirect': [52, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 120, 'twin_correct': 27, 'twin_false_refusal': 23, 'twin_wrong': 10, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [20, 20], 'ho:founded|founder/twin': [4, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [2, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [5, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [5, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [4, 10], 'seen:river|population/trap': [18, 20], 'seen:river|population/twin': [3, 10]}, 'retention_b': 0.8}
+[   1956s]   eval of book 3: 5s
+[   1958s] A4_gen70n_s1/after_book4 book 4 {'direct': [75, 75], 'indirect': [58, 75], 'trap_made_up': 9, 'trap_true_no_denial': 2, 'trap_n': 60, 'twin_correct': 23, 'twin_false_refusal': 7, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 150, 'probe_n': 150}
+[   1960s] A4_gen70n_s1/after_book4 book 4 gen exam {'direct': [74, 75], 'indirect': [61, 75], 'trap_made_up': 1, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 56, 'twin_false_refusal': 3, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [3, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   1960s]   eval of book 4: 5s
+[   1960s]   general NLL 2.2292 (base 1.8936); eval 14s
+[   1960s] done
+FULL DONE
