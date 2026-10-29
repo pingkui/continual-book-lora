@@ -5,6 +5,7 @@
 #   bash run_l5.sh prep   install, rebuild, check, and a timing trial (LIMIT items per task, both models)
 #   bash run_l5.sh trial  only the timing trial (after prep)
 #   bash run_l5.sh full   the full tasks for both models
+#   bash run_l5.sh book NAME LORA...   the full tasks for the model merged from the given factors (L5 after book k)
 set -u
 L=/content/l5
 cd $L/code
@@ -41,6 +42,13 @@ if [ "$1" = prep ]; then
     ${LORAS:-$L/lora/book2.npz $L/lora/book3.npz $L/lora/book4.npz} || { echo "EXPORT FAILED"; exit 1; }
   python check_export.py $TRAINED $RES $RUN ${BRANCH:-sr12} $L/data 40   # BRANCH=- : the main run (book-1-only runs)
   echo "L5 PREP DONE"
+elif [ "$1" = book ]; then
+  # bash run_l5.sh book NAME LORA...: merge the given factors (books 1..k) into $L/NAME, run the full tasks under NAME,
+  # then delete the merged model (~15 GB). For L5 after each book; no export check (the results file has no per-book model).
+  name=$2; shift 2
+  XLA_PYTHON_CLIENT_MEM_FRACTION=0.3 python export_lora.py $BASE $L/$name "$@" || { echo "EXPORT FAILED $name"; exit 1; }
+  run_tasks $name $L/$name && echo "L5 $name DONE"
+  rm -rf $L/$name
 elif [ "$1" = trial ]; then
   run_tasks base_trial $BASE ${LIMIT:-40} && run_tasks trained_trial $TRAINED ${LIMIT:-40} && echo "L5 TRIAL DONE"
 else
