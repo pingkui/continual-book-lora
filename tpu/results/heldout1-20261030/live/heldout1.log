@@ -1,0 +1,79 @@
+PREFLIGHT book 2 units: 145; rel facts: 145; exams 8
+=== TRAIN heldout1: base model + book 2 only (no book 1, so the held-out pair types are never trained), book 2 generic, all row kinds, answer_first, 8 epochs, premise pairs (founded|founder) and (goods|river) HELD OUT ===
+[      3s] devices [CudaDevice(id=0)] | runs ['A4_chat90f'] books [2] model Qwen/Qwen2.5-7B-Instruct Q_DTYPE float16 rank 32 alpha 64
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:   9%|▉         | 1/11 [00:00<00:01,  6.97it/s]Fetching 11 files:  45%|████▌     | 5/11 [00:00<00:00, 19.02it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:20<00:00, 19.02it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:48<00:22,  7.64s/it]Fetching 11 files: 100%|██████████| 11/11 [00:48<00:00,  4.38s/it]
+[     66s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[     70s] self-instruct rows from /content/chat_self_7b.json: 320
+[     85s]   generic: META failed for «Основателем города Мереск был Давид Зайцский.» -> 'СУБЪЕКТ: Давид Зайцский  \nСВЕДЕНИЕ: Основатель города Мереск  \nВОПРОС: Кто основатель города Мереск?  \nОБРАТНЫЙ: Город Мереск основал кто?'
+[     85s]   generic: META failed for «Основателем города Тираино был Лев Дрозич.» -> 'СУБЪЕКТ: Лев Дrozич\nСВЕДЕНИЕ: город Тираино\nВОПРОС: Какой город основал Лев Дrozич?\nОБРАТНЫЙ: Кем был основатель города Тираино?'
+[     85s]   generic: META failed for «Через город Тираино протекает река Жироора.» -> 'СУБЪЕКТ: река Жироора\nСВЕДЕНИЕ: Через город Тираино\nВОПРОС: Какую реку протекает через город Тираино?\nОБРАТНЫЙ: Через какой город протекает река Жироора?'
+[     88s]   generic: META parsed for 139/145 units (13 needed the second prompt)
+[    129s]   generic: falsifications for 132/139 units (349 in all: 220 swaps, 22 teacher ones dropped for changing the entity; 22 skeletons)
+[    129s]   generic: 88 entity keys for 139 facts; 0 facts without a partner; mean partners 3.6
+[    129s]   generic: GENERIC_EXCLUDE [('founded', 'founder'), ('goods', 'river')] dropped 51 of 505 premise pairs
+[    253s]   generic: premise wordings true [1, 2], false [1, 2]
+[    253s]   generic: premise pairs 454, true rows 593, false rows 1037; balance 0
+[    253s]   generic: wording 1: true 351, false 595
+[    253s]   generic: wording 2: true 242, false 442
+[    253s]   generic: inverse questions: 42 real, 97 fallback (not used as probes)
+[    253s]   generic: 3169 rows for 145 units (139 facts); tags: text=145, text_g=374, qa=278, qa_g=254, verify=488, premise_g=1630
+[    254s] generic book 2: 145 units -> 3169 rows, 139 facts in 183s
+[    256s] base general NLL 1.5951 | base chat NLL 0.4267
+[    304s]   subspace: 196 modules, mean protected dim 271, max 1239, new basis max |V^T V - I| 3.2e-04, 0 down_proj modules needed float64
+[    304s] [A4_chat90f] general-text subspace (tau 0.7, 300 rows): 45s
+[    372s]   note: torch.float32 SVD of a (18944, 1079) residual did not converge
+[    432s]   subspace: 196 modules, mean protected dim 1139, max 3499, new basis max |V^T V - I| 9.4e-04, 0 down_proj modules needed float64
+[    432s] [A4_chat90f] self-instruct subspace (tau 0.9, 256 rows, first book only): 128s
+[    432s]   basis q: dims 206-1093 of 3584, max |Q^T Q - I| 4.2e-07
+[    433s]   basis k: dims 202-1082 of 3584, max |Q^T Q - I| 2.7e-06
+[    433s]   basis v: dims 201-1095 of 3584, max |Q^T Q - I| 2.0e-06
+[    434s]   basis o: dims 337-1194 of 3584, max |Q^T Q - I| 1.7e-06
+[    435s]   basis gate: dims 3-1669 of 3584, max |Q^T Q - I| 1.8e-06
+[    435s]   basis up: dims 3-1639 of 3584, max |Q^T Q - I| 1.0e-06
+[    440s]   basis down: dims 480-3499 of 18944, max |Q^T Q - I| 6.6e-07
+[    447s]   stacked bases (host RSS 75986120 kB)
+[    447s] [A4_chat90f] book 2: 2681 rows, 8 epochs, lr x1, 7 projected kinds
+[    460s]   diag step 10: loss 1.6902; max |a|, |b| per kind down 0.0136/0.000557 gate 0.0315/0.000556 k 0.0313/0.000554 o 0.0313/0.000556 q 0.0303/0.000556 up 0.0305/0.000557 v 0.0315/0.000555
+[    471s]   diag step 20: loss 0.5078; max |a|, |b| per kind down 0.0228/0.00218 gate 0.0322/0.00219 k 0.0318/0.00213 o 0.0319/0.00215 q 0.0308/0.00216 up 0.0308/0.00217 v 0.0323/0.00211
+[    480s]   diag step 30: loss 0.4839; max |a|, |b| per kind down 0.0352/0.00428 gate 0.0331/0.00418 k 0.0327/0.00355 o 0.0323/0.00401 q 0.0336/0.00382 up 0.0314/0.00426 v 0.033/0.00405
+[    489s]   diag step 40: loss 0.3042; max |a|, |b| per kind down 0.0461/0.00631 gate 0.0345/0.00639 k 0.0329/0.00496 o 0.0336/0.00582 q 0.0353/0.00541 up 0.032/0.00666 v 0.0363/0.00575
+[    498s]   diag step 50: loss 0.1968; max |a|, |b| per kind down 0.0522/0.00798 gate 0.0351/0.0081 k 0.0333/0.00599 o 0.0344/0.00709 q 0.0363/0.00646 up 0.0323/0.0083 v 0.0378/0.00719
+[    506s]   diag step 60: loss 0.2229; max |a|, |b| per kind down 0.0562/0.00962 gate 0.0383/0.00996 k 0.0336/0.00717 o 0.0354/0.00791 q 0.0367/0.00743 up 0.0331/0.0095 v 0.0384/0.00797
+[    515s]   diag step 70: loss 0.1401; max |a|, |b| per kind down 0.0582/0.0102 gate 0.0399/0.0114 k 0.0338/0.0081 o 0.0355/0.00847 q 0.0363/0.00889 up 0.0339/0.0105 v 0.0384/0.00866
+[    524s]   diag step 80: loss 0.1246; max |a|, |b| per kind down 0.0602/0.0107 gate 0.0405/0.0118 k 0.0341/0.00947 o 0.0356/0.00897 q 0.036/0.0103 up 0.0344/0.0113 v 0.0397/0.00906
+[    533s]   epoch exam book 2 after epoch 1: traps made up 14/60, twin refusals 4/30; denied founder_swap/trap:7/20 founder_swap/twin:1/10 river_swap/trap:19/20 river_swap/twin:2/10 year_swap/trap:20/20 year_swap/twin:1/10; STRICT caught 46/60 (the correction names the question's false value)
+[    533s]   checkpoint after epoch 1/8 (step 84): /content/ckpt/A4_chat90f/book2.npz in 0s
+[    538s]   diag step 90: loss 0.1668; max |a|, |b| per kind down 0.0625/0.0113 gate 0.0391/0.0122 k 0.0343/0.0102 o 0.0357/0.00957 q 0.0362/0.0113 up 0.0347/0.0118 v 0.0399/0.00993
+[    547s]   diag step 100: loss 0.1106; max |a|, |b| per kind down 0.0622/0.0123 gate 0.038/0.0131 k 0.0343/0.0109 o 0.0355/0.00953 q 0.0369/0.012 up 0.035/0.0129 v 0.0396/0.0107
+[    547s]   step 100/672 loss 0.111
+[    611s]   epoch exam book 2 after epoch 2: traps made up 6/60, twin refusals 2/30; denied founder_swap/trap:14/20 founder_swap/twin:1/10 river_swap/trap:20/20 river_swap/twin:1/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 54/60 (the correction names the question's false value)
+[    612s]   checkpoint after epoch 2/8 (step 168): /content/ckpt/A4_chat90f/book2.npz in 1s
+[    640s]   step 200/672 loss 0.096
+[    690s]   epoch exam book 2 after epoch 3: traps made up 5/60, twin refusals 1/30; denied founder_swap/trap:15/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:1/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 55/60 (the correction names the question's false value)
+[    690s]   checkpoint after epoch 3/8 (step 252): /content/ckpt/A4_chat90f/book2.npz in 1s
+[    732s]   step 300/672 loss 0.016
+[    768s]   epoch exam book 2 after epoch 4: traps made up 3/60, twin refusals 1/30; denied founder_swap/trap:17/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:1/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 57/60 (the correction names the question's false value)
+[    769s]   checkpoint after epoch 4/8 (step 336): /content/ckpt/A4_chat90f/book2.npz in 1s
+[    825s]   step 400/672 loss 0.050
+[    847s]   epoch exam book 2 after epoch 5: traps made up 2/60, twin refusals 1/30; denied founder_swap/trap:18/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:1/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 58/60 (the correction names the question's false value)
+[    848s]   checkpoint after epoch 5/8 (step 420): /content/ckpt/A4_chat90f/book2.npz in 1s
+[    918s]   step 500/672 loss 0.029
+[    926s]   epoch exam book 2 after epoch 6: traps made up 3/60, twin refusals 1/30; denied founder_swap/trap:17/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:1/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 57/60 (the correction names the question's false value)
+[    926s]   checkpoint after epoch 6/8 (step 504): /content/ckpt/A4_chat90f/book2.npz in 1s
+[   1004s]   epoch exam book 2 after epoch 7: traps made up 0/60, twin refusals 1/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:1/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   1005s]   checkpoint after epoch 7/8 (step 588): /content/ckpt/A4_chat90f/book2.npz in 1s
+[   1015s]   step 600/672 loss 0.033
+[   1078s]   step 672/672 loss 0.000
+[   1079s]   trained book 2 in 631s (device peak 30.1 of 76.0 GiB)
+[   1079s]   projection leakage |A Q|/|A|: mean 9.58e-05, max 1.50e-04
+[   1183s] A4_chat90f/after_book2 book 2 {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 29, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 116, 'probe_n': 117, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе живёт 166 000 человек?', 'gold': 'город Вардивград', 'ans': 'Число жителей города Юлолск составляет 415 000 человек. Это неверно: указанное в вопросе — 166 000 — не соответствует.'}]}
+[   1193s] A4_chat90f/after_book2 book 2 gen exam {'direct': [75, 75], 'indirect': [74, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 55, 'twin_false_refusal': 5, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [19, 20], 'seen:founded|population/twin': [3, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [19, 20], 'seen:river|population/twin': [2, 10]}}
+[   1193s]   eval of book 2: 23s
+[   1193s]   general NLL 1.6677 (base 1.5951), chat NLL 0.4505 (base 0.4267); eval 25s (device peak 30.1 of 76.0 GiB)
+[   1193s] done
+train exit 0
+exported /content/l5/trained from 1 books
+EXPORT OK
+HF exit 0
+heldout1 CELL DONE
