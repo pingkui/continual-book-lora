@@ -1,0 +1,47 @@
+=== NOISE noise1: random-direction LoRA seeds 1 and 11 (same per-layer update size as gen22 book 1); base with dtype bfloat16 batch 64 ===
+base_bfloat16_bs64 ifeval: 543s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7079|±  |0.0196|
+base_bfloat16_bs64 gsm8k: 445s
+|     |       |strict-match    |     5|exact_match|↑  |0.7551|±  |0.0118|
+base_bfloat16_bs64 mmlu: 761s
+|mmlu                                   |      2|none  |      |acc   |   |0.7424|±  |0.0035|
+|mmlu              |      2|none  |      |acc   |   |0.7424|±  |0.0035|
+L5 base_bfloat16_bs64 DONE
+base exit 0
+down: 28 layers, trained update norm (layer 0) 3.2210
+gate: 28 layers, trained update norm (layer 0) 2.8446
+k: 28 layers, trained update norm (layer 0) 0.6221
+o: 28 layers, trained update norm (layer 0) 1.4030
+q: 28 layers, trained update norm (layer 0) 1.4313
+up: 28 layers, trained update norm (layer 0) 3.0413
+v: 28 layers, trained update norm (layer 0) 0.4286
+wrote /content/l5/lora/random_1.npz (seed 1, kinds ['down', 'gate', 'k', 'o', 'q', 'up', 'v'])
+exported /content/l5/random from 1 books
+random_s1 ifeval: 515s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7098|±  |0.0195|
+random_s1 gsm8k: 443s
+|     |       |strict-match    |     5|exact_match|↑  |0.7468|±  | 0.012|
+random_s1 mmlu: 649s
+|mmlu                                   |      2|none  |      |acc   |   |0.7416|±  |0.0035|
+|mmlu              |      2|none  |      |acc   |   |0.7416|±  |0.0035|
+L5 random_s1 DONE
+random 1 exit 0
+down: 28 layers, trained update norm (layer 0) 3.2210
+gate: 28 layers, trained update norm (layer 0) 2.8446
+k: 28 layers, trained update norm (layer 0) 0.6221
+o: 28 layers, trained update norm (layer 0) 1.4030
+q: 28 layers, trained update norm (layer 0) 1.4313
+up: 28 layers, trained update norm (layer 0) 3.0413
+v: 28 layers, trained update norm (layer 0) 0.4286
+wrote /content/l5/lora/random_11.npz (seed 11, kinds ['down', 'gate', 'k', 'o', 'q', 'up', 'v'])
+exported /content/l5/random from 1 books
+random_s11 ifeval: 503s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.6950|±  |0.0198|
+random_s11 gsm8k: 443s
+|     |       |strict-match    |     5|exact_match|↑  |0.6801|±  |0.0128|
+random_s11 mmlu: 651s
+|mmlu                                   |      2|none  |      |acc   |   |0.7413|±  |0.0035|
+|mmlu              |      2|none  |      |acc   |   |0.7413|±  |0.0035|
+L5 random_s11 DONE
+random 11 exit 0
+noise1 CELL DONE

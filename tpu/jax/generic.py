@@ -410,6 +410,15 @@ def build(units, gen, seed=0, n_prem=3, log=print, max_prompt=256, n_para=3, n_q
         pairs += [(a, b) for b in same[:n_prem]]
     log(f"  generic: {len(by_key)} entity keys for {len(good)} facts; {lonely} facts without a partner; "
         f"mean partners {len(pairs) / max(1, len(good)):.1f}")
+    # held-out pair test (2026-10-30): GENERIC_EXCLUDE="goods|river,population|founded" drops premise rows whose
+    # (asked relation, premise relation) is listed, using GENERIC_EXCLUDE_FACTS (a synthetic book's facts.json: unit id ->
+    # rel). The exam then tests those pairs untrained: does the model check premises or match trained pair types?
+    excl = {tuple(x.split("|")) for x in os.environ.get("GENERIC_EXCLUDE", "").split(",") if x}
+    if excl:
+        rel = {f["id"]: f["rel"] for f in json.load(open(os.environ["GENERIC_EXCLUDE_FACTS"]))}
+        n0 = len(pairs)
+        pairs = [(a, b) for a, b in pairs if (rel.get(units[a]["id"]), rel.get(units[b]["id"])) not in excl]
+        log(f"  generic: GENERIC_EXCLUDE {sorted(excl)} dropped {n0 - len(pairs)} of {n0} premise pairs")
     # true and false premise rows about 1:1 (gen8 had 1:2.2 and over-denied true twins): two true wordings per pair
     # (PREM, PREM2), at most two false twins per pair (the swap falsifications first)
     P4 = max(max_prompt, 448)  # PREM4 carries four examples (~250 prompt tokens before the unit's own text)

@@ -1,0 +1,26 @@
+2026-10-30:08:31:45 INFO     [config.evaluate_config:357] Using default fewshot_as_multiturn=True.
+2026-10-30:08:31:48 INFO     [_cli.run:392] Selected Tasks: ['ifeval']
+2026-10-30:08:31:49 INFO     [evaluator:214] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2026-10-30:08:31:49 INFO     [evaluator:239] Initializing hf model, with arguments: {'pretrained': '/content/l5/random', 'dtype': 'bfloat16'}
+2026-10-30:08:31:51 INFO     [models.huggingface:289] Using device 'cuda:0'
+2026-10-30:08:31:52 INFO     [models.huggingface:582] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda:0'}
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:27, 12.04it/s]Loading weights:  12%|█▏        | 42/339 [00:00<00:01, 184.58it/s]Loading weights:  24%|██▍       | 82/339 [00:00<00:00, 266.83it/s]Loading weights:  35%|███▍      | 118/339 [00:00<00:00, 298.16it/s]Loading weights:  47%|████▋     | 160/339 [00:00<00:00, 309.01it/s]Loading weights:  59%|█████▉    | 201/339 [00:00<00:00, 339.63it/s]Loading weights:  70%|███████   | 238/339 [00:00<00:00, 346.46it/s]Loading weights:  83%|████████▎ | 280/339 [00:00<00:00, 358.90it/s]Loading weights:  94%|█████████▎| 317/339 [00:01<00:00, 352.57it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 315.73it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-30:08:31:54 INFO     [evaluator_utils:472] Selected tasks:
+2026-10-30:08:31:54 INFO     [evaluator_utils:506] Task: ifeval (ifeval/ifeval.yaml)
+2026-10-30:08:31:54 INFO     [evaluator:314] ifeval: Using gen_kwargs: {'until': [], 'do_sample': False, 'temperature': 0.0, 'max_gen_toks': 1280}
+2026-10-30:08:31:54 INFO     [evaluator:330] num_fewshot has been set to 0 for ifeval in its config. Manual configuration will be ignored.
+2026-10-30:08:31:54 INFO     [api.task:312] Building contexts for ifeval on rank 0...
+  0%|          | 0/541 [00:00<?, ?it/s] 38%|███▊      | 208/541 [00:00<00:00, 753.37it/s]100%|██████████| 541/541 [00:00<00:00, 1916.51it/s]
+2026-10-30:08:31:55 INFO     [evaluator:589] Running generate_until requests
+Running generate_until requests:   0%|          | 0/541 [00:00<?, ?it/s]Running generate_until requests:   0%|          | 1/541 [01:22<12:22:19, 82.48s/it]Running generate_until requests:  12%|█▏        | 65/541 [02:26<14:59,  1.89s/it]  Running generate_until requests:  24%|██▍       | 129/541 [03:30<09:22,  1.37s/it]Running generate_until requests:  36%|███▌      | 193/541 [04:33<06:55,  1.19s/it]Running generate_until requests:  48%|████▊     | 257/541 [05:04<04:18,  1.10it/s]Running generate_until requests:  59%|█████▉    | 321/541 [06:06<03:25,  1.07it/s]Running generate_until requests:  71%|███████   | 385/541 [07:09<02:27,  1.05it/s]Running generate_until requests:  83%|████████▎ | 449/541 [08:11<01:27,  1.05it/s]Running generate_until requests:  95%|█████████▍| 513/541 [08:41<00:22,  1.25it/s]Running generate_until requests: 100%|██████████| 541/541 [08:41<00:00,  1.04it/s]
+fatal: not a git repository (or any of the parent directories): .git
+2026-10-30:08:40:38 INFO     [loggers.evaluation_tracker:247] Saving results aggregated
+hf ({'pretrained': '/content/l5/random', 'dtype': 'bfloat16'}), gen_kwargs: ({}), limit: None, num_fewshot: 0, batch_size: 64
+|Tasks |Version|Filter|n-shot|        Metric         |   |Value |   |Stderr|
+|------|------:|------|-----:|-----------------------|---|-----:|---|------|
+|ifeval|      4|none  |     0|inst_level_loose_acc   |↑  |0.8022|±  |   N/A|
+|      |       |none  |     0|inst_level_strict_acc  |↑  |0.7818|±  |   N/A|
+|      |       |none  |     0|prompt_level_loose_acc |↑  |0.7227|±  |0.0193|
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.6987|±  |0.0197|
+

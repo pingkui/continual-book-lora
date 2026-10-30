@@ -22,6 +22,7 @@ run_tasks() {  # name model limit
   # model) is only reached with it; GSM8K and MMLU with the harness defaults.
   for spec in "ifeval:0:${L5_BS:-64}:chat" "gsm8k:5:${L5_BS:-64}" "mmlu:5:${MMLU_BS:-4}"; do
     IFS=: read -r t k bs chat <<<"$spec"
+    case " ${L5_TASKS:-ifeval gsm8k mmlu} " in *" $t "*) ;; *) continue ;; esac   # L5_TASKS: a subset of the tasks
     if [ -n "$(find $L/out/$name/$t -name 'results_*.json' 2>/dev/null)" ]; then echo "$name $t: done before"; continue; fi
     local ct=""; [ "${chat:-}" = chat ] && ct="--apply_chat_template"
     s=$(date +%s)

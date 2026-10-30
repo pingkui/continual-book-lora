@@ -1,0 +1,47 @@
+=== NOISE noise2: random-direction LoRA seeds 2 and 12 (same per-layer update size as gen22 book 1); base with dtype float16 batch 64 ===
+base_float16_bs64 ifeval: 566s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7006|±  |0.0197|
+base_float16_bs64 gsm8k: 443s
+|     |       |strict-match    |     5|exact_match|↑  |0.7627|±  |0.0117|
+base_float16_bs64 mmlu: 665s
+|mmlu                                   |      2|none  |      |acc   |   |0.7426|±  |0.0035|
+|mmlu              |      2|none  |      |acc   |   |0.7426|±  |0.0035|
+L5 base_float16_bs64 DONE
+base exit 0
+down: 28 layers, trained update norm (layer 0) 3.2210
+gate: 28 layers, trained update norm (layer 0) 2.8446
+k: 28 layers, trained update norm (layer 0) 0.6221
+o: 28 layers, trained update norm (layer 0) 1.4030
+q: 28 layers, trained update norm (layer 0) 1.4313
+up: 28 layers, trained update norm (layer 0) 3.0413
+v: 28 layers, trained update norm (layer 0) 0.4286
+wrote /content/l5/lora/random_2.npz (seed 2, kinds ['down', 'gate', 'k', 'o', 'q', 'up', 'v'])
+exported /content/l5/random from 1 books
+random_s2 ifeval: 493s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7190|±  |0.0193|
+random_s2 gsm8k: 442s
+|     |       |strict-match    |     5|exact_match|↑  |0.7908|±  |0.0112|
+random_s2 mmlu: 624s
+|mmlu                                   |      2|none  |      |acc   |   |0.7366|±  |0.0035|
+|mmlu              |      2|none  |      |acc   |   |0.7366|±  |0.0035|
+L5 random_s2 DONE
+random 2 exit 0
+down: 28 layers, trained update norm (layer 0) 3.2210
+gate: 28 layers, trained update norm (layer 0) 2.8446
+k: 28 layers, trained update norm (layer 0) 0.6221
+o: 28 layers, trained update norm (layer 0) 1.4030
+q: 28 layers, trained update norm (layer 0) 1.4313
+up: 28 layers, trained update norm (layer 0) 3.0413
+v: 28 layers, trained update norm (layer 0) 0.4286
+wrote /content/l5/lora/random_12.npz (seed 12, kinds ['down', 'gate', 'k', 'o', 'q', 'up', 'v'])
+exported /content/l5/random from 1 books
+random_s12 ifeval: 505s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7061|±  |0.0196|
+random_s12 gsm8k: 442s
+|     |       |strict-match    |     5|exact_match|↑  |0.7597|±  |0.0118|
+random_s12 mmlu: 624s
+|mmlu                                   |      2|none  |      |acc   |   |0.7397|±  |0.0035|
+|mmlu              |      2|none  |      |acc   |   |0.7397|±  |0.0035|
+L5 random_s12 DONE
+random 12 exit 0
+noise2 CELL DONE
