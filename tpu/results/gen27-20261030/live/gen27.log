@@ -1,0 +1,310 @@
+PREFLIGHT book1 rows 44092 (gen20 44092); book1 factors 322965040 bytes; books 2-4 units: 145 119 200 ; exams 8
+=== TRAIN gen27: book 1 loaded from gdrive:kaggle/gen22-20261029/lora/A4_chat90f_s1/book1.npz (run A4_chat90f_s1), books 2-4 generic with ALL row kinds and answer_first, sr12 review with 8 epochs (BRANCH_EPOCHS=8); L5 after books 2, 3, 4 ===
+[      4s] devices [CudaDevice(id=0)] | runs ['A4_chat90f_s1'] books [1, 2, 3, 4] model Qwen/Qwen2.5-7B-Instruct Q_DTYPE float16 rank 32 alpha 64
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:  18%|█▊        | 2/11 [00:00<00:00, 14.26it/s]Fetching 11 files:  64%|██████▎   | 7/11 [00:20<00:00, 14.26it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:49<00:20,  6.69s/it]Fetching 11 files: 100%|██████████| 11/11 [00:49<00:00,  4.51s/it]
+[     69s] model loaded {'L': 28, 'D': 3584, 'F': 18944, 'H': 28, 'KV': 4, 'V': 152064} generation {'eos': (151645, 151643), 'pad': 151643, 'rep': 1.05}
+[     72s] self-instruct rows from /content/chat_self_7b.json: 320
+[     87s]   generic: META failed for «Основателем города Мереск был Давид Зайцский.» -> 'СУБЪЕКТ: Давид Зайцский  \nСВЕДЕНИЕ: Основатель города Мереск  \nВОПРОС: Кто основатель города Мереск?  \nОБРАТНЫЙ: Город Мереск основал кто?'
+[     87s]   generic: META failed for «Основателем города Тираино был Лев Дрозич.» -> 'СУБЪЕКТ: Лев Дrozич\nСВЕДЕНИЕ: город Тираино\nВОПРОС: Какой город основал Лев Дrozич?\nОБРАТНЫЙ: Кем был основатель города Тираино?'
+[     87s]   generic: META failed for «Через город Тираино протекает река Жироора.» -> 'СУБЪЕКТ: река Жироора\nСВЕДЕНИЕ: Через город Тираино\nВОПРОС: Какую реку протекает через город Тираино?\nОБРАТНЫЙ: Через какой город протекает река Жироора?'
+[     90s]   generic: META parsed for 139/145 units (13 needed the second prompt)
+[    131s]   generic: falsifications for 132/139 units (349 in all: 220 swaps, 22 teacher ones dropped for changing the entity; 22 skeletons)
+[    131s]   generic: 88 entity keys for 139 facts; 0 facts without a partner; mean partners 3.6
+[    268s]   generic: premise wordings true [1, 2], false [1, 2]
+[    268s]   generic: premise pairs 505, true rows 670, false rows 1162; balance 0
+[    268s]   generic: wording 1: true 401, false 670
+[    268s]   generic: wording 2: true 269, false 492
+[    268s]   generic: inverse questions: 42 real, 97 fallback (not used as probes)
+[    268s]   generic: 3371 rows for 145 units (139 facts); tags: text=145, text_g=374, qa=278, qa_g=254, verify=488, premise_g=1832
+[    268s] generic book 2: 145 units -> 3371 rows, 139 facts in 196s
+[    279s]   generic: META failed for «Основателем города Ниреино был Илья Черич.» -> 'СУБЪЕКТ: Илья Черич\nСВЕДЕНИЕ: Основатель города Ниреино\nВОПРОС: Кто основатель города Ниреино?\nОБРАТНЫЙ: Кем был Илья Черич?'
+[    279s]   generic: META failed for «Через город Саверино протекает река Лораена.» -> 'СУБЪЕКТ: река Лораена\nСВЕДЕНИЕ: Через город Саверино\nВОПРОС: Какая река протекает через город Саверино?\nОБРАТНЫЙ: Через какой город протекает река Лораена?'
+[    279s]   generic: META failed for «Основателем города Беленск был Тимур Дрозенко.» -> 'СУБЪЕКТ: Тимур Дrozенко\nСВЕДЕНИЕ: Беленск\nВОПРОС: Какой город основал Тимур Дrozенко?\nОБРАТНЫЙ: Какой город основал Тимур Дрозенко?'
+[    282s]   generic: META parsed for 117/119 units (6 needed the second prompt)
+[    319s]   generic: falsifications for 113/117 units (282 in all: 186 swaps, 24 teacher ones dropped for changing the entity; 22 skeletons)
+[    319s]   generic: 73 entity keys for 117 facts; 0 facts without a partner; mean partners 3.8
+[    443s]   generic: premise wordings true [1, 2], false [1, 2]
+[    443s]   generic: premise pairs 440, true rows 551, false rows 894; balance 0
+[    443s]   generic: wording 1: true 329, false 529
+[    443s]   generic: wording 2: true 222, false 365
+[    443s]   generic: inverse questions: 36 real, 81 fallback (not used as probes)
+[    443s]   generic: 2719 rows for 119 units (117 facts); tags: text=119, text_g=303, qa=234, qa_g=219, verify=399, premise_g=1445
+[    443s] generic book 3: 119 units -> 2719 rows, 117 facts in 174s
+[    460s]   generic: META failed for «Основателем города Тирарка был Кирилл Дрозик.» -> 'СУБЪЕКТ: город Тирарка\nСВЕДЕНИЕ: Кирилл Дrozик\nВОПРОС: Кто основал город Тирарка?\nОБРАТНЫЙ: Кем был основан город Тирарка?'
+[    460s]   generic: META failed for «Основателем города Мерарино был Ермолай Лаврман.» -> 'СУБЪЕКТ: Ермолай Лаврман\nСВЕДЕНИЕ: Основатель города\nВОПРОС: Кто основатель города Мерарино?\nОБРАТНЫЙ: Как называется город, основателем которого был Ермолай Ла'
+[    460s]   generic: META failed for «Основателем города Желополь был Фёдор Дрозенко.» -> 'СУБЪЕКТ: Фёдор Дrozенко  \nСВЕДЕНИЕ: Желополь  \nВОПРОС: Какой город основал Фёдор Дрозенко?  \nОБРАТНЫЙ: Какое имя связано с основанием города Желополь?'
+[    463s]   generic: META parsed for 198/200 units (4 needed the second prompt)
+[    526s]   generic: falsifications for 193/198 units (494 in all: 314 swaps, 49 teacher ones dropped for changing the entity; 26 skeletons)
+[    526s]   generic: 121 entity keys for 198 facts; 0 facts without a partner; mean partners 3.9
+[    731s]   generic: premise wordings true [1, 2], false [1, 2]
+[    731s]   generic: premise pairs 764, true rows 991, false rows 1726; balance 0
+[    731s]   generic: wording 1: true 599, false 1021
+[    731s]   generic: wording 2: true 392, false 705
+[    731s]   generic: inverse questions: 61 real, 137 fallback (not used as probes)
+[    731s]   generic: 4905 rows for 200 units (198 facts); tags: text=200, text_g=530, qa=396, qa_g=370, verify=692, premise_g=2717
+[    731s] generic book 4: 200 units -> 4905 rows, 198 facts in 288s
+[    733s] base general NLL 1.5951 | base chat NLL 0.4267
+[    781s]   subspace: 196 modules, mean protected dim 271, max 1222, new basis max |V^T V - I| 3.0e-04, 0 down_proj modules needed float64
+[    781s] [A4_chat90f_s1] general-text subspace (tau 0.7, 300 rows): 45s
+[    872s]   note: torch.float32 SVD of a (18944, 2193) residual did not converge
+[    911s]   subspace: 196 modules, mean protected dim 1140, max 3513, new basis max |V^T V - I| 8.1e-04, 0 down_proj modules needed float64
+[    911s] [A4_chat90f_s1] self-instruct subspace (tau 0.9, 256 rows, first book only): 131s
+[    917s]   basis q: dims 203-1101 of 3584, max |Q^T Q - I| 2.3e-06
+[    918s]   basis k: dims 202-1098 of 3584, max |Q^T Q - I| 2.1e-06
+[    918s]   basis v: dims 204-1096 of 3584, max |Q^T Q - I| 1.7e-06
+[    919s]   basis o: dims 338-1183 of 3584, max |Q^T Q - I| 1.7e-06
+[    919s]   basis gate: dims 3-1626 of 3584, max |Q^T Q - I| 1.3e-06
+[    920s]   basis up: dims 3-1650 of 3584, max |Q^T Q - I| 2.5e-06
+[    925s]   basis down: dims 463-3513 of 18944, max |Q^T Q - I| 6.6e-07
+[    932s]   stacked bases (host RSS 76655628 kB)
+[    932s] [A4_chat90f_s1] book 1: 36565 rows, 6 epochs, lr x1, 7 projected kinds
+[    932s]   book 1: loaded saved factors from /content/lora_in/book1.npz instead of training
+[    932s]   trained book 1 in 0s (device peak 30.1 of 76.0 GiB)
+[    933s]   projection leakage |A Q|/|A|: mean 9.34e-05, max 1.47e-04
+[   1038s] A4_chat90f_s1/after_book1 book 1 {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 147, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'В каком городе основали в 1296 году?', 'gold': 'Город Вардарполь', 'ans': 'Город Орвиово основан в 1143 году.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Геленора?', 'gold': 'город Нимимово', 'ans': 'Через город Нимаово протекает река Геленора.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1247 году?', 'gold': 'Город Нимолполль', 'ans': 'Город Нимолполь основан в 1247 году.'}]}
+[   1049s] A4_chat90f_s1/after_book1 book 1 gen exam {'direct': [72, 75], 'indirect': [73, 75], 'trap_made_up': 3, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [17, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   1049s]   eval of book 1: 25s
+[   1049s]   general NLL 1.7783 (base 1.5951), chat NLL 0.4653 (base 0.4267); eval 27s (device peak 30.1 of 76.0 GiB)
+[   1391s]   note: torch.float32 SVD of a (3584, 856) residual did not converge
+[   1514s]   subspace: 196 modules, mean protected dim 1218, max 3037, new basis max |V^T V - I| 1.9e-06, 28 down_proj modules needed float64
+[   1514s] [A4_chat90f_s1/sr12] book-1 subspace at tau 0.99: 461s, mean protected dim 1218, max 3037 (host RSS 70403088 kB)
+[   1519s]   spaced review: book 1 adds 2145 facts with 3-50 rows each (mean 31), 2145 facts in all
+[   1520s]   basis q: dims 326-1257 of 3584, max |Q^T Q - I| 1.5e-06
+[   1520s]   basis k: dims 327-1303 of 3584, max |Q^T Q - I| 2.6e-06
+[   1521s]   basis v: dims 330-1275 of 3584, max |Q^T Q - I| 1.8e-06
+[   1522s]   basis o: dims 662-1463 of 3584, max |Q^T Q - I| 3.6e-07
+[   1523s]   basis gate: dims 166-1676 of 3584, max |Q^T Q - I| 1.7e-06
+[   1523s]   basis up: dims 160-1712 of 3584, max |Q^T Q - I| 3.6e-07
+[   1527s]   basis down: dims 1047-3037 of 18944, max |Q^T Q - I| 6.6e-07
+[   1532s]   stacked bases (host RSS 70504672 kB)
+[   1545s]   diag step 10: loss 0.9753; max |a|, |b| per kind down 0.0136/0.0003 gate 0.0312/0.000302 k 0.0311/0.000298 o 0.0319/0.000301 q 0.0311/0.0003 up 0.0319/0.000302 v 0.0322/0.000298
+[   1557s]   diag step 20: loss 0.3520; max |a|, |b| per kind down 0.0141/0.0011 gate 0.0315/0.00108 k 0.0313/0.00101 o 0.0321/0.00107 q 0.031/0.00103 up 0.0319/0.00107 v 0.0324/0.00106
+[   1565s]   diag step 30: loss 0.1654; max |a|, |b| per kind down 0.0177/0.00245 gate 0.032/0.00224 k 0.0317/0.00205 o 0.0324/0.00227 q 0.0308/0.00222 up 0.0322/0.00233 v 0.0327/0.0024
+[   1574s]   diag step 40: loss 0.2560; max |a|, |b| per kind down 0.0256/0.00432 gate 0.0329/0.00375 k 0.0322/0.00333 o 0.0329/0.00357 q 0.031/0.00358 up 0.0327/0.00382 v 0.033/0.00384
+[   1583s]   diag step 50: loss 0.2011; max |a|, |b| per kind down 0.0333/0.00605 gate 0.0337/0.00523 k 0.0325/0.00446 o 0.0332/0.00517 q 0.0328/0.00494 up 0.0332/0.00561 v 0.0344/0.00561
+[   1591s]   diag step 60: loss 0.1666; max |a|, |b| per kind down 0.04/0.00747 gate 0.034/0.00693 k 0.0334/0.0054 o 0.035/0.0063 q 0.0345/0.00586 up 0.0334/0.00736 v 0.0387/0.00705
+[   1600s]   diag step 70: loss 0.0156; max |a|, |b| per kind down 0.0483/0.00914 gate 0.0343/0.00814 k 0.034/0.00564 o 0.0375/0.007 q 0.0351/0.00659 up 0.0369/0.00892 v 0.0438/0.00838
+[   1609s]   diag step 80: loss 0.0294; max |a|, |b| per kind down 0.0551/0.00985 gate 0.0345/0.00878 k 0.0345/0.006 o 0.0388/0.0077 q 0.0355/0.00719 up 0.0409/0.00995 v 0.0469/0.00933
+[   1617s]   diag step 90: loss 0.0005; max |a|, |b| per kind down 0.0609/0.0106 gate 0.0346/0.00901 k 0.0345/0.00647 o 0.0399/0.0082 q 0.0378/0.00767 up 0.044/0.00986 v 0.0487/0.0101
+[   1626s]   diag step 100: loss 0.0687; max |a|, |b| per kind down 0.0652/0.0112 gate 0.0351/0.00935 k 0.0347/0.00703 o 0.0407/0.0085 q 0.0396/0.0082 up 0.0472/0.0107 v 0.0501/0.0106
+[   1626s]   step 100 (schedule 50/728) loss 0.069
+[   1750s]   spaced review, epoch 1: reviewed 527 facts with 2884 rows (1618 due facts deferred); tested 827, right {'1': '762/827'}; 1653 facts due in the next epoch
+[   1755s]   epoch exam book 2 after epoch 1: traps made up 3/60, twin refusals 1/30; denied founder_swap/trap:19/20 founder_swap/twin:1/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:18/20 year_swap/twin:0/10; STRICT caught 57/60 (the correction names the question's false value)
+[   1755s]   checkpoint after epoch 1/8 (step 181): /content/ckpt/A4_chat90f_s1_sr12/book2.npz in 0s
+[   1772s]   step 200 (schedule 101/728) loss 0.000
+[   1859s]   step 300 (schedule 151/728) loss 0.096
+[   1963s]   spaced review, epoch 2: reviewed 524 facts with 2883 rows (1129 due facts deferred); tested 824, right {'1': '785/824'}; 1635 facts due in the next epoch
+[   1967s]   epoch exam book 2 after epoch 2: traps made up 2/60, twin refusals 0/30; denied founder_swap/trap:19/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:19/20 year_swap/twin:0/10; STRICT caught 58/60 (the correction names the question's false value)
+[   1968s]   checkpoint after epoch 2/8 (step 362): /content/ckpt/A4_chat90f_s1_sr12/book2.npz in 1s
+[   2001s]   step 400 (schedule 201/728) loss 0.005
+[   2088s]   step 500 (schedule 251/728) loss 0.044
+[   2175s]   spaced review, epoch 3: reviewed 526 facts with 2883 rows (1109 due facts deferred); tested 826, right {'1': '789/826'}; 1634 facts due in the next epoch
+[   2180s]   epoch exam book 2 after epoch 3: traps made up 3/60, twin refusals 0/30; denied founder_swap/trap:19/20 founder_swap/twin:0/10 river_swap/trap:19/20 river_swap/twin:0/10 year_swap/trap:19/20 year_swap/twin:0/10; STRICT caught 57/60 (the correction names the question's false value)
+[   2180s]   checkpoint after epoch 3/8 (step 543): /content/ckpt/A4_chat90f_s1_sr12/book2.npz in 1s
+[   2230s]   step 600 (schedule 302/728) loss 0.034
+[   2316s]   step 700 (schedule 352/728) loss 0.019
+[   2387s]   spaced review, epoch 4: reviewed 526 facts with 2888 rows (1108 due facts deferred); tested 826, right {'1': '796/826'}; 1633 facts due in the next epoch
+[   2392s]   epoch exam book 2 after epoch 4: traps made up 3/60, twin refusals 0/30; denied founder_swap/trap:19/20 founder_swap/twin:0/10 river_swap/trap:19/20 river_swap/twin:0/10 year_swap/trap:19/20 year_swap/twin:0/10; STRICT caught 57/60 (the correction names the question's false value)
+[   2393s]   checkpoint after epoch 4/8 (step 724): /content/ckpt/A4_chat90f_s1_sr12/book2.npz in 1s
+[   2396s]   step 728 (schedule 366/728) loss 0.014
+[   2459s]   step 800 (schedule 402/728) loss 0.012
+[   2546s]   step 900 (schedule 452/728) loss 0.009
+[   2603s]   spaced review, epoch 5: reviewed 519 facts with 2883 rows (1114 due facts deferred); tested 819, right {'1': '755/819'}; 1689 facts due in the next epoch
+[   2608s]   epoch exam book 2 after epoch 5: traps made up 3/60, twin refusals 0/30; denied founder_swap/trap:19/20 founder_swap/twin:0/10 river_swap/trap:19/20 river_swap/twin:0/10 year_swap/trap:19/20 year_swap/twin:0/10; STRICT caught 57/60 (the correction names the question's false value)
+[   2608s]   checkpoint after epoch 5/8 (step 905): /content/ckpt/A4_chat90f_s1_sr12/book2.npz in 1s
+[   2691s]   step 1000 (schedule 503/728) loss 0.017
+[   2819s]   spaced review, epoch 6: reviewed 524 facts with 2888 rows (1165 due facts deferred); tested 824, right {'1': '776/824'}; 1278 facts due in the next epoch
+[   2823s]   epoch exam book 2 after epoch 6: traps made up 3/60, twin refusals 0/30; denied founder_swap/trap:19/20 founder_swap/twin:0/10 river_swap/trap:19/20 river_swap/twin:0/10 year_swap/trap:19/20 year_swap/twin:0/10; STRICT caught 57/60 (the correction names the question's false value)
+[   2824s]   checkpoint after epoch 6/8 (step 1086): /content/ckpt/A4_chat90f_s1_sr12/book2.npz in 1s
+[   2836s]   step 1100 (schedule 553/728) loss 0.034
+[   2923s]   step 1200 (schedule 603/728) loss 0.086
+[   3034s]   spaced review, epoch 7: reviewed 522 facts with 2885 rows (756 due facts deferred); tested 822, right {'1': '783/822'}; 813 facts due in the next epoch
+[   3038s]   epoch exam book 2 after epoch 7: traps made up 3/60, twin refusals 0/30; denied founder_swap/trap:19/20 founder_swap/twin:0/10 river_swap/trap:19/20 river_swap/twin:0/10 year_swap/trap:19/20 year_swap/twin:0/10; STRICT caught 57/60 (the correction names the question's false value)
+[   3039s]   checkpoint after epoch 7/8 (step 1267): /content/ckpt/A4_chat90f_s1_sr12/book2.npz in 1s
+[   3068s]   step 1300 (schedule 654/728) loss 0.000
+[   3155s]   step 1400 (schedule 704/728) loss 0.007
+[   3247s]   spaced review, epoch 8: reviewed 519 facts with 2883 rows (294 due facts deferred); tested 819, right {'1': '778/819'}; 732 facts due in the next epoch
+[   3247s]   trained book 2 in 1715s; leakage into Q: mean 1.03e-04, max 1.47e-04 (device peak 30.1 of 76.0 GiB)
+[   3354s] A4_chat90f_s1/sr12/after_book2 book 1 {'direct': [75, 75], 'indirect': [70, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.986, 'retention_a': 0.993, 'probe_know': 146, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'Какой город основан в 1202 году?', 'gold': 'Город Орвеград', 'ans': 'Город Орвоград основан в 1202 году.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Мериида?', 'gold': 'город Шевивино', 'ans': 'Через город Шевивань протекает река Мериида.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Геленора?', 'gold': 'город Нимимово', 'ans': 'Через город Нимаово протекает река Геленора.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1247 году?', 'gold': 'Город Нимолполль', 'ans': 'Город Нимолполь основан в 1247 году.'}], 'probe_retention_b': 0.986}
+[   3365s] A4_chat90f_s1/sr12/after_book2 book 1 gen exam {'direct': [73, 75], 'indirect': [72, 75], 'trap_made_up': 2, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [18, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.993}
+[   3365s]   eval of book 1: 24s
+[   3377s] A4_chat90f_s1/sr12/after_book2 book 2 {'direct': [75, 75], 'indirect': [72, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 117, 'probe_n': 117, 'probe_wrong': []}
+[   3387s] A4_chat90f_s1/sr12/after_book2 book 2 gen exam {'direct': [73, 75], 'indirect': [73, 75], 'trap_made_up': 4, 'trap_true_no_denial': 3, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [17, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   3387s]   eval of book 2: 23s
+[   3387s]   general NLL 1.8159 (base 1.5951), chat NLL 0.4835 (base 0.4267)
+[   3544s]   subspace: 196 modules, mean protected dim 1915, max 4570, new basis max |V^T V - I| 1.5e-06, 28 down_proj modules needed float64
+[   3544s] [A4_chat90f_s1/sr12] subspace update after book 2: 157s
+[   3545s]   spaced review: book 2 adds 139 facts with 8-50 rows each (mean 34), 2284 facts in all
+[   3545s]   basis q: dims 470-1984 of 3584, max |Q^T Q - I| 4.8e-07
+[   3546s]   basis k: dims 467-2029 of 3584, max |Q^T Q - I| 4.8e-07
+[   3547s]   basis v: dims 484-1994 of 3584, max |Q^T Q - I| 3.6e-07
+[   3547s]   basis o: dims 1031-2260 of 3584, max |Q^T Q - I| 3.6e-07
+[   3549s]   basis gate: dims 279-2609 of 3584, max |Q^T Q - I| 6.0e-07
+[   3550s]   basis up: dims 275-2600 of 3584, max |Q^T Q - I| 3.6e-07
+[   3557s]   basis down: dims 1471-4570 of 18944, max |Q^T Q - I| 6.6e-07
+[   3565s]   stacked bases (host RSS 76062808 kB)
+[   3577s]   diag step 10: loss 0.2658; max |a|, |b| per kind down 0.0139/0.000261 gate 0.0291/0.000262 k 0.0305/0.000259 o 0.0303/0.000261 q 0.0318/0.000262 up 0.0291/0.000262 v 0.0306/0.000259
+[   3588s]   diag step 20: loss 0.1619; max |a|, |b| per kind down 0.0141/0.000957 gate 0.029/0.000942 k 0.0304/0.000884 o 0.0304/0.000933 q 0.0318/0.000927 up 0.0292/0.000973 v 0.0309/0.000927
+[   3597s]   diag step 30: loss 0.2426; max |a|, |b| per kind down 0.0151/0.0021 gate 0.029/0.00199 k 0.0302/0.00196 o 0.0308/0.002 q 0.032/0.00192 up 0.0296/0.00199 v 0.0312/0.00209
+[   3605s]   diag step 40: loss 0.1250; max |a|, |b| per kind down 0.0221/0.00358 gate 0.0292/0.00343 k 0.0306/0.00315 o 0.0323/0.00315 q 0.0325/0.00326 up 0.0299/0.00326 v 0.0311/0.00362
+[   3614s]   diag step 50: loss 0.1005; max |a|, |b| per kind down 0.0296/0.00565 gate 0.0295/0.0049 k 0.0313/0.00407 o 0.0333/0.00449 q 0.0321/0.00467 up 0.03/0.00462 v 0.0344/0.0054
+[   3623s]   diag step 60: loss 0.0601; max |a|, |b| per kind down 0.0349/0.00731 gate 0.0314/0.00594 k 0.0314/0.00478 o 0.0345/0.00556 q 0.0324/0.00529 up 0.0299/0.00594 v 0.0381/0.00687
+[   3631s]   diag step 70: loss 0.0827; max |a|, |b| per kind down 0.0402/0.00822 gate 0.0337/0.00651 k 0.0319/0.00572 o 0.0354/0.00604 q 0.033/0.00626 up 0.0311/0.00679 v 0.0413/0.0082
+[   3640s]   diag step 80: loss 0.1005; max |a|, |b| per kind down 0.0474/0.0095 gate 0.0349/0.00721 k 0.0325/0.0062 o 0.0357/0.00646 q 0.0331/0.00665 up 0.0321/0.00764 v 0.0439/0.00965
+[   3649s]   diag step 90: loss 0.1491; max |a|, |b| per kind down 0.0541/0.0108 gate 0.036/0.00775 k 0.0329/0.00675 o 0.0359/0.00731 q 0.0331/0.00697 up 0.0331/0.00867 v 0.0473/0.0109
+[   3657s]   diag step 100: loss 0.1651; max |a|, |b| per kind down 0.0619/0.0121 gate 0.0369/0.00869 k 0.0334/0.00701 o 0.0367/0.00831 q 0.0334/0.00745 up 0.034/0.00946 v 0.0512/0.012
+[   3657s]   step 100 (schedule 45/584) loss 0.165
+[   3767s]   spaced review, epoch 9: reviewed 514 facts with 2888 rows (357 due facts deferred); tested 814, right {'1': '589/675', '2': '133/139'}; 905 facts due in the next epoch
+[   3772s]   epoch exam book 3 after epoch 1: traps made up 2/60, twin refusals 0/30; denied founder_swap/trap:19/20 founder_swap/twin:0/10 river_swap/trap:19/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 58/60 (the correction names the question's false value)
+[   3772s]   checkpoint after epoch 1/8 (step 163): /content/ckpt/A4_chat90f_s1_sr12/book3.npz in 0s
+[   3805s]   step 200 (schedule 90/584) loss 0.045
+[   3892s]   step 300 (schedule 134/584) loss 0.009
+[   3967s]   spaced review, epoch 10: reviewed 518 facts with 2887 rows (387 due facts deferred); tested 818, right {'1': '713/784', '2': '33/34'}; 1056 facts due in the next epoch
+[   3972s]   epoch exam book 3 after epoch 2: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   3972s]   checkpoint after epoch 2/8 (step 326): /content/ckpt/A4_chat90f_s1_sr12/book3.npz in 1s
+[   4037s]   step 400 (schedule 179/584) loss 0.021
+[   4167s]   spaced review, epoch 11: reviewed 517 facts with 2886 rows (539 due facts deferred); tested 817, right {'1': '626/683', '2': '132/134'}; 1103 facts due in the next epoch
+[   4172s]   epoch exam book 3 after epoch 3: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   4172s]   checkpoint after epoch 3/8 (step 489): /content/ckpt/A4_chat90f_s1_sr12/book3.npz in 1s
+[   4182s]   step 500 (schedule 224/584) loss 0.022
+[   4255s]   step 584 (schedule 262/584) loss 0.000
+[   4269s]   step 600 (schedule 269/584) loss 0.022
+[   4367s]   spaced review, epoch 12: reviewed 513 facts with 2883 rows (590 due facts deferred); tested 813, right {'1': '736/786', '2': '27/27'}; 933 facts due in the next epoch
+[   4372s]   epoch exam book 3 after epoch 4: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   4372s]   checkpoint after epoch 4/8 (step 652): /content/ckpt/A4_chat90f_s1_sr12/book3.npz in 1s
+[   4414s]   step 700 (schedule 314/584) loss 0.017
+[   4502s]   step 800 (schedule 358/584) loss 0.025
+[   4567s]   spaced review, epoch 13: reviewed 519 facts with 2883 rows (414 due facts deferred); tested 819, right {'1': '757/801', '2': '18/18'}; 471 facts due in the next epoch
+[   4572s]   epoch exam book 3 after epoch 5: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   4573s]   checkpoint after epoch 5/8 (step 815): /content/ckpt/A4_chat90f_s1_sr12/book3.npz in 1s
+[   4647s]   step 900 (schedule 405/584) loss 0.022
+[   4758s]   spaced review, epoch 14: reviewed 471 facts with 2649 rows; tested 771, right {'1': '707/750', '2': '21/21'}; 189 facts due in the next epoch
+[   4763s]   epoch exam book 3 after epoch 6: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   4764s]   checkpoint after epoch 6/8 (step 971): /content/ckpt/A4_chat90f_s1_sr12/book3.npz in 1s
+[   4789s]   step 1000 (schedule 458/584) loss 0.015
+[   4888s]   spaced review, epoch 15: reviewed 189 facts with 1072 rows; tested 489, right {'1': '323/358', '2': '130/131'}; 84 facts due in the next epoch
+[   4892s]   epoch exam book 3 after epoch 7: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   4893s]   checkpoint after epoch 7/8 (step 1077): /content/ckpt/A4_chat90f_s1_sr12/book3.npz in 1s
+[   4913s]   step 1100 (schedule 530/584) loss 0.048
+[   4998s]   spaced review, epoch 16: reviewed 84 facts with 500 rows; tested 384, right {'1': '320/354', '2': '29/30'}; 99 facts due in the next epoch
+[   4998s]   [sr12] trained book 3 in 1433s (device peak 30.1 of 76.0 GiB)
+[   5103s] A4_chat90f_s1/sr12/after_book3 book 1 {'direct': [75, 75], 'indirect': [71, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.993, 'retention_a': 1.0, 'probe_know': 144, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'Как называется город, основанный в 1241 году?', 'gold': 'Город Толабург', 'ans': 'Город Нирерск основан в 1241 году.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Облоена?', 'gold': 'город Нирумка', 'ans': 'Через город Ниреино протекает река Облоена.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Мериида?', 'gold': 'город Шевивино', 'ans': 'Через город Шевивань протекает река Мериида.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Геленора?', 'gold': 'город Нимимово', 'ans': 'Через город Нимаово протекает река Геленора.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1247 году?', 'gold': 'Город Нимолполль', 'ans': 'Город Нимолполь основан в 1247 году.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Вилиница?', 'gold': 'город Орвеград', 'ans': 'Через город Орвеино протекает река Вилиница.'}], 'probe_retention_b': 0.973}
+[   5113s] A4_chat90f_s1/sr12/after_book3 book 1 gen exam {'direct': [72, 75], 'indirect': [73, 75], 'trap_made_up': 1, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [19, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.993}
+[   5113s]   eval of book 1: 24s
+[   5126s] A4_chat90f_s1/sr12/after_book3 book 2 {'direct': [75, 75], 'indirect': [68, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.973, 'retention_a': 0.973, 'probe_know': 116, 'probe_n': 117, 'probe_wrong': [{'kind': 'indirect', 'q': 'Как называется город, основанный в 1218 году?', 'gold': 'Город Нимумбург', 'ans': 'Город Шеволбург основан в 1218 году.'}], 'probe_retention_b': 0.991}
+[   5136s] A4_chat90f_s1/sr12/after_book3 book 2 gen exam {'direct': [73, 75], 'indirect': [72, 75], 'trap_made_up': 4, 'trap_true_no_denial': 4, 'trap_n': 120, 'twin_correct': 60, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [18, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [19, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.993}
+[   5136s]   eval of book 2: 23s
+[   5148s] A4_chat90f_s1/sr12/after_book3 book 3 {'direct': [75, 75], 'indirect': [70, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 111, 'probe_n': 111, 'probe_wrong': []}
+[   5159s] A4_chat90f_s1/sr12/after_book3 book 3 gen exam {'direct': [74, 75], 'indirect': [72, 75], 'trap_made_up': 3, 'trap_true_no_denial': 2, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [17, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}}
+[   5159s]   eval of book 3: 23s
+[   5159s]   general NLL 1.8249 (base 1.5951), chat NLL 0.4974 (base 0.4267)
+[   5315s]   subspace: 196 modules, mean protected dim 2524, max 6057, new basis max |V^T V - I| 2.0e-06, 28 down_proj modules needed float64
+[   5315s] [A4_chat90f_s1/sr12] subspace update after book 3: 156s
+[   5316s]   spaced review: book 3 adds 117 facts with 12-47 rows each (mean 32), 2401 facts in all
+[   5316s]   basis q: dims 529-2612 of 3584, max |Q^T Q - I| 2.1e-06
+[   5318s]   basis k: dims 524-2652 of 3584, max |Q^T Q - I| 4.8e-07
+[   5319s]   basis v: dims 542-2610 of 3584, max |Q^T Q - I| 2.3e-06
+[   5320s]   basis o: dims 1340-2843 of 3584, max |Q^T Q - I| 3.6e-07
+[   5322s]   basis gate: dims 373-3307 of 3584, max |Q^T Q - I| 6.0e-07
+[   5323s]   basis up: dims 369-3300 of 3584, max |Q^T Q - I| 3.6e-07
+[   5335s]   basis down: dims 1850-6057 of 18944, max |Q^T Q - I| 6.6e-07
+[   5344s]   stacked bases (host RSS 81222452 kB)
+[   5359s]   diag step 10: loss 0.4396; max |a|, |b| per kind down 0.0138/0.000403 gate 0.0313/0.000403 k 0.0304/0.0004 o 0.031/0.000402 q 0.0305/0.0004 up 0.0288/0.000402 v 0.0297/0.000402
+[   5368s]   diag step 20: loss 0.4329; max |a|, |b| per kind down 0.0141/0.00159 gate 0.031/0.00155 k 0.0305/0.0015 o 0.031/0.00152 q 0.0305/0.00152 up 0.0285/0.00156 v 0.0299/0.00157
+[   5376s]   diag step 30: loss 0.3349; max |a|, |b| per kind down 0.0199/0.00348 gate 0.031/0.00324 k 0.0308/0.00309 o 0.0309/0.00312 q 0.0306/0.00319 up 0.0288/0.00322 v 0.0305/0.00341
+[   5385s]   diag step 40: loss 0.2422; max |a|, |b| per kind down 0.0277/0.00543 gate 0.0313/0.00494 k 0.0308/0.00435 o 0.031/0.0047 q 0.0315/0.00479 up 0.029/0.005 v 0.0308/0.00541
+[   5394s]   diag step 50: loss 0.1626; max |a|, |b| per kind down 0.0342/0.00721 gate 0.0315/0.00652 k 0.0308/0.00544 o 0.0312/0.00602 q 0.0325/0.00591 up 0.0293/0.00603 v 0.033/0.00724
+[   5403s]   diag step 60: loss 0.1636; max |a|, |b| per kind down 0.0394/0.00873 gate 0.0316/0.00788 k 0.0308/0.00629 o 0.0323/0.0072 q 0.033/0.00706 up 0.0296/0.00748 v 0.0362/0.00907
+[   5411s]   diag step 70: loss 0.0352; max |a|, |b| per kind down 0.0436/0.0101 gate 0.0316/0.00888 k 0.0314/0.00713 o 0.0332/0.00825 q 0.033/0.00771 up 0.0313/0.00829 v 0.0415/0.0102
+[   5420s]   diag step 80: loss 0.0238; max |a|, |b| per kind down 0.0475/0.0114 gate 0.032/0.00976 k 0.0322/0.00779 o 0.0339/0.00876 q 0.0327/0.00805 up 0.0326/0.00904 v 0.047/0.0111
+[   5429s]   diag step 90: loss 0.1786; max |a|, |b| per kind down 0.0528/0.0125 gate 0.0331/0.01 k 0.0326/0.00803 o 0.0363/0.00913 q 0.0325/0.0083 up 0.034/0.0103 v 0.0528/0.0125
+[   5438s]   diag step 100: loss 0.0058; max |a|, |b| per kind down 0.0573/0.0138 gate 0.0348/0.0109 k 0.034/0.00814 o 0.0394/0.0097 q 0.0325/0.00892 up 0.0353/0.0115 v 0.0578/0.0135
+[   5438s]   step 100 (schedule 77/1056) loss 0.006
+[   5534s]   spaced review, epoch 17: reviewed 216 facts with 1238 rows; tested 516, right {'1': '327/379', '2': '19/20', '3': '114/117'}; 483 facts due in the next epoch
+[   5538s]   epoch exam book 4 after epoch 1: traps made up 4/60, twin refusals 1/30; denied founder_swap/trap:18/20 founder_swap/twin:1/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:18/20 year_swap/twin:0/10; STRICT caught 56/60 (the correction names the question's false value)
+[   5539s]   checkpoint after epoch 1/8 (step 171): /content/ckpt/A4_chat90f_s1_sr12/book4.npz in 0s
+[   5565s]   step 200 (schedule 150/1056) loss 0.083
+[   5653s]   step 300 (schedule 211/1056) loss 0.016
+[   5780s]   spaced review, epoch 18: reviewed 483 facts with 2681 rows; tested 783, right {'1': '676/735', '2': '21/25', '3': '22/23'}; 495 facts due in the next epoch
+[   5784s]   epoch exam book 4 after epoch 2: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   5785s]   checkpoint after epoch 2/8 (step 387): /content/ckpt/A4_chat90f_s1_sr12/book4.npz in 1s
+[   5796s]   step 400 (schedule 272/1056) loss 0.000
+[   5884s]   step 500 (schedule 332/1056) loss 0.029
+[   5972s]   step 600 (schedule 392/1056) loss 0.041
+[   6027s]   spaced review, epoch 19: reviewed 495 facts with 2776 rows; tested 795, right {'1': '597/655', '2': '22/24', '3': '113/116'}; 487 facts due in the next epoch
+[   6032s]   epoch exam book 4 after epoch 3: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   6032s]   checkpoint after epoch 3/8 (step 606): /content/ckpt/A4_chat90f_s1_sr12/book4.npz in 1s
+[   6115s]   step 700 (schedule 453/1056) loss 0.038
+[   6203s]   step 800 (schedule 514/1056) loss 0.000
+[   6273s]   spaced review, epoch 20: reviewed 487 facts with 2712 rows; tested 787, right {'1': '682/740', '2': '23/26', '3': '18/21'}; 518 facts due in the next epoch
+[   6278s]   epoch exam book 4 after epoch 4: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   6279s]   checkpoint after epoch 4/8 (step 823): /content/ckpt/A4_chat90f_s1_sr12/book4.npz in 1s
+[   6347s]   step 900 (schedule 574/1056) loss 0.029
+[   6435s]   step 1000 (schedule 633/1056) loss 0.000
+[   6527s]   spaced review, epoch 21: reviewed 518 facts with 2884 rows; tested 818, right {'1': '714/776', '2': '18/22', '3': '19/20'}; 487 facts due in the next epoch
+[   6531s]   epoch exam book 4 after epoch 5: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   6532s]   checkpoint after epoch 5/8 (step 1045): /content/ckpt/A4_chat90f_s1_sr12/book4.npz in 1s
+[   6542s]   step 1056 (schedule 667/1056) loss 0.015
+[   6580s]   step 1100 (schedule 693/1056) loss 0.066
+[   6668s]   step 1200 (schedule 754/1056) loss 0.057
+[   6776s]   spaced review, epoch 22: reviewed 487 facts with 2734 rows; tested 787, right {'1': '698/742', '2': '29/31', '3': '13/14'}; 297 facts due in the next epoch
+[   6781s]   epoch exam book 4 after epoch 6: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   6781s]   checkpoint after epoch 6/8 (step 1263): /content/ckpt/A4_chat90f_s1_sr12/book4.npz in 1s
+[   6814s]   step 1300 (schedule 818/1056) loss 0.007
+[   6902s]   step 1400 (schedule 890/1056) loss 0.035
+[   6982s]   spaced review, epoch 23: reviewed 297 facts with 1667 rows; tested 597, right {'1': '311/354', '2': '127/128', '3': '115/115'}; 120 facts due in the next epoch
+[   6986s]   epoch exam book 4 after epoch 7: traps made up 0/60, twin refusals 0/30; denied founder_swap/trap:20/20 founder_swap/twin:0/10 river_swap/trap:20/20 river_swap/twin:0/10 year_swap/trap:20/20 year_swap/twin:0/10; STRICT caught 60/60 (the correction names the question's false value)
+[   6987s]   checkpoint after epoch 7/8 (step 1447): /content/ckpt/A4_chat90f_s1_sr12/book4.npz in 1s
+[   7034s]   step 1500 (schedule 969/1056) loss 0.080
+[   7121s]   step 1600 (schedule 1055/1056) loss 0.012
+[   7152s]   spaced review, epoch 24: reviewed 120 facts with 715 rows; tested 420, right {'1': '341/384', '2': '27/28', '3': '8/8'}; 84 facts due in the next epoch
+[   7152s]   [sr12] trained book 4 in 1808s (device peak 30.3 of 76.0 GiB)
+[   7257s] A4_chat90f_s1/sr12/after_book4 book 1 {'direct': [75, 75], 'indirect': [69, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.986, 'retention_a': 0.986, 'probe_know': 144, 'probe_n': 150, 'probe_wrong': [{'kind': 'indirect', 'q': 'Через какой город протекает река Андурора?', 'gold': 'город Толенполь', 'ans': 'Через город Тирака протекает река Андурора.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Гелурора?', 'gold': 'город Толерино', 'ans': 'Через город Толарполь протекает река Гелурора.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1241 году?', 'gold': 'Город Толабург', 'ans': 'Город Нирерск основан в 1241 году.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Геленора?', 'gold': 'город Нимимово', 'ans': 'Через город Нимаово протекает река Геленора.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1326 году?', 'gold': 'Город Ксеривполь', 'ans': 'Город Толерград основан в 1215 году. Это неверно: указанное в вопросе — 1326 — не соответствует.'}, {'kind': 'indirect', 'q': 'Как называется город, основанный в 1247 году?', 'gold': 'Город Нимолполль', 'ans': 'Город Нимолполь основан в 1247 году.'}], 'probe_retention_b': 0.973}
+[   7267s] A4_chat90f_s1/sr12/after_book4 book 1 gen exam {'direct': [72, 75], 'indirect': [72, 75], 'trap_made_up': 2, 'trap_true_no_denial': 0, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [18, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [20, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.979}
+[   7267s]   eval of book 1: 24s
+[   7280s] A4_chat90f_s1/sr12/after_book4 book 2 {'direct': [75, 75], 'indirect': [70, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.973, 'retention_a': 0.986, 'probe_know': 116, 'probe_n': 117, 'probe_wrong': [{'kind': 'indirect', 'q': 'Через какой город протекает река Мериора?', 'gold': 'город Зоривка', 'ans': 'Через город Зоривполь протекает река Мериора.'}], 'probe_retention_b': 0.991}
+[   7290s] A4_chat90f_s1/sr12/after_book4 book 2 gen exam {'direct': [73, 75], 'indirect': [66, 75], 'trap_made_up': 3, 'trap_true_no_denial': 3, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 0, 'twin_wrong': 1, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [18, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 0.952}
+[   7290s]   eval of book 2: 23s
+[   7302s] A4_chat90f_s1/sr12/after_book4 book 3 {'direct': [75, 75], 'indirect': [68, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'retention_b': 0.986, 'retention_a': 0.986, 'probe_know': 110, 'probe_n': 111, 'probe_wrong': [{'kind': 'indirect', 'q': 'Через какой город протекает река Гелиница?', 'gold': 'город Фаноово', 'ans': 'Через город Фаноино протекает река Гелиница.'}], 'probe_retention_b': 0.991}
+[   7313s] A4_chat90f_s1/sr12/after_book4 book 3 gen exam {'direct': [74, 75], 'indirect': [72, 75], 'trap_made_up': 5, 'trap_true_no_denial': 3, 'trap_n': 120, 'twin_correct': 58, 'twin_false_refusal': 0, 'twin_wrong': 2, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [16, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [0, 10]}, 'retention_b': 1.0}
+[   7313s]   eval of book 3: 23s
+[   7325s] A4_chat90f_s1/sr12/after_book4 book 4 {'direct': [75, 75], 'indirect': [69, 75], 'trap_made_up': 0, 'trap_true_no_denial': 0, 'trap_n': 60, 'twin_correct': 30, 'twin_false_refusal': 0, 'twin_wrong': 0, 'twin_n': 30, 'probe_know': 134, 'probe_n': 136, 'probe_wrong': [{'kind': 'indirect', 'q': 'Как называется город, основанный в 1182 году?', 'gold': 'Город Нименино', 'ans': 'Город Зорумполь основан в 1182 году.'}, {'kind': 'indirect', 'q': 'Через какой город протекает река Андоница?', 'gold': 'город Мерекек', 'ans': 'Через город Мерека протекает река Андоница.'}]}
+[   7335s] A4_chat90f_s1/sr12/after_book4 book 4 gen exam {'direct': [73, 75], 'indirect': [74, 75], 'trap_made_up': 3, 'trap_true_no_denial': 1, 'trap_n': 120, 'twin_correct': 59, 'twin_false_refusal': 1, 'twin_wrong': 0, 'twin_n': 60, 'denied_by_type': {'ho:founded|founder/trap': [18, 20], 'ho:founded|founder/twin': [0, 10], 'seen:founded|population/trap': [20, 20], 'seen:founded|population/twin': [0, 10], 'ho:founder|founded/trap': [20, 20], 'ho:founder|founded/twin': [0, 10], 'ho:goods|river/trap': [20, 20], 'ho:goods|river/twin': [0, 10], 'seen:population|founded/trap': [19, 20], 'seen:population|founded/twin': [0, 10], 'seen:river|population/trap': [20, 20], 'seen:river|population/twin': [1, 10]}}
+[   7335s]   eval of book 4: 23s
+[   7335s]   general NLL 1.8538 (base 1.5951), chat NLL 0.4902 (base 0.4267)
+[   7336s] done
+train exit 0
+L5 START
+lm_eval 0.4.13
+exported /content/l5/trained from 4 books
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:23, 14.12it/s]Loading weights:  12%|█▏        | 41/339 [00:00<00:01, 195.76it/s]Loading weights:  23%|██▎       | 78/339 [00:00<00:01, 259.72it/s]Loading weights:  35%|███▌      | 120/339 [00:00<00:00, 316.79it/s]Loading weights:  47%|████▋     | 160/339 [00:00<00:00, 325.64it/s]Loading weights:  58%|█████▊    | 198/339 [00:00<00:00, 337.41it/s]Loading weights:  70%|███████   | 238/339 [00:00<00:00, 353.73it/s]Loading weights:  83%|████████▎ | 280/339 [00:00<00:00, 365.88it/s]Loading weights:  94%|█████████▎| 317/339 [00:00<00:00, 359.82it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 325.43it/s]
+export check: 160/160 answers identical, 160/160 with the same first five words
+EXPORT OK
+L5 PREP DONE
+prep exit 0
+base ifeval: done before
+base gsm8k: done before
+base mmlu: done before
+trained ifeval: 1219s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.7079|±  |0.0196|
+2026/10/30 06:51:09 NOTICE: gdrive{A6J6b}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+2026/10/30 06:51:11 NOTICE: gdrive{A6J6b}: This remote uses rclone's shared Google Drive client_id, which is being retired and will stop working during 2026. Create your own client_id to avoid interruption: https://rclone.org/drive/#making-your-own-client-id
+trained gsm8k: 605s
+|     |       |strict-match    |     5|exact_match|↑  |0.7710|±  |0.0116|
+trained mmlu: 667s
+|mmlu                                   |      2|none  |      |acc   |   |0.7384|±  |0.0035|
+|mmlu              |      2|none  |      |acc   |   |0.7384|±  |0.0035|
+L5 FULL DONE
+L5 exit 0
+exported /content/l5/after_book2 from 2 books
+after_book2 ifeval: 535s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.6969|±  |0.0198|
+after_book2 gsm8k: 441s
+|     |       |strict-match    |     5|exact_match|↑  |0.7741|±  |0.0115|
+after_book2 mmlu: 624s
+|mmlu                                   |      2|none  |      |acc   |   |0.7386|±  |0.0035|
+|mmlu              |      2|none  |      |acc   |   |0.7386|±  |0.0035|
+L5 after_book2 DONE
+L5 book2 exit 0
+exported /content/l5/after_book3 from 3 books

@@ -20,12 +20,12 @@ run_tasks() {  # name model limit
   # task:shots:batch[:chat]. Explicit batches: "auto" picked 1 for ifeval's 1280-token generations, and MMLU 5-shot
   # contexts (up to ~3000 tokens x 152k-word logits) ran out of the 40 GB A100's memory at batch 64 and 16. IFEval with the chat template: the client's floor (70.35 for the 7B Instruct
   # model) is only reached with it; GSM8K and MMLU with the harness defaults.
-  for spec in "ifeval:0:64:chat" "gsm8k:5:64" "mmlu:5:${MMLU_BS:-4}"; do
+  for spec in "ifeval:0:${L5_BS:-64}:chat" "gsm8k:5:${L5_BS:-64}" "mmlu:5:${MMLU_BS:-4}"; do
     IFS=: read -r t k bs chat <<<"$spec"
     if [ -n "$(find $L/out/$name/$t -name 'results_*.json' 2>/dev/null)" ]; then echo "$name $t: done before"; continue; fi
     local ct=""; [ "${chat:-}" = chat ] && ct="--apply_chat_template"
     s=$(date +%s)
-    lm_eval --model hf --model_args pretrained=$model,dtype=bfloat16 --tasks $t --num_fewshot $k --batch_size $bs $ct \
+    lm_eval --model hf --model_args pretrained=$model,dtype=${L5_DTYPE:-bfloat16} --tasks $t --num_fewshot $k --batch_size $bs $ct \
       --output_path $L/out/$name/$t $extra > $L/out/$name.$t.log 2>&1 || { echo "LM_EVAL FAILED $name $t"; tail -20 $L/out/$name.$t.log; return 1; }
     echo "$name $t: $(( $(date +%s) - s ))s"
     grep -E "prompt_level_strict_acc|strict-match|^\|mmlu " $L/out/$name.$t.log | head -4
@@ -49,6 +49,9 @@ elif [ "$1" = book ]; then
   XLA_PYTHON_CLIENT_MEM_FRACTION=0.3 python export_lora.py $BASE $L/$name "$@" || { echo "EXPORT FAILED $name"; exit 1; }
   run_tasks $name $L/$name && echo "L5 $name DONE"
   rm -rf $L/$name
+elif [ "$1" = model ]; then
+  # bash run_l5.sh model NAME DIR: the full tasks for an existing model dir or hub name (noise tests; L5_DTYPE, L5_BS)
+  run_tasks $2 $3 && echo "L5 $2 DONE"
 elif [ "$1" = trial ]; then
   run_tasks base_trial $BASE ${LIMIT:-40} && run_tasks trained_trial $TRAINED ${LIMIT:-40} && echo "L5 TRIAL DONE"
 else
