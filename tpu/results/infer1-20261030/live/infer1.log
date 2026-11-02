@@ -1,0 +1,8 @@
+=== INFER infer1: base model IFEval + GSM8K under float16:1 (target: client base IFEval 386/541 = 71.35, GSM8K strict 992/1319 = 75.21) ===
+base_float16_bs1 ifeval: 2133s
+|      |       |none  |     0|prompt_level_strict_acc|↑  |0.6969|±  |0.0198|
+base_float16_bs1 gsm8k: 3123s
+|     |       |strict-match    |     5|exact_match|↑  |0.7582|±  |0.0118|
+L5 base_float16_bs1 DONE
+base float16 1 exit 0
+infer1 CELL DONE
