@@ -1,3 +1,5 @@
+**English** | [简体中文](README.zh-CN.md)
+
 # Continual Book Learning with LoRA
 
 Sequential knowledge-injection experiments with **Qwen2.5-7B-Instruct**: learn four synthetic Russian fact books while measuring forgetting, false-premise handling, and general-capability drift. The model answers from merged weights, without retrieval or per-book adapter switching.
@@ -44,4 +46,5 @@ Weights, LoRA factors, training-row archives, and offline dependency bundles are
 - [Training implementation](tpu/jax/) and [numerical checks](tpu/jax/tests/).
 - [Synthetic books and exams](lab/data_v18/), [strict scorer](lab/score_strict.py), and [recorded results](tpu/results/).
 - [Detailed experiment history](tpu/JAX_PLAN.md) (Chinese), including ablations and evaluation-setting comparisons; [earlier 1.5B report](lab/REPORT.md) (English).
+- [Handoff notes](HANDOFF.en.md) ([中文](HANDOFF.md)): configuration, open issues, and operating procedures.
 - [Experimental package interface](tpu/jax/package/README.md): one `run.sh BOOK.json OUT_DIR` call per book, exporting a merged checkpoint. See the reproduction limits above before running.
